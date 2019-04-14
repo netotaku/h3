@@ -1,0 +1,7 @@
+.footer{
+    position: relative;
+    &__brand{
+        position: absolute;
+        right: $gutter; 
+    }
+}

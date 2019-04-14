@@ -1,0 +1,22 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+ul{
+    list-style-type: none;
+}
+
+body{
+    line-height: 1.6;
+    font-size: 1em;
+    font-family: sans-serif;
+}
+
+a{
+    color: $red;
+    &:hover{
+        text-decoration: none;
+    }
+}

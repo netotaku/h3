@@ -1,0 +1,17 @@
+.menu{
+    &__link{
+        color: #fff;
+        text-decoration: none;
+        font-weight: bold;
+        &:hover, &__active{
+            color: $red;
+        }
+    }
+    &__base{
+        position: absolute;
+        bottom: $gutter;        
+    }
+    ul ul{
+        display: none;
+    }
+}

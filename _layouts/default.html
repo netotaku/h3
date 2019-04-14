@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<html>
+    <head>
+        {% include head.html %}
+    </head>
+    <body>            
+
+        <div class="page" id="js-app">
+            <div class="page__content content">
+                
+                {% for section in page.sections  %}
+                    {% include {{ section.template }} %}
+                {% endfor %}
+                
+                <footer class="section section--padding section--black footer">
+                    <a class="footer__brand" href="/pong"><img src="/assets/svg/brand.svg"></a>
+                    {% include contact.html %}
+                </footer>
+
+            </div>
+            <menu class="page__menu menu section section--padding">
+                <ul>
+                {% for link in site.menu %}
+                    <li>
+                        <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
+                        {% if link.children %}                            
+                            <ul>
+                                {% for child in link.children %}
+                                    <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
+                                {% endfor %}
+                            </ul>    
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+                <div class="menu__base contact">                    
+                    <div class="contact">
+                        {% include contact.html %}
+                    </div>
+                </div>
+            </menu>
+        </div>
+
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+        <script type="text/javascript" src="https://unpkg.com/vue"></script>
+        <script>
+        </script>
+    </body>
+</html>

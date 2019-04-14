@@ -41,3 +41,34 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+menu: 
+ - 
+  label: Principles
+  slug: principles
+  path: /principles
+ - 
+  label: Work
+  slug: work
+  path: /work
+  children: 
+    - 
+      label: LDO
+      slug : ldo
+      path: /work/ldo
+    - 
+      label: Wickwar
+      slug : wickwar
+      path: /work/wickwar    
+    - 
+      label: Live Nation
+      slug : livenation
+      path: /work/livenation  
+    - 
+      label: Butcombe
+      slug : butcombe
+      path: /work/butcombe                  
+ - 
+  label: Culture
+  slug: culture
+  path: /culture 

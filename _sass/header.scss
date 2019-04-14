@@ -1,0 +1,17 @@
+.header{
+    position: absolute;
+    z-index: 1;
+    left: 0px;
+    right: 0px;     
+    line-height: 1;
+    margin: $gutter;
+    &__brand{
+        display: block;
+    }
+    &__bars{
+        display: block;
+        position: absolute;
+        right: 0px;
+        top: 0px;
+    }
+}

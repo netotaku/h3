@@ -1,0 +1,14 @@
+<section class="section section--padding">
+    <ul>
+        {% if section.filter %}
+            {% for link in site.menu %}
+                {% if link.slug == section.filter %}
+                    {% for child in link.children %}
+                        <li><a href="{{ child.path }}">{{ child.label }}</a></li>
+                    {% endfor %}                
+                {% endif %}            
+            {% endfor %}
+        {% else %}
+        {% endif %}
+    </ul>    
+</section>

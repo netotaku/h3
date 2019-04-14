@@ -1,0 +1,38 @@
+.section{
+    background-position: center;
+    background-size: cover;
+    &--center{
+        text-align: center;
+    }
+    &--padding{
+        padding: $gutter;
+    }
+    &--red{
+        background-color: $red;
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    &--blue{
+        background-color: $blue;
+        color: $white;
+        a{
+            color: $white;
+        }
+    }
+    &--black{
+        background-color: $black;
+        color: $white;
+        a{
+            color: $white;
+        }
+    } 
+    &--yellow{
+        background-color: $yellow;
+        color: $white;
+        a{
+            color: $white;
+        }
+    }        
+}

@@ -1,0 +1,14 @@
+.page{
+    &__content{        
+        margin-right: $menuwidth;
+        position: relative;
+    }
+    &__menu{
+        position: fixed;
+        background: #000;
+        width: $menuwidth;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;        
+    }
+}

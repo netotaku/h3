@@ -1,0 +1,27 @@
+.hero{
+
+    background-size: cover;
+    background-position: center;
+    &__inner{        
+        height: 0px;
+        position: relative;
+        padding-top: 53%;
+        overflow: hidden;
+    }
+    &__layer{
+        display: block;
+        background-size: cover;
+        position: absolute;
+        top: 0px;
+        bottom: 0px;
+        left: 0px;
+        right: 0px;
+        width: 100%    !important;
+        height: auto   !important;
+    }
+    &--minimal{
+        .hero__inner{
+            padding-top: 20%;
+        }
+    }
+}

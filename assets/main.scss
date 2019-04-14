@@ -1,0 +1,26 @@
+---
+---
+
+$menuwidth: 300px;
+$gutter: 20px;
+
+$red: #FF0648;
+$blue: #0000D8;
+$black: #000;
+$grey: #eee;
+$yellow: #FFE21F;
+$white: #fff;
+
+@import "global";
+@import "page";
+@import "menu";
+@import "header";
+@import "hero";
+@import "section";
+@import "typography";
+@import "slider";
+@import "button";
+@import "icon";
+@import "contact";
+@import "footer";
+

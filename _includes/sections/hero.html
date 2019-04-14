@@ -1,0 +1,9 @@
+{% if section.image %}
+    <div class="section {{ section.class }} hero" style="background-image: url(/assets/img/{{ section.image }})">
+{% else %}
+    <div class="section {{ section.class }} hero">
+{% endif %}
+    <div class="hero__inner">
+        {{ section.content }}
+    </div>
+</div>
