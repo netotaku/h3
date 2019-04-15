@@ -56,18 +56,22 @@ menu:
       label: LDO
       slug : ldo
       path: /work/ldo
+      thumb: /assets/drink/budvar.jpg
     - 
       label: Wickwar
       slug : wickwar
-      path: /work/wickwar    
+      path: /work/wickwar   
+      thumb: /assets/drink/wickwar.jpg 
     - 
       label: Live Nation
       slug : livenation
       path: /work/livenation  
+      thumb: /assets/music/download.jpg
     - 
       label: Butcombe
       slug : butcombe
-      path: /work/butcombe                  
+      path: /work/butcombe    
+      thumb: /assets/drink/butcombe.jpg              
  - 
   label: Culture
   slug: culture

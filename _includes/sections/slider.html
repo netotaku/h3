@@ -1,14 +1,19 @@
-<section class="section section--padding">
-    <ul>
-        {% if section.filter %}
-            {% for link in site.menu %}
-                {% if link.slug == section.filter %}
-                    {% for child in link.children %}
-                        <li><a href="{{ child.path }}">{{ child.label }}</a></li>
-                    {% endfor %}                
-                {% endif %}            
-            {% endfor %}
-        {% else %}
-        {% endif %}
-    </ul>    
+<section class="section">
+    <div class="slider">
+        <div class="slider__scroll">
+            {% if section.filter %}
+                {% for link in site.menu %}
+                    {% if link.slug == section.filter %}
+                        {% for child in link.children %}
+                            <div class="slider__item"><a href="{{ child.path }}">
+                                <img class="slider__item__image" src="{{ child.thumb }}">
+                                <!-- {{ child.label }} -->
+                            </a></div>
+                        {% endfor %}                
+                    {% endif %}            
+                {% endfor %}
+            {% else %}
+            {% endif %}
+        </div>
+    </div>    
 </section>

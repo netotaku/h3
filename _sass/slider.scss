@@ -1,0 +1,18 @@
+.slider{
+    font-size: 0px;
+    overflow: hidden;
+    white-space: nowrap;
+    overflow-x: scroll;
+    &__scroll{
+        padding-right: $gutter;
+        padding-top: $gutter;
+        padding-bottom: $gutter;
+    }
+    &__item{        
+        display: inline-block;
+        margin-left: $gutter;
+        &__image{
+            display: block;
+        }
+    }
+}
