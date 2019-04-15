@@ -1,0 +1,33 @@
+ - 
+  label: Principles
+  slug: principles
+  path: /principles
+ - 
+  label: Work
+  slug: work
+  path: /work
+  children: 
+    - 
+      label: LDO
+      slug : ldo
+      path: /work/ldo
+      thumb: /assets/img/drink/budvar.jpg
+    - 
+      label: Wickwar
+      slug : wickwar
+      path: /work/wickwar   
+      thumb: /assets/img/drink/wickwar.jpg 
+    - 
+      label: Live Nation
+      slug : livenation
+      path: /work/livenation  
+      thumb: /assets/img/music/download.jpg
+    - 
+      label: Butcombe
+      slug : butcombe
+      path: /work/butcombe    
+      thumb: /assets/img/drink/butcombe.jpg              
+ - 
+  label: Culture
+  slug: culture
+  path: /culture 

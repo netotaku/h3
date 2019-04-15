@@ -1,5 +1,17 @@
 .hero{
+    &__strap{
+        width: 80%;
+        margin: auto;
+        color: $red;        
+        position: absolute;
+        top: 50%;
+        left: 0px;
+        right: 0px;
+        // left: 50%;        
+        transform: translateY(-50%);        
+        // transform: translateX(-50%);
 
+    }
     background-size: cover;
     background-position: center;
     &__inner{        
@@ -18,6 +30,9 @@
         right: 0px;
         width: 100%    !important;
         height: auto   !important;
+    }
+    &__header{
+
     }
     &--minimal{
         .hero__inner{

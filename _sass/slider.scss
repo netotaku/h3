@@ -2,17 +2,18 @@
     font-size: 0px;
     overflow: hidden;
     white-space: nowrap;
-    overflow-x: scroll;
-    &__scroll{
-        padding-right: $gutter;
+    overflow-x: scroll;    
+    &__scroll{   
+        padding-left: $gutter;     
         padding-top: $gutter;
         padding-bottom: $gutter;
     }
     &__item{        
         display: inline-block;
-        margin-left: $gutter;
+        margin-right: $gutter;
         &__image{
             display: block;
+            width: 30vw;
         }
     }
 }

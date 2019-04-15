@@ -1,19 +1,27 @@
 <section class="section">
     <div class="slider">
         <div class="slider__scroll">
+            
             {% if section.filter %}
-                {% for link in site.menu %}
+                {% for link in site.data.map %}
                     {% if link.slug == section.filter %}
                         {% for child in link.children %}
                             <div class="slider__item"><a href="{{ child.path }}">
-                                <img class="slider__item__image" src="{{ child.thumb }}">
-                                <!-- {{ child.label }} -->
+                                <img class="slider__item__image" src="{{ child.thumb }}">                                
                             </a></div>
                         {% endfor %}                
                     {% endif %}            
                 {% endfor %}
-            {% else %}
             {% endif %}
+
+            {% if section.data %}
+                {% for thumb in section.data %}
+                    <div class="slider__item">
+                        <img class="slider__item__image" src="{{ thumb }}">                
+                    </div>          
+                {% endfor %}
+            {% endif %}
+
         </div>
     </div>    
 </section>

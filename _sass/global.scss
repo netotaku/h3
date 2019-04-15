@@ -7,7 +7,10 @@
 ul{
     list-style-type: none;
 }
-
+html{
+    height: 100%;
+    background: #333;
+}
 body{
     line-height: 1.6;
     font-size: 1em;
@@ -19,4 +22,8 @@ a{
     &:hover{
         text-decoration: none;
     }
+}
+
+[v-cloak]{
+    display: none;
 }

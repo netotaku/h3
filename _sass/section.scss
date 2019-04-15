@@ -1,6 +1,7 @@
 .section{
     background-position: center;
     background-size: cover;
+    background-color: #fff;
     &--center{
         text-align: center;
     }
@@ -34,5 +35,8 @@
         a{
             color: $white;
         }
-    }        
+    } 
+    &__left{
+        width: 50%;
+    }       
 }

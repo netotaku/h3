@@ -1,14 +1,32 @@
 .page{
-    &__content{        
-        margin-right: $menuwidth;
-        position: relative;
-    }
-    &__menu{
+    &__overlay{
+        background: rgba(0,0,0,.6);
+        z-index: 1;
         position: fixed;
+        top: 0px;
+        bottom: 0px;
+        right: 0px;   
+        left: 0px;
+    }
+    &__menu{                
+        position: absolute;
         background: #000;
         width: $menuwidth;
         top: 0px;
         bottom: 0px;
-        right: 0px;        
-    }
+        right: 0px;   
+        &__open{
+            display: block;
+            position: absolute;
+            top: $gutter;
+            right: $gutter;
+        }
+    } 
+    &__brand{
+        display: block;
+        position: absolute;
+        top: $gutter;
+        left: $gutter;
+        z-index: 1;
+    }   
 }

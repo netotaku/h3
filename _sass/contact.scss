@@ -3,4 +3,24 @@
     &__item{
         display: block;
     }
+    &__heading{
+        color: $yellow;
+    }
+    a{
+        color: $white;
+        text-decoration: none;
+        &:hover{
+            color: $yellow;
+        }
+    }  
+    &__footer{
+        margin-top: $gutter;
+        a{
+            color: $red;
+            text-decoration: underline;
+            &:hover{
+                text-decoration: none;
+            }
+        }
+    }  
 }

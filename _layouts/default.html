@@ -6,46 +6,57 @@
     </head>
     <body>            
 
-        <div class="page" id="js-app">
-            <div class="page__content content">
-                
-                {% for section in page.sections  %}
-                    {% include {{ section.template }} %}
-                {% endfor %}
-                
-                <footer class="section section--padding section--black footer">
-                    <a class="footer__brand" href="/pong"><img src="/assets/svg/brand.svg"></a>
-                    {% include contact.html %}
-                </footer>
+        <div class="page">
+            <a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a>  
 
-            </div>
-            <menu class="page__menu menu section section--padding">
-                <ul>
-                {% for link in site.menu %}
-                    <li>
-                        <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
-                        {% if link.children %}                            
-                            <ul>
-                                {% for child in link.children %}
-                                    <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
-                                {% endfor %}
-                            </ul>    
-                        {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-                <div class="menu__base contact">                    
-                    <div class="contact">
-                        {% include contact.html %}
-                    </div>
+            {{ content }}
+            
+            <div id="js-menu">  
+                <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
+                <div v-if="opened" class="page__overlay" v-cloak>
+                    <menu class="page__menu menu">
+                        <ul>
+                        {% for link in site.data.map %}
+                            <li>
+                                <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
+                                {% if link.children %}                            
+                                    <ul>
+                                        {% for child in link.children %}
+                                            <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
+                                        {% endfor %}
+                                    </ul>    
+                                {% endif %}
+                            </li>
+                        {% endfor %}
+                        </ul>
+                        <div class="menu__base contact">                    
+                            <div class="contact">
+                                {% include contact.html %}
+                            </div>
+                        </div>
+                        <a v-on:click.prevent="opened = false" href="#">
+                            <img class="menu__close" src="/assets/svg/close.svg"></a>
+                    </menu>
                 </div>
-            </menu>
+            </div>
+
         </div>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
         <script type="text/javascript" src="https://unpkg.com/vue"></script>
         <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:1200659,hjsv:6};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+
+            var menu = new Vue({ el: '#js-menu', data: { opened: false } });
+
         </script>
     </body>
 </html>

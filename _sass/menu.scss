@@ -1,4 +1,5 @@
 .menu{
+    padding: $gutter;
     &__link{
         color: #fff;
         text-decoration: none;
@@ -14,4 +15,9 @@
     ul ul{
         display: none;
     }
+    &__close{
+        position: absolute;
+        top: $gutter;   
+        right: $gutter;
+    }    
 }

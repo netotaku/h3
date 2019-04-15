@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page
 permalink: '/work/ldo'
 sections: 
 -     
@@ -9,16 +9,18 @@ sections:
     template: sections/hero.html
     image: case-studies/ldo/hero.png      
 - 
-    class: 'section--padding section--yellow'
+    class: 'section--padding section--yellow typography'
     template: sections/section.html
     image: case-studies/ldo/hello.png
     content: |
-        <h1>Hello<span>LDO</span></h1>
-        <p>Client:
-        London Designer Outlet</p>
-        <p>Work:<br>
-        Brand development + year round ATL trans-media campaigns.</p>
-        <p>LDO have been helping keep London on point and stylish for over 5 years. As part of the Wembley Park estate, in the shadow of the stadium but never over-shadowed, the shopping centre is home to the biggest names in fashion and leisure wear alongside a 9 screen cinema and extensive F&B offering. Halo deliver year round brand development, ATL omni-channel campaigns as the retained agency of record.</p>
+        <div class="section__left">
+            <h1>Hello<span>LDO</span></h1>
+            <p>Client:
+            London Designer Outlet</p>
+            <p>Work:<br>
+            Brand development + year round ATL trans-media campaigns.</p>
+            <p>LDO have been helping keep London on point and stylish for over 5 years. As part of the Wembley Park estate, in the shadow of the stadium but never over-shadowed, the shopping centre is home to the biggest names in fashion and leisure wear alongside a 9 screen cinema and extensive F&B offering. Halo deliver year round brand development, ATL omni-channel campaigns as the retained agency of record.</p>
+        </div>
 - 
     class: 'section--padding section--black section--center'
     template: sections/section.html
@@ -27,7 +29,11 @@ sections:
 - 
     class: ''    
     template: sections/slider.html
-    data: ldo             
+    data: 
+        - /assets/img/case-studies/ldo/slide-1.png
+        - /assets/img/case-studies/ldo/slide-2.png
+        - /assets/img/case-studies/ldo/slide-3.png
+        - /assets/img/case-studies/ldo/slide-4.png             
 - 
     class: ''    
     template: sections/slider.html
