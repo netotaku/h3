@@ -2,6 +2,7 @@
     background-position: center;
     background-size: cover;
     background-color: #fff;
+    position: relative;
     &--center{
         text-align: center;
     }
@@ -31,12 +32,24 @@
     } 
     &--yellow{
         background-color: $yellow;
-        color: $white;
-        a{
-            color: $white;
-        }
     } 
     &__left{
-        width: 50%;
-    }       
+        width: 50%;        
+    }   
+    &__center{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    &--background-aware{
+        min-height: 100vh;
+    }    
 }
+
+@media only screen and (min-width: $max-width){
+    .section{
+        &--padding{
+            padding: $gutter-lrg;
+        }        
+    }
+} 
