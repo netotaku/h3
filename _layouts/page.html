@@ -3,9 +3,11 @@ layout: default
 ---
 <div class="page__content content">
                 
-    {% for section in page.sections  %}
-        {% include {{ section.template }} %}
-    {% endfor %}
+    <div class="group">
+        {% for section in page.sections  %}
+            {% include {{ section.template }} %}
+        {% endfor %}
+    </div>
     
     <footer class="section section--padding section--black footer">
         <a class="footer__brand" href="/pong"><img src="/assets/svg/brand.svg"></a>

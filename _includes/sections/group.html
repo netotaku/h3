@@ -1,0 +1,9 @@
+{% if section.image %}
+    <div class="group {{ section.class }}" style="background-image: url({{ section.image }})">
+{% else %}
+    <div class="group {{ section.class }}">
+{% endif %}
+    {% for section in section.sections  %}    
+        {% include {{ section.template }} %}
+    {% endfor %}
+</div>

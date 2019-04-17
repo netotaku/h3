@@ -1,13 +1,16 @@
 .section{
     background-position: center;
     background-size: cover;
-    background-color: #fff;
+    // background-color: #fff;
     position: relative;
     &--center{
         text-align: center;
     }
     &--padding{
         padding: $gutter;
+    }
+    &--white{
+        background-color: $white;
     }
     &--red{
         background-color: $red;
