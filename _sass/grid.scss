@@ -1,0 +1,8 @@
+.grid{
+    position: relative;
+    overflow: hidden;
+    &__unit{
+        float: left;
+        width: 33%;
+    }
+}

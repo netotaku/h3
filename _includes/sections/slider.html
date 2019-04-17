@@ -6,8 +6,10 @@
                 {% for link in site.data.map %}
                     {% if link.slug == section.filter %}
                         {% for child in link.children %}
-                            <div class="slider__item"><a href="{{ child.path }}">
-                                <img class="slider__item__image" src="{{ child.thumb }}">                                
+                            <div class="slider__item"><a href="{{ child.path }}">                                
+                                <img class="slider__item__image" src="{{ child.thumb }}"> 
+                                <img class="slider__item__grad" src="/assets/svg/grad.svg">                                
+                                <h2 class="slider__item__label">{{ child.label }}</h2>
                             </a></div>
                         {% endfor %}                
                     {% endif %}            

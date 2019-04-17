@@ -8,12 +8,28 @@
         padding-top: $gutter;
         padding-bottom: $gutter;
     }
-    &__item{        
+    &__item{  
+        font-size: 22px;      
         display: inline-block;
         margin-right: $gutter;
+        position: relative;
         &__image{
             display: block;
             width: 30vw;
+        }
+        &__grad{
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            left: 0px;                        
+        }
+        &__label{
+            position: absolute;
+            bottom: $gutter;
+            left: $gutter;
+            z-index: 1;
+            color: #fff;
+            line-height: 1;
         }
     }
 }

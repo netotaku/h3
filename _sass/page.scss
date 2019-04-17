@@ -30,3 +30,20 @@
         z-index: 1;
     }   
 }
+
+@media only screen and (min-width: $max-width){
+    .page{        
+        &__menu{  
+            width: 400px;                
+            &__open{
+                top: $gutter-lrg;
+                right: $gutter-lrg;
+            }
+        } 
+        &__brand{
+            top: $gutter-lrg;
+            left: $gutter-lrg;
+        }   
+    }
+    
+} 
