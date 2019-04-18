@@ -13,6 +13,7 @@
             color: $yellow;
         }
     }  
+
     &__footer{
         margin-top: $gutter;
         a{
@@ -24,3 +25,28 @@
         }
     }  
 }
+
+@media only screen and (min-width: $max-width){
+    .contact{        
+        &--lrg{
+            line-height: 63px;
+            .contact__item{
+                // font-family: 'gilroybold', Helvetica, Arial, sans-serif;
+                font-weight: bold;
+                &--tel{
+                    a{
+                        font-size: 4.6em;
+                    }
+                }
+                &--email{
+                    a{
+                        font-size: 4.6em;
+                    }
+                } 
+                &--address{                    
+                    font-size: 2.6em;                    
+                }                                
+            }
+        }
+    }
+} 

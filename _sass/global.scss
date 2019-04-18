@@ -1,7 +1,33 @@
+@font-face {
+    font-family: 'frequencymid';
+    src: url('/assets/fonts/frequency_aw-webfont.woff2') format('woff2'),
+         url('/assets/fonts/frequency_aw-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroybold';
+    src: url('/assets/fonts/radomir_tinkov_-_gilroy-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/radomir_tinkov_-_gilroy-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'gilroymedium';
+    src: url('/assets/fonts/radomir_tinkov_-_gilroy-medium-webfont.woff2') format('woff2'),
+         url('/assets/fonts/radomir_tinkov_-_gilroy-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 ul{
@@ -14,7 +40,7 @@ html{
 body{
     line-height: 1.6;
     font-size: 1em;
-    font-family: sans-serif;
+    font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
 }
 
 a{
@@ -32,4 +58,8 @@ img{
 
 [v-cloak]{
     display: none;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'gilroybold', Helvetica, Arial, sans-serif;
 }

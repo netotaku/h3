@@ -1,15 +1,19 @@
 .footer{
     position: relative;
     &__brand{
-        position: absolute;
-        right: $gutter; 
+        margin: 0px;
+        img{
+            display: inline;
+        }        
     }
 }
 
 @media only screen and (min-width: $max-width){
     .footer{        
-        &__brand{            
+        &__brand{   
+            position: absolute;         
             right: $gutter-lrg; 
         }
     }
 } 
+
