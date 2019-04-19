@@ -15,7 +15,7 @@
         position: relative;
         &__image{
             display: block;
-            width: 30vw;
+            width: 70vw;
         }
         &__grad{
             position: absolute;
@@ -33,3 +33,14 @@
         }
     }
 }
+
+@media only screen and (min-width: $max-width){
+    .slider{
+        &__item{  
+            &__image{
+                display: block;
+                width: 30vw;
+            }
+        }
+    }
+} 

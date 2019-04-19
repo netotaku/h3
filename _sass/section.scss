@@ -7,15 +7,15 @@
         max-width: 740px;
         margin: auto;
     }
-    &--center{
-        text-align: center;
-    }
     &--padding{
         padding: $gutter;
     }
     &--white{
         background-color: $white;
     }
+    &--center{
+        text-align: center;
+    }    
     &--red{
         background-color: $red;
         color: $white;
@@ -40,17 +40,7 @@
     &--yellow{
         background-color: $yellow;
     } 
-    &__left{
-        width: 50%;        
-    }   
-    &__center{
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-    }
-    &--background-aware{
-        min-height: 100vh;
-    }  
+   
     &--peak{
         .peak{
             display: block;
@@ -78,10 +68,37 @@
     }  
 }
 
+@media only screen and (max-width: $max-width){
+    .section{
+        &--background-aware{            
+            background: none;
+        }       
+    }
+} 
+
+
 @media only screen and (min-width: $max-width){
     .section{
+        &--background-aware{
+            min-height: 100vh;
+        }  
         &--padding{
             padding: $gutter-lrg;
-        }        
+            &--pinch{
+                padding: $gutter-lrg*2;            
+            }
+        } 
+        &--center-lrg{
+            text-align: center;
+        }
+        &__left{
+            width: 50%; 
+            padding-right:  $gutter-lrg*2;       
+        }
+        &__center{
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+        }       
     }
 } 

@@ -1,8 +1,10 @@
-.grid{
-    position: relative;
-    overflow: hidden;
-    &__unit{
-        float: left;
-        width: 33%;
+@media only screen and (min-width: $max-width){
+    .grid{
+        position: relative;
+        overflow: hidden;
+        &__unit{
+            float: left;
+            width: 33%;
+        }
     }
-}
+} 

@@ -13,3 +13,12 @@
         display: block;
     }
 }
+
+@media only screen and (max-width: $max-width){
+    .peak{
+        &__svg{
+            width: 22px;
+            height: auto;
+        }
+    }
+} 

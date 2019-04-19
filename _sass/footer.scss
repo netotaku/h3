@@ -2,6 +2,8 @@
     position: relative;
     &__brand{
         margin: 0px;
+        margin-bottom: $gutter;
+        display: block;
         img{
             display: inline;
         }        

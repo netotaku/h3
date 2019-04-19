@@ -4,14 +4,31 @@
             margin-bottom: $gutter/2;
         }
     }
+
+    blockquote{
+        background: url(/assets/svg/quote.svg) no-repeat;
+        padding-top: 20px;
+        font-size: 1.8em;
+        font-weight: bold;
+        cite{
+            display: block;
+            margin-top: $gutter;
+            font-style: normal;
+            font-size: .8em;
+        }
+    }
+
     &--blue{
         color: $blue;
     }  
     &--yellow{
         color: $yellow;
-    }      
+    }  
+    &--white{
+        color: $white;
+    }          
     &--huge{
-        font-size: 3em;
-        font-weight: bold;
+        font-size: 5em;
+        font-family: 'gilroybold', Helvetica, Arial, sans-serif;
     }  
 }

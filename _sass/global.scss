@@ -39,8 +39,8 @@ html{
 }
 body{
     line-height: 1.6;
-    font-size: 1em;
     font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
+    font-size: 1.1em;
 }
 
 a{
@@ -63,3 +63,22 @@ img{
 h1,h2,h3,h4,h5,h6{
     font-family: 'gilroybold', Helvetica, Arial, sans-serif;
 }
+
+
+
+@media only screen and (min-width: $max-width){
+    body{
+        font-size: 1em;
+    }
+    h1{
+        font-size: 6em;
+        line-height: 1.1;
+    }
+    h2{
+        font-size: 3.2em;
+        line-height: 1.1;
+    }
+    h3{
+        font-size: 1.5em;
+    }    
+} 
