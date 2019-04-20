@@ -10,12 +10,16 @@
     &--padding{
         padding: $gutter;
     }
+    &--center{
+        text-align: center;
+    } 
+
     &--white{
         background-color: $white;
     }
-    &--center{
-        text-align: center;
-    }    
+    &--grey{
+        background-color: $grey;
+    }      
     &--red{
         background-color: $red;
         color: $white;
@@ -64,14 +68,19 @@
             .peak__svg g g{
                 fill: $black;
             }
-        }        
+        }  
+        &--grey{
+            .peak__svg g g{
+                fill: $grey;
+            }
+        }                
     }  
 }
 
 @media only screen and (max-width: $max-width){
     .section{
         &--background-aware{            
-            background: none;
+            background-image: none;
         }       
     }
 } 

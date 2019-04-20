@@ -8,10 +8,15 @@
   path: /work
   children: 
     - 
+      label: Butcombe
+      slug : butcombe
+      path: /work/butcombe    
+      thumb: /assets/img/drink/butcombe.jpg   
+    - 
       label: LDO
       slug : ldo
       path: /work/ldo
-      thumb: /assets/img/drink/budvar.jpg
+      thumb: /assets/img/case-studies/ldo/ldo.png
     - 
       label: Wickwar
       slug : wickwar
@@ -21,12 +26,7 @@
       label: Live Nation
       slug : livenation
       path: /work/livenation  
-      thumb: /assets/img/music/download.jpg
-    - 
-      label: Butcombe
-      slug : butcombe
-      path: /work/butcombe    
-      thumb: /assets/img/drink/butcombe.jpg              
+      thumb: /assets/img/music/download.jpg           
  - 
   label: Culture
   slug: culture
