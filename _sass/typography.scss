@@ -1,9 +1,13 @@
 .typography{
     h1, h2, h3, h4, h5, h6, p{        
         &:not(:last-child){
-            margin-bottom: $gutter/2;
+            margin-bottom: $gutter;
         }
     }
+
+    // p, li{
+    //     // font-size: 1.2em;
+    // }
 
     blockquote{
         background: url(/assets/svg/quote.svg) no-repeat;
@@ -35,3 +39,16 @@
         font-family: 'gilroybold', Helvetica, Arial, sans-serif;
     }  
 }
+
+@media only screen and (min-width: $max-width){
+    .typography{
+        h1, h2, h3, h4, h5, h6{        
+            &:not(:last-child){
+                margin-bottom: $gutter*2;
+            }
+        }
+        p + h2, p + h3{
+            margin-top: $gutter*2;
+        }
+    }
+} 

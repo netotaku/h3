@@ -7,8 +7,7 @@
     <body>            
 
         <div class="page">
-            <a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a>  
-
+            
             {{ content }}
             
             <div id="js-menu">  
@@ -58,5 +57,6 @@
             var menu = new Vue({ el: '#js-menu', data: { opened: false } });
 
         </script>
+        {{ page.scripts }}
     </body>
 </html>

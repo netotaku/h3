@@ -1,15 +1,55 @@
 ---
 layout: page
 permalink: /culture
+scripts: |
+    <script>
+        var gallery = new Vue({
+            el: '#js-gallery',
+            mounted: function(){
+                console.log('gallery');
+            }
+        });
+    </script>
 sections: 
+-     
+    template: brand.html
 -     
     template: sections/header.html
 -     
     class: 'section--yellow'    
     template: sections/hero.html  
 - 
-    class: 'section--padding'
+    class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
     template: sections/section.html
-    content: |
-        <h1>Culture</h1>
+    content: |        
+        <h1>One agency.<br>
+            No rules.<br> 
+            <span class="typography--yellow">Except four.</span>
+        </h1>
+        <ul>
+            <li>Create meaningful, significant work.</li>
+            <li>Challenge the brief. Question the insight. Search for original.</li>
+            <li>Stay flexible. Always try to say yes.</li>
+            <li>Deliver elegant answers to complex problems.</li>            
+        </ul>
+- 
+    class: 'section--padding section--padding--pinch section--blue section--peak section--peak--red typography'
+    template: sections/section.html
+    content: |     
+        <h2>People</h2>
+- 
+    class: 'section--padding section--padding--pinch section--yellow section--peak section--peak--blue typography'
+    template: sections/slider-ajax.html
+    title: | 
+        Right here. <span class="typography--blue">Right now.</span>
+    content: |     
+        <h2>Right here. <span class="typography--blue">Right now.</span></h2>  
+        <div id="js-gallery" class=""></div>
 ---
+
+
+
+
+
+
+

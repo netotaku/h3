@@ -1,10 +1,12 @@
 .contact{
+    font-size: .9em;
     color: $white;
     &__item{
         display: block;
     }
     &__heading{
         color: $yellow;
+        margin-bottom: $gutter/2;
     }
     a{
         color: $white;
@@ -15,7 +17,7 @@
     }  
 
     &__footer{
-        margin-top: $gutter;
+        margin-top: $gutter/2;
         a{
             color: $red;
             text-decoration: underline;
@@ -30,8 +32,10 @@
     .contact{        
         &--lrg{
             line-height: 63px;
-            .contact__item{
-                // font-family: 'gilroybold', Helvetica, Arial, sans-serif;
+            .contact__heading{
+                margin-bottom: $gutter*2;
+            }
+            .contact__item{                
                 font-weight: bold;
                 &--tel{
                     a{
@@ -46,6 +50,9 @@
                 &--address{                    
                     font-size: 2.6em;                    
                 }                                
+            }
+            .contact__footer{
+                margin-top: $gutter;
             }
         }
     }

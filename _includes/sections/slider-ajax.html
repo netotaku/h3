@@ -1,0 +1,12 @@
+<section class="section {{ section.class }}" id="{{ section.id }}">
+    <h2>{{ section.title }}</h2>
+    {% raw %}
+        <div class="slider">
+            <div class="slider__scroll">            
+                <div v-for="item in data" class="slider__item"><a href="{{ child.path }}">                                
+                    <img class="slider__item__image" src="{{ child.thumb }}">                                                                                                         
+                </a></div>
+            </div>
+        </div>
+    {% endraw %}    
+</section>
