@@ -1,10 +1,39 @@
+.grid{
+    &__unit{
+        padding-bottom: $gutter;
+    }
+}
+
 @media only screen and (min-width: $max-width){
     .grid{
         position: relative;
         overflow: hidden;
         &__unit{
             float: left;
-            width: 33%;
+            padding-bottom: 0;
+        }
+        &--thirds{
+            .grid__unit{
+                width: 33%;
+                &:nth-child(3n+1){
+                    clear:left
+                }
+            }
+        }  
+        &--halves{
+            .grid__unit{
+                width: 50%;
+                &:nth-child(2n+1){
+                    clear:left
+                }
+            }            
+        }
+        &--padding{
+            margin-left: -$gutter;
+            margin-right: -$gutter;
+            .grid__unit{
+                padding: $gutter;
+            }
         }
     }
 } 

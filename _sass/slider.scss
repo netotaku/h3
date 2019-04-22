@@ -35,6 +35,15 @@
             color: #fff;
             line-height: 1;
         }
+        &--background-aware{
+            a{
+                position: relative;
+                display: block;
+                height: 70vw;
+                width: 70vw;                
+                background-size: cover;
+            }
+        }
     }
 }
 
@@ -44,6 +53,12 @@
             &__image{
                 display: block;
                 width: 30vw;
+            }
+            &--background-aware{
+                a{                    
+                    height: 30vw;
+                    width: 30vw;                                    
+                }
             }
         }
     }

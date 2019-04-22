@@ -2,8 +2,7 @@
     {% raw %}
         <div class="slider">
             <div class="slider__scroll">            
-                <div v-for="item in items" class="slider__item"><a :href="item.link">                                
-                    <img class="slider__item__image" :src="item.images.thumbnail.url">                                                                                                         
+                <div v-for="item in items" class="slider__item slider__item--background-aware"><a :href="item.link" :style="'background-image: url(' + item.images.standard_resolution.url + ')'">                                                                                                                                                            
                 </a></div>
             </div>
         </div>
