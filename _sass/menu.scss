@@ -19,6 +19,7 @@
         position: absolute;
         top: $gutter;   
         right: $gutter;
+        width: 35px;
     }    
 }
 
@@ -28,6 +29,7 @@
         &__close{            
             top: $gutter-lrg;   
             right: $gutter-lrg;
+            width: auto;
         } 
         &__base{         
             bottom: $gutter-lrg;        

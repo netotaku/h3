@@ -2,7 +2,11 @@
     font-size: 0px;
     overflow: hidden;
     white-space: nowrap;
-    overflow-x: scroll;    
+    overflow-x: scroll;   
+    &__title{
+        padding: $gutter;
+        padding-bottom: 0px;
+    } 
     &__scroll{   
         padding-left: $gutter;     
         padding-top: $gutter;

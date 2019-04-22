@@ -20,6 +20,7 @@
             position: fixed;
             top: $gutter;
             right: $gutter;
+            width: 35px;
         }
     } 
     &__brand{
@@ -28,6 +29,7 @@
         top: $gutter;
         left: $gutter;
         z-index: 1;
+        width: 35px;
     }   
 }
 
@@ -38,11 +40,13 @@
             &__open{
                 top: $gutter-lrg;
                 right: $gutter-lrg;
+                width: auto;
             }
         } 
         &__brand{
             top: $gutter-lrg;
             left: $gutter-lrg;
+            width: auto;
         }   
     }
     

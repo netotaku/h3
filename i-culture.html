@@ -2,11 +2,26 @@
 layout: page
 permalink: /culture
 scripts: |
+    <script type="text/javascript" src="/assets/scripts/feed.js"></script>
     <script>
         var gallery = new Vue({
             el: '#js-gallery',
+            data: {
+                items: []
+            },
             mounted: function(){
                 console.log('gallery');
+
+                var that = this;
+
+                new Instafeed({
+                    get: 'user', userId: '31031276', accessToken: '31031276.1677ed0.a2fc5276e5f14ccbb7a0d23eb2faf5dd', clientId: '400ac5ec7d574d34b7b72474ca376ed0',                
+                    mock: true,
+                    success: function(r){   
+                        that.items = r.data;                                                 
+                        console.log(r.data);
+                    }
+                }).run();
             }
         });
     </script>
@@ -16,7 +31,7 @@ sections:
 -     
     template: sections/header.html
 -     
-    class: 'section--yellow'    
+    class: 'hero--minimal section--yellow'    
     template: sections/hero.html  
 - 
     class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
@@ -38,13 +53,19 @@ sections:
     content: |     
         <h2>People</h2>
 - 
-    class: 'section--padding section--padding--pinch section--yellow section--peak section--peak--blue typography'
-    template: sections/slider-ajax.html
-    title: | 
-        Right here. <span class="typography--blue">Right now.</span>
+    class: 'section--padding section--padding--pinch section--black section--peak section--peak--blue typography'
+    template: sections/section.html
     content: |     
-        <h2>Right here. <span class="typography--blue">Right now.</span></h2>  
-        <div id="js-gallery" class=""></div>
+        <h2>Right here. <span class="typography--blue">Right Now.</span></h2>        
+- 
+    class: 'section--white section--peak section--peak--blue typography'
+    template: sections/slider-ajax.html
+    id: 'js-gallery'
+- 
+    class: 'section--padding section--red section--center section--peak section--peak--white'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us</a></p>            
 ---
 
 
