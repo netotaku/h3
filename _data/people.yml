@@ -1,0 +1,41 @@
+founders: 
+  - 
+    name: Nick Ellis
+    title: Creative Partner
+    image: 'https://instagram.flhr2-1.fna.fbcdn.net/vp/d1162f9923c476416edeb0a7ced0dfbb/5D5464FB/t51.2885-15/sh0.08/e35/c135.0.809.809a/s640x640/46146268_2352609061435539_4766827467816560550_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net'
+  - 
+    name: Vern Edmonds
+    title: Managing Partner
+    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/65f6c054498803712a5484d15451243f/5D429B95/t51.2885-15/e35/44899827_273921069977005_6724220646654823017_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+
+leadership:
+  - 
+    name: Nick Clarkson
+    title: Digital Director
+    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/a751c6a7d7323d868858280c223e232e/5D71C471/t51.2885-15/e35/40204114_250364248953206_1364416766687576064_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+  - 
+    name: Hannah Williams
+    title: Director of Client Partnerships
+    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/2e9ab24b9fb6609a124df6910f60b43e/5D71188F/t51.2885-15/e35/14072989_322119541468158_1410074715_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+  - 
+    name: Kelly Finnegan
+    title: Creative Director
+    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/6dd9a9cceaf292aa330e8f1a892d6fe5/5D597111/t51.2885-15/e35/54800552_152783275747280_7372838164049933718_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+  - 
+    name: Nat Inker
+    title: Operations Director
+    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/0524d9beb2e156a04a82306b50473e70/5D358C0C/t51.2885-15/e35/54513336_271133816950163_6271657381912513168_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+  - 
+    name: Nina Edmonds
+    title: Finance Director
+
+departments:
+  - 
+    name: Digital
+    image: 'https://instagram.flhr2-1.fna.fbcdn.net/vp/391552c029781f51b4b8a1b79404a22e/5D5C1AD4/t51.2885-15/e35/46251533_721306188240597_5148598373510625290_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net'
+  - 
+    name: Creative
+    image: ''
+  - 
+    name: Client Partnerships
+    images: ''

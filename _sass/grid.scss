@@ -1,6 +1,12 @@
 .grid{
     &__unit{
+        position: relative;
         padding-bottom: $gutter;
+    }
+    &__hero{
+        display: block;
+        width: 100%;
+        height: auto;
     }
 }
 

@@ -65,6 +65,12 @@ h1,h2,h3,h4,h5,h6{
     font-family: 'gilroybold', Helvetica, Arial, sans-serif;
 }
 
+.u{
+    &--gutter-bottom{
+        margin-bottom: $gutter*2;
+    }
+}
+
 //////////////////////
 
 @media only screen and (min-width: $max-width){

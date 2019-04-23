@@ -1,0 +1,48 @@
+<section class="section section--padding section--padding--pinch section--peak section--peak--blue typography">
+    {% include peak.html %}
+
+    <h3>Founders</h3>
+
+    <div class="grid grid--halves grid--padding u--gutter-bottom">
+        {% for person in site.data.people.founders %}
+            <div class="grid__unit">
+                <div class="card">
+                    <div class="card__hero" style="background-image: url({{ person.image }})"></div>                                              
+                    <div class="card__grad"></div>
+                    <h3 class="card__label">
+                        {{ person.name }}<br>
+                        <span class="typography--normal">{{ person.title }}</span></h3>                                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3>Leadership</h3>
+
+    <div class="grid grid--halves grid--padding u--gutter-bottom">
+        {% for person in site.data.people.leadership %}
+            <div class="grid__unit">
+                <div class="card">
+                    <div class="card__hero" style="background-image: url({{ person.image }})"></div>                                              
+                    <div class="card__grad"></div>
+                    <h3 class="card__label">
+                        {{ person.name }}<br>
+                        <span class="typography--normal">{{ person.title }}</span></h3>                                    
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+
+    <h3>Departments</h3>
+    
+    {% for dept in site.data.people.departments %}        
+        <div class="card card--margin u--gutter-bottom">
+            <div class="card__hero" style="background-image: url({{ dept.image }})"></div>                                              
+            <div class="card__grad"></div>
+            <h3 class="card__label">
+                {{ dept.name }}</h3>                                    
+        </div>
+    {% endfor %}
+    
+
+</section>

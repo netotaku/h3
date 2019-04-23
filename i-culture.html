@@ -53,7 +53,14 @@ sections:
     content: |     
         <h2>People</h2>
 - 
-    class: 'section--padding section--yellow section--center section--peak section--peak--blue'
+    class: 'section section--group'
+    image: /assets/svg/triangle.svg 
+    template: sections/group.html
+    sections:
+        -             
+            template: sections/people.html         
+- 
+    class: 'section--padding section--blue section--center section--peak section--peak--yellow'
     template: sections/section.html
     content: |
         <p><a class="button button--black" href="/careers" target="_window">We hirin'</a></p>                

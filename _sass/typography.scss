@@ -38,6 +38,10 @@
         font-size: 4.2em;
         font-family: 'gilroybold', Helvetica, Arial, sans-serif;
     }  
+    &--normal{
+        font-weight: normal;
+        font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
+    }
 }
 
 @media only screen and (min-width: $max-width){

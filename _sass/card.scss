@@ -1,0 +1,29 @@
+.card{
+    position: relative;
+    background-color: $white;
+    box-shadow: 0 43px 25px -26px rgba(0,0,0,0.24);
+    &__grad{
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        background: rgba(0,0,0,.3);        
+    }
+    &__hero{
+        width: 100%;
+        height: 0px;
+        padding-top: 70%;
+        background-position: center;
+        background-size: cover;
+    }
+    &__label{
+        position: absolute;
+        bottom: $gutter;
+        left: $gutter;
+        color: #fff;
+    }
+    &--margin{
+        margin-top: $gutter;
+    }
+}
