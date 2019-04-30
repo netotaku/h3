@@ -5,12 +5,24 @@ sections:
 -     
     template: brand.html
 -     
-    template: sections/header.html
--     
-    class: 'hero--minimal section--yellow'
-    template: sections/hero.html      
+    template: sections/header.html    
 - 
-    class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
+    class: 'section--padding section--padding--pinch section--peak section--yellow section--background-aware typography'
+    template: sections/section.html
+    image: clienad.png
+    content: |
+        <div class="section__center">
+            <div class="section__left">
+                <h1><span class="typography--black">It's been</span> <span class="typography--yellow">emotional</span></h1>               
+            </div>
+        </div>    
+-     
+    class: 'section--white'
+    template: sections/section.html
+    content: |
+        <hr class="hr hr--white" />      
+- 
+    class: 'section--padding section--padding--pinch section--red section--peak section--peak--white typography'
     template: sections/section.html
     content: |        
         <h1>Work</h1>
@@ -18,4 +30,9 @@ sections:
     class: 'section--white'    
     template: sections/slider.html
     filter: work 
+- 
+    class: 'section--padding section--blue section--center section--peak section--peak--white'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="/priniciples">How it works</a></p>
 ---
