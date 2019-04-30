@@ -1,6 +1,6 @@
 ---
 layout: page
-permalink: /culture
+permalink: /culture/
 scripts: |
     <script type="text/javascript" src="/assets/scripts/feed.js"></script>
     <script>
@@ -15,67 +15,67 @@ scripts: |
                 var that = this;
 
                 new Instafeed({
-                    get: 'user', userId: '31031276', accessToken: '31031276.1677ed0.a2fc5276e5f14ccbb7a0d23eb2faf5dd', clientId: '400ac5ec7d574d34b7b72474ca376ed0',                
+                    get: 'user', userId: '31031276', accessToken: '31031276.1677ed0.a2fc5276e5f14ccbb7a0d23eb2faf5dd', clientId: '400ac5ec7d574d34b7b72474ca376ed0',
                     mock: true,
-                    success: function(r){   
-                        that.items = r.data;                                                 
+                    success: function(r){
+                        that.items = r.data;
                         console.log(r.data);
                     }
                 }).run();
             }
         });
     </script>
-sections: 
--     
+sections:
+-
     template: brand.html
--     
+-
     template: sections/header.html
--     
-    class: 'hero--minimal section--yellow'    
-    template: sections/hero.html  
-- 
+-
+    class: 'hero--minimal section--yellow'
+    template: sections/hero.html
+-
     class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
     template: sections/section.html
-    content: |        
+    content: |
         <h1>One agency.<br>
-            No rules.<br> 
+            No rules.<br>
             <span class="typography--yellow">Except four.</span>
         </h1>
         <ul>
             <li>Create meaningful, significant work.</li>
             <li>Challenge the brief. Question the insight. Search for original.</li>
             <li>Stay flexible. Always try to say yes.</li>
-            <li>Deliver elegant answers to complex problems.</li>            
+            <li>Deliver elegant answers to complex problems.</li>
         </ul>
-- 
+-
     class: 'section--padding section--padding--pinch section--blue typography'
     template: sections/section.html
-    content: |     
+    content: |
         <h2>People</h2>
-- 
+-
     class: 'section section--group'
-    image: /assets/svg/triangle.svg 
+    image: /assets/svg/triangle.svg
     template: sections/group.html
     sections:
-        -             
-            template: sections/people.html         
-- 
+        -
+            template: sections/people.html
+-
     class: 'section--padding section--blue section--center section--peak section--peak--yellow'
     template: sections/section.html
     content: |
-        <p><a class="button button--black" href="/careers" target="_window">We hirin'</a></p>                
-- 
+        <p><a class="button button--black" href="/careers" target="_window">We hirin'</a></p>
+-
     class: 'section--padding section--padding--pinch section--black typography'
     template: sections/section.html
-    content: |     
-        <h2>Right here. <span class="typography--blue">Right Now.</span></h2>        
-- 
+    content: |
+        <h2>Right here. <span class="typography--blue">Right Now.</span></h2>
+-
     class: 'section--white section--peak section--peak--blue typography'
     template: sections/slider-ajax.html
     id: 'js-gallery'
-- 
+-
     class: 'section--padding section--red section--center section--peak section--peak--white'
     template: sections/section.html
     content: |
-        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us</a></p>            
+        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us</a></p>
 ---
