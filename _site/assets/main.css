@@ -1342,6 +1342,16 @@ h1, h2, h3, h4, h5, h6 {
 @media (min-width: 1200px) and (max-width: 1359px) {
   .hidden-xl {
     display: none; } }
+.page--budvar .hero__inner {
+  color: #FFF; }
+  .page--budvar .hero__inner h1 {
+    font-size: 3rem; }
+  .page--budvar .hero__inner strong, .page--budvar .hero__inner h1 {
+    color: #DA291C; }
+  .page--budvar .hero__inner .bold {
+    font-weight: bold; }
+  .page--budvar .hero__inner .section__left {
+    padding-left: 2rem; }
 .page--budvar .section--red {
   background-color: #DA291C; }
 .page--budvar .section--white {
@@ -1418,6 +1428,7 @@ h1, h2, h3, h4, h5, h6 {
     margin-bottom: 4rem; }
   .page--budvar .section__stats h1 {
     font-size: 6rem;
-    margin-bottom: 6rem; }
+    margin-bottom: 6rem;
+    color: #DA291C; }
   .page--budvar .section__stats h1, .page--budvar .section__stats h2 {
     font-weight: bold; }

@@ -2,6 +2,27 @@ $budvar-red: #DA291C;
 $budvar-white: #FFFEF8;
 
 .page--budvar {
+
+  .hero__inner {
+    color: #FFF;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    strong, h1 {
+      color: $budvar-red;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .section__left {
+      padding-left: 2rem;
+    }
+  }
+
   .section--red {
     background-color: $budvar-red;
   }
@@ -117,6 +138,7 @@ $budvar-white: #FFFEF8;
     h1 {
       font-size: 6rem;
       margin-bottom: 6rem;
+      color: $budvar-red;
     }
 
     h1, h2 {
