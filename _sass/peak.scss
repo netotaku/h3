@@ -17,10 +17,18 @@
     }
 }
 
+.peak--white {
+    background-color: #FFF;
+
+    polygon {
+        fill: #FFF;
+    }
+}
+
 .peak--black {
     background-color: #000;
 
-    .polygon {
-        background-color: #000;
+    polygon {
+        fill: #000;
     }
 }

@@ -181,6 +181,14 @@ h1, h2, h3, h4, h5, h6 {
   .hero--minimal .hero__inner {
     padding-top: 20%; }
 
+.hero__inner .section__left {
+  padding-left: 2rem; }
+.hero__inner .bold {
+  font-weight: bold; }
+
+.hero--white {
+  color: #FFF; }
+
 .section {
   background-position: center;
   background-size: cover;
@@ -441,10 +449,15 @@ h1, h2, h3, h4, h5, h6 {
   .peak--show {
     display: block; }
 
+.peak--white {
+  background-color: #FFF; }
+  .peak--white polygon {
+    fill: #FFF; }
+
 .peak--black {
   background-color: #000; }
-  .peak--black .polygon {
-    background-color: #000; }
+  .peak--black polygon {
+    fill: #000; }
 
 .hr {
   height: 23px;
@@ -1348,8 +1361,6 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 3rem; }
   .page--budvar .hero__inner strong, .page--budvar .hero__inner h1 {
     color: #DA291C; }
-  .page--budvar .hero__inner .bold {
-    font-weight: bold; }
   .page--budvar .hero__inner .section__left {
     padding-left: 2rem; }
 .page--budvar .section--red {
@@ -1454,3 +1465,11 @@ h1, h2, h3, h4, h5, h6 {
   .page--deezer .section__stats .stats__image:nth-child(3) {
     margin-top: -7.5%;
     margin-left: 50%; }
+
+.page--crestron .peak--blue {
+  background-color: #007C99; }
+  .page--crestron .peak--blue polygon {
+    fill: #007C99; }
+.page--crestron .section--img-100 img {
+  width: 100%;
+  max-width: initial; }

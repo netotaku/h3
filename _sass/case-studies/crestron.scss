@@ -1,0 +1,18 @@
+$crestron-blue: #007C99;
+
+.page--crestron {
+  .peak--blue {
+    background-color: $crestron-blue;
+
+    polygon {
+      fill: $crestron-blue;
+    }
+  }
+
+  .section--img-100 {
+    img {
+      width: 100%;
+      max-width: initial;
+    }
+  }
+}
