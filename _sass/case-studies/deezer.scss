@@ -1,0 +1,44 @@
+.page--deezer {
+  .row--covers {
+    div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .slider--50 {
+    .slider__item__image {
+      width: 50vw;
+    }
+  }
+
+  .section--covers {}
+
+  .section__stats {
+
+    .text {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 5rem;
+      max-width: 750px;
+      margin: 0px auto;
+      color: #fff;
+    }
+
+    .stats__images {
+      width: 100%;
+    }
+    .stats__image {
+      width: 50%;
+
+      &:nth-child(2) {
+        margin-top: -7.5%;
+        margin-left: 25%;
+      }
+
+      &:nth-child(3) {
+        margin-top: -7.5%;
+        margin-left: 50%;
+      }
+    }
+  }
+}

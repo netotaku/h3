@@ -1432,3 +1432,25 @@ h1, h2, h3, h4, h5, h6 {
     color: #DA291C; }
   .page--budvar .section__stats h1, .page--budvar .section__stats h2 {
     font-weight: bold; }
+
+.page--deezer .row--covers div {
+  margin-bottom: 1rem; }
+.page--deezer .slider--50 .slider__item__image {
+  width: 50vw; }
+.page--deezer .section__stats .text {
+  text-align: center;
+  font-weight: bold;
+  padding-bottom: 5rem;
+  max-width: 750px;
+  margin: 0px auto;
+  color: #fff; }
+.page--deezer .section__stats .stats__images {
+  width: 100%; }
+.page--deezer .section__stats .stats__image {
+  width: 50%; }
+  .page--deezer .section__stats .stats__image:nth-child(2) {
+    margin-top: -7.5%;
+    margin-left: 25%; }
+  .page--deezer .section__stats .stats__image:nth-child(3) {
+    margin-top: -7.5%;
+    margin-left: 50%; }
