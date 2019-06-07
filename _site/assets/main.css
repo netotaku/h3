@@ -66,6 +66,9 @@ h1, h2, h3, h4, h5, h6 {
 
   h3 {
     font-size: 1.5em; } }
+.page__content {
+  position: relative;
+  z-index: 1; }
 .page__overlay {
   background: rgba(0, 0, 0, 0.4);
   z-index: 1;
@@ -106,6 +109,10 @@ h1, h2, h3, h4, h5, h6 {
     top: 4vw;
     left: 4vw;
     width: auto; } }
+.menu-top {
+  position: relative;
+  z-index: 2; }
+
 .menu {
   padding: 20px; }
   .menu__link {
@@ -1473,3 +1480,73 @@ h1, h2, h3, h4, h5, h6 {
 .page--crestron .section--img-100 img {
   width: 100%;
   max-width: initial; }
+.page--crestron .section--half-blue {
+  position: relative;
+  background-color: #fff; }
+  .page--crestron .section--half-blue p {
+    position: relative;
+    z-index: 2; }
+  .page--crestron .section--half-blue:after {
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #007C99; }
+.page--crestron .text--center {
+  text-align: center; }
+.page--crestron .section--white-triangle {
+  background-color: #007C99;
+  position: relative; }
+  .page--crestron .section--white-triangle:before {
+    content: '';
+    display: block;
+    background-image: url("./img/case-studies/crestron/white_triangle.svg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 61%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .page--crestron .section--white-triangle .section__measure, .page--crestron .section--white-triangle .section__stats {
+    position: relative;
+    z-index: 2; }
+.page--crestron .section--triangle {
+  background-color: #FFF; }
+  .page--crestron .section--triangle:before {
+    content: '';
+    display: block;
+    background-image: url("./img/case-studies/crestron/blue_triangle.svg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 28%;
+    position: absolute;
+    bottom: -1px;
+    left: 0; }
+  .page--crestron .section--triangle .row {
+    position: relative;
+    z-index: 2; }
+.page--crestron .section--logos .row {
+  margin-top: 3rem; }
+  .page--crestron .section--logos .row .col-md-3 {
+    justify-content: center;
+    display: flex;
+    flex-direction: column; }
+    .page--crestron .section--logos .row .col-md-3 img {
+      margin: 0;
+      margin-bottom: 2rem; }
+  .page--crestron .section--logos .row .col-md-9 {
+    padding: 4rem; }
+.page--crestron .section--c-blue {
+  background-color: #007C99; }
+.page--crestron .stats__image, .page--crestron .stats {
+  margin-top: 4rem; }
+.page--crestron .stats {
+  color: #fff;
+  text-align: left; }
+  .page--crestron .stats h2 {
+    margin-bottom: 5px; }

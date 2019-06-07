@@ -40,7 +40,7 @@ sections:
     content: |
         <p><a class="button button--blue" href="/contact">Request a case study</a></p>
 -
-    class: 'section--padding section--center'
+    class: 'section--padding section--center section--half-blue'
     template: sections/section.html
     content: |
         <p><img src="/assets/img/case-studies/crestron/billboard_1.jpg"></p>
@@ -56,11 +56,16 @@ sections:
             </div>
         </div>
 -
-    class: 'section--padding section--white section--center-lrg section--img-100 typography'
+    class: 'section--padding section--white section--center-lrg section--img-100 typography section--white-triangle'
     template: sections/section.html
     content: |
         <div class="section__measure">
-            <p>The shift in the consumer pallete towards punchier, heavy hopped IPA’s &amp; mature Bocks has created space in the category for Butcombe’s seasonal, special edition brews. Each one is limited batch with a unique name & design created in honour of a landmark event or personality from 1978 - the year of the Brewery’s birth. The ‘78 Range has achieved significant retail listings &amp; On-Trade support.</p>
+            <div class="row row--center">
+                <div class="col-md-8">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ducimus ipsam ex obcaecati quos reprehenderit aperiam expedita quisquam nulla quas, ea aliquam et odit, aut officia eaque, architecto quaerat veniam.</p>
+                </div>
+            </div>
+
         </div>
         <div class="section__stats">
             <div class="stats__image">
@@ -70,13 +75,13 @@ sections:
                 <p><img src="/assets/img/case-studies/crestron/billboard_3.jpg"></p>
             </div>
             <div class="stats">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>15% increase</h1>
+                <div class="row row--center">
+                    <div class="col-md-4">
+                        <h2>15% increase</h2>
                         <p>Direct to consumer contact in first 6 months from launch</p>
                     </div>
-                    <div class="col-md-6">
-                        <h1>Unified</h1>
+                    <div class="col-md-4">
+                        <h2>Unified</h2>
                         <p>Global trans-media strategy</p>
                     </div>
                 </div>
@@ -88,13 +93,12 @@ sections:
     content: |
         <hr class="hr" />
 -
-    class: 'section section--group'
-    image: /assets/svg/triangle.svg
+    class: 'section section--group '
     template: sections/group.html
     sections:
 
         -
-            class: 'section--padding section--center'
+            class: 'section--padding section--center section--triangle section--logos'
             template: sections/section.html
             content: |
                 <div class="row">
@@ -102,39 +106,47 @@ sections:
                         <img src="/assets/img/case-studies/crestron/amazon_logo.svg" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem amet optio quisquam officiis illo dolores enim ut id voluptate, expedita deleniti itaque ratione ex esse debitis, mollitia facilis sunt alias.</p>
                     </div>
-                    <div class="col-md-9">
+                    <div class="col-md-offset-1 col-md-8">
                         <img src="/assets/img/case-studies/crestron/image_border_1.jpg" alt="">
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-9">
+                    <div class="col-md-8">
                         <img src="/assets/img/case-studies/crestron/image_border_2.jpg" alt="">
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-md-3 col-md-offset-1">
                         <img src="/assets/img/case-studies/crestron/sonos.svg" alt="">
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem amet optio quisquam officiis illo dolores enim ut id voluptate, expedita deleniti itaque ratione ex esse debitis, mollitia facilis sunt alias.</p>
                     </div>
                 </div>
 
         -
-            class: 'section--padding section--center'
+            class: 'section--padding section--center section--c-blue'
             template: sections/section.html
             content: |
-                <p><img src="/assets/img/case-studies/crestron/poster_image.jpg"></p>
+                <div class="row row--center">
+                    <div class="col-md-8">
+                        <img src="/assets/img/case-studies/crestron/poster_image.jpg">
+                    </div>
+                </div>
         -
-            class: 'section--padding section--center'
+            class: 'section--padding section--center section--c-blue'
             template: sections/section.html
             content: |
                 <p><img src="/assets/img/case-studies/crestron/billboard_4.jpg"></p>
 -
-    class: 'section--black'
+    class: 'section--black section--padding'
     template: sections/slider.html
     data:
         - /assets/img/case-studies/crestron/white_poster_1.jpg
         - /assets/img/case-studies/crestron/white_poster_2.jpg
         - /assets/img/case-studies/crestron/white_poster_3.jpg
     content: |
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum debitis quidem natus dolor eius ratione quae laborum quibusdam cupiditate culpa, molestias esse quia iure ut, reprehenderit corporis aperiam accusamus vero.</p>
+        <div class="row row--center">
+            <div class="col-md-8 text--center">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eum debitis quidem natus dolor eius ratione quae laborum quibusdam cupiditate culpa, molestias esse quia iure ut, reprehenderit corporis aperiam accusamus vero.</p>
+            </div>
+        </div>
 
 -
         class: 'section--img-100'

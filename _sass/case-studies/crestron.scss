@@ -15,4 +15,112 @@ $crestron-blue: #007C99;
       max-width: initial;
     }
   }
+
+  .section--half-blue {
+    position: relative;
+    background-color: #fff;
+
+    p {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      left:0;
+      top: 0;
+      z-index: 0;
+      background-color: $crestron-blue;
+    }
+  }
+
+  .text--center {
+    text-align: center;
+  }
+
+  .section--white-triangle {
+    background-color: $crestron-blue;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/white_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+
+    .section__measure, .section__stats {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--triangle {
+    background-color: #FFF;
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/blue_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 28%;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+
+    .row {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--logos {
+    .row {
+      margin-top: 3rem;
+
+      .col-md-3 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        img {
+          margin: 0;
+          margin-bottom: 2rem;
+        }
+      }
+
+      .col-md-9 {
+        padding: 4rem;
+      }
+    }
+  }
+
+  .section--c-blue {
+    background-color: $crestron-blue;
+  }
+
+  .stats__image, .stats {
+    margin-top: 4rem;
+  }
+
+  .stats {
+    color: #fff;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
 }

@@ -1,3 +1,8 @@
+.menu-top {
+    position: relative;
+    z-index: 2;
+}
+
 .menu{
     padding: $gutter;
     &__link{

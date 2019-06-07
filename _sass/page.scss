@@ -1,6 +1,9 @@
 .page{
+
     &__content{
         // filter: blur(8px);
+        position: relative;
+        z-index: 1;    
     }
     &__overlay{
         background: rgba(0,0,0,.4);        
