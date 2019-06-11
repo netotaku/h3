@@ -1,0 +1,58 @@
+$butcombe-grey: #312C25;
+$butcombe-white: #FDF6EA;
+
+.page--butcombe {
+  .peak--grey {
+    background-color: $butcombe-grey;
+
+    polygon {
+      fill: $butcombe-grey;
+    }
+  }
+
+  .section--white {
+    background-color: $butcombe-white;
+  }
+
+  .section--grey {
+    background-color: $butcombe-grey;
+  }
+
+  .section--dinosaur {
+    background-color: #000;
+    
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      bottom: 0;
+      background-image: url('./img/case-studies/butcombe/dinosaur_illustration.svg');
+      background-size: cover;
+      left: -5vw;
+    }
+  }
+
+  .flourish {
+    position: relative;
+    &:before, &:after {
+      content: '';
+      display: block;
+      width: 49px;
+      height: 27px;
+      background-image: url('./img/case-studies/butcombe/spiral_pattern_1.svg');
+      top: 50%;
+      left: -75px;
+      right: auto;
+      position: absolute;
+      transform: translateY(-50%);
+    }
+
+    &:after {
+      left: auto;
+      right: -75px;
+      transform: translateY(-50%) scaleX(-1);
+    }
+  }
+}

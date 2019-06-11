@@ -3,7 +3,7 @@ $budvar-white: #FFFEF8;
 
 .page--budvar {
 
-  .hero__inner {
+  .hero__inner, .hero__content {
     color: #FFF;
 
     h1 {
@@ -99,9 +99,13 @@ $budvar-white: #FFFEF8;
     background-image: url("./img/case-studies/budvar/pattern.svg");
     background-size: cover;
     background-color: $budvar-white;
-    background-size: 50%;
+    background-size: 100%;
     background-repeat: no-repeat;
     background-position: top;
+
+    @include media-breakpoint-up(xl) {
+      background-size: 50%;
+    }
 
     &:after {
       content: '';
@@ -125,7 +129,7 @@ $budvar-white: #FFFEF8;
     padding-top: 5rem;
     padding-bottom: 5rem;
     margin: auto;
-    overflow: visible;
+    overflow: hidden;
 
     .row {
       margin-bottom: 4rem;
@@ -139,6 +143,17 @@ $budvar-white: #FFFEF8;
 
     h1, h2 {
       font-weight: bold;
+    }
+  }
+
+  .budvar-font {
+    margin-bottom: 4rem;
+  }
+
+  .section--labels {
+    padding-top: 4rem;
+    img {
+      margin-bottom: 3rem;
     }
   }
 }

@@ -13,6 +13,7 @@ $grey: #333333;
 $yellow: #FFE21F;
 $white: #fff;
 
+@import 'grid/grid';
 @import "global";
 @import "page";
 @import "menu";
@@ -33,7 +34,6 @@ $white: #fff;
 @import "card";
 
 
-@import 'grid/grid';
 @import "case-studies/case-studies";
 
 

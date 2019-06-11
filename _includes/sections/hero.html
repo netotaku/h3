@@ -1,9 +1,12 @@
+
+<div class="section {{ section.class }} hero">
 {% if section.image %}
-    <div class="section {{ section.class }} hero" style="background-image: url(/assets/img/{{ section.image }})">
+    <div class="hero__inner" style="background-image: url(/assets/img/{{ section.image }})">
 {% else %}
-    <div class="section {{ section.class }} hero">
-{% endif %}
     <div class="hero__inner">
+{% endif %}
+    </div>
+    <div class="hero__content">
         {{ section.content }}
     </div>
 </div>

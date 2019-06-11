@@ -1,0 +1,23 @@
+$ldo-yellow: #FFE21F;
+
+.page--ldo {
+  .peak--yellow {
+    background-color: #FFE21F;
+    polygon {
+      fill: #FFE21F;
+    }
+  }
+
+  .slider--100 {
+    
+    .slider__item__image {
+      width: 100%;
+    }
+    .slider__scroll {
+      padding: 0;
+    }
+    .slider__item {
+      width: 100vw;
+    }
+  }
+}

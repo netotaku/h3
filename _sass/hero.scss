@@ -10,7 +10,6 @@
         // left: 50%;        
         transform: translateY(-50%);        
         // transform: translateX(-50%);
-
     }
     background-size: cover;
     background-position: center;
@@ -42,6 +41,8 @@
 }
 
 .hero__inner {
+    background-size: cover;
+
     .section__left {
         padding-left: 2rem;
     }
@@ -54,4 +55,20 @@
 
 .hero--white {
     color: #FFF;
+}
+
+.hero__content {
+    @include media-breakpoint-up(md) {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+.hero__left {
+    padding: 4rem 1rem;
+    @include media-breakpoint-up(md) {
+        width: 50%; 
+        padding-right:  $gutter-lrg*2;
+    }
 }
