@@ -40,6 +40,7 @@ $crestron-blue: #007C99;
 
   .text--center {
     text-align: center;
+    margin-bottom: 4rem;
   }
 
   .section--white-triangle {
@@ -90,14 +91,46 @@ $crestron-blue: #007C99;
     .row {
       margin-top: 3rem;
 
+      &:nth-child(2) {
+
+        .col-md-3  {
+          order: 1;
+          @include media-breakpoint-up(md) {
+            order: 2;
+          }
+        }
+
+        .col-md-8 {
+          order: 2;
+
+          @include media-breakpoint-up(md) {
+            order: 1;
+          }
+        }
+
+      }
+
       .col-md-3 {
         justify-content: center;
         display: flex;
         flex-direction: column;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0;
+        }
 
         img {
           margin: 0;
           margin-bottom: 2rem;
+
+          &.section__logo {
+            @include media-breakpoint-down(md) {
+              max-width: 250px;
+              margin: 0px auto;
+              margin-bottom: 2rem;
+            }
+          }
         }
       }
 
@@ -106,6 +139,7 @@ $crestron-blue: #007C99;
       }
     }
   }
+
 
   .section--c-blue {
     background-color: $crestron-blue;
