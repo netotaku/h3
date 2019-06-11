@@ -1,5 +1,6 @@
 $butcombe-grey: #312C25;
 $butcombe-white: #FDF6EA;
+$butcombe-yellow: #fcbf00;
 
 .page--butcombe {
   .peak--grey {
@@ -11,6 +12,10 @@ $butcombe-white: #FDF6EA;
   }
 
   .section--white {
+    background-color: #FFF;
+  }
+
+  .section--b-white {
     background-color: $butcombe-white;
   }
 
@@ -54,5 +59,14 @@ $butcombe-white: #FDF6EA;
       right: -75px;
       transform: translateY(-50%) scaleX(-1);
     }
+  }
+
+  .section--78 {
+    padding-top: 8rem;
+    padding-bottom: 4rem;
+  }
+
+  .type--yellow {
+    color: $butcombe-yellow;
   }
 }

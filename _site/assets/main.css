@@ -1706,6 +1706,8 @@ h1, h2, h3, h4, h5, h6 {
   .page--butcombe .peak--grey polygon {
     fill: #312C25; }
 .page--butcombe .section--white {
+  background-color: #FFF; }
+.page--butcombe .section--b-white {
   background-color: #FDF6EA; }
 .page--butcombe .section--grey {
   background-color: #312C25; }
@@ -1738,3 +1740,8 @@ h1, h2, h3, h4, h5, h6 {
     left: auto;
     right: -75px;
     transform: translateY(-50%) scaleX(-1); }
+.page--butcombe .section--78 {
+  padding-top: 8rem;
+  padding-bottom: 4rem; }
+.page--butcombe .type--yellow {
+  color: #fcbf00; }
