@@ -24,21 +24,76 @@
 
   .section--covers {
     position: relative;
+    overflow: hidden;
+
     &:after {
       content: '';
       display: block;
-      height: 75%;
+      height: 100%;
       width: 100%;
       position: absolute;
       bottom: 0;
       left: 0;
-
       @extend %deezer-gradient-45;
     }
 
-    .section__measure, .covers {
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/white_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .section__measure {
+      p {
+        font-weight: bold;
+      }
+      padding-bottom: 4rem;
+    }
+
+    .section__measure, .covers, .sub-section {
       position: relative;
       z-index: 2;
+    }
+
+    .covers {
+      padding-bottom: 6rem;
+    }
+
+    .sub-section {
+      font-weight: bold;
+      color: #fff;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        height: 50%;
+        width: 200vw;
+        position: absolute;
+        bottom: -2rem;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #000;
+
+        @include media-breakpoint-up(md) {
+          bottom: -4rem;
+        }
+      }
+
+      .row {
+        position: relative;
+        z-index: 2;
+      }
     }
   }
 
@@ -75,18 +130,33 @@
       color: #fff;
     }
 
+    .stats__text {
+      position: absolute;
+    }
+
+    .stats__text--first {
+      top: 0;
+      right: 0;
+    }
+
+    .stats__text--last {
+      left: 0;
+      bottom: 0;
+    }
+
     .stats__images {
       width: 100%;
+      position: relative;
     }
     .stats__image {
       width: 50%;
 
-      &:nth-child(2) {
+      &:nth-child(3) {
         margin-top: -7.5%;
         margin-left: 25%;
       }
 
-      &:nth-child(3) {
+      &:nth-child(4) {
         margin-top: -7.5%;
         margin-left: 50%;
       }

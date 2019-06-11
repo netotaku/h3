@@ -1479,18 +1479,57 @@ h1, h2, h3, h4, h5, h6 {
 .page--deezer .row--covers div {
   margin-bottom: 1rem; }
 .page--deezer .section--covers {
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .page--deezer .section--covers:after {
     content: '';
     display: block;
-    height: 75%;
+    height: 100%;
     width: 100%;
     position: absolute;
     bottom: 0;
     left: 0; }
-  .page--deezer .section--covers .section__measure, .page--deezer .section--covers .covers {
+  .page--deezer .section--covers:before {
+    content: '';
+    display: block;
+    background-image: url("./img/case-studies/crestron/white_triangle.svg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 61%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1; }
+  .page--deezer .section--covers .section__measure {
+    padding-bottom: 4rem; }
+    .page--deezer .section--covers .section__measure p {
+      font-weight: bold; }
+  .page--deezer .section--covers .section__measure, .page--deezer .section--covers .covers, .page--deezer .section--covers .sub-section {
     position: relative;
     z-index: 2; }
+  .page--deezer .section--covers .covers {
+    padding-bottom: 6rem; }
+  .page--deezer .section--covers .sub-section {
+    font-weight: bold;
+    color: #fff; }
+    .page--deezer .section--covers .sub-section h2 {
+      margin-bottom: 0; }
+    .page--deezer .section--covers .sub-section:after {
+      content: '';
+      display: block;
+      height: 50%;
+      width: 200vw;
+      position: absolute;
+      bottom: -2rem;
+      margin-left: -50vw;
+      margin-right: -50vw;
+      background-color: #000; }
+      @media (min-width: 768px) {
+        .page--deezer .section--covers .sub-section:after {
+          bottom: -4rem; } }
+    .page--deezer .section--covers .sub-section .row {
+      position: relative;
+      z-index: 2; }
 .page--deezer .slider--50 {
   position: relative;
   background-color: #000; }
@@ -1513,14 +1552,23 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 750px;
   margin: 0px auto;
   color: #fff; }
+.page--deezer .section__stats .stats__text {
+  position: absolute; }
+.page--deezer .section__stats .stats__text--first {
+  top: 0;
+  right: 0; }
+.page--deezer .section__stats .stats__text--last {
+  left: 0;
+  bottom: 0; }
 .page--deezer .section__stats .stats__images {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
 .page--deezer .section__stats .stats__image {
   width: 50%; }
-  .page--deezer .section__stats .stats__image:nth-child(2) {
+  .page--deezer .section__stats .stats__image:nth-child(3) {
     margin-top: -7.5%;
     margin-left: 25%; }
-  .page--deezer .section__stats .stats__image:nth-child(3) {
+  .page--deezer .section__stats .stats__image:nth-child(4) {
     margin-top: -7.5%;
     margin-left: 50%; }
 
