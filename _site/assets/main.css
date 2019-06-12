@@ -1049,6 +1049,14 @@ h1, h2, h3, h4, h5, h6 {
 .hero--white {
   color: #FFF; }
 
+.hero--video {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 90vh;
+  width: 100vw;
+  position: relative; }
+
 @media (min-width: 768px) {
   .hero__content {
     position: absolute;
@@ -1061,6 +1069,31 @@ h1, h2, h3, h4, h5, h6 {
     .hero__left {
       width: 50%;
       padding-right: 8vw; } }
+
+.hero__video-container {
+  overflow: hidden; }
+
+.hero__video {
+  bottom: 0px;
+  left: 0px;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  background-size: cover; }
+
+.hero__video-film video {
+  position: absolute;
+  top: -9999px;
+  right: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  display: block;
+  min-width: 100%;
+  height: auto;
+  min-height: 100%;
+  margin: auto;
+  width: 100%;
+  object-fit: cover; }
 
 .section {
   background-position: center;
