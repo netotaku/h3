@@ -1,6 +1,10 @@
 $butcombe-grey: #312C25;
 $butcombe-white: #FDF6EA;
 $butcombe-yellow: #fcbf00;
+$butcombe-forty-two: #f6ca10;
+$butcombe-green: #09cc31;
+$butcombe-red: #e52228;
+$butcombe-blue: #008a9f;
 
 .page--butcombe {
   .peak--grey {
@@ -68,5 +72,56 @@ $butcombe-yellow: #fcbf00;
 
   .type--yellow {
     color: $butcombe-yellow;
+  }
+
+  .section--yellow {
+    background-color: $butcombe-forty-two;
+  }
+
+  .section--green {
+    background-color: $butcombe-green;
+    padding-bottom: 0;
+
+    &:after {
+      content: '';
+      display: block;
+      width: 100%;
+      background-image: url(./img/case-studies/butcombe/green_triangle.svg);
+      height: 38.5%;
+      position: absolute;
+      bottom: -38.5%;
+      left: 0;
+      z-index: 100;
+      background-size: cover;
+    }
+  }
+
+  .pull-right {
+    margin-right: -25%;
+  }
+
+  .section--red {
+    overflow: hidden;
+    padding-top: 15%;
+    background-color: $butcombe-red;
+
+    p {
+      color: #000;
+    }
+  }
+
+  .section--stats {
+    background-color: $butcombe-white;
+    text-align: left;
+    
+    .typography--blue {
+      color: $butcombe-blue;
+      margin-bottom: 0;
+      line-height: 1;
+    }
+
+    p {
+      color: #000;
+    }
   }
 }

@@ -10,7 +10,7 @@ sections:
 -
     class: 'section--yellow'
     template: sections/hero.html
-    image: case-studies/butcombe/But_2.jpg
+    image: case-studies/butcombe/butcombe_hero_image_1.jpg
 -
     class: 'section section--padding section--padding--pinch section--peak section--red section--background-aware typography typography--black'
     template: sections/section.html
@@ -104,7 +104,31 @@ sections:
     content: |
         <hr class="hr" />
 -
-    class: 'section--padding section--center grid grid--thirds typography'
+    class: 'section--padding section--center section--green'
+    template: sections/section.html
+    content: |
+        <div class="row">
+            <div class="col-md-6">
+                <img class="pull-right" src="/assets/img/case-studies/butcombe/invader_can_shadow.jpg">
+            </div>
+            <div class="col-md-4 col--center">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente eius, eos commodi voluptas alias, repudiandae ratione aliquid illum accusamus expedita tempore, ducimus quas nobis quia deleniti excepturi. Quasi, exercitationem pariatur!</p>
+            </div>
+        </div>
+-
+    class: 'section--padding section--center section--red'
+    template: sections/section.html
+    content: |
+        <div class="row">
+            <div class="col-md-offset-2 col-md-4 col--center">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem sequi excepturi dignissimos aliquid distinctio magni a facere sed quibusdam soluta illo ipsa maiores quis sit ducimus, maxime velit tempora nostrum!</p>
+            </div>
+            <div class="col-md-6">
+                <img class="pull-right" src="/assets/img/case-studies/butcombe/union_can_shadow.jpg">
+            </div>
+        </div>
+-
+    class: 'section--padding section--stats section--center grid grid--thirds typography'
     template: sections/section.html
     content: |
         <div class="section__measure">
@@ -113,40 +137,26 @@ sections:
                 <p><strong>Off Trade Growth</strong></p>
             </div>
             <div class="grid__unit">
-                <span class="typography--huge typography--blue">Award</span>
-                <p><strong>World Beer Medal for Design</strong></p>
-            </div>
-            <div class="grid__unit">
                 <span class="typography--huge typography--blue">14%</span>
                 <p><strong>On Trade Growth</strong></p>
             </div>
+            <div class="grid__unit">
+                <span class="typography--huge typography--blue">Awarded</span>
+                <p><strong>World Beer Medal for Design</strong></p>
+            </div>
         </div>
 -
-    class: 'section section--group'
-    image: /assets/svg/triangle.svg
-    template: sections/group.html
-    sections:
+    class: 'section--black slider--100'
+    template: sections/slider.html
+    data:
+        - /assets/img/case-studies/butcombe/But_13.jpg
+        - /assets/img/case-studies/butcombe/But_14.jpg
+-
+    class: 'section--padding section--center section--yellow'
+    template: sections/section.html
+    content: |
+        <p><img src="/assets/img/case-studies/butcombe/forty_two_can.jpg"></p>
 
-        -
-            class: 'section--padding section--center'
-            template: sections/section.html
-            content: |
-                <p><img src="/assets/img/case-studies/butcombe/But_11.jpg"></p>
-        -
-            class: 'section--padding section--center'
-            template: sections/section.html
-            content: |
-                <p><img src="/assets/img/case-studies/butcombe/But_12.jpg"></p>
-        -
-            class: 'section--padding section--center'
-            template: sections/section.html
-            content: |
-                <p><img src="/assets/img/case-studies/butcombe/But_13.jpg"></p>
-        -
-            class: 'section--padding section--center'
-            template: sections/section.html
-            content: |
-                <p><img src="/assets/img/case-studies/butcombe/But_14.jpg"></p>
 -
     class: ''
     template: sections/slider.html

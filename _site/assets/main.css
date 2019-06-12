@@ -49,6 +49,10 @@
   justify-content: center;
   margin: auto; }
 
+.col--center {
+  display: flex;
+  align-items: center; }
+
 .col.reverse {
   flex-direction: column-reverse; }
 
@@ -1189,6 +1193,14 @@ h1, h2, h3, h4, h5, h6 {
       width: 70vw;
       background-size: cover; }
 
+.slider--100 .slider__item__image {
+  width: 100%; }
+.slider--100 .slider__scroll {
+  padding: 0; }
+.slider--100 .slider__item {
+  width: 100vw;
+  margin: 0; }
+
 @media only screen and (min-width: 900px) {
   .slider__item__image {
     display: block;
@@ -1694,12 +1706,6 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFE21F; }
   .page--ldo .peak--yellow polygon {
     fill: #FFE21F; }
-.page--ldo .slider--100 .slider__item__image {
-  width: 100%; }
-.page--ldo .slider--100 .slider__scroll {
-  padding: 0; }
-.page--ldo .slider--100 .slider__item {
-  width: 100vw; }
 
 .page--butcombe .peak--grey {
   background-color: #312C25; }
@@ -1745,3 +1751,36 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 4rem; }
 .page--butcombe .type--yellow {
   color: #fcbf00; }
+.page--butcombe .section--yellow {
+  background-color: #f6ca10; }
+.page--butcombe .section--green {
+  background-color: #09cc31;
+  padding-bottom: 0; }
+  .page--butcombe .section--green:after {
+    content: '';
+    display: block;
+    width: 100%;
+    background-image: url(./img/case-studies/butcombe/green_triangle.svg);
+    height: 38.5%;
+    position: absolute;
+    bottom: -38.5%;
+    left: 0;
+    z-index: 100;
+    background-size: cover; }
+.page--butcombe .pull-right {
+  margin-right: -25%; }
+.page--butcombe .section--red {
+  overflow: hidden;
+  padding-top: 15%;
+  background-color: #e52228; }
+  .page--butcombe .section--red p {
+    color: #000; }
+.page--butcombe .section--stats {
+  background-color: #FDF6EA;
+  text-align: left; }
+  .page--butcombe .section--stats .typography--blue {
+    color: #008a9f;
+    margin-bottom: 0;
+    line-height: 1; }
+  .page--butcombe .section--stats p {
+    color: #000; }

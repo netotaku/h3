@@ -86,6 +86,11 @@ $fb-half-gutter-width: $fb-gutter-width / 2;
   margin: auto;
 }
 
+.col--center {
+  display: flex;
+  align-items: center;
+}
+
 
 .col.reverse {
   flex-direction: column-reverse;
