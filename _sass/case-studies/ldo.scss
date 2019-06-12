@@ -17,6 +17,12 @@ $ldo-blue: #0001d6;
     }
   }
 
+  .slider--50 {
+    .slider__item__image {
+      width: 50vw;
+    }
+  }
+
   .section--half-blue {
     position: relative;
     background-color: $ldo-blue;

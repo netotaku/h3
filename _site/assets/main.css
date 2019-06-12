@@ -1710,6 +1710,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #0001d6; }
   .page--ldo .peak--blue polygon {
     fill: #0001d6; }
+.page--ldo .slider--50 .slider__item__image {
+  width: 50vw; }
 .page--ldo .section--half-blue {
   position: relative;
   background-color: #0001d6; }
