@@ -1138,6 +1138,8 @@ h1, h2, h3, h4, h5, h6 {
   color: #000; }
 .typography--blue {
   color: #0000D8; }
+.typography--red {
+  color: #FF0648; }
 .typography--yellow {
   color: #FFE21F; }
 .typography--white {
