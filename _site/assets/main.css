@@ -1706,6 +1706,46 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFE21F; }
   .page--ldo .peak--yellow polygon {
     fill: #FFE21F; }
+.page--ldo .peak--blue {
+  background-color: #0001d6; }
+  .page--ldo .peak--blue polygon {
+    fill: #0001d6; }
+.page--ldo .section--half-blue {
+  position: relative;
+  background-color: #0001d6; }
+  .page--ldo .section--half-blue .slider {
+    position: relative;
+    z-index: 2; }
+  .page--ldo .section--half-blue:after {
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #fff; }
+.page--ldo .section--half-yellow {
+  position: relative;
+  background-color: #FFE21F; }
+  .page--ldo .section--half-yellow .slider {
+    position: relative;
+    z-index: 2; }
+  .page--ldo .section--half-yellow:after {
+    content: '';
+    display: block;
+    height: 50%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 0;
+    background-color: #fff; }
+.page--ldo .section--image-max img {
+  max-width: initial;
+  width: 100%;
+  margin: 0; }
 
 .page--butcombe .peak--grey {
   background-color: #312C25; }

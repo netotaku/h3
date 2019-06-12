@@ -1,10 +1,71 @@
 $ldo-yellow: #FFE21F;
+$ldo-blue: #0001d6;
 
 .page--ldo {
   .peak--yellow {
     background-color: #FFE21F;
     polygon {
       fill: #FFE21F;
+    }
+  }
+
+  .peak--blue {
+    background-color: $ldo-blue;
+
+    polygon {
+      fill: $ldo-blue;
+    }
+  }
+
+  .section--half-blue {
+    position: relative;
+    background-color: $ldo-blue;
+
+    .slider {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      left:0;
+      top: 0;
+      z-index: 0;
+      background-color: #fff;
+    }
+  }
+
+  .section--half-yellow {
+    position: relative;
+    background-color: $ldo-yellow;
+
+    .slider {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      left:0;
+      top: 0;
+      z-index: 0;
+      background-color: #fff;
+    }
+  }
+
+  .section--image-max {
+    img {
+      max-width: initial;
+      width: 100%;
+      margin: 0;
     }
   }
 }

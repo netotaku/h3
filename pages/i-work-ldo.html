@@ -32,13 +32,18 @@ sections:
             </div>
         </div>
 -
-    class: ''
+    class: 'section--half-blue'
     template: sections/slider.html
     data:
         - /assets/img/case-studies/ldo/slide-1.png
         - /assets/img/case-studies/ldo/slide-2.png
         - /assets/img/case-studies/ldo/slide-3.png
         - /assets/img/case-studies/ldo/slide-4.png
+-
+    class: 'peak--blue'
+    template: peak.html
+    content: |
+        <hr class="hr" />
 -
     class: 'section section--group'
     image: /assets/svg/triangle.svg
@@ -49,11 +54,6 @@ sections:
             template: sections/section.html
             content: |
                 <p><a class="button button--blue" href="/contact">Request a case study</a></p>
-        -
-            class: 'peak--yellow'
-            template: peak.html
-            content: |
-                <hr class="hr" />
         -
             class: 'section--padding section--padding--pinch section--blue section--peak section--peak--yellow section--background-aware typography'
             template: sections/section.html
@@ -79,22 +79,22 @@ sections:
             class: 'section--padding section--center'
             template: sections/section.html
             content: |
-                <p><img src="/assets/img/case-studies/ldo/poster-1.png"></p>
+                <p><img src="/assets/img/case-studies/ldo/poster_1.jpg"></p>
         -
             class: 'section--padding section--center grid grid--thirds typography'
             template: sections/section.html
             content: |
                 <div class="section__measure">
                     <div class="grid__unit">
-                        <span class="typography--huge typography--blue">33%</span>
+                        <span class="typography--huge typography--red">33%</span>
                         <p><strong>Sales growth YOY</strong></p>
                     </div>
                     <div class="grid__unit">
-                        <span class="typography--huge typography--blue">2million</span>
+                        <span class="typography--huge typography--red">2million</span>
                         <p><strong>Visitors in 2018</strong></p>
                     </div>
                     <div class="grid__unit">
-                        <span class="typography--huge typography--blue">11%</span>
+                        <span class="typography--huge typography--red">11%</span>
                         <p><strong>Av. spend YOY</strong></p>
                     </div>
                 </div>
@@ -102,28 +102,26 @@ sections:
             class: 'section--padding section--center'
             template: sections/section.html
             content: |
-                <p><img src="/assets/img/case-studies/ldo/poster-2.png"></p>
-        -
-            class: 'section--yellow'
-            template: sections/slider.html
-            data:
-                - /assets/img/case-studies/ldo/slide-5.png
-                - /assets/img/case-studies/ldo/slide-6.png
-                - /assets/img/case-studies/ldo/slide-7.png
-                - /assets/img/case-studies/ldo/slide-8.png
+                <p><img src="/assets/img/case-studies/ldo/ldo_summer.jpg"></p>
 -
-    class: 'peak--yellow'
+    class: 'section--image-max'
+    template: sections/section.html
+    content:  |
+        <p><img src="/assets/img/case-studies/ldo/ldo_land_v4.jpg"></p>
+-
+    class: 'peak--black'
     template: peak.html
     content: |
         <hr class="hr" />
 -
-    class: 'section--black slider--100'
+    class: 'section--half-yellow'
     template: sections/slider.html
     data:
-        - /assets/img/case-studies/ldo/casual_party.png
-        - /assets/img/case-studies/ldo/casual_party.png
-        - /assets/img/case-studies/ldo/casual_party.png
-        - /assets/img/case-studies/ldo/casual_party.png
+        - /assets/img/case-studies/ldo/slider_2_1.jpg
+        - /assets/img/case-studies/ldo/slider_2_2.jpg
+        - /assets/img/case-studies/ldo/slider_2_3.jpg
+        - /assets/img/case-studies/ldo/slider_2_4.jpg
+        - /assets/img/case-studies/ldo/slider_2_4.jpg
 -
     class: 'section--padding section--blue section--center section--peak section--peak--yellow'
     template: sections/section.html
