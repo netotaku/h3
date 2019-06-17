@@ -7,7 +7,7 @@ sections:
 -
     template: sections/header.html
 -
-    class: 'hero--minimal section--yellow'
+    class: 'section--yellow'
     template: sections/hero.html
 -
     class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
@@ -15,7 +15,10 @@ sections:
     content: |
         <h1>Work</h1>
 -
-    class: 'section--white'
-    template: sections/slider.html
-    filter: work
+    class: 'section section--group'
+    image: /assets/svg/triangle.svg
+    template: sections/group.html
+    sections:
+        -
+            template: sections/work.html        
 ---

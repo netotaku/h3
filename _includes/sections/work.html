@@ -1,0 +1,18 @@
+<section class="section section--padding section--padding--pinch section--peak section--peak--blue typography">
+    <div class="grid grid--halves grid--padding u--gutter-bottom">
+        {% for link in site.data.map %}
+            {% if link.slug == 'work' %}
+                {% for child in link.children %}
+                    <div class="grid__unit">
+                        <a href="{{ child.path }}" class="card">
+                            <div class="card__hero" style="background-image: url({{ child.thumb }})"></div>                                              
+                            <div class="card__grad"></div>
+                            <h3 class="card__label">
+                                {{ child.label }}</span></h3>                                    
+                        </a>
+                    </div>
+                {% endfor %}  
+            {% endif %}  
+        {% endfor %}
+    </div>
+</section>

@@ -18,10 +18,20 @@
       path: /work/ldo
       thumb: /assets/img/case-studies/ldo/ldo.png
     - 
-      label: Wickwar
-      slug : wickwar
-      path: /work/wickwar   
+      label: Crestron
+      slug : crestron
+      path: /work/crestron   
       thumb: /assets/img/drink/wickwar.jpg 
+    - 
+      label: Budvar
+      slug : budvar
+      path: /work/budvar
+      thumb: /assets/img/drink/wickwar.jpg       
+    - 
+      label: Deezer
+      slug : deezer
+      path: /work/deezer
+      thumb: /assets/img/drink/wickwar.jpg             
     - 
       label: Live Nation
       slug : livenation

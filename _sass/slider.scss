@@ -66,6 +66,9 @@
             &__image{
                 display: block;
                 width: 30vw;
+                &--large{
+                    width: 35vw;
+                }
             }
             &--background-aware{
                 a{                    

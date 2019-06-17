@@ -1,7 +1,11 @@
 .card{
     position: relative;
-    background-color: $white;
-    box-shadow: 0 43px 25px -26px rgba(0,0,0,0.24);
+    // background-color: $white;
+    
+    &--image-aware{
+
+    }
+
     &__grad{
         position: absolute;
         top: 0px;

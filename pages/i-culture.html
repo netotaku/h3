@@ -31,8 +31,12 @@ sections:
 -
     template: sections/header.html
 -
-    class: 'hero--minimal section--yellow'
+    class: 'section--yellow'
     template: sections/hero.html
+    content: |
+        <video class="hero__layer hero__layer--one" autoplay="" muted="" loop="" playsinline="" preload="" poster="/assets/img/culture-poster.png">
+            <source id="header-video" src="/assets/video/culture.mp4" type="video/mp4">
+        </video> 
 -
     class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
     template: sections/section.html

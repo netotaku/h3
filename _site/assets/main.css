@@ -902,6 +902,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .u--gutter-bottom {
   margin-bottom: 40px; }
+.u--no-gutter-bottom {
+  margin-bottom: 0px;
+  padding-bottom: 0px !important; }
 
 @media only screen and (min-width: 900px) {
   body {
@@ -1021,6 +1024,11 @@ h1, h2, h3, h4, h5, h6 {
     left: 0px;
     right: 0px;
     transform: translateY(-50%); }
+    .hero__strap__brand {
+      display: block;
+      width: 120px;
+      height: auto;
+      margin-bottom: 40px; }
   .hero__inner {
     height: 0px;
     position: relative;
@@ -1036,6 +1044,10 @@ h1, h2, h3, h4, h5, h6 {
     right: 0px;
     width: 100%    !important;
     height: auto   !important; }
+    .hero__layer--one {
+      z-index: 1; }
+    .hero__layer--two {
+      z-index: 2; }
   .hero--minimal .hero__inner {
     padding-top: 20%; }
 
@@ -1240,6 +1252,8 @@ h1, h2, h3, h4, h5, h6 {
   .slider__item__image {
     display: block;
     width: 30vw; }
+    .slider__item__image--large {
+      width: 35vw; }
   .slider__item--background-aware a {
     height: 30vw;
     width: 30vw; } }
@@ -1396,9 +1410,7 @@ h1, h2, h3, h4, h5, h6 {
       right: 0px; }
 
 .card {
-  position: relative;
-  background-color: #fff;
-  box-shadow: 0 43px 25px -26px rgba(0, 0, 0, 0.24); }
+  position: relative; }
   .card__grad {
     position: absolute;
     top: 0px;

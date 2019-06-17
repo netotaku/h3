@@ -7,20 +7,27 @@ sections:
 -
     template: sections/header.html
 -
-    class: 'hero--minimal section--yellow'
-    template: sections/hero.html
--
     class: 'section--padding section--padding--pinch section--blue section--peak section--peak--yellow typography'
     template: sections/section.html
     content: |
         <h1>Creative &amp; strategic partners to ambitious, purposeful brands.</h1>
-        <p>We partner with brands​ that want to be heard above the noise in a deafening world. With leaders
-        who want to define and redefine their businesses; answering strategic and commercial questions
-        with insight and creativity.</p>
-        <p><a href="/work">We work with household names</a> evolving and renewing their propositions, challengers disrupting
-        the status quo and start-ups beginning the journey.</p>
-        <p>Shaping brands with creative inspiration and commercial acuity. Making insight driven, good ideas that look great and people like.</p>
-        <p><strong>Making brands louder than love.</strong></p>
+
+
+        <div class="grid grid--halves grid--padding">
+            <div class="grid__unit">
+                <p>We partner with brands​ that want to be heard above the noise in a deafening world. With leaders
+                who want to define and redefine their businesses; answering strategic and commercial questions
+                with insight and creativity.</p>
+                <p><a href="/work">We work with household names</a> evolving and renewing their propositions, challengers disrupting
+                the status quo and start-ups beginning the journey.</p>
+            </div>
+            <div class="grid__unit">                
+                <p>Shaping brands with creative inspiration and commercial acuity. Making insight driven, good ideas that look great and people like.</p>
+                <p><strong>Making brands louder than love.</strong></p>
+            </div>
+        </div>
+
+
 -
     class: 'section--padding section--padding--pinch section--black section--peak section--peak--blue typography'
     template: sections/section.html
@@ -52,7 +59,7 @@ sections:
 
         <hr class="hr" />
 
-        <p><a class="button button--blue" href="/work">See our work</a></p>
+        <p><a class="button button--blue" href="/work">See the work</a></p>
 ---
 
 
