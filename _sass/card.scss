@@ -22,10 +22,13 @@
         background-size: cover;
     }
     &__label{
+        display: block;
         position: absolute;
         bottom: $gutter;
         left: $gutter;
+        right: $gutter;
         color: #fff;
+        width: 100%;
     }
     &--margin{
         margin-top: $gutter;

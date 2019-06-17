@@ -11,7 +11,7 @@
       label: Butcombe
       slug : butcombe
       path: /work/butcombe    
-      thumb: /assets/img/drink/butcombe.jpg   
+      thumb: /assets/img/scratch/drink/butcombe.jpg   
     - 
       label: LDO
       slug : ldo
@@ -21,22 +21,22 @@
       label: Crestron
       slug : crestron
       path: /work/crestron   
-      thumb: /assets/img/drink/wickwar.jpg 
+      thumb: /assets/img/thumb_crestron.jpg 
     - 
       label: Budvar
       slug : budvar
       path: /work/budvar
-      thumb: /assets/img/drink/wickwar.jpg       
+      thumb: /assets/img/thumb_budvar.jpg       
     - 
       label: Deezer
       slug : deezer
       path: /work/deezer
-      thumb: /assets/img/drink/wickwar.jpg             
+      thumb: /assets/img/thumb_deezer.jpg             
     - 
       label: Live Nation
       slug : livenation
       path: /work/livenation  
-      thumb: /assets/img/music/download.jpg           
+      thumb: /assets/img/thumb_livenation.jpg           
  - 
   label: Culture
   slug: culture

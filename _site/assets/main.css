@@ -890,6 +890,7 @@ a {
 
 img {
   display: block;
+  width: 100%;
   max-width: 100%;
   margin: auto; }
 
@@ -1425,10 +1426,13 @@ h1, h2, h3, h4, h5, h6 {
     background-position: center;
     background-size: cover; }
   .card__label {
+    display: block;
     position: absolute;
     bottom: 20px;
     left: 20px;
-    color: #fff; }
+    right: 20px;
+    color: #fff;
+    width: 100%; }
   .card--margin {
     margin-top: 20px; }
 
