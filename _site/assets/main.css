@@ -1286,6 +1286,8 @@ h1, h2, h3, h4, h5, h6 {
 .grid__unit {
   position: relative;
   padding-bottom: 20px; }
+  .grid__unit--center {
+    text-align: center; }
 .grid__hero {
   display: block;
   width: 100%;
