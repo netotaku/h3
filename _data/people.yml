@@ -20,7 +20,7 @@ leadership:
   - 
     name: Kelly Finnegan
     title: Creative Director
-    image: '/assets/img/team/hannah.jpg'
+    image: '/assets/img/team/kelly.jpg'
   - 
     name: Nat Inker
     title: Operations Director
@@ -31,52 +31,52 @@ leadership:
     image: '/assets/img/team/nina.jpg'
 
 accounts:
-  - name: Zoe Viness
-    title: Account Director
+  - name: Zoe Veness
+    title: Senior Client Partner
     image: '/assets/img/team/zoe.jpg'
-  - name: Lisa
+  - name: Lisa Carter
     title: Client Partner
     image: '/assets/img/team/lisa.jpg'
-  - name: Jess
-    title: Finance
+  - name: Jess Snipe
+    title: Finance Manager
     image: '/assets/img/team/jess.jpg'
-  - name: Kate
+  - name: Kate Hosegood
     title: Client Partner
     image: '/assets/img/team/kate.jpg'  
-  - name: Emily
-    title: Client Partner
+  - name: Emily Klitgaard
+    title: Client Partner Executive
     image: '/assets/img/team/emily.jpg'  
-  - name: Nath
-    title: Client Partner
+  - name: Nathan Dawson
+    title: Client Partner Executive
     image: '/assets/img/team/nath.jpg'                    
 
 creative:
-  - name: Liam
+  - name: Liam Davenport
     title: Designer
     image: '/assets/img/team/liam.jpg'
-  - name: Billie
-    title: Designer
+  - name: Billie Arnold
+    title: Junior Creative Artworker 
     image: '/assets/img/team/billie.jpg'
-  - name: Lauren
-    title: Designer
+  - name: Lauren Lucchesse
+    title: Creative Artworker
     image: '/assets/img/team/lauren.jpg'
-  - name: Stu
-    title: Studio Manager
+  - name: Stuart Brasington
+    title: Head of Art
     image: '/assets/img/team/stu.jpg'
   - name: Yee Poon
     title: Designer
     image: '/assets/img/team/yee.jpg'
-  - name: Dan
-    title: Designer
+  - name: Dan Coombes
+    title: Junior Creative Artworker
     image: '/assets/img/team/dan.jpg'  
-  - name: Tilly
-    title: Designer
+  - name: Tilly Scott
+    title: Junior Designer
     image: '/assets/img/team/tilly.jpg'            
 
 
 digital: 
   - name: Matt England
-    title: Tech Lead
+    title: Technical Lead
     image: '/assets/img/team/matt.jpg'
   - name: Annick Ellis-Smith
     title: Digital Design / UX
