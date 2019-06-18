@@ -52,6 +52,7 @@ a{
 
 img{
     display: block;
+    width: 100%;
     max-width: 100%;
     margin: auto;
 }
@@ -68,6 +69,10 @@ h1,h2,h3,h4,h5,h6{
 .u{
     &--gutter-bottom{
         margin-bottom: $gutter*2;
+    }
+    &--no-gutter-bottom{
+        margin-bottom: 0px;
+        padding-bottom: 0px!important;
     }
 }
 

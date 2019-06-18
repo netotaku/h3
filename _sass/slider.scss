@@ -47,12 +47,28 @@
     }
 }
 
+.slider--100 {
+    .slider__item__image {
+        width: 100%;
+    }
+    .slider__scroll {
+        padding: 0;
+    }
+    .slider__item {
+        width: 100vw;
+        margin: 0;
+    }
+}
+
 @media only screen and (min-width: $max-width){
     .slider{
         &__item{  
             &__image{
                 display: block;
                 width: 30vw;
+                &--large{
+                    width: 35vw;
+                }
             }
             &--background-aware{
                 a{                    

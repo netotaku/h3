@@ -100,14 +100,9 @@
         &--center-lrg{
             text-align: center;
         }
-        &__left{
+        &__left {
             width: 50%; 
-            padding-right:  $gutter-lrg*2;       
+            padding-right:  $gutter-lrg*2;
         }
-        &__center{
-            position: absolute;
-            top: 50%;
-            transform: translateY(-50%);
-        }       
     }
 } 

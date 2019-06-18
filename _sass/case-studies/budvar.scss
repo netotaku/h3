@@ -1,0 +1,159 @@
+$budvar-red: #DA291C;
+$budvar-white: #FFFEF8;
+
+.page--budvar {
+
+  .hero__inner, .hero__content {
+    color: #FFF;
+
+    h1 {
+      font-size: 3rem;
+    }
+
+    strong, h1 {
+      color: $budvar-red;
+    }
+
+    .section__left {
+      padding-left: 2rem;
+    }
+  }
+
+  .section--red {
+    background-color: $budvar-red;
+  }
+  .section--white {
+    background-color: $budvar-white;
+  }
+
+  .section--black {
+    background-color: #000;
+  }
+
+  .peak--white {
+    background-color: $budvar-white;
+
+    polygon {
+      fill: $budvar-white;
+    }
+  }
+
+  .peak--red {
+    background-color: $budvar-red;
+
+    polygon {
+      fill: $budvar-red;
+    }
+  }
+
+  .section--red-triangle {
+    overflow: hidden;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    background-color: $budvar-white;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      right: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("./img/case-studies/budvar/red_triangle.svg");
+      background-position: right bottom;
+      background-size: cover;
+    }
+  }
+
+  .section--slider-landscape {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    .slider__item {
+      margin-right: 5rem;
+    }
+    .slider__item__image {
+      width: 50vw;
+    }
+  }
+
+  .section--slider-budvar {
+    .slider__item__image {
+      width: 45vw;
+    }
+  }
+
+  .hero__inner {
+    .section__right {
+      @extend .col-md-6;
+      margin-left: auto;
+      font-weight: bold;
+      color: #fff;
+      position: relative; 
+      margin-top: -10%;
+      padding-right: 4rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .section--pattern {
+    background-image: url("./img/case-studies/budvar/pattern.svg");
+    background-size: cover;
+    background-color: $budvar-white;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: top;
+
+    @include media-breakpoint-up(xl) {
+      background-size: 50%;
+    }
+
+    &:after {
+      content: '';
+      background-color: #000;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      z-index: 0;
+      height: 20%;
+    }
+
+    .slider {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section__stats {
+    max-width: 1600px;
+    text-align: center;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: auto;
+    overflow: hidden;
+
+    .row {
+      margin-bottom: 4rem;
+    }
+
+    h1 {
+      font-size: 6rem;
+      margin-bottom: 6rem;
+      color: $budvar-red;
+    }
+
+    h1, h2 {
+      font-weight: bold;
+    }
+  }
+
+  .budvar-font {
+    margin-bottom: 4rem;
+  }
+
+  .section--labels {
+    padding-top: 4rem;
+    img {
+      margin-bottom: 3rem;
+    }
+  }
+}

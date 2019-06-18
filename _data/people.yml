@@ -2,40 +2,89 @@ founders:
   - 
     name: Nick Ellis
     title: Creative Partner
-    image: 'https://instagram.flhr2-1.fna.fbcdn.net/vp/d1162f9923c476416edeb0a7ced0dfbb/5D5464FB/t51.2885-15/sh0.08/e35/c135.0.809.809a/s640x640/46146268_2352609061435539_4766827467816560550_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net'
+    image: '/assets/img/team/nick.jpg'
   - 
     name: Vern Edmonds
     title: Managing Partner
-    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/65f6c054498803712a5484d15451243f/5D429B95/t51.2885-15/e35/44899827_273921069977005_6724220646654823017_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
-
+    image: '/assets/img/team/vern.jpg'
+    
 leadership:
   - 
     name: Nick Clarkson
     title: Digital Director
-    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/a751c6a7d7323d868858280c223e232e/5D71C471/t51.2885-15/e35/40204114_250364248953206_1364416766687576064_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+    image: '/assets/img/team/me.jpg'
   - 
     name: Hannah Williams
     title: Director of Client Partnerships
-    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/2e9ab24b9fb6609a124df6910f60b43e/5D71188F/t51.2885-15/e35/14072989_322119541468158_1410074715_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+    image: '/assets/img/team/hannah.jpg'
   - 
     name: Kelly Finnegan
     title: Creative Director
-    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/6dd9a9cceaf292aa330e8f1a892d6fe5/5D597111/t51.2885-15/e35/54800552_152783275747280_7372838164049933718_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+    image: '/assets/img/team/kelly.jpg'
   - 
     name: Nat Inker
     title: Operations Director
-    image: https://instagram.flhr2-1.fna.fbcdn.net/vp/0524d9beb2e156a04a82306b50473e70/5D358C0C/t51.2885-15/e35/54513336_271133816950163_6271657381912513168_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net
+    image: '/assets/img/team/nat.jpg'
   - 
     name: Nina Edmonds
     title: Finance Director
+    image: '/assets/img/team/nina.jpg'
 
-departments:
-  - 
-    name: Digital
-    image: 'https://instagram.flhr2-1.fna.fbcdn.net/vp/391552c029781f51b4b8a1b79404a22e/5D5C1AD4/t51.2885-15/e35/46251533_721306188240597_5148598373510625290_n.jpg?_nc_ht=instagram.flhr2-1.fna.fbcdn.net'
-  - 
-    name: Creative
-    image: ''
-  - 
-    name: Client Partnerships
-    images: ''
+accounts:
+  - name: Zoe Veness
+    title: Senior Client Partner
+    image: '/assets/img/team/zoe.jpg'
+  - name: Lisa Carter
+    title: Client Partner
+    image: '/assets/img/team/lisa.jpg'
+  - name: Jess Snipe
+    title: Finance Manager
+    image: '/assets/img/team/jess.jpg'
+  - name: Kate Hosegood
+    title: Client Partner
+    image: '/assets/img/team/kate.jpg'  
+  - name: Emily Klitgaard
+    title: Client Partner Executive
+    image: '/assets/img/team/emily.jpg'  
+  - name: Nathan Dawson
+    title: Client Partner Executive
+    image: '/assets/img/team/nath.jpg'                    
+
+creative:
+  - name: Liam Davenport
+    title: Designer
+    image: '/assets/img/team/liam.jpg'
+  - name: Billie Arnold
+    title: Junior Creative Artworker 
+    image: '/assets/img/team/billie.jpg'
+  - name: Lauren Lucchesse
+    title: Creative Artworker
+    image: '/assets/img/team/lauren.jpg'
+  - name: Stuart Brasington
+    title: Head of Art
+    image: '/assets/img/team/stu.jpg'
+  - name: Yee Poon
+    title: Designer
+    image: '/assets/img/team/yee.jpg'
+  - name: Dan Coombes
+    title: Junior Creative Artworker
+    image: '/assets/img/team/dan.jpg'  
+  - name: Tilly Scott
+    title: Junior Designer
+    image: '/assets/img/team/tilly.jpg'            
+
+
+digital: 
+  - name: Matt England
+    title: Technical Lead
+    image: '/assets/img/team/matt.jpg'
+  - name: Annick Ellis-Smith
+    title: Digital Design / UX
+    image: '/assets/img/team/neak.jpg'
+  - name: Miles Tinknell
+    title: Front End Developer
+    image: '/assets/img/team/miles.jpg'
+  - name: Lieve Vogels
+    title: Digital Client Partner
+    image: '/assets/img/team/lieve.jpg'    
+

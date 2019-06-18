@@ -1,7 +1,7 @@
 .card{
     position: relative;
-    background-color: $white;
-    box-shadow: 0 43px 25px -26px rgba(0,0,0,0.24);
+    // background-color: $white;
+    
     &__grad{
         position: absolute;
         top: 0px;
@@ -18,10 +18,13 @@
         background-size: cover;
     }
     &__label{
+        display: block;
         position: absolute;
         bottom: $gutter;
         left: $gutter;
+        right: $gutter;
         color: #fff;
+        width: 100%;
     }
     &--margin{
         margin-top: $gutter;

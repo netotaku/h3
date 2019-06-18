@@ -1,0 +1,165 @@
+%deezer-gradient-horizontal {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#9c1780+0,124ab0+100 */
+  background: rgb(156,23,128); /* Old browsers */
+  background: -moz-linear-gradient(left,  rgba(156,23,128,1) 0%, rgba(18,74,176,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left,  rgba(156,23,128,1) 0%,rgba(18,74,176,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right,  rgba(156,23,128,1) 0%,rgba(18,74,176,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1780', endColorstr='#124ab0',GradientType=1 ); /* IE6-9 */
+}
+
+%deezer-gradient-45 {
+  background: rgb(156,23,128); /* Old browsers */
+  background: -moz-linear-gradient(-45deg,  rgba(156,23,128,1) 0%, rgba(18,74,176,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(-45deg,  rgba(156,23,128,1) 0%,rgba(18,74,176,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(135deg,  rgba(156,23,128,1) 0%,rgba(18,74,176,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1780', endColorstr='#124ab0',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.page--deezer {
+  .row--covers {
+    div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .section--covers {
+    position: relative;
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @extend %deezer-gradient-45;
+    }
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/white_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+    .section__measure {
+      p {
+        font-weight: bold;
+      }
+      padding-bottom: 4rem;
+    }
+
+    .section__measure, .covers, .sub-section {
+      position: relative;
+      z-index: 2;
+    }
+
+    .covers {
+      padding-bottom: 6rem;
+    }
+
+    .sub-section {
+      font-weight: bold;
+      color: #fff;
+
+      h2 {
+        margin-bottom: 0;
+      }
+
+      &:after {
+        content: '';
+        display: block;
+        height: 50%;
+        width: 200vw;
+        position: absolute;
+        bottom: -2rem;
+        margin-left: -50vw;
+        margin-right: -50vw;
+        background-color: #000;
+
+        @include media-breakpoint-up(md) {
+          bottom: -4rem;
+        }
+      }
+
+      .row {
+        position: relative;
+        z-index: 2;
+      }
+    }
+  }
+
+  .slider--50 {
+    position: relative;
+    background-color: #000;
+
+    &:after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      height: 50%;
+      width: 100%;
+      left: 0;
+      
+      @extend %deezer-gradient-horizontal;
+    }
+    .slider__item__image {
+      width: 50vw;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section__stats {
+
+    .text {
+      text-align: center;
+      font-weight: bold;
+      padding-bottom: 5rem;
+      max-width: 750px;
+      margin: 0px auto;
+      color: #fff;
+    }
+
+    .stats__text {
+      position: absolute;
+    }
+
+    .stats__text--first {
+      top: 0;
+      right: 0;
+    }
+
+    .stats__text--last {
+      left: 0;
+      bottom: 0;
+    }
+
+    .stats__images {
+      width: 100%;
+      position: relative;
+    }
+    .stats__image {
+      width: 50%;
+
+      &:nth-child(3) {
+        margin-top: -7.5%;
+        margin-left: 25%;
+      }
+
+      &:nth-child(4) {
+        margin-top: -7.5%;
+        margin-left: 50%;
+      }
+    }
+  }
+}

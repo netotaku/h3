@@ -1,0 +1,160 @@
+$crestron-blue: #007C99;
+
+.page--crestron {
+  .peak--blue {
+    background-color: $crestron-blue;
+
+    polygon {
+      fill: $crestron-blue;
+    }
+  }
+
+  .section--img-100 {
+    img {
+      width: 100%;
+      max-width: initial;
+    }
+  }
+
+  .section--half-blue {
+    position: relative;
+    background-color: #fff;
+
+    p {
+      position: relative;
+      z-index: 2;
+    }
+
+    &:after {
+      content: '';
+      display: block;
+      height: 50%;
+      width: 100%;
+      position: absolute;
+      left:0;
+      top: 0;
+      z-index: 0;
+      background-color: $crestron-blue;
+    }
+  }
+
+  .text--center {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+
+  .section--white-triangle {
+    background-color: $crestron-blue;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/white_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+
+
+    .section__measure, .section__stats {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--triangle {
+    background-color: #FFF;
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/blue_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 28%;
+      position: absolute;
+      bottom: -1px;
+      left: 0;
+    }
+
+    .row {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--logos {
+    .row {
+      margin-top: 3rem;
+
+      &:nth-child(2) {
+
+        .col-md-3  {
+          order: 1;
+          @include media-breakpoint-up(md) {
+            order: 2;
+          }
+        }
+
+        .col-md-8 {
+          order: 2;
+
+          @include media-breakpoint-up(md) {
+            order: 1;
+          }
+        }
+
+      }
+
+      .col-md-3 {
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 2rem;
+
+        @include media-breakpoint-up(md) {
+          margin-bottom: 0;
+        }
+
+        img {
+          margin: 0;
+          margin-bottom: 2rem;
+
+          &.section__logo {
+            @include media-breakpoint-down(md) {
+              max-width: 250px;
+              margin: 0px auto;
+              margin-bottom: 2rem;
+            }
+          }
+        }
+      }
+
+      .col-md-9 {
+        padding: 4rem;
+      }
+    }
+  }
+
+
+  .section--c-blue {
+    background-color: $crestron-blue;
+  }
+
+  .stats__image, .stats {
+    margin-top: 4rem;
+  }
+
+  .stats {
+    color: #fff;
+    text-align: left;
+
+    h2 {
+      margin-bottom: 5px;
+    }
+  }
+}

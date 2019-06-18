@@ -10,7 +10,7 @@
             
             {{ content }}
             
-            <div id="js-menu">  
+            <div id="js-menu" class="menu-top">  
                 <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
                 <div v-if="opened" class="page__overlay" v-cloak>
                     <menu class="page__menu menu">
