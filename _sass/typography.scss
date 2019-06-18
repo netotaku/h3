@@ -12,8 +12,12 @@
     blockquote{
         background: url(/assets/svg/quote.svg) no-repeat;
         padding-top: 20px;
-        font-size: 1.8em;
         font-weight: bold;
+        font-size: 1.1rem;
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.8em;
+        }
         cite{
             display: block;
             margin-top: $gutter;
