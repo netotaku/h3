@@ -1190,8 +1190,11 @@ h1, h2, h3, h4, h5, h6 {
 .typography blockquote {
   background: url(/assets/svg/quote.svg) no-repeat;
   padding-top: 20px;
-  font-size: 1.8em;
-  font-weight: bold; }
+  font-weight: bold;
+  font-size: 1.1rem; }
+  @media (min-width: 768px) {
+    .typography blockquote {
+      font-size: 1.8em; } }
   .typography blockquote cite {
     display: block;
     margin-top: 20px;

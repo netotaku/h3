@@ -2,7 +2,9 @@
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
         <g id="Artboard" transform="translate(-1561.000000, -354.000000)">
             <g id="Group-4" transform="translate(1561.000000, 354.000000)">
+                <rect id="Rectangle" stroke="#979797" fill="#FFFFFF" x="0.5" y="0.5" width="1919" height="5254"></rect>
                 <g id="Group-3" transform="translate(0.000000, 469.000000)">
+                    <rect id="Mask" fill="#FFE21F" x="0" y="0" width="1920" height="726"></rect>
                     <polygon id="Fill-1-Copy" fill="#FF0648" points="2.32480701e-12 2039 3.41060513e-12 2345.21005 1920 3186 1920 2039"></polygon>
                     <polygon id="Fill-1-Copy" fill="#FFE21F" points="1920 3365 0 4128.32432 0 6006 1920 6006"></polygon>
                 </g>
