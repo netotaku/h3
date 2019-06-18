@@ -1,3 +1,95 @@
 .page--live-nation {
+
+  .slider--50 {
+    .slider__item__image {
+      width: 50vw;
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .hero__left {
+    h1, strong {
+      color: $red;
+    }
+
+    p {
+      color: #fff;
+    }
+  }
+
+  .section__stats {
+    text-align: left;
+
+    h2 {
+      margin-bottom: $gutter / 2;
+    }
+
+    p {
+      font-weight: bold;
+      color: $blue;
+    }
+  }
+
+
+  .slider {
+    padding-top: $gutter*2;
+    padding-bottom: $gutter*2;
+  }
+
+  .slider--black {
+    background-color: #000;
+  }
+
+  .slider--blue {
+    background-color: $blue;
+  }
   
+  .section--white-triangle {
+    position: relative;
+    
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/crestron/white_triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+
+    div {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--white-bar {
+    position: relative;
+
+    .row {
+      position: relative;
+      z-index: 2;
+    }
+    
+    &:after {
+      content: '';
+      display: block;
+      height: 33%;
+      width: 100%;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      z-index: 0;
+      background-color: #fff;
+    }
+  }
+
+  .u--img-pad {
+    padding: 8vw 0;
+  }
 }
