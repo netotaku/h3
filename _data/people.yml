@@ -1,32 +1,25 @@
 founders: 
-  - 
-    name: Nick Ellis
+  - name: Nick Ellis
     title: Creative Partner
     image: '/assets/img/team/nick.jpg'
-  - 
-    name: Vern Edmonds
+  - name: Vern Edmonds
     title: Managing Partner
     image: '/assets/img/team/vern.jpg'
     
 leadership:
-  - 
-    name: Nick Clarkson
+  - name: Nick Clarkson
     title: Digital Director
     image: '/assets/img/team/me.jpg'
-  - 
-    name: Hannah Williams
+  - name: Hannah Williams
     title: Director of Client Partnerships
     image: '/assets/img/team/hannah.jpg'
-  - 
-    name: Kelly Finnegan
+  - name: Kelly Finnegan
     title: Creative Director
     image: '/assets/img/team/kelly.jpg'
-  - 
-    name: Nat Inker
+  - name: Nat Inker
     title: Operations Director
     image: '/assets/img/team/nat.jpg'
-  - 
-    name: Nina Edmonds
+  - name: Nina Edmonds
     title: Finance Director
     image: '/assets/img/team/nina.jpg'
 

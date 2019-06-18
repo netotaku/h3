@@ -10,17 +10,20 @@ sections:
     poster: posters/work.jpg
     video: work.mp4  
 -
-    template: sections/header.html
--
-    class: 'section--padding section--padding--pinch section--blue section--peak section--peak--yellow typography'
+    class: 'section--padding section--padding--pinch section--blue typography'
     template: sections/section.html
     content: |
         <h1>Work</h1>
 -
-    class: 'section section--group'
+    class: 'section section--group section--peak section--peak--blue'
     image: /assets/svg/triangle.svg
     template: sections/group.html
     sections:
-        -
-            template: sections/work.html        
+        -   
+            template: sections/work.html
+-
+    class: 'section--padding section--red section--center section--peak section--peak--yellow'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="/contact" target="_window">Contact us</a></p>                    
 ---

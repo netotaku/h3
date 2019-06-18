@@ -44,36 +44,45 @@
     &--yellow{
         background-color: $yellow;
     } 
+
+    &--banner{
+        height: 185px;
+    }
    
     &--peak{
         .peak{
             display: block;
         }
         &--yellow{
-            .peak__svg g g{
+            polygon{
                 fill: $yellow;
             }
         }
         &--red{
-            .peak__svg g g{
+            polygon{
                 fill: $red;
             }
         }
         &--blue{
-            .peak__svg g g{
+            polygon{
                 fill: $blue;
             }
         } 
         &--black{
-            .peak__svg g g{
+            polygon{
                 fill: $black;
             }
         }  
         &--grey{
-            .peak__svg g g{
+            polygon{
                 fill: $grey;
             }
-        }                
+        }  
+        &--white{
+            polygon{
+                fill: white;
+            }
+        }                        
     }  
 }
 

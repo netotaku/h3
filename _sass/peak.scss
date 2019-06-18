@@ -1,15 +1,16 @@
 .peak{
-    position: relative;
+    position: absolute;
     top: 0px;
     left: 0px;
     width: 100%;
     text-align: center;
     z-index: 10;
+    display: none;
     &__svg{
         display: block;
         margin: auto;
         position: relative;
-        top: 23px;
+        // top: 23px;
         z-index: 10;
     }
     &--show{
