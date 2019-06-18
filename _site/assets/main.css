@@ -1073,8 +1073,8 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-  height: 90vh;
-  width: 100vw;
+  width: 100%;
+  padding-top: 53%;
   overflow-y: hidden;
   position: relative; }
 
@@ -1214,7 +1214,8 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 0px;
   overflow: hidden;
   white-space: nowrap;
-  overflow-x: scroll; }
+  overflow-x: scroll;
+  -webkit-overflow-scrolling: touch; }
   .slider__title {
     padding: 20px;
     padding-bottom: 0px; }
@@ -1360,7 +1361,8 @@ h1, h2, h3, h4, h5, h6 {
   .footer__brand {
     margin: 0px;
     margin-bottom: 20px;
-    display: block; }
+    display: block;
+    max-width: 120px; }
     .footer__brand img {
       display: inline; }
 
@@ -1448,7 +1450,7 @@ h1, h2, h3, h4, h5, h6 {
   background-color: inherit; }
 
 .lead-image {
-  height: 90vh;
+  padding-top: 53%;
   background-size: cover;
   background-position: 50% 50%; }
 
@@ -1879,22 +1881,33 @@ h1, h2, h3, h4, h5, h6 {
     fill: #312C25; }
 .page--butcombe .section--white {
   background-color: #FFF; }
+.page--butcombe .section--lead {
+  background-color: #FF0648; }
 .page--butcombe .section--b-white {
-  background-color: #FDF6EA; }
+  background-color: #FDF6EA;
+  overflow: hidden; }
 .page--butcombe .section--grey {
   background-color: #312C25; }
 .page--butcombe .section--dinosaur {
-  background-color: #000; }
+  background-color: #000;
+  padding-bottom: 0; }
+  .page--butcombe .section--dinosaur .section__center {
+    position: relative;
+    z-index: 2;
+    padding-bottom: 40px; }
+  .page--butcombe .section--dinosaur .section__left {
+    width: 100%; }
   .page--butcombe .section--dinosaur:after {
     content: '';
     display: block;
-    position: absolute;
+    position: relative;
     width: 100%;
-    height: 50%;
+    padding-top: 53%;
     bottom: 0;
-    background-image: url("./img/case-studies/butcombe/dinosaur_illustration.svg");
     background-size: cover;
-    left: -5vw; }
+    left: -5vw;
+    z-index: 1;
+    background-image: url("./img/case-studies/butcombe/dinosaur_illustration.svg"); }
 .page--butcombe .flourish {
   position: relative; }
   .page--butcombe .flourish:before, .page--butcombe .flourish:after {
@@ -1912,9 +1925,15 @@ h1, h2, h3, h4, h5, h6 {
     left: auto;
     right: -75px;
     transform: translateY(-50%) scaleX(-1); }
-.page--butcombe .section--78 {
-  padding-top: 8rem;
-  padding-bottom: 4rem; }
+@media (max-width: 991px) {
+  .page--butcombe .section--78 .logo {
+    padding-top: 40px;
+    width: 50%;
+    margin: 0px auto; } }
+@media (min-width: 768px) {
+  .page--butcombe .section--78 {
+    padding-top: 8rem;
+    padding-bottom: 4rem; } }
 .page--butcombe .type--yellow {
   color: #fcbf00; }
 .page--butcombe .section--yellow {
@@ -1922,17 +1941,23 @@ h1, h2, h3, h4, h5, h6 {
 .page--butcombe .section--green {
   background-color: #09cc31;
   padding-bottom: 0; }
+  .page--butcombe .section--green .row {
+    overflow: hidden; }
   .page--butcombe .section--green:after {
     content: '';
     display: block;
     width: 100%;
     background-image: url(./img/case-studies/butcombe/green_triangle.svg);
-    height: 38.5%;
+    height: 15%;
     position: absolute;
-    bottom: -38.5%;
+    bottom: -15%;
     left: 0;
     z-index: 100;
     background-size: cover; }
+    @media (min-width: 768px) {
+      .page--butcombe .section--green:after {
+        height: 38.5%;
+        bottom: -38.3%; } }
 .page--butcombe .pull-right {
   margin-right: -25%; }
 .page--butcombe .section--red {
@@ -1950,3 +1975,9 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1; }
   .page--butcombe .section--stats p {
     color: #000; }
+.page--butcombe .section--can .can {
+  max-width: 50%;
+  margin: 0px auto; }
+  @media (min-width: 768px) {
+    .page--butcombe .section--can .can {
+      width: 30%; } }
