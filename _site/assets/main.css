@@ -1444,6 +1444,14 @@ h1, h2, h3, h4, h5, h6 {
   .card--margin {
     margin-top: 20px; }
 
+.page--homepage {
+  background-color: inherit; }
+
+.lead-image {
+  height: 90vh;
+  background-size: cover;
+  background-position: 50% 50%; }
+
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }
   .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
