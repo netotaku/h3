@@ -2,6 +2,9 @@
     &__unit{
         position: relative;
         padding-bottom: $gutter;
+        &--center{
+            text-align: center;
+        }
     }
     &__hero{
         display: block;
