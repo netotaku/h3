@@ -922,15 +922,15 @@ h1, h2, h3, h4, h5, h6 {
     font-size: 1.3em; }
 
   h1 {
-    font-size: 6em;
+    font-size: 5em;
     line-height: 1.1; }
 
   h2 {
-    font-size: 2.8em;
+    font-size: 3.2em;
     line-height: 1.1; }
 
   h3 {
-    font-size: 1.5em; } }
+    font-size: 1.8em; } }
 .page__content {
   position: relative;
   z-index: 1; }
@@ -1207,7 +1207,7 @@ h1, h2, h3, h4, h5, h6 {
 .typography--white {
   color: #fff; }
 .typography--huge {
-  font-size: 4.2em;
+  font-size: 3.8em;
   font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 .typography--normal {
   font-weight: normal;
@@ -1350,6 +1350,9 @@ h1, h2, h3, h4, h5, h6 {
       text-decoration: underline; }
       .contact__footer a:hover {
         text-decoration: none; }
+  .contact__copyright {
+    display: none;
+    color: #666; }
 
 @media only screen and (min-width: 900px) {
   .contact--lrg {
@@ -1365,7 +1368,13 @@ h1, h2, h3, h4, h5, h6 {
       .contact--lrg .contact__item--address {
         font-size: 2.6em; }
     .contact--lrg .contact__footer {
-      margin-top: 20px; } }
+      margin-top: 20px; }
+    .contact--lrg .contact__social__link {
+      display: inline-block;
+      font-size: 1.6em;
+      margin-right: 10px; }
+    .contact--lrg .contact__copyright {
+      display: block; } }
 .footer {
   position: relative; }
   .footer__brand {
