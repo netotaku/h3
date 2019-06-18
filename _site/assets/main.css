@@ -1413,14 +1413,16 @@ h1, h2, h3, h4, h5, h6 {
       right: 0px; }
 
 .card {
-  position: relative; }
+  position: relative;
+  display: block; }
   .card__grad {
     position: absolute;
     top: 0px;
     left: 0px;
     right: 0px;
     bottom: 0px;
-    background: rgba(0, 0, 0, 0.3); }
+    background: rgba(0, 0, 0, 0.3);
+    width: 100%; }
   .card__hero {
     width: 100%;
     height: 0px;
