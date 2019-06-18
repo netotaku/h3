@@ -74,8 +74,8 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    height: 90vh;
-    width: 100vw;
+    width: 100%;
+    padding-top: 53%;
     overflow-y: hidden;
     position: relative;
 }
@@ -83,11 +83,6 @@
 .hero__content {
     position: relative;
     z-index: 2;
-    @include media-breakpoint-up(md) {
-        // position: absolute;
-        // top: 50%;
-        // transform: translateY(-50%);
-    }
 }
 
 .hero__left {
