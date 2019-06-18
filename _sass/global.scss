@@ -22,6 +22,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'gilroyblack';
+    src: url('/assets/fonts/radomir_tinkov_-_gilroy-black.otf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 *{
     padding: 0px;
     margin: 0px;
@@ -63,7 +70,7 @@ img{
 
 h1,h2,h3,h4,h5,h6{
     line-height: 1.2;
-    font-family: 'gilroybold', Helvetica, Arial, sans-serif;
+    font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
 }
 
 .u{

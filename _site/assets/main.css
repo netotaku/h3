@@ -864,6 +864,11 @@
   src: url("/assets/fonts/radomir_tinkov_-_gilroy-medium-webfont.woff2") format("woff2"), url("/assets/fonts/radomir_tinkov_-_gilroy-medium-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'gilroyblack';
+  src: url("/assets/fonts/radomir_tinkov_-_gilroy-black.otf") format("woff");
+  font-weight: normal;
+  font-style: normal; }
 * {
   padding: 0px;
   margin: 0px;
@@ -899,7 +904,7 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
-  font-family: 'gilroybold', Helvetica, Arial, sans-serif; }
+  font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
 .u--gutter-bottom {
   margin-bottom: 40px; }
@@ -955,7 +960,7 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   top: 20px;
   left: 20px;
-  z-index: 2;
+  z-index: 3;
   width: 35px; }
 
 @media only screen and (min-width: 900px) {
@@ -1200,7 +1205,7 @@ h1, h2, h3, h4, h5, h6 {
   color: #fff; }
 .typography--huge {
   font-size: 4.2em;
-  font-family: 'gilroybold', Helvetica, Arial, sans-serif; }
+  font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 .typography--normal {
   font-weight: normal;
   font-family: 'gilroymedium', Helvetica, Arial, sans-serif; }
