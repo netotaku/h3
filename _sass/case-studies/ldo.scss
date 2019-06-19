@@ -2,14 +2,14 @@ $ldo-yellow: #FFE21F;
 $ldo-blue: #0001d6;
 
 .page--ldo {
-  .peak--yellow {
+  .section--peak--yellow {
     background-color: #FFE21F;
     polygon {
       fill: #FFE21F;
     }
   }
 
-  .peak--blue {
+  .section--peak--blue {
     background-color: $ldo-blue;
 
     polygon {
