@@ -1,6 +1,5 @@
 .card{
     position: relative;
-    // background-color: $white;
     display: block;
     
     &__grad{
@@ -8,9 +7,7 @@
         top: 0px;
         left: 0px;
         right: 0px;
-        bottom: 0px;
-        // background: rgba(0,0,0,.3); 
-        // width: 100%;       
+        bottom: 0px;   
     }
     &__hero{
         width: 100%;
@@ -31,4 +28,5 @@
     &--margin{
         margin-top: $gutter;
     }
+    
 }
