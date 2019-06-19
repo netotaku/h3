@@ -1551,14 +1551,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #FFFEF8; }
 .page--budvar .section--black {
   background-color: #000; }
-.page--budvar .section--peak--white {
-  background-color: #FFFEF8; }
-  .page--budvar .section--peak--white polygon {
-    fill: #FFFEF8; }
-.page--budvar .section--peak--red {
-  background-color: #DA291C; }
-  .page--budvar .section--peak--red polygon {
-    fill: #DA291C; }
+.page--budvar .section--peak--white polygon {
+  fill: #FFFEF8; }
+.page--budvar .section--peak--red polygon {
+  fill: #DA291C; }
 .page--budvar .section--red-triangle {
   overflow: hidden;
   padding-top: 4rem;
@@ -1760,6 +1756,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #007C99; }
   .page--crestron .section--peak--blue polygon {
     fill: #007C99; }
+.page--crestron .section--group .section .peak {
+  display: none; }
 .page--crestron .section--img-100 img {
   width: 100%;
   max-width: initial; }
@@ -1816,34 +1814,34 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 2; }
 .page--crestron .section--logos .row {
   margin-top: 3rem; }
-  .page--crestron .section--logos .row:nth-child(2) .col-md-3 {
-    order: 1; }
-    @media (min-width: 768px) {
-      .page--crestron .section--logos .row:nth-child(2) .col-md-3 {
-        order: 2; } }
-  .page--crestron .section--logos .row:nth-child(2) .col-md-8 {
-    order: 2; }
-    @media (min-width: 768px) {
-      .page--crestron .section--logos .row:nth-child(2) .col-md-8 {
-        order: 1; } }
-  .page--crestron .section--logos .row .col-md-3 {
+  .page--crestron .section--logos .row .col-lg-3 {
     justify-content: center;
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem; }
     @media (min-width: 768px) {
-      .page--crestron .section--logos .row .col-md-3 {
+      .page--crestron .section--logos .row .col-lg-3 {
         margin-bottom: 0; } }
-    .page--crestron .section--logos .row .col-md-3 img {
+    .page--crestron .section--logos .row .col-lg-3 img {
       margin: 0;
       margin-bottom: 2rem; }
       @media (max-width: 991px) {
-        .page--crestron .section--logos .row .col-md-3 img.section__logo {
+        .page--crestron .section--logos .row .col-lg-3 img.section__logo {
           max-width: 250px;
           margin: 0px auto;
           margin-bottom: 2rem; } }
   .page--crestron .section--logos .row .col-md-9 {
     padding: 4rem; }
+.page--crestron .section--logos .row--second .col-lg-3 {
+  order: 0; }
+  @media (min-width: 768px) {
+    .page--crestron .section--logos .row--second .col-lg-3 {
+      order: 1; } }
+.page--crestron .section--logos .row--second .col-md-8 {
+  order: 1; }
+  @media (min-width: 768px) {
+    .page--crestron .section--logos .row--second .col-md-8 {
+      order: 0; } }
 .page--crestron .section--c-blue {
   background-color: #007C99; }
 .page--crestron .stats__image, .page--crestron .stats {
@@ -1854,7 +1852,10 @@ h1, h2, h3, h4, h5, h6 {
   .page--crestron .stats .col {
     width: 100%; }
     .page--crestron .stats .col + .col {
-      margin-top: 40px; }
+      margin-top: 20px; }
+      @media (min-width: 768px) {
+        .page--crestron .stats .col + .col {
+          margin-top: 0; } }
   @media (min-width: 768px) {
     .page--crestron .stats {
       text-align: left; } }

@@ -9,6 +9,14 @@ $crestron-blue: #007C99;
     }
   }
 
+  .section--group {
+    .section {
+      .peak {
+        display: none;
+      }
+    }
+  }
+
   .section--img-100 {
     img {
       width: 100%;
@@ -91,26 +99,7 @@ $crestron-blue: #007C99;
     .row {
       margin-top: 3rem;
 
-      &:nth-child(2) {
-
-        .col-md-3  {
-          order: 1;
-          @include media-breakpoint-up(md) {
-            order: 2;
-          }
-        }
-
-        .col-md-8 {
-          order: 2;
-
-          @include media-breakpoint-up(md) {
-            order: 1;
-          }
-        }
-
-      }
-
-      .col-md-3 {
+      .col-lg-3 {
         justify-content: center;
         display: flex;
         flex-direction: column;
@@ -138,6 +127,24 @@ $crestron-blue: #007C99;
         padding: 4rem;
       }
     }
+
+    .row--second {
+      .col-lg-3 {
+        order: 0;
+
+        @include media-breakpoint-up(md) {
+          order: 1;
+        }
+      }
+
+      .col-md-8 {
+        order: 1;
+
+        @include media-breakpoint-up(md) {
+          order: 0;
+        }
+      }
+    }
   }
 
 
@@ -157,7 +164,11 @@ $crestron-blue: #007C99;
       width: 100%;
 
       & + .col {
-        margin-top: $gutter*2;
+        margin-top: $gutter;
+
+        @include media-breakpoint-up(md) {
+          margin-top: 0;
+        }
       }
     }
 
