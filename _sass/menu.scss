@@ -10,13 +10,14 @@
         color: #fff;
         text-decoration: none;
         font-weight: bold;
+        font-size: 1.6em;
         &:hover, &__active{
             color: $red;
         }
     }
     &__base{
         position: absolute;
-        bottom: $gutter;        
+        bottom: $gutter;  
     }
     ul ul{
         display: none;
@@ -27,6 +28,7 @@
         right: $gutter;
         width: 35px;
     }    
+    
 }
 
 @media only screen and (min-width: $max-width){
