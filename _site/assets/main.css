@@ -1770,6 +1770,11 @@ h1, h2, h3, h4, h5, h6 {
     fill: #007C99; }
 .page--crestron .section--group .section .peak {
   display: none; }
+.page--crestron .slider--50 .slider__item__image {
+  width: 50vw;
+  position: relative;
+  z-index: 2;
+  min-width: 500px; }
 .page--crestron .section--img-100 img {
   width: 100%;
   max-width: initial; }
@@ -1840,6 +1845,11 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 991px) {
         .page--crestron .section--logos .row .col-lg-3 img.section__logo {
           max-width: 250px;
+          margin: 0px auto;
+          margin-bottom: 2rem; } }
+      @media (max-width: 991px) {
+        .page--crestron .section--logos .row .col-lg-3 img.section__logo--sonos {
+          max-width: 180px;
           margin: 0px auto;
           margin-bottom: 2rem; } }
   .page--crestron .section--logos .row .col-md-9 {

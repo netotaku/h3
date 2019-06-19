@@ -17,6 +17,15 @@ $crestron-blue: #007C99;
     }
   }
 
+  .slider--50 {
+    .slider__item__image {
+      width: 50vw;
+      position: relative;
+      z-index: 2;
+      min-width: 500px;
+    }
+  }
+
   .section--img-100 {
     img {
       width: 100%;
@@ -116,6 +125,14 @@ $crestron-blue: #007C99;
           &.section__logo {
             @include media-breakpoint-down(md) {
               max-width: 250px;
+              margin: 0px auto;
+              margin-bottom: 2rem;
+            }
+          }
+
+          &.section__logo--sonos {
+            @include media-breakpoint-down(md) {
+              max-width: 180px;
               margin: 0px auto;
               margin-bottom: 2rem;
             }
