@@ -5,7 +5,8 @@ sections:
 -
     template: brand.html
 -
-    template: sections/header.html
+    class: 'section--banner section--red'
+    template: sections/section.html
 -
     class: 'section--red hero--minimal'
     template: sections/hero.html
@@ -13,7 +14,7 @@ sections:
     class: 'section--padding section--padding--pinch section--blue section--peak section--peak--red typography'
     template: sections/section.html
     content: |
-        <h1>Current <span>vacancies</span></h1>
+        <h1>Careers at <span>Halo</span></h1>
 -
     class: 'section--padding section--padding--pinch section--blue section--peak section--peak--red typography'
     template: sections/vacancies.html
@@ -21,9 +22,9 @@ sections:
     class: 'section--padding section--padding--pinch section--yellow section--peak section--peak--blue typography'
     template: sections/section.html
     content: |
-        <h2>Careers</h2>
+        <h2>How we work.</h2>
 
-        <p>We like to keep things simple, with some clear ideas about what makes us, us.</p>
+        <!-- <p>We like to keep things simple, with some clear ideas about what makes us, us.</p> -->
 
         <div class="grid grid--halves grid--padding">
             <div class="grid__unit">
@@ -36,7 +37,7 @@ sections:
             </div>
             <div class="grid__unit">
                 <h3>Good enough is not enough.</h3>
-                <p>Every project is important. Each-and-every job matters. We treat every job equally; with care, consideration &amp; maximum effort – If it’s important to our client, it’s important to us.</p>
+                <p>Every project is important. Each-and-every job matters. We treat every job equally; with care, consideration &amp; maximum effort – if it’s important to our client, it’s important to us.</p>
             </div>
             <div class="grid__unit">
                 <h3>Don’t be a dick.</h3>
@@ -45,4 +46,10 @@ sections:
                 <p>No one wants to be a dick. So, don’t act like one.</p>
             </div>
         </div>
+-
+    class: 'section--padding section--red section--center section--peak section--peak--yellow'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="/contact" target="_window">Contact us</a></p>
+    
 ---

@@ -3,6 +3,7 @@
 {% else %}
     <div class="group {{ section.class }}">
 {% endif %}
+    {% include peak.html %}
     {% for section in section.sections  %}    
         {% include {{ section.template }} %}
     {% endfor %}

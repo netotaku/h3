@@ -1,34 +1,30 @@
 founders: 
-  - 
-    name: Nick Ellis
+  - name: Nick Ellis
     title: Creative Partner
     image: '/assets/img/team/nick.jpg'
-  - 
-    name: Vern Edmonds
+  - name: Vern Edmonds
     title: Managing Partner
     image: '/assets/img/team/vern.jpg'
     
 leadership:
-  - 
-    name: Nick Clarkson
+  - name: Nick Clarkson
     title: Digital Director
     image: '/assets/img/team/me.jpg'
-  - 
-    name: Hannah Williams
-    title: Director of Client Partnerships
+  - name: Hannah Williams
+    title: Head of Client Partnerships
     image: '/assets/img/team/hannah.jpg'
-  - 
-    name: Kelly Finnegan
+  - name: Kelly Finnegan
     title: Creative Director
     image: '/assets/img/team/kelly.jpg'
-  - 
-    name: Nat Inker
+  - name: Nat Inker
     title: Operations Director
     image: '/assets/img/team/nat.jpg'
-  - 
-    name: Nina Edmonds
+  - name: Nina Edmonds
     title: Finance Director
     image: '/assets/img/team/nina.jpg'
+  - name: Stuart Brazington
+    title: Head of Art
+    image: '/assets/img/team/stu.jpg'    
 
 accounts:
   - name: Zoe Veness
@@ -37,42 +33,41 @@ accounts:
   - name: Lisa Carter
     title: Client Partner
     image: '/assets/img/team/lisa.jpg'
-  - name: Jess Snipe
-    title: Finance Manager
-    image: '/assets/img/team/jess.jpg'
   - name: Kate Hosegood
     title: Client Partner
     image: '/assets/img/team/kate.jpg'  
+  - name: Lieve Vogels
+    title: Digital Client Partner
+    image: '/assets/img/team/lieve.jpg'     
   - name: Emily Klitgaard
-    title: Client Partner Executive
+    title: Client Partner
     image: '/assets/img/team/emily.jpg'  
   - name: Nathan Dawson
-    title: Client Partner Executive
-    image: '/assets/img/team/nath.jpg'                    
-
+    title: Client Partner
+    image: '/assets/img/team/nath.jpg'
+  - name: Jess Snipe
+    title: Finance Manager
+    image: '/assets/img/team/jess.jpg'    
+                       
 creative:
+  - name: Tilly Scott
+    title: Designer
+    image: '/assets/img/team/tilly.jpg'              
   - name: Liam Davenport
     title: Designer
     image: '/assets/img/team/liam.jpg'
+  - name: Yee Poon
+    title: Designer
+    image: '/assets/img/team/yee.jpg'    
   - name: Billie Arnold
-    title: Junior Creative Artworker 
+    title: Creative Artworker 
     image: '/assets/img/team/billie.jpg'
   - name: Lauren Lucchesse
     title: Creative Artworker
     image: '/assets/img/team/lauren.jpg'
-  - name: Stuart Brasington
-    title: Head of Art
-    image: '/assets/img/team/stu.jpg'
-  - name: Yee Poon
-    title: Designer
-    image: '/assets/img/team/yee.jpg'
   - name: Dan Coombes
-    title: Junior Creative Artworker
+    title: Creative Artworker
     image: '/assets/img/team/dan.jpg'  
-  - name: Tilly Scott
-    title: Junior Designer
-    image: '/assets/img/team/tilly.jpg'            
-
 
 digital: 
   - name: Matt England
@@ -81,10 +76,7 @@ digital:
   - name: Annick Ellis-Smith
     title: Digital Design / UX
     image: '/assets/img/team/neak.jpg'
-  - name: Miles Tinknell
+  - name: Miles Tincknell
     title: Front End Developer
-    image: '/assets/img/team/miles.jpg'
-  - name: Lieve Vogels
-    title: Digital Client Partner
-    image: '/assets/img/team/lieve.jpg'    
+    image: '/assets/img/team/miles.jpg'    
 

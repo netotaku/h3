@@ -6,15 +6,13 @@ sections:
     template: brand.html
 -
     template: sections/header.html
--     
-    class: 'section--yellow section--center'
-    template: sections/hero.html   
-    content: |
-        <video class="hero__layer hero__layer--one" autoplay="" muted="" loop="" playsinline="" preload="" poster="/assets/video/principles.jpg">
-            <source id="header-video" src="/assets/video/principles.mp4" type="video/mp4">
-        </video>      
 -
-    class: 'section--padding section--padding--pinch section--blue section--peak section--peak--yellow typography'
+    class: 'section--yellow'
+    template: sections/hero-video.html
+    poster: posters/principles.jpg
+    video: principles.mp4
+-
+    class: 'section--padding section--padding--pinch section--blue typography'
     template: sections/section.html
     content: |
         <h1>Creative &amp; strategic partners to ambitious, purposeful brands.</h1>
@@ -35,7 +33,7 @@ sections:
 
 
 -
-    class: 'section--padding section--padding--pinch section--black section--peak section--peak--blue typography'
+    class: 'section--padding section--padding--pinch section--black typography'
     template: sections/section.html
     content: |
         <h2>Shaping powerful brands with <span class="typography--blue">three principles.</span></h2>
@@ -59,7 +57,7 @@ sections:
         </div>  
         
 -
-    class: 'section--padding section--padding--pinch section--yellow section--peak section--peak--black typography'
+    class: 'section--padding section--padding--pinch section--yellow section--peak section--peak--blue typography'
     template: sections/section.html
     content: |  
 
@@ -77,7 +75,7 @@ sections:
         </div>          
         
 -
-    class: 'section--padding section--padding--pinch section--red section--peak section--peak--black typography'
+    class: 'section--padding section--padding--pinch section--red section--peak section--peak--yellow typography'
     template: sections/section.html
     content: |  
         <div class="grid grid--halves grid--padding">
@@ -91,8 +89,16 @@ sections:
                     <source id="header-video" src="/assets/video/animations/480x480/hands.mp4" type="video/mp4">
                 </video> 
             </div>
-        </div>          
-        
+        </div>    
+- 
+    class: 'section--padding section--padding--pinch section--black section--peak section--peak--red typography'
+    template: sections/section.html
+    content: |     
+        <h2>Our <span class="typography--blue">work.</span></h2>                      
+- 
+    class: 'section--white'    
+    template: sections/slider.html
+    filter: work     
                 
 ---
 

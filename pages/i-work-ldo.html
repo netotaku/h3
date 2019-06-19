@@ -13,12 +13,7 @@ sections:
     poster: case-studies/ldo/video_poster.jpg
     video: case-studies/ldo/header.mp4
 -
-    class: 'peak--white'
-    template: peak.html
-    content: |
-        <hr class="hr" />
--
-    class: 'section--padding section--padding--pinch section--peak section--yellow section--background-aware typography'
+    class: 'section--padding section--padding--pinch section--peak section--peak--black section--yellow section--background-aware typography'
     template: sections/section.html
     image: case-studies/ldo/hello.png
     content: |
@@ -33,6 +28,11 @@ sections:
             </div>
         </div>
 -
+    class: 'section--padding section--black section--center'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--blue" href="/contact">Request a case study</a></p>
+-
     class: 'section--half-blue'
     template: sections/slider.html
     data:
@@ -41,32 +41,22 @@ sections:
         - /assets/img/case-studies/ldo/slide-3.png
         - /assets/img/case-studies/ldo/slide-4.png
 -
-    class: 'peak--blue'
-    template: peak.html
+    class: 'section--padding section--padding--pinch section--blue section--peak section--peak--blue section--background-aware typography'
+    template: sections/section.html
+    image: case-studies/ldo/casual_party.png
     content: |
-        <hr class="hr" />
+        <div class="section__center">
+            <div class="section__left">
+                <blockquote>They’ve reinvented the brand &amp; reimagined our campaigns with a bold vision that is as creative as it is strategic.
+                    <cite>Norman Black, Director of Marketing</cite>
+                </blockquote>
+            </div>
+        </div>
 -
-    class: 'section section--group'
+    class: 'section section--white section--group'
     image: /assets/svg/triangle.svg
     template: sections/group.html
     sections:
-        -
-            class: 'section--padding section--black section--center'
-            template: sections/section.html
-            content: |
-                <p><a class="button button--blue" href="/contact">Request a case study</a></p>
-        -
-            class: 'section--padding section--padding--pinch section--blue section--peak section--peak--yellow section--background-aware typography'
-            template: sections/section.html
-            image: case-studies/ldo/casual_party.png
-            content: |
-                <div class="section__center">
-                    <div class="section__left">
-                        <blockquote>They’ve reinvented the brand &amp; reimagined our campaigns with a bold vision that is as creative as it is strategic.
-                            <cite>Norman Black, Director of Marketing</cite>
-                        </blockquote>
-                    </div>
-                </div>
         -
             class: 'section--padding section--center-lrg typography'
             template: sections/section.html
@@ -110,12 +100,7 @@ sections:
     content:  |
         <p><img src="/assets/img/case-studies/ldo/ldo_land_v4.jpg"></p>
 -
-    class: 'peak--yellow'
-    template: peak.html
-    content: |
-        <hr class="hr" />
--
-    class: 'section--half-yellow slider--50'
+    class: 'section--half-yellow section--peak section--peak--yellow slider--50'
     template: sections/slider.html
     data:
         - /assets/img/case-studies/ldo/slider_2_1.jpg
