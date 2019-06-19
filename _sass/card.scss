@@ -1,6 +1,10 @@
 .card{
     position: relative;
     display: block;
+
+    &__inner{
+        position: relative;
+    }
     
     &__grad{
         position: absolute;
