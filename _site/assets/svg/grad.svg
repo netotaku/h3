@@ -1,13 +1,17 @@
-<svg width="641px" height="481px" viewBox="0 0 641 481" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="640px" height="480px" viewBox="0 0 640 480" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 53.2 (72643) - https://sketchapp.com -->
+    <title>grad</title>
+    <desc>Created with Sketch.</desc>
     <defs>
-        <radialGradient cx="54.4315523%" cy="50%" fx="54.4315523%" fy="50%" r="277.550117%" gradientTransform="translate(0.544316,0.500000),scale(0.750390,1.000000),rotate(108.957893),translate(-0.544316,-0.500000)" id="radialGradient-1">
+        <radialGradient cx="54.4316116%" cy="49.9999549%" fx="54.4316116%" fy="49.9999549%" r="277.565353%" gradientTransform="translate(0.544316,0.500000),scale(0.750000,1.000000),rotate(108.967047),translate(-0.544316,-0.500000)" id="radialGradient-1">
             <stop stop-color="#000000" stop-opacity="0" offset="0%"></stop>
             <stop stop-color="#000000" offset="100%"></stop>
         </radialGradient>
     </defs>
     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-        <g id="Artboard" transform="translate(-280.000000, -4266.000000)" fill="url(#radialGradient-1)" stroke="#979797">
-            <rect id="Rectangle" x="280.5" y="4266.5" width="640" height="480"></rect>
+        <g id="grad" fill="url(#radialGradient-1)" fill-rule="nonzero">
+            <rect id="Rectangle" x="0" y="0" width="640" height="480"></rect>
         </g>
     </g>
 </svg>

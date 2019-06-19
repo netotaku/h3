@@ -8,6 +8,7 @@
         left: 0px;
         right: 0px;
         bottom: 0px;   
+        background-image: radial-gradient(50% 143%, rgba(0,0,0,0.00) 50%, rgba(0,0,0,0.30) 100%);
     }
     &__hero{
         width: 100%;
@@ -23,10 +24,9 @@
         left: $gutter;
         right: $gutter;
         color: #fff;
-        width: 100%;
     }
     &--margin{
         margin-top: $gutter;
     }
-    
+
 }
