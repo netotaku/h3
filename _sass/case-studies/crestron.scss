@@ -1,6 +1,10 @@
 $crestron-blue: #007C99;
 
 .page--crestron {
+
+  .typography--blue {
+    color: $crestron-blue;
+  }
   .section--peak--blue {
     background-color: $crestron-blue;
 
