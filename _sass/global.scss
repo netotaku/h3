@@ -40,6 +40,11 @@
 ul{
     list-style-type: none;
 }
+
+ol{
+    margin-left: 26px;
+}
+
 html{
     height: 100%;
     background: #333;
@@ -101,7 +106,7 @@ h1,h2,h3,h4,h5,h6{
         line-height: 1.1;
     }
     h2{
-        font-size: 3.2em;
+        font-size: 3.1em;
         line-height: 1.1;
     }
     h3{

@@ -8,35 +8,36 @@
   path: /work
   children: 
     - 
-      label: Butcombe
+      label: Ticketmaster
+      slug : livenation
+      path: /work/livenation  
+      thumb: /assets/img/thumb_livenation.jpg   
+    - 
+      label: Budweiser Budvar
+      slug : budvar
+      path: /work/budvar
+      thumb: /assets/img/thumb_budvar.jpg          
+    - 
+      label: Deezer
+      slug : deezer
+      path: /work/deezer
+      thumb: /assets/img/thumb_deezer.jpg   
+    - 
+      label: London Designer Outlet
+      slug : ldo
+      path: /work/ldo
+      thumb: /assets/img/thumb_ldo.jpg            
+    -       
+      label: Butcombe Brewing Co.
       slug : butcombe
       path: /work/butcombe    
       thumb: /assets/img/scratch/drink/butcombe.jpg   
-    - 
-      label: LDO
-      slug : ldo
-      path: /work/ldo
-      thumb: /assets/img/case-studies/ldo/ldo.png
     - 
       label: Crestron
       slug : crestron
       path: /work/crestron   
       thumb: /assets/img/thumb_crestron.jpg 
-    - 
-      label: Budvar
-      slug : budvar
-      path: /work/budvar
-      thumb: /assets/img/thumb_budvar.jpg       
-    - 
-      label: Deezer
-      slug : deezer
-      path: /work/deezer
-      thumb: /assets/img/thumb_deezer.jpg             
-    - 
-      label: Live Nation
-      slug : livenation
-      path: /work/livenation  
-      thumb: /assets/img/thumb_livenation.jpg           
+           
  - 
   label: Culture
   slug: culture

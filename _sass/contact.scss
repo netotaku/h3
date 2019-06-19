@@ -37,13 +37,17 @@
     .contact{        
         &--lrg{
 
+            
+
             line-height: 63px;
 
             .contact{
                 &__heading{
                     margin-bottom: $gutter*2;
+                    font-family: 'gilroybold', Helvetica, Arial, sans-serif;
                 }
                 &__item{
+                    font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
                     font-weight: bold;
                     &--tel{
                         a{
