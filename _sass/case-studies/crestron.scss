@@ -151,7 +151,19 @@ $crestron-blue: #007C99;
 
   .stats {
     color: #fff;
-    text-align: left;
+    text-align: center;
+
+    .col {
+      width: 100%;
+
+      & + .col {
+        margin-top: $gutter*2;
+      }
+    }
+
+    @include media-breakpoint-up(md) {
+      text-align: left;
+    }
 
     h2 {
       margin-bottom: 5px;
