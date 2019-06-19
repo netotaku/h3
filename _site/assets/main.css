@@ -1930,12 +1930,22 @@ h1, h2, h3, h4, h5, h6 {
 .page--live-nation .hero__left p {
   color: #fff; }
 .page--live-nation .section__stats {
-  text-align: left; }
+  text-align: center; }
+  .page--live-nation .section__stats .col + .col {
+    margin-top: 20px; }
+    @media (min-width: 768px) {
+      .page--live-nation .section__stats .col + .col {
+        margin-top: 0; } }
+  @media (min-width: 768px) {
+    .page--live-nation .section__stats {
+      text-align: left; } }
   .page--live-nation .section__stats h2 {
     margin-bottom: 10px; }
   .page--live-nation .section__stats p {
     font-weight: bold;
     color: #0000D8; }
+.page--live-nation .slider .slider__item__image {
+  min-width: 500px; }
 .page--live-nation .slider--black {
   background-color: #000; }
 .page--live-nation .slider--blue {
@@ -1973,7 +1983,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
     background-color: #fff; }
 .page--live-nation .u--img-pad {
-  padding: 8vw 0; }
+  padding: 20px; }
+  @media (min-width: 768px) {
+    .page--live-nation .u--img-pad {
+      padding: 8vw 0; } }
 
 .page--butcombe .section--peak--grey {
   background-color: #312C25; }
