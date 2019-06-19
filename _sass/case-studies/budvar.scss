@@ -31,15 +31,12 @@ $budvar-white: #FFFEF8;
   }
 
   .section--peak--white {
-    background-color: $budvar-white;
-
     polygon {
       fill: $budvar-white;
     }
   }
 
   .section--peak--red {
-    background-color: $budvar-red;
 
     polygon {
       fill: $budvar-red;
