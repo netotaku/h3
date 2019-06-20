@@ -79,4 +79,32 @@
             }
         }
     }
-} 
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-button {
+    background: gold;
+}
+::-webkit-scrollbar-thumb {
+    background: grey;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: grey;
+}
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+::-webkit-scrollbar-track-piece {
+    background: transparent;
+}
+ 
+::-webkit-scrollbar-corner {
+    background: green;
+}
+::-webkit-resizer {
+    background: pink;
+}

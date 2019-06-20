@@ -1,0 +1,13 @@
+.quote {
+  &.quote--75 {
+    @media only screen and (min-width: 900px){
+      width: 75%;
+    }
+  }
+
+  &.quote--50 {
+    @media only screen and (min-width: 900px) {
+      width: 50%;
+    }
+  }
+}

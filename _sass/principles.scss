@@ -1,0 +1,19 @@
+$v-blue: #0000dd;
+$v-yellow: #ffe522;
+$v-red: #ff0153;
+
+
+.page--principles {
+  
+  .section--v-blue {
+    background-color: $v-blue;
+  }
+
+  .section--v-yellow {
+    background-color: $v-yellow;
+  }
+
+  .section--v-red {
+    background-color: $v-red;
+  }
+}

@@ -1,5 +1,9 @@
 .animation{
-    display: block;
+    display: none;
     height: auto;
     max-width: 100%;
+
+    @include media-breakpoint-up(md) {
+        display: block;
+    }
 }
