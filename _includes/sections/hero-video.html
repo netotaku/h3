@@ -1,4 +1,4 @@
-<div class="hero hero--video">
+<div class="hero hero__layer hero__layer--one hero--video">
     <div class="hero__video">
       <div class="hero__video-film">
         <video autoplay="" muted="" loop="" playsinline="" preload="" poster="/assets/img/{{section.poster}}">
@@ -7,8 +7,8 @@
       </div>
     </div>
     {% if section.content %}
-      <div class="hero__overlay">
-        {{section.content}}
+      <div class="hero__layer hero__layer--two">
+        <div class="hero__strap">{{section.content}}</div>
       </div>
     {% endif %}
 </div>
