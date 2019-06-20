@@ -1556,6 +1556,7 @@ h1, h2, h3, h4, h5, h6 {
   max-width: 100%; }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (min-width: 768px) {
   .quote.quote--75 {
     width: 75%; } }
@@ -1575,6 +1576,8 @@ h1, h2, h3, h4, h5, h6 {
 
 >>>>>>> Stashed changes
 >>>>>>> merge
+=======
+>>>>>>> generating
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }
   .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
