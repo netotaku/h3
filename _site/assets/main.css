@@ -1254,6 +1254,7 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden;
   white-space: nowrap;
   overflow-x: scroll;
+  cursor: ew-resize;
   -webkit-overflow-scrolling: touch; }
   .slider__title {
     padding: 20px;
@@ -1308,7 +1309,8 @@ h1, h2, h3, h4, h5, h6 {
     width: 30vw; } }
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px; }
+  height: 5px;
+  padding-bottom: 5px; }
 
 ::-webkit-scrollbar-thumb {
   background: grey;
@@ -1620,8 +1622,6 @@ h1, h2, h3, h4, h5, h6 {
   fill: #DA291C; }
 .page--budvar .section--red-triangle {
   overflow: hidden;
-  padding-top: 4rem;
-  padding-bottom: 4rem;
   background-color: #FFFEF8; }
   .page--budvar .section--red-triangle:before {
     content: '';

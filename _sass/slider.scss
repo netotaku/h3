@@ -3,6 +3,7 @@
     overflow: hidden;
     white-space: nowrap;
     overflow-x: scroll;
+    cursor: ew-resize;
     -webkit-overflow-scrolling: touch;
     &__title{
         padding: $gutter;
@@ -84,6 +85,8 @@
 ::-webkit-scrollbar {
     width: 5px;
     height: 5px;
+    padding-bottom: 5px;
+
 }
 ::-webkit-scrollbar-thumb {
     background: grey;

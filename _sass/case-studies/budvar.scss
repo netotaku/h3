@@ -56,8 +56,6 @@ $budvar-white: #FFFEF8;
 
   .section--red-triangle {
     overflow: hidden;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     background-color: $budvar-white;
     &:before {
       content: '';
