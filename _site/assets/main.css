@@ -1447,7 +1447,7 @@ h1, h2, h3, h4, h5, h6 {
     right: 4vw; } }
 .peak {
   position: absolute;
-  top: 0px;
+  top: 1px;
   left: 0px;
   width: 100%;
   text-align: center;
