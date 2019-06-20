@@ -19,6 +19,13 @@ $budvar-white: #FFFEF8;
     }
   }
 
+  .hero__inner {
+    background-color: #151515;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+  }
+
   .section--red {
     background-color: $budvar-red;
   }
