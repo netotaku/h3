@@ -1,8 +1,9 @@
 .hero{
     &__strap{
-        width: 80%;
+        // width: 80%;
         margin: auto;
-        color: $red;        
+        // color: $red;  
+        font-family: frequencymid;      
         position: absolute;
         top: 50%;
         left: 0px;
@@ -14,6 +15,9 @@
             height: auto;
             margin-bottom: 40px;
         }
+        text-align: center;
+        color: #fff;
+        font-size: 9.5vw;
     }
     background-size: cover;
     background-position: center;
@@ -40,7 +44,7 @@
             z-index: 1;
         }
         &--two{
-            z-index: 2;
+            z-index: 5;
         }
     }
     &__header{
