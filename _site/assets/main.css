@@ -1308,8 +1308,7 @@ h1, h2, h3, h4, h5, h6 {
     width: 30vw; } }
 ::-webkit-scrollbar {
   width: 5px;
-  height: 5px;
-  border-radius: 10px; }
+  height: 5px; }
 
 ::-webkit-scrollbar-thumb {
   background: grey;
