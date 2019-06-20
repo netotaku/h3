@@ -851,7 +851,7 @@
     display: none; } }
 @font-face {
   font-family: 'frequencymid';
-  src: url("/assets/fonts/frequency_aw-webfont.woff2") format("woff2"), url("/assets/fonts/frequency_aw-webfont.woff") format("woff");
+  src: url("/assets/fonts/frequency_aw-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal; }
 @font-face {
@@ -1044,14 +1044,16 @@ h1, h2, h3, h4, h5, h6 {
   background-size: cover;
   background-position: center; }
   .hero__strap {
-    width: 80%;
     margin: auto;
-    color: #FF0648;
+    font-family: frequencymid;
     position: absolute;
     top: 50%;
     left: 0px;
     right: 0px;
-    transform: translateY(-50%); }
+    transform: translateY(-50%);
+    text-align: center;
+    color: #fff;
+    font-size: 9.5vw; }
     .hero__strap__brand {
       display: block;
       width: 120px;
@@ -1077,7 +1079,7 @@ h1, h2, h3, h4, h5, h6 {
     .hero__layer--one {
       z-index: 1; }
     .hero__layer--two {
-      z-index: 2; }
+      z-index: 5; }
   .hero--minimal .hero__inner {
     padding-top: 20%; }
 
