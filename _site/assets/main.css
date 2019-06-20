@@ -927,6 +927,10 @@ h1, h2, h3, h4, h5, h6 {
   background-size: 100% 20px;
   width: 100%;
   height: 20px; }
+.u-column {
+  flex-direction: column;
+  justify-content: center;
+  display: flex; }
 
 @media only screen and (min-width: 900px) {
   body {
@@ -1551,25 +1555,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em; }
 
 .animation {
-  display: block;
+  display: none;
   height: auto;
   max-width: 100%; }
+  @media (min-width: 768px) {
+    .animation {
+      display: block; } }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-@media (min-width: 768px) {
-  .quote.quote--75 {
-    width: 75%; } }
-@media (min-width: 768px) {
-  .quote.quote--50 {
-    width: 50%; } }
-
-=======
-<<<<<<< Updated upstream
-=======
-=======
->>>>>>> undoing regression
 @media only screen and (min-width: 900px) {
   .quote.quote--75 {
     width: 75%; } }
@@ -1577,13 +1569,15 @@ h1, h2, h3, h4, h5, h6 {
   .quote.quote--50 {
     width: 50%; } }
 
-<<<<<<< HEAD
->>>>>>> Stashed changes
->>>>>>> merge
-=======
->>>>>>> generating
-=======
->>>>>>> undoing regression
+.page--principles .section--v-blue {
+  background-color: #0000dd; }
+.page--principles .section--v-yellow {
+  background-color: #ffe522; }
+.page--principles .section--v-red {
+  background-color: #ff0153; }
+
+.page--budvar .text--center {
+  text-align: center; }
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }
   .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
@@ -1592,6 +1586,11 @@ h1, h2, h3, h4, h5, h6 {
     color: #DA291C; }
   .page--budvar .hero__inner .section__left, .page--budvar .hero__content .section__left {
     padding-left: 2rem; }
+.page--budvar .hero__inner {
+  background-color: #151515;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: bottom right; }
 .page--budvar .section--red {
   background-color: #DA291C; }
 .page--budvar .section--white {
@@ -1618,13 +1617,8 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("./img/case-studies/budvar/red_triangle.svg");
     background-position: right bottom;
     background-size: cover; }
-.page--budvar .section--slider-landscape {
-  padding-top: 4rem;
-  padding-bottom: 4rem; }
-  .page--budvar .section--slider-landscape .slider__item {
-    margin-right: 5rem; }
-  .page--budvar .section--slider-landscape .slider__item__image {
-    width: 50vw; }
+.page--budvar .section--slider-landscape .slider__item__image {
+  width: 50vw; }
 .page--budvar .section--slider-budvar .slider__item__image {
   width: 45vw; }
 .page--budvar .hero__inner .section__right {
@@ -1659,18 +1653,26 @@ h1, h2, h3, h4, h5, h6 {
 .page--budvar .section__stats {
   max-width: 1600px;
   text-align: center;
-  padding-top: 5rem;
-  padding-bottom: 5rem;
   margin: auto;
   overflow: hidden; }
-  .page--budvar .section__stats .row {
-    margin-bottom: 4rem; }
+  .page--budvar .section__stats .row .col-xs-12 {
+    margin-bottom: 40px; }
+    @media (min-width: 768px) {
+      .page--budvar .section__stats .row .col-xs-12 {
+        margin-bottom: 0; } }
+  @media (min-width: 768px) {
+    .page--budvar .section__stats .row + .row {
+      margin-top: 4rem; } }
   .page--budvar .section__stats h1 {
-    font-size: 6rem;
-    margin-bottom: 6rem;
+    font-size: 2.5rem;
+    margin-bottom: 50px;
     color: #DA291C; }
-  .page--budvar .section__stats h1, .page--budvar .section__stats h2 {
-    font-weight: bold; }
+    @media (min-width: 768px) {
+      .page--budvar .section__stats h1 {
+        font-size: 5rem;
+        margin-bottom: 80px; } }
+  .page--budvar .section__stats h3 {
+    margin-bottom: 20px; }
 .page--budvar .budvar-font {
   margin-bottom: 4rem; }
 .page--budvar .section--labels {
@@ -2037,6 +2039,8 @@ h1, h2, h3, h4, h5, h6 {
   background-color: #312C25; }
   .page--butcombe .section--peak--grey polygon {
     fill: #312C25; }
+.page--butcombe .typography--yellow {
+  color: #fcbf00; }
 .page--butcombe .section--white {
   background-color: #FFF; }
 .page--butcombe .section--lead {
