@@ -1187,6 +1187,10 @@ h1, h2, h3, h4, h5, h6 {
   .section--peak--white polygon {
     fill: white; }
 
+.section--quote {
+  display: flex;
+  align-items: flex-end; }
+
 @media only screen and (max-width: 900px) {
   .section--background-aware {
     background-image: none !important; } }
@@ -1548,6 +1552,13 @@ h1, h2, h3, h4, h5, h6 {
   display: block;
   height: auto;
   max-width: 100%; }
+
+@media (min-width: 768px) {
+  .quote.quote--75 {
+    width: 75%; } }
+@media (min-width: 768px) {
+  .quote.quote--50 {
+    width: 50%; } }
 
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }

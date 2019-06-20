@@ -1,0 +1,13 @@
+.quote {
+  &.quote--75 {
+    @include media-breakpoint-up(md) {
+      width: 75%;
+    }
+  }
+
+  &.quote--50 {
+    @include media-breakpoint-up(md) {
+      width: 50%;
+    }
+  }
+}
