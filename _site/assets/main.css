@@ -1766,12 +1766,19 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: -7.5%;
     margin-left: 50%; }
 
+.page--crestron .typography--blue {
+  color: #007C99; }
 .page--crestron .section--peak--blue {
   background-color: #007C99; }
   .page--crestron .section--peak--blue polygon {
     fill: #007C99; }
 .page--crestron .section--group .section .peak {
   display: none; }
+.page--crestron .slider--50 .slider__item__image {
+  width: 50vw;
+  position: relative;
+  z-index: 2;
+  min-width: 500px; }
 .page--crestron .section--img-100 img {
   width: 100%;
   max-width: initial; }
@@ -1842,6 +1849,11 @@ h1, h2, h3, h4, h5, h6 {
       @media (max-width: 991px) {
         .page--crestron .section--logos .row .col-lg-3 img.section__logo {
           max-width: 250px;
+          margin: 0px auto;
+          margin-bottom: 2rem; } }
+      @media (max-width: 991px) {
+        .page--crestron .section--logos .row .col-lg-3 img.section__logo--sonos {
+          max-width: 180px;
           margin: 0px auto;
           margin-bottom: 2rem; } }
   .page--crestron .section--logos .row .col-md-9 {
@@ -1932,15 +1944,22 @@ h1, h2, h3, h4, h5, h6 {
 .page--live-nation .hero__left p {
   color: #fff; }
 .page--live-nation .section__stats {
-  text-align: left; }
+  text-align: center; }
+  .page--live-nation .section__stats .col + .col {
+    margin-top: 20px; }
+    @media (min-width: 768px) {
+      .page--live-nation .section__stats .col + .col {
+        margin-top: 0; } }
+  @media (min-width: 768px) {
+    .page--live-nation .section__stats {
+      text-align: left; } }
   .page--live-nation .section__stats h2 {
     margin-bottom: 10px; }
   .page--live-nation .section__stats p {
     font-weight: bold;
     color: #0000D8; }
-.page--live-nation .slider {
-  padding-top: 40px;
-  padding-bottom: 40px; }
+.page--live-nation .slider .slider__item__image {
+  min-width: 500px; }
 .page--live-nation .slider--black {
   background-color: #000; }
 .page--live-nation .slider--blue {
@@ -1978,7 +1997,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
     background-color: #fff; }
 .page--live-nation .u--img-pad {
-  padding: 8vw 0; }
+  padding: 20px; }
+  @media (min-width: 768px) {
+    .page--live-nation .u--img-pad {
+      padding: 4vw 0; } }
 
 .page--butcombe .section--peak--grey {
   background-color: #312C25; }
