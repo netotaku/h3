@@ -1555,6 +1555,7 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
   max-width: 100%; }
 
+<<<<<<< HEAD
 @media (min-width: 768px) {
   .quote.quote--75 {
     width: 75%; } }
@@ -1562,6 +1563,18 @@ h1, h2, h3, h4, h5, h6 {
   .quote.quote--50 {
     width: 50%; } }
 
+=======
+<<<<<<< Updated upstream
+=======
+@media only screen and (min-width: 900px) {
+  .quote.quote--75 {
+    width: 75%; } }
+@media only screen and (min-width: 900px) {
+  .quote.quote--50 {
+    width: 50%; } }
+
+>>>>>>> Stashed changes
+>>>>>>> merge
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }
   .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
@@ -1712,8 +1725,6 @@ h1, h2, h3, h4, h5, h6 {
   .page--deezer .section--covers .section__measure, .page--deezer .section--covers .covers, .page--deezer .section--covers .sub-section {
     position: relative;
     z-index: 2; }
-  .page--deezer .section--covers .covers {
-    padding-bottom: 6rem; }
   .page--deezer .section--covers .sub-section {
     font-weight: bold;
     color: #fff; }
@@ -2076,6 +2087,11 @@ h1, h2, h3, h4, h5, h6 {
   color: #fcbf00; }
 .page--butcombe .section--yellow {
   background-color: #f6ca10; }
+.page--butcombe .section--red, .page--butcombe .section--green {
+  color: #000; }
+  .page--butcombe .section--red .col--center, .page--butcombe .section--green .col--center {
+    flex-direction: column;
+    justify-content: center; }
 .page--butcombe .section--green {
   background-color: #09cc31;
   padding-bottom: 0; }
@@ -2131,9 +2147,8 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1; }
   .page--butcombe .section--stats p {
     color: #000; }
-.page--butcombe .section--can .can {
-  max-width: 50%;
-  margin: 0px auto; }
-  @media (min-width: 768px) {
-    .page--butcombe .section--can .can {
-      width: 30%; } }
+.page--butcombe .section--can {
+  padding-top: 40px; }
+.page--butcombe .section--img-100 img {
+  width: 100%;
+  max-width: initial; }

@@ -112,6 +112,14 @@ $butcombe-blue: #008a9f;
     background-color: $butcombe-forty-two;
   }
 
+  .section--red, .section--green {
+    color: #000;
+    .col--center {
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
   .section--green {
     background-color: $butcombe-green;
     padding-bottom: 0;
@@ -195,13 +203,13 @@ $butcombe-blue: #008a9f;
   }
 
   .section--can {
-    .can {
-      max-width: 50%;
-      margin: 0px auto;
+    padding-top: $gutter*2;
+  }
 
-      @include media-breakpoint-up(md) {
-        width: 30%;
-      }
+  .section--img-100 {
+    img {
+      width: 100%;
+      max-width: initial;
     }
   }
 }
