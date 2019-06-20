@@ -2095,6 +2095,14 @@ h1, h2, h3, h4, h5, h6 {
   .page--butcombe .section--red .col--center, .page--butcombe .section--green .col--center {
     flex-direction: column;
     justify-content: center; }
+  .page--butcombe .section--red .can, .page--butcombe .section--green .can {
+    margin: 0px auto; }
+    @media (min-width: 576px) {
+      .page--butcombe .section--red .can, .page--butcombe .section--green .can {
+        width: 75%; } }
+    @media (min-width: 768px) {
+      .page--butcombe .section--red .can, .page--butcombe .section--green .can {
+        width: auto; } }
 .page--butcombe .section--green {
   background-color: #09cc31;
   padding-bottom: 0; }
@@ -2110,10 +2118,14 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url(./img/case-studies/butcombe/green_triangle.svg);
     height: 15%;
     position: absolute;
-    bottom: -15%;
+    bottom: -14.8%;
     left: 0;
     z-index: 100;
     background-size: cover; }
+    @media (min-width: 576px) {
+      .page--butcombe .section--green:after {
+        height: 25%;
+        bottom: -24.3%; } }
     @media (min-width: 768px) {
       .page--butcombe .section--green:after {
         height: 38.5%;
@@ -2133,10 +2145,13 @@ h1, h2, h3, h4, h5, h6 {
   @media (min-width: 768px) {
     .page--butcombe .section--red {
       order: 2;
-      padding-top: 15%;
+      padding-top: 20%;
       padding-bottom: 4vw; }
       .page--butcombe .section--red .col--center {
         order: 0; } }
+  @media (min-width: 1200px) {
+    .page--butcombe .section--red {
+      padding-top: 10%; } }
   .page--butcombe .section--red p {
     color: #000; }
 .page--butcombe .section--stats {
