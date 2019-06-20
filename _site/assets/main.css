@@ -1306,6 +1306,32 @@ h1, h2, h3, h4, h5, h6 {
   .slider__item--background-aware a {
     height: 30vw;
     width: 30vw; } }
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+  border-radius: 10px; }
+
+::-webkit-scrollbar-button {
+  background: gold; }
+
+::-webkit-scrollbar-thumb {
+  background: grey; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: grey; }
+
+::-webkit-scrollbar-track {
+  background: transparent; }
+
+::-webkit-scrollbar-track-piece {
+  background: transparent; }
+
+::-webkit-scrollbar-corner {
+  background: green; }
+
+::-webkit-resizer {
+  background: pink; }
+
 .button {
   display: inline-block;
   border: 0px;
