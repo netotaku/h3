@@ -1557,6 +1557,7 @@ h1, h2, h3, h4, h5, h6 {
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 @media (min-width: 768px) {
   .quote.quote--75 {
     width: 75%; } }
@@ -1567,6 +1568,8 @@ h1, h2, h3, h4, h5, h6 {
 =======
 <<<<<<< Updated upstream
 =======
+=======
+>>>>>>> undoing regression
 @media only screen and (min-width: 900px) {
   .quote.quote--75 {
     width: 75%; } }
@@ -1574,10 +1577,13 @@ h1, h2, h3, h4, h5, h6 {
   .quote.quote--50 {
     width: 50%; } }
 
+<<<<<<< HEAD
 >>>>>>> Stashed changes
 >>>>>>> merge
 =======
 >>>>>>> generating
+=======
+>>>>>>> undoing regression
 .page--budvar .hero__inner, .page--budvar .hero__content {
   color: #FFF; }
   .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
