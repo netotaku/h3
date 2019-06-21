@@ -4,7 +4,10 @@ $budvar-white: #FFFEF8;
 .page--budvar {
 
   .text--center {
-    text-align: center;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
   }
 
   .hero__inner, .hero__content {
@@ -78,13 +81,17 @@ $budvar-white: #FFFEF8;
 
   .section--slider-landscape {
     .slider__item__image {
-      width: 50vw;
+      @include media-breakpoint-up(md) {
+        width: 50vw;
+      }
     }
   }
 
   .section--slider-budvar {
     .slider__item__image {
-      width: 45vw;
+      @include media-breakpoint-up(md) {
+        width: 45vw;;
+      }
     }
   }
 
@@ -135,6 +142,10 @@ $budvar-white: #FFFEF8;
     margin: auto;
     overflow: hidden;
 
+    @include media-breakpoint-down(md) {
+      padding-bottom: 0 !important;
+    }
+
     .row {
       .col-xs-12 {
         margin-bottom: $gutter*2;
@@ -167,8 +178,15 @@ $budvar-white: #FFFEF8;
     }
   }
 
+  .section--font {}
+
   .budvar-font {
-    margin-bottom: 4rem;
+    margin-bottom: $gutter*2;
+    margin-top: $gutter*2;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 4rem;
+    }
   }
 
   .section--labels {

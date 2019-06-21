@@ -7,6 +7,35 @@ $v-red: #ff0153;
   
   .section--v-blue {
     background-color: $v-blue;
+    color: #fff;
+  }
+
+  .section--animation {
+
+    @include media-breakpoint-down(md) {
+      .anim__vid {
+        order: 1;
+        margin-bottom: $gutter*2;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 400px;
+      }
+  
+      .anim__text {
+        order: 2;
+      }
+    }
+
+
+    @include media-breakpoint-up(md) {
+      .anim__vid {
+        order: 1;
+      }
+  
+      .anim__text {
+        order: 1;
+      }
+    }
   }
 
   .section--v-yellow {
@@ -15,5 +44,6 @@ $v-red: #ff0153;
 
   .section--v-red {
     background-color: $v-red;
+    color: #fff;
   }
 }

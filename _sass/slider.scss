@@ -62,6 +62,27 @@
     }
 }
 
+.slider--min {
+    .slider__item__image {
+        min-width: 85vw;
+
+        @include media-breakpoint-up(md) {
+            min-width: initial;
+        }
+    }
+
+}
+
+.slider--min-laptop {
+    .slider__item__image {
+        min-width: 500px;
+
+        @include media-breakpoint-up(md) {
+            min-width: initial;
+        }
+    }
+}
+
 @media only screen and (min-width: $max-width){
     .slider{
         &__item{  

@@ -19,7 +19,9 @@ $ldo-blue: #0001d6;
 
   .slider--50 {
     .slider__item__image {
-      width: 50vw;
+      @include media-breakpoint-up(md) {
+        width: 50vw;
+      }
     }
   }
 
