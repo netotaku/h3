@@ -951,6 +951,10 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 20px; }
     .u-columns--two {
       column-count: 2; } }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    * {
+      letter-spacing: -0.03em; } } }
 .page__content {
   position: relative;
   z-index: 1; }
