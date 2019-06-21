@@ -58,6 +58,13 @@ $crestron-blue: #007C99;
       z-index: 0;
       background-color: $crestron-blue;
     }
+
+    &.section--reverse {
+      &:after {
+        top: auto;
+        bottom: 0;
+      }
+    }
   }
 
   .text--center {
