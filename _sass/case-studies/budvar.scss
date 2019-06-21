@@ -10,8 +10,34 @@ $budvar-white: #FFFEF8;
     }
   }
 
+  .desktop-title {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding-top: $gutter*2;
+      padding-left: $gutter;
+      padding-right: $gutter;
+    }
+  }
+
+  .hero__left {
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+  }
+
+  .mobile-title {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
   .hero__inner, .hero__content {
-    color: #FFF;
+
+    @include media-breakpoint-up(md) {
+      color: #FFF;
+    }
 
     h1 {
       @include media-breakpoint-up(md) {
@@ -32,10 +58,21 @@ $budvar-white: #FFFEF8;
   }
 
   .hero__inner {
-    background-color: #151515;
+
+    height: 500px;
+    background-image: url('/assets/img/case-studies/budvar/cans_bg.jpg');
     background-size: contain;
+    background-position: center;
+    background-color: #151515;
     background-repeat: no-repeat;
-    background-position: bottom right;
+
+    
+    @include media-breakpoint-up(md) {
+      background-image: url('/assets/img/case-studies/budvar/budvar_cans_dark_background.jpg');
+      background-color: #151515;
+      background-position: bottom right;
+      height: 100%;
+    }
   }
 
   .section--red {
@@ -164,7 +201,6 @@ $budvar-white: #FFFEF8;
     h1 {
       font-size: 2.5rem;
       margin-bottom: 50px;
-
 
       @include media-breakpoint-up(md) {
         font-size: 5rem;

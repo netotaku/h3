@@ -1589,15 +1589,9 @@ h3 {
 .section--peak-mask--white .peak-mask__peak__mask path {
   fill: #ffffff; }
 .section--peak-mask--b-grey .peak-mask__peak::after, .section--peak-mask--b-grey .peak-mask__peak::before {
-  background: #000; }
-  @media (min-width: 768px) {
-    .section--peak-mask--b-grey .peak-mask__peak::after, .section--peak-mask--b-grey .peak-mask__peak::before {
-      background: #141414; } }
+  background: #141414; }
 .section--peak-mask--b-grey .peak-mask__peak__mask path {
-  fill: #000; }
-  @media (min-width: 768px) {
-    .section--peak-mask--b-grey .peak-mask__peak__mask path {
-      fill: #141414; } }
+  fill: #141414; }
 
 .hr {
   height: 23px;
@@ -1753,23 +1747,48 @@ h3 {
 @media (min-width: 768px) {
   .page--budvar .text--center {
     text-align: center; } }
-.page--budvar .hero__inner, .page--budvar .hero__content {
-  color: #FFF; }
+.page--budvar .desktop-title {
+  display: none; }
   @media (min-width: 768px) {
-    .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
-      font-size: 4rem; } }
-  @media (min-width: 992px) {
-    .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
-      font-size: 5rem; } }
-  .page--budvar .hero__inner strong, .page--budvar .hero__inner h1, .page--budvar .hero__content strong, .page--budvar .hero__content h1 {
-    color: #DA291C; }
-  .page--budvar .hero__inner .section__left, .page--budvar .hero__content .section__left {
-    padding-left: 2rem; }
+    .page--budvar .desktop-title {
+      display: block;
+      padding-top: 40px;
+      padding-left: 20px;
+      padding-right: 20px; } }
+@media (min-width: 768px) {
+  .page--budvar .hero__left {
+    padding-top: 0; } }
+.page--budvar .mobile-title {
+  display: block; }
+  @media (min-width: 768px) {
+    .page--budvar .mobile-title {
+      display: none; } }
+@media (min-width: 768px) {
+  .page--budvar .hero__inner, .page--budvar .hero__content {
+    color: #FFF; } }
+@media (min-width: 768px) {
+  .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
+    font-size: 4rem; } }
+@media (min-width: 992px) {
+  .page--budvar .hero__inner h1, .page--budvar .hero__content h1 {
+    font-size: 5rem; } }
+.page--budvar .hero__inner strong, .page--budvar .hero__inner h1, .page--budvar .hero__content strong, .page--budvar .hero__content h1 {
+  color: #DA291C; }
+.page--budvar .hero__inner .section__left, .page--budvar .hero__content .section__left {
+  padding-left: 2rem; }
 .page--budvar .hero__inner {
-  background-color: #151515;
+  height: 500px;
+  background-image: url("/assets/img/case-studies/budvar/cans_bg.jpg");
   background-size: contain;
-  background-repeat: no-repeat;
-  background-position: bottom right; }
+  background-position: center;
+  background-color: #151515;
+  background-repeat: no-repeat; }
+  @media (min-width: 768px) {
+    .page--budvar .hero__inner {
+      background-image: url("/assets/img/case-studies/budvar/budvar_cans_dark_background.jpg");
+      background-color: #151515;
+      background-position: bottom right;
+      height: 100%; } }
 .page--budvar .section--red {
   background-color: #DA291C; }
 .page--budvar .section--white {

@@ -171,17 +171,11 @@
             .peak-mask__peak{
                 &::after,
                 &::before{
-                    background: #000;
-                    @include media-breakpoint-up(md) {
-                        background: #141414;
-                    }
+                    background: #141414;
                 }
                 &__mask{                
                     path{
-                        fill: #000;
-                        @include media-breakpoint-up(md) {
-                            fill: #141414;
-                        }
+                        fill: #141414;
                     }
                 } 
             }
