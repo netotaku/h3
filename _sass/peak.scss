@@ -53,6 +53,12 @@
     bottom: 0px;
     width: 100%;
 
+    &__holder{
+        width: 30px;
+        height: 11.11px;
+        overflow: hidden;
+    }
+
     &__peak{
         display: flex;
         align-items: center;
@@ -68,10 +74,11 @@
             flex:1;
             height: 11px;            
         }
-        &__mask{
+        &__mask{            
             display: block;
-            width: 30px;
-            height: 11.11px;
+            margin-left: -14px;
+            width: 58px;
+            height: 58px;
             path{
                 fill: $yellow;
             }
@@ -82,14 +89,19 @@
 
 @media only screen and (min-width: $max-width){
     .peak-mask{
+        &__holder{
+            width: 54px;
+            height: 20px;            
+        }
         &__peak{
             &::after,
             &::before{
                 height: 20px;            
             }
-            &__mask{                
-                width: 54px;
-                height: 20px;                
+            &__mask{    
+                margin-left: -23px;            
+                width: 100px;
+                height: 100px;                
             }
         }
     }

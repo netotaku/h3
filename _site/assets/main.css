@@ -1499,6 +1499,10 @@ h1, h2, h3, h4, h5, h6 {
   position: absolute;
   bottom: 0px;
   width: 100%; }
+  .peak-mask__holder {
+    width: 30px;
+    height: 11.11px;
+    overflow: hidden; }
   .peak-mask__peak {
     display: flex;
     align-items: center;
@@ -1514,17 +1518,22 @@ h1, h2, h3, h4, h5, h6 {
       height: 11px; }
     .peak-mask__peak__mask {
       display: block;
-      width: 30px;
-      height: 11.11px; }
+      margin-left: -14px;
+      width: 58px;
+      height: 58px; }
       .peak-mask__peak__mask path {
         fill: #FFE21F; }
 
 @media only screen and (min-width: 900px) {
+  .peak-mask__holder {
+    width: 54px;
+    height: 20px; }
   .peak-mask__peak::after, .peak-mask__peak::before {
     height: 20px; }
   .peak-mask__peak__mask {
-    width: 54px;
-    height: 20px; } }
+    margin-left: -23px;
+    width: 100px;
+    height: 100px; } }
 .section--peak-mask--none .peak-mask {
   display: none; }
 .section--peak-mask--red .peak-mask__peak::after, .section--peak-mask--red .peak-mask__peak::before {
