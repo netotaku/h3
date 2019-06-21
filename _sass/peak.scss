@@ -17,6 +17,10 @@
     &--show{
         display: block;
     }
+    &--mask{
+        bottom: 0px;
+        top: auto;
+    }
 }
 
 .peak--white {
@@ -42,3 +46,113 @@
         }
     }
 } 
+
+
+.peak-mask{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    &__peak{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &::after,
+        &::before{
+            display: flex;
+            content: '';
+            background: $yellow;
+            flex:1;
+            height: 11px;            
+        }
+        &__mask{
+            display: block;
+            width: 30px;
+            height: 11.11px;
+            path{
+                fill: $yellow;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: $max-width){
+    .peak-mask{
+        &__peak{
+            &::after,
+            &::before{
+                height: 20px;            
+            }
+            &__mask{                
+                width: 54px;
+                height: 20px;                
+            }
+        }
+    }
+} 
+
+.section{
+    &--peak-mask--none{
+        .peak-mask{
+            display: none;
+        }
+    }
+    &--peak-mask{
+        &--red{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: $red;
+                }
+                &__mask{                
+                    path{
+                        fill: $red;
+                    }
+                } 
+            }          
+        }
+        &--blue{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: $blue;
+                }
+                &__mask{                
+                    path{
+                        fill: $blue;
+                    }
+                } 
+            }
+        }
+        &--black{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: #000000;
+                }
+                &__mask{                
+                    path{
+                        fill: #000000;
+                    }
+                } 
+            }
+        }
+        &--white{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: #ffffff;
+                }
+                &__mask{                
+                    path{
+                        fill: #ffffff;
+                    }
+                } 
+            }
+        }
+    }
+}
