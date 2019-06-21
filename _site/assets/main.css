@@ -1034,7 +1034,8 @@ h1, h2, h3, h4, h5, h6 {
     .menu__base {
       bottom: 4vw; }
     .menu__link {
-      font-size: 1.6em; }
+      font-size: 1.6em;
+      font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
   .is-active .menu__close {
     width: 35px; } }
@@ -1543,6 +1544,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff; }
 .section--peak-mask--white .peak-mask__peak__mask path {
   fill: #ffffff; }
+.section--peak-mask--b-grey .peak-mask__peak::after, .section--peak-mask--b-grey .peak-mask__peak::before {
+  background: #141414; }
+.section--peak-mask--b-grey .peak-mask__peak__mask path {
+  fill: #141414; }
 
 .hr {
   height: 23px;
