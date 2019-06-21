@@ -37,9 +37,7 @@
   display: flex;
   flex: 0 1 auto;
   flex-direction: row;
-  flex-wrap: wrap;
-  margin-right: -10px;
-  margin-left: -10px; }
+  flex-wrap: wrap; }
   .row:before, .row:after {
     display: none; }
   .row .reverse {
@@ -930,7 +928,8 @@ h1, h2, h3, h4, h5, h6 {
 .u-column {
   flex-direction: column;
   justify-content: center;
-  display: flex; }
+  display: flex;
+  align-items: initial; }
 
 @media only screen and (min-width: 900px) {
   body {
@@ -1171,7 +1170,7 @@ h1, h2, h3, h4, h5, h6 {
     max-width: 900px;
     margin: auto; }
   .section--padding {
-    padding: 20px; }
+    padding: 40px 20px; }
   .section--center {
     text-align: center; }
   .section--white {
@@ -1235,6 +1234,8 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px; }
 .typography p {
   font-weight: bold; }
+.typography strong {
+  font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 .typography blockquote {
   background: url(/assets/svg/quote.svg) no-repeat;
   padding-top: 20px;
@@ -1651,7 +1652,6 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1em; }
 
 .animation {
-  display: none;
   height: auto;
   max-width: 100%; }
   @media (min-width: 768px) {
@@ -1666,11 +1666,27 @@ h1, h2, h3, h4, h5, h6 {
     width: 50%; } }
 
 .page--principles .section--v-blue {
-  background-color: #0000dd; }
+  background-color: #0000dd;
+  color: #fff; }
+@media (max-width: 991px) {
+  .page--principles .section--animation .anim__vid {
+    order: 1;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 400px; }
+  .page--principles .section--animation .anim__text {
+    order: 2; } }
+@media (min-width: 768px) {
+  .page--principles .section--animation .anim__vid {
+    order: 1; }
+  .page--principles .section--animation .anim__text {
+    order: 1; } }
 .page--principles .section--v-yellow {
   background-color: #ffe522; }
 .page--principles .section--v-red {
-  background-color: #ff0153; }
+  background-color: #ff0153;
+  color: #fff; }
 
 .nav-bar {
   width: 100%;
@@ -1950,10 +1966,10 @@ h1, h2, h3, h4, h5, h6 {
     z-index: 0;
     background-color: #007C99; }
 .page--crestron .text--center {
-  text-align: center;
-  margin-bottom: 2rem; }
+  margin-bottom: 40px; }
   @media (min-width: 768px) {
     .page--crestron .text--center {
+      text-align: center;
       margin-bottom: 4rem; } }
 .page--crestron .section--white-triangle {
   background-color: #007C99;
@@ -1988,30 +2004,26 @@ h1, h2, h3, h4, h5, h6 {
     position: relative;
     z-index: 2; }
 .page--crestron .section--logos .row {
-  margin-top: 3rem; }
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .page--crestron .section--logos .row {
+      margin-top: 3rem; } }
   .page--crestron .section--logos .row .col-lg-3 {
     justify-content: center;
     display: flex;
     flex-direction: column;
-    margin-bottom: 2rem; }
+    margin-bottom: 20px; }
     @media (min-width: 768px) {
       .page--crestron .section--logos .row .col-lg-3 {
         margin-bottom: 0; } }
     .page--crestron .section--logos .row .col-lg-3 img {
-      margin: 0;
-      margin-bottom: 2rem; }
-      @media (max-width: 991px) {
-        .page--crestron .section--logos .row .col-lg-3 img.section__logo {
-          max-width: 250px;
-          margin: 0px auto;
-          margin-bottom: 2rem; } }
-      @media (max-width: 991px) {
-        .page--crestron .section--logos .row .col-lg-3 img.section__logo--sonos {
-          max-width: 180px;
-          margin: 0px auto;
-          margin-bottom: 2rem; } }
-  .page--crestron .section--logos .row .col-md-9 {
-    padding: 4rem; }
+      margin: 0; }
+      .page--crestron .section--logos .row .col-lg-3 img.section__logo {
+        max-width: 200px;
+        margin: 0px auto;
+        margin-bottom: 1rem; }
+      .page--crestron .section--logos .row .col-lg-3 img.section__logo--sonos {
+        max-width: 130px; }
 .page--crestron .section--logos .row--second .col-lg-3 {
   order: 0; }
   @media (min-width: 768px) {
@@ -2025,7 +2037,10 @@ h1, h2, h3, h4, h5, h6 {
 .page--crestron .section--c-blue {
   background-color: #007C99; }
 .page--crestron .stats__image, .page--crestron .stats {
-  margin-top: 4rem; }
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .page--crestron .stats__image, .page--crestron .stats {
+      margin-top: 4rem; } }
 .page--crestron .stats {
   color: #fff;
   text-align: center; }
@@ -2256,7 +2271,7 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     bottom: -14.8%;
     left: 0;
-    z-index: 100;
+    z-index: 9;
     background-size: cover; }
     @media (min-width: 576px) {
       .page--butcombe .section--green:after {

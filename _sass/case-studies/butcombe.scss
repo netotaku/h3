@@ -155,7 +155,7 @@ $butcombe-blue: #008a9f;
       position: absolute;
       bottom: -14.8%;
       left: 0;
-      z-index: 100;
+      z-index: 9;
       background-size: cover;
 
       @include media-breakpoint-up(sm) {

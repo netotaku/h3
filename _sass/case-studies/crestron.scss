@@ -60,10 +60,11 @@ $crestron-blue: #007C99;
   }
 
   .text--center {
-    text-align: center;
-    margin-bottom: 2rem;
+
+    margin-bottom: $gutter*2;
 
     @include media-breakpoint-up(md) {
+      text-align: center;
       margin-bottom: 4rem;
     }
   }
@@ -114,13 +115,18 @@ $crestron-blue: #007C99;
 
   .section--logos {
     .row {
-      margin-top: 3rem;
+
+      margin-top: $gutter*2;
+
+      @include media-breakpoint-up(md) {
+        margin-top: 3rem;
+      }
 
       .col-lg-3 {
         justify-content: center;
         display: flex;
         flex-direction: column;
-        margin-bottom: 2rem;
+        margin-bottom: $gutter;
 
         @include media-breakpoint-up(md) {
           margin-bottom: 0;
@@ -128,28 +134,17 @@ $crestron-blue: #007C99;
 
         img {
           margin: 0;
-          margin-bottom: 2rem;
 
           &.section__logo {
-            @include media-breakpoint-down(md) {
-              max-width: 250px;
+              max-width: 200px;
               margin: 0px auto;
-              margin-bottom: 2rem;
-            }
+              margin-bottom: 1rem;
           }
 
           &.section__logo--sonos {
-            @include media-breakpoint-down(md) {
-              max-width: 180px;
-              margin: 0px auto;
-              margin-bottom: 2rem;
-            }
+              max-width: 130px;
           }
         }
-      }
-
-      .col-md-9 {
-        padding: 4rem;
       }
     }
 
@@ -178,7 +173,10 @@ $crestron-blue: #007C99;
   }
 
   .stats__image, .stats {
-    margin-top: 4rem;
+    margin-top: $gutter*2;
+    @include media-breakpoint-up(md) {
+      margin-top: 4rem;
+    }
   }
 
   .stats {

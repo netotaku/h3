@@ -8,7 +8,7 @@
         margin: auto;
     }
     &--padding{
-        padding: $gutter;
+        padding: $gutter*2 $gutter;
     }
     &--center{
         text-align: center;
