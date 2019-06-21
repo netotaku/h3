@@ -1084,6 +1084,8 @@ h1, h2, h3, h4, h5, h6 {
       z-index: 1; }
     .hero__layer--two {
       z-index: 5; }
+    .hero__layer--three {
+      z-index: 10; }
   .hero--minimal .hero__inner {
     padding-top: 20%; }
 
@@ -1469,6 +1471,9 @@ h1, h2, h3, h4, h5, h6 {
     top: -1px; }
   .peak--show {
     display: block; }
+  .peak--mask {
+    bottom: 0px;
+    top: auto; }
 
 .peak--white {
   background-color: #FFF; }
@@ -1483,6 +1488,36 @@ h1, h2, h3, h4, h5, h6 {
 @media only screen and (min-width: 900px) {
   .peak__svg {
     width: 60px; } }
+.peak-mask {
+  position: absolute;
+  bottom: 0px;
+  width: 100%; }
+  .peak-mask__peak {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap; }
+    .peak-mask__peak::after, .peak-mask__peak::before {
+      display: flex;
+      content: '';
+      background: #FFE21F;
+      flex: 1;
+      height: 11px; }
+    .peak-mask__peak__mask {
+      display: block;
+      width: 30px;
+      height: 11.11px; }
+      .peak-mask__peak__mask path {
+        fill: #FFE21F; }
+
+@media only screen and (min-width: 900px) {
+  .peak-mask__peak::after, .peak-mask__peak::before {
+    height: 20px; }
+  .peak-mask__peak__mask {
+    width: 54px;
+    height: 20px; } }
 .hr {
   height: 23px;
   border: 0px; }

@@ -17,6 +17,10 @@
     &--show{
         display: block;
     }
+    &--mask{
+        bottom: 0px;
+        top: auto;
+    }
 }
 
 .peak--white {
@@ -39,6 +43,54 @@
     .peak{
         &__svg{            
             width: 60px;            
+        }
+    }
+} 
+
+
+.peak-mask{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+
+    &__peak{
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        &::after,
+        &::before{
+            display: flex;
+            content: '';
+            background: $yellow;
+            flex:1;
+            height: 11px;            
+        }
+        &__mask{
+            display: block;
+            width: 30px;
+            height: 11.11px;
+            path{
+                fill: $yellow;
+            }
+        }
+    }
+    
+}
+
+@media only screen and (min-width: $max-width){
+    .peak-mask{
+        &__peak{
+            &::after,
+            &::before{
+                height: 20px;            
+            }
+            &__mask{                
+                width: 54px;
+                height: 20px;                
+            }
         }
     }
 } 

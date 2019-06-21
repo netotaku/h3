@@ -48,6 +48,10 @@
     &--banner{
         height: 185px;
     }
+
+    &--peak-mask{
+        // -webkit-mask-box-image: url("/assets/svg/mask.svg") 35 repeat;
+    }
    
     &--peak{
         .peak{
