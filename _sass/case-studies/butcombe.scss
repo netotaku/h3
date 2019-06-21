@@ -137,6 +137,7 @@ $butcombe-blue: #008a9f;
   .section--green {
     background-color: $butcombe-green;
     padding-bottom: 0;
+    overflow: visible;
 
     @include media-breakpoint-up(md) {
       padding-top: 4rem;
@@ -150,7 +151,7 @@ $butcombe-blue: #008a9f;
       content: '';
       display: block;
       width: 100%;
-      background-image: url(./img/case-studies/butcombe/green_triangle.svg);
+      background-image: url('./img/case-studies/butcombe/green_triangle.svg');
       height: 15%;
       position: absolute;
       bottom: -14.8%;

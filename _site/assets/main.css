@@ -2336,7 +2336,8 @@ h3 {
         width: auto; } }
 .page--butcombe .section--green {
   background-color: #09cc31;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  overflow: visible; }
   @media (min-width: 768px) {
     .page--butcombe .section--green {
       padding-top: 4rem; } }
@@ -2346,7 +2347,7 @@ h3 {
     content: '';
     display: block;
     width: 100%;
-    background-image: url(./img/case-studies/butcombe/green_triangle.svg);
+    background-image: url("./img/case-studies/butcombe/green_triangle.svg");
     height: 15%;
     position: absolute;
     bottom: -14.8%;
