@@ -2,6 +2,7 @@
     background-position: center;
     background-size: cover;
     position: relative;
+    overflow: hidden;
 
     &__measure{
         max-width: 900px;
@@ -47,10 +48,6 @@
 
     &--banner{
         height: 185px;
-    }
-
-    &--peak-mask{
-        // -webkit-mask-box-image: url("/assets/svg/mask.svg") 35 repeat;
     }
    
     &--peak{

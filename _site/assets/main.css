@@ -1182,7 +1182,8 @@ h3 {
 .section {
   background-position: center;
   background-size: cover;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .section__measure {
     max-width: 900px;
     margin: auto; }
