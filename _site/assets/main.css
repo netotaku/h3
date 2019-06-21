@@ -1251,7 +1251,7 @@ h3 {
 .typography h1:not(:last-child), .typography h2:not(:last-child), .typography h3:not(:last-child), .typography h4:not(:last-child), .typography h5:not(:last-child), .typography h6:not(:last-child), .typography p:not(:last-child) {
   margin-bottom: 20px; }
 .typography p {
-  font-weight: bold; }
+  font-family: 'gilroybold', Helvetica, Arial, sans-serif; }
 .typography strong {
   font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 .typography blockquote {
