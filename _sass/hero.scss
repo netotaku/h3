@@ -82,9 +82,13 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    padding-top: 53%;
+    padding-top: 100%;
     overflow-y: hidden;
     position: relative;
+
+    @include media-breakpoint-up(md) {
+        padding-top: 53%;
+    }
 }
 
 .hero__content {

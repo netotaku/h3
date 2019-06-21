@@ -11,7 +11,12 @@ $budvar-white: #FFFEF8;
     color: #FFF;
 
     h1 {
-      font-size: 3rem;
+      @include media-breakpoint-up(md) {
+        font-size: 4rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 5rem;
+      }
     }
 
     strong, h1 {
@@ -56,8 +61,6 @@ $budvar-white: #FFFEF8;
 
   .section--red-triangle {
     overflow: hidden;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
     background-color: $budvar-white;
     &:before {
       content: '';

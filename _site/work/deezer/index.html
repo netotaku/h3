@@ -12,7 +12,7 @@
 <link rel="icon" type="image/png" href="/assets/img/favicon.png" />
 
 <script src="https://use.fontawesome.com/610695cb43.js"></script>
-<link rel="stylesheet" href="/assets/main.css?1561106700">
+<link rel="stylesheet" href="/assets/main.css?1561107434">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@" />
@@ -34,12 +34,81 @@
     <body>            
 
         <div class="page">
-            
             <div class="page__content content page--deezer">
                 
     <div class="group">
         
-            <a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a> 
+            <div id="js-header" class="nav-bar">
+    <a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a> 
+    <div id="js-menu" class="menu-top">  
+        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
+        <div v-if="opened" class="page__overlay" v-cloak>
+            <menu class="page__menu menu">
+                <ul>
+                
+                    <li>
+                        <a href="/principles" class="menu__link">Principles</a>
+                        
+                    </li>
+                
+                    <li>
+                        <a href="/work" class="menu__link">Work</a>
+                                                    
+                            <ul>
+                                
+                                    <li><a href="/work/livenation" class="menu__link">Ticketmaster</a></li>
+                                
+                                    <li><a href="/work/budvar" class="menu__link">Budweiser Budvar</a></li>
+                                
+                                    <li><a href="/work/deezer" class="menu__link">Deezer</a></li>
+                                
+                                    <li><a href="/work/ldo" class="menu__link">London Designer Outlet</a></li>
+                                
+                                    <li><a href="/work/butcombe" class="menu__link">Butcombe Brewing Co.</a></li>
+                                
+                                    <li><a href="/work/crestron" class="menu__link">Crestron</a></li>
+                                
+                            </ul>    
+                        
+                    </li>
+                
+                    <li>
+                        <a href="/culture" class="menu__link">Culture</a>
+                        
+                    </li>
+                
+                </ul>
+                <div class="menu__base contact">                    
+                    <div class="contact">
+                        <h3 class="contact__heading">Get in touch</h3>
+<p>
+    <span class="contact__item contact__item--tel"><a href="tel:01179277841">0117 927 7841</a></span>
+    <span class="contact__item contact__item--email"><a href="mailto:hello@wearehalo.co.uk">hello@wearehalo.co.uk</a></span>
+    <span class="contact__item contact__item--address">470 Bath Rd, Bristol BS4 3AP</span>
+</p>
+
+<div class="contact__social">
+    <a target="_blank" class="contact__social__link" href="https://twitter.com/weare_halo"><i class="fa fa-twitter"></i></a>
+    <a target="_blank" class="contact__social__link" href="https://www.instagram.com/wearehalo_bristol/"><i class="fa fa-instagram"></i></a>
+    <a target="_blank" class="contact__social__link" href="https://www.linkedin.com/company/halo-media-communications-ltd/"><i class="fa fa-linkedin"></i></a>
+</div>
+
+<p class="contact__footer">
+    <a href="/cookies-and-privacy">Cookies &amp; Privacy</a> /
+    <a href="/contact">Contact</a> /
+    <a href="/careers">Careers</a>
+</p>
+
+<p class="contact__copyright">&copy; Copyright Halo Media Communications 2019</p>
+                    </div>
+                </div>
+                <a v-on:click.prevent="opened = false" href="#">
+                    <img class="menu__close" src="/assets/svg/close.svg"></a>
+            </menu>
+        </div>
+    </div>
+</div>
+
         
             
         
@@ -159,7 +228,7 @@
     <div class="section__bottom quote quote--75">
         <blockquote>Halo, from the very beginning, have understood how to create a meaningful visual language for Deezer. They have supported us in driving significant increases in subscribers, interactions and usage. They have proven to be a committed partner and creative force for good time and time again.
         </blockquote>
-        <cite>Chris XXX</cite>
+        <cite>Chris Baughen</cite>
     </div>
 </div>
 
@@ -245,7 +314,7 @@
     </svg>
 </div>
 
-    <p><a class="button button--black" href="/contact">Subscribe</a></p>
+    <p><a class="button button--black" href="/contact">Request a case study</a></p>
 
 </section>
         
@@ -343,75 +412,6 @@
     </footer>
 
 </div>
-            
-            <div id="js-menu" class="menu-top">  
-                <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
-                <div v-if="opened" class="page__overlay" v-cloak>
-                    <menu class="page__menu menu">
-                        <ul>
-                        
-                            <li>
-                                <a href="/principles" class="menu__link">Principles</a>
-                                
-                            </li>
-                        
-                            <li>
-                                <a href="/work" class="menu__link">Work</a>
-                                                            
-                                    <ul>
-                                        
-                                            <li><a href="/work/livenation" class="menu__link">Ticketmaster</a></li>
-                                        
-                                            <li><a href="/work/budvar" class="menu__link">Budweiser Budvar</a></li>
-                                        
-                                            <li><a href="/work/deezer" class="menu__link">Deezer</a></li>
-                                        
-                                            <li><a href="/work/ldo" class="menu__link">London Designer Outlet</a></li>
-                                        
-                                            <li><a href="/work/butcombe" class="menu__link">Butcombe Brewing Co.</a></li>
-                                        
-                                            <li><a href="/work/crestron" class="menu__link">Crestron</a></li>
-                                        
-                                    </ul>    
-                                
-                            </li>
-                        
-                            <li>
-                                <a href="/culture" class="menu__link">Culture</a>
-                                
-                            </li>
-                        
-                        </ul>
-                        <div class="menu__base contact">                    
-                            <div class="contact">
-                                <h3 class="contact__heading">Get in touch</h3>
-<p>
-    <span class="contact__item contact__item--tel"><a href="tel:01179277841">0117 927 7841</a></span>
-    <span class="contact__item contact__item--email"><a href="mailto:hello@wearehalo.co.uk">hello@wearehalo.co.uk</a></span>
-    <span class="contact__item contact__item--address">470 Bath Rd, Bristol BS4 3AP</span>
-</p>
-
-<div class="contact__social">
-    <a target="_blank" class="contact__social__link" href="https://twitter.com/weare_halo"><i class="fa fa-twitter"></i></a>
-    <a target="_blank" class="contact__social__link" href="https://www.instagram.com/wearehalo_bristol/"><i class="fa fa-instagram"></i></a>
-    <a target="_blank" class="contact__social__link" href="https://www.linkedin.com/company/halo-media-communications-ltd/"><i class="fa fa-linkedin"></i></a>
-</div>
-
-<p class="contact__footer">
-    <a href="/cookies-and-privacy">Cookies &amp; Privacy</a> /
-    <a href="/contact">Contact</a> /
-    <a href="/careers">Careers</a>
-</p>
-
-<p class="contact__copyright">&copy; Copyright Halo Media Communications 2019</p>
-                            </div>
-                        </div>
-                        <a v-on:click.prevent="opened = false" href="#">
-                            <img class="menu__close" src="/assets/svg/close.svg"></a>
-                    </menu>
-                </div>
-            </div>
-
         </div>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                
@@ -442,6 +442,26 @@
             var menu = new Vue({ el: '#js-menu', data: { opened: false } });
 
         </script>
+        <script>
+            var scrollpos = window.scrollY
+            var header = document.getElementById("js-header");
+            var header_height = header.offsetHeight
+            var add_class_on_scroll = function() {
+                header.classList.add("is-active");
+            }
+            var remove_class_on_scroll = function()  {
+                header.classList.remove("is-active");
+            }
+
+            window.addEventListener('scroll', function() {
+                scrollpos = window.scrollY;
+                if (scrollpos >= header_height) {
+                    add_class_on_scroll()
+                }
+                else { remove_class_on_scroll() }
+            });
+        </script>
+        
         
     </body>
 </html>

@@ -1,1 +1,31 @@
-<a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a> 
+<div id="js-header" class="nav-bar">
+    <a class="page__brand" href="/"><img src="/assets/svg/brand.svg"></a> 
+    <div id="js-menu" class="menu-top">  
+        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
+        <div v-if="opened" class="page__overlay" v-cloak>
+            <menu class="page__menu menu">
+                <ul>
+                {% for link in site.data.map %}
+                    <li>
+                        <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
+                        {% if link.children %}                            
+                            <ul>
+                                {% for child in link.children %}
+                                    <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
+                                {% endfor %}
+                            </ul>    
+                        {% endif %}
+                    </li>
+                {% endfor %}
+                </ul>
+                <div class="menu__base contact">                    
+                    <div class="contact">
+                        {% include contact.html %}
+                    </div>
+                </div>
+                <a v-on:click.prevent="opened = false" href="#">
+                    <img class="menu__close" src="/assets/svg/close.svg"></a>
+            </menu>
+        </div>
+    </div>
+</div>

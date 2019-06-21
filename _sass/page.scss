@@ -24,7 +24,6 @@
         right: 0px;   
         &__open{
             display: block;
-            position: fixed;
             top: $gutter;
             right: $gutter;
             width: 35px;
@@ -32,7 +31,6 @@
     } 
     &__brand{
         display: block;
-        position: absolute;
         top: $gutter;
         left: $gutter;
         z-index: 3;
@@ -47,14 +45,25 @@
             &__open{
                 top: $gutter-lrg;
                 right: $gutter-lrg;
-                width: auto;
+                width: 59px;
             }
         } 
         &__brand{
             top: $gutter-lrg;
             left: $gutter-lrg;
-            width: auto;
+            width: 59px;
         }   
+    }
+
+    .page__menu__open, .page__brand {
+        transition: width 0.5s ease;
+        will-change: width;
+    }
+
+    .is-active {
+        .page__menu__open, .page__brand {
+            width: 35px;
+        }
     }
     
 } 

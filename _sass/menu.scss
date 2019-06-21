@@ -1,3 +1,5 @@
+$nav-spacing: 20px;
+
 .menu-top {
     // display: none;
     position: relative;
@@ -33,10 +35,11 @@
 
 @media only screen and (min-width: $max-width){
     .menu{        
-        padding: $gutter-lrg;
+        padding: $nav-spacing;
+        padding-left: 4vw;
         &__close{            
-            top: $gutter-lrg;   
-            right: $gutter-lrg;
+            top: $nav-spacing;   
+            right: $nav-spacing;
             width: auto;
         } 
         &__base{         
@@ -44,6 +47,12 @@
         }  
         &__link{
             font-size: 1.6em;
+        }
+    }
+
+    .is-active {
+        .menu__close {
+            width: 35px;
         }
     }
 } 

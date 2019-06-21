@@ -94,3 +94,60 @@
         }
     }
 } 
+
+.section{
+    &--peak-mask{
+        &--red{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: $red;
+                }
+                &__mask{                
+                    path{
+                        fill: $red;
+                    }
+                } 
+            }          
+        }
+        &--blue{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: $blue;
+                }
+                &__mask{                
+                    path{
+                        fill: $blue;
+                    }
+                } 
+            }
+        }
+        &--black{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: #000000;
+                }
+                &__mask{                
+                    path{
+                        fill: #000000;
+                    }
+                } 
+            }
+        }
+        &--white{
+            .peak-mask__peak{
+                &::after,
+                &::before{
+                    background: #ffffff;
+                }
+                &__mask{                
+                    path{
+                        fill: #ffffff;
+                    }
+                } 
+            }
+        }
+    }
+}

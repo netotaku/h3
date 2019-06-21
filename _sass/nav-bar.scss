@@ -1,0 +1,22 @@
+$nav-spacing: 20px;
+
+.nav-bar {
+  width: 100%;
+  position: fixed;
+  padding: $nav-spacing/2;
+  top: 0;
+  left: 0;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  z-index: 11;
+  transition: background-color 0.3s ease;
+
+  @include media-breakpoint-up(sm) {
+    padding: $nav-spacing;
+  }
+  
+  &.is-active {
+    background-color: #000;
+  }
+}

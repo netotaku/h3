@@ -7,38 +7,7 @@
     <body>            
 
         <div class="page">
-            
             {{ content }}
-            
-            <div id="js-menu" class="menu-top">  
-                <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>  
-                <div v-if="opened" class="page__overlay" v-cloak>
-                    <menu class="page__menu menu">
-                        <ul>
-                        {% for link in site.data.map %}
-                            <li>
-                                <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
-                                {% if link.children %}                            
-                                    <ul>
-                                        {% for child in link.children %}
-                                            <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
-                                        {% endfor %}
-                                    </ul>    
-                                {% endif %}
-                            </li>
-                        {% endfor %}
-                        </ul>
-                        <div class="menu__base contact">                    
-                            <div class="contact">
-                                {% include contact.html %}
-                            </div>
-                        </div>
-                        <a v-on:click.prevent="opened = false" href="#">
-                            <img class="menu__close" src="/assets/svg/close.svg"></a>
-                    </menu>
-                </div>
-            </div>
-
         </div>
 
         <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>                
@@ -69,6 +38,26 @@
             var menu = new Vue({ el: '#js-menu', data: { opened: false } });
 
         </script>
+        <script>
+            var scrollpos = window.scrollY
+            var header = document.getElementById("js-header");
+            var header_height = header.offsetHeight
+            var add_class_on_scroll = function() {
+                header.classList.add("is-active");
+            }
+            var remove_class_on_scroll = function()  {
+                header.classList.remove("is-active");
+            }
+
+            window.addEventListener('scroll', function() {
+                scrollpos = window.scrollY;
+                if (scrollpos >= header_height) {
+                    add_class_on_scroll()
+                }
+                else { remove_class_on_scroll() }
+            });
+        </script>
         {{ page.scripts }}
+        
     </body>
 </html>
