@@ -96,6 +96,11 @@
 } 
 
 .section{
+    &--peak-mask--none{
+        .peak-mask{
+            display: none;
+        }
+    }
     &--peak-mask{
         &--red{
             .peak-mask__peak{

@@ -1525,6 +1525,8 @@ h1, h2, h3, h4, h5, h6 {
   .peak-mask__peak__mask {
     width: 54px;
     height: 20px; } }
+.section--peak-mask--none .peak-mask {
+  display: none; }
 .section--peak-mask--red .peak-mask__peak::after, .section--peak-mask--red .peak-mask__peak::before {
   background: #FF0648; }
 .section--peak-mask--red .peak-mask__peak__mask path {
