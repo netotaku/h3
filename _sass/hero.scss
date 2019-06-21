@@ -58,6 +58,17 @@
             padding-top: 20%;
         }
     }
+
+    h1 {
+
+        @include media-breakpoint-up(sm) {
+            font-size: 3em;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 5em;
+        }
+    }
 }
 
 .hero__inner {

@@ -114,9 +114,12 @@
       @extend %deezer-gradient-horizontal;
     }
     .slider__item__image {
-      width: 50vw;
       position: relative;
       z-index: 2;
+
+      @include media-breakpoint-up(md) {
+        width: 50vw;
+      }
     }
   }
 
