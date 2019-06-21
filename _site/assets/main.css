@@ -2041,6 +2041,9 @@ h3 {
     top: 0;
     z-index: 0;
     background-color: #007C99; }
+  .page--crestron .section--half-blue.section--reverse:after {
+    top: auto;
+    bottom: 0; }
 .page--crestron .text--center {
   margin-bottom: 40px; }
   @media (min-width: 768px) {
