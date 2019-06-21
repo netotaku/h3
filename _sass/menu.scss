@@ -29,8 +29,8 @@ $nav-spacing: 20px;
         top: $gutter;   
         right: $gutter;
         width: 35px;
-    }    
-    
+    }
+
 }
 
 @media only screen and (min-width: $max-width){
@@ -47,6 +47,7 @@ $nav-spacing: 20px;
         }  
         &__link{
             font-size: 1.6em;
+            font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
         }
     }
 

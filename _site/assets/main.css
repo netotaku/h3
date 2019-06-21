@@ -951,6 +951,10 @@ h1, h2, h3, h4, h5, h6 {
     column-gap: 20px; }
     .u-columns--two {
       column-count: 2; } }
+@media not all and (min-resolution: 0.001dpcm) {
+  @supports (-webkit-appearance: none) {
+    * {
+      letter-spacing: -0.03em; } } }
 .page__content {
   position: relative;
   z-index: 1; }
@@ -1034,7 +1038,8 @@ h1, h2, h3, h4, h5, h6 {
     .menu__base {
       bottom: 4vw; }
     .menu__link {
-      font-size: 1.6em; }
+      font-size: 1.6em;
+      font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
   .is-active .menu__close {
     width: 35px; } }
@@ -1552,6 +1557,10 @@ h1, h2, h3, h4, h5, h6 {
   background: #ffffff; }
 .section--peak-mask--white .peak-mask__peak__mask path {
   fill: #ffffff; }
+.section--peak-mask--b-grey .peak-mask__peak::after, .section--peak-mask--b-grey .peak-mask__peak::before {
+  background: #141414; }
+.section--peak-mask--b-grey .peak-mask__peak__mask path {
+  fill: #141414; }
 
 .hr {
   height: 23px;
@@ -1822,6 +1831,9 @@ h1, h2, h3, h4, h5, h6 {
 
 .page--deezer .row--covers div {
   margin-bottom: 1rem; }
+.page--deezer .slider {
+  position: relative;
+  z-index: 2; }
 .page--deezer .section--covers {
   position: relative;
   overflow: hidden; }
@@ -1839,7 +1851,7 @@ h1, h2, h3, h4, h5, h6 {
     background-image: url("./img/case-studies/crestron/white_triangle.svg");
     background-size: cover;
     width: 100%;
-    padding-top: 61%;
+    padding-top: 67%;
     position: absolute;
     top: 0;
     left: 0;
@@ -1948,7 +1960,10 @@ h1, h2, h3, h4, h5, h6 {
     background-color: #007C99; }
 .page--crestron .text--center {
   text-align: center;
-  margin-bottom: 4rem; }
+  margin-bottom: 2rem; }
+  @media (min-width: 768px) {
+    .page--crestron .text--center {
+      margin-bottom: 4rem; } }
 .page--crestron .section--white-triangle {
   background-color: #007C99;
   position: relative; }
@@ -2035,6 +2050,11 @@ h1, h2, h3, h4, h5, h6 {
       text-align: left; } }
   .page--crestron .stats h2 {
     margin-bottom: 5px; }
+.page--crestron .section--collateral .col-xs-6 {
+  margin-bottom: 20px; }
+  @media (min-width: 768px) {
+    .page--crestron .section--collateral .col-xs-6 {
+      margin-bottom: 0; } }
 
 .page--ldo .section--peak--yellow {
   background-color: #FFE21F; }

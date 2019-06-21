@@ -61,7 +61,11 @@ $crestron-blue: #007C99;
 
   .text--center {
     text-align: center;
-    margin-bottom: 4rem;
+    margin-bottom: 2rem;
+
+    @include media-breakpoint-up(md) {
+      margin-bottom: 4rem;
+    }
   }
 
   .section--white-triangle {
@@ -199,6 +203,15 @@ $crestron-blue: #007C99;
 
     h2 {
       margin-bottom: 5px;
+    }
+  }
+
+  .section--collateral {
+    .col-xs-6 {
+      margin-bottom: $gutter;
+      @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+      }
     }
   }
 }

@@ -136,4 +136,12 @@ h1,h2,h3,h4,h5,h6{
             }
         }
     }
-} 
+}
+
+@media not all and (min-resolution:.001dpcm) {
+    @supports (-webkit-appearance:none) {
+        * {
+            letter-spacing: -0.03em;
+        }
+    }
+  }
