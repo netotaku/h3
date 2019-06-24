@@ -1277,10 +1277,12 @@ h3 {
     margin-top: 20px;
     font-style: normal;
     font-size: .8em; }
-.typography ul li {
-  font-family: 'gilroybold', Helvetica, Arial, sans-serif;
-  list-style-type: disc;
-  list-style-position: inside; }
+.typography ul {
+  padding-left: 20px; }
+  .typography ul li {
+    font-family: 'gilroybold', Helvetica, Arial, sans-serif;
+    list-style-type: disc;
+    list-style-position: outside; }
 .typography--black {
   color: #000; }
 .typography--blue {

@@ -35,10 +35,11 @@
     }
 
     ul {
+        padding-left: 20px;
         li {
             font-family: 'gilroybold', Helvetica, Arial, sans-serif;
             list-style-type: disc;
-            list-style-position: inside;
+            list-style-position: outside;
         }
     }
 
