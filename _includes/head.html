@@ -12,16 +12,19 @@
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="@" />
-<meta name="twitter:creator" content="@t_pk" />
+<meta name="twitter:creator" content="@weare_halo" />
 
 <!-- https://wearehalo.co.uk/assets/social-share.jpg -->
-
-<meta property="og:image" content=""/>
-<meta property="og:title" content="{{ page.title }}"/>
-<meta property="og:description" content="{{ description }}"/>
-<meta property="og:site_name" content="{{ site.title }}"/>
+{% if page.share_image %}
+  <meta property="og:image" content="/assets/img/{{ page.share_image }}"/>
+{% else %}
+  <meta property="og:image" content="/assets/img/social_share.jpg"/>
+{% endif %}
+<meta property="og:title" content="❚ ♥ ❚"/>
+<meta property="og:description" content="{{ page.share_description }}"/>
+<meta property="og:site_name" content="Halo ❚ ♥ ❚"/>
 <meta property="og:url" content="{{ site.url }}{{ page.url }}"/>
 <meta property="og:type" content="website" />
-<meta property="fb:app_id" content="" /> 
+<meta property="fb:app_id" content="" />
 
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }} Atom" href="{{ site.url }}/atom.xml" />

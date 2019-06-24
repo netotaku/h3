@@ -17,6 +17,12 @@
 
 .page--deezer {
   .row--covers {
+    margin-left: -10px;
+    margin-right: -10px;
+
+    @include media-breakpoint-up(md) {
+      margin: auto;
+    }
     div {
       margin-bottom: 1rem;
     }
@@ -81,13 +87,13 @@
         height: 50%;
         width: 200vw;
         position: absolute;
-        bottom: -2rem;
+        bottom: -41px;
         margin-left: -50vw;
         margin-right: -50vw;
         background-color: #000;
 
         @include media-breakpoint-up(md) {
-          bottom: -4rem;
+          bottom: -5rem;
         }
       }
 

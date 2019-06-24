@@ -1036,6 +1036,9 @@ h3 {
     top: 20px;
     right: 20px;
     width: 35px; }
+  .menu__link {
+    font-size: 1.6em;
+    font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
 @media only screen and (min-width: 900px) {
   .menu {
@@ -1047,9 +1050,6 @@ h3 {
       width: auto; }
     .menu__base {
       bottom: 4vw; }
-    .menu__link {
-      font-size: 1.6em;
-      font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
   .is-active .menu__close {
     width: 35px; } }
@@ -1267,6 +1267,10 @@ h3 {
     margin-top: 20px;
     font-style: normal;
     font-size: .8em; }
+.typography ul li {
+  font-family: 'gilroybold', Helvetica, Arial, sans-serif;
+  list-style-type: disc;
+  list-style-position: inside; }
 .typography--black {
   color: #000; }
 .typography--blue {
@@ -1754,7 +1758,8 @@ h3 {
       display: block;
       padding-top: 40px;
       padding-left: 20px;
-      padding-right: 20px; } }
+      padding-right: 20px;
+      max-width: 1200px; } }
 @media (min-width: 768px) {
   .page--budvar .hero__left {
     padding-top: 0; } }
@@ -1910,8 +1915,14 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1780', endColorstr='#124ab0',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-.page--deezer .row--covers div {
-  margin-bottom: 1rem; }
+.page--deezer .row--covers {
+  margin-left: -10px;
+  margin-right: -10px; }
+  @media (min-width: 768px) {
+    .page--deezer .row--covers {
+      margin: auto; } }
+  .page--deezer .row--covers div {
+    margin-bottom: 1rem; }
 .page--deezer .slider {
   position: relative;
   z-index: 2; }
@@ -1955,13 +1966,13 @@ h3 {
       height: 50%;
       width: 200vw;
       position: absolute;
-      bottom: -2rem;
+      bottom: -41px;
       margin-left: -50vw;
       margin-right: -50vw;
       background-color: #000; }
       @media (min-width: 768px) {
         .page--deezer .section--covers .sub-section:after {
-          bottom: -4rem; } }
+          bottom: -5rem; } }
     .page--deezer .section--covers .sub-section .row {
       position: relative;
       z-index: 2; }

@@ -30,7 +30,10 @@ $nav-spacing: 20px;
         right: $gutter;
         width: 35px;
     }
-
+    &__link{
+        font-size: 1.6em;
+        font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+    }
 }
 
 @media only screen and (min-width: $max-width){
@@ -45,10 +48,6 @@ $nav-spacing: 20px;
         &__base{         
             bottom: $gutter-lrg;        
         }  
-        &__link{
-            font-size: 1.6em;
-            font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
-        }
     }
 
     .is-active {
