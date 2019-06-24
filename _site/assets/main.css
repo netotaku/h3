@@ -1763,6 +1763,10 @@ h3 {
   .nav-bar.is-active {
     background-color: #000; }
 
+.video video {
+  width: 100%;
+  display: block; }
+
 @media (min-width: 768px) {
   .page--budvar .text--center {
     text-align: center; } }
@@ -2428,3 +2432,68 @@ h3 {
 .page--butcombe .section--img-100 img {
   width: 100%;
   max-width: initial; }
+
+.page--mallets .typography--gold {
+  color: #c99815; }
+.page--mallets .typography--center {
+  text-align: center; }
+.page--mallets .section--img-100 img {
+  width: 100%;
+  max-width: initial; }
+.page--mallets .slider--min .slider__item__image {
+  min-width: 85vw; }
+.page--mallets .section--hero-image {
+  background-position: center right; }
+.page--mallets .section--gold {
+  background-color: #c99815; }
+.page--mallets .section--mallets-logo .row {
+  max-width: 800px; }
+.page--mallets .section--stats .row .col-md-6 + .col-md-6, .page--mallets .section--stats .row .page--budvar .hero__inner .section__right + .col-md-6, .page--budvar .hero__inner .page--mallets .section--stats .row .section__right + .col-md-6, .page--mallets .section--stats .row .page--budvar .hero__inner .col-md-6 + .section__right, .page--budvar .hero__inner .page--mallets .section--stats .row .col-md-6 + .section__right, .page--mallets .section--stats .row .page--budvar .hero__inner .section__right + .section__right, .page--budvar .hero__inner .page--mallets .section--stats .row .section__right + .section__right {
+  margin-top: 40px; }
+  @media (min-width: 768px) {
+    .page--mallets .section--stats .row .col-md-6 + .col-md-6, .page--mallets .section--stats .row .page--budvar .hero__inner .section__right + .col-md-6, .page--budvar .hero__inner .page--mallets .section--stats .row .section__right + .col-md-6, .page--mallets .section--stats .row .page--budvar .hero__inner .col-md-6 + .section__right, .page--budvar .hero__inner .page--mallets .section--stats .row .col-md-6 + .section__right, .page--mallets .section--stats .row .page--budvar .hero__inner .section__right + .section__right, .page--budvar .hero__inner .page--mallets .section--stats .row .section__right + .section__right {
+      margin-top: 0; } }
+.page--mallets .section--stats .stat__title {
+  margin-bottom: 10px; }
+  @media (min-width: 768px) {
+    .page--mallets .section--stats .stat__title {
+      font-size: 2.5rem; } }
+@media (min-width: 768px) {
+  .page--mallets .typography--center {
+    text-align: center; } }
+.page--mallets .section--black-triangle {
+  background-color: #c99815;
+  position: relative; }
+  .page--mallets .section--black-triangle:before {
+    content: '';
+    display: block;
+    background-image: url("./img/case-studies/black_triangle.svg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 61%;
+    position: absolute;
+    top: -1px;
+    left: 0;
+    z-index: 1;
+    transform: scaleX(-1); }
+  .page--mallets .section--black-triangle .section, .page--mallets .section--black-triangle p, .page--mallets .section--black-triangle img {
+    position: relative;
+    z-index: 2; }
+.page--mallets .section--black-triangle-reverse {
+  background-color: #c99815;
+  position: relative; }
+  .page--mallets .section--black-triangle-reverse:before {
+    content: '';
+    display: block;
+    background-image: url("./img/case-studies/black_triangle.svg");
+    background-size: cover;
+    width: 100%;
+    padding-top: 61%;
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    z-index: 1;
+    transform: scale(-1); }
+  .page--mallets .section--black-triangle-reverse img {
+    position: relative;
+    z-index: 2; }

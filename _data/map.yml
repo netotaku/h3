@@ -37,6 +37,11 @@
       slug : crestron
       path: /work/crestron   
       thumb: /assets/img/thumb_crestron.jpg 
+    -
+      label: Mallets
+      slug: mallets
+      path: /work/mallets
+      thumb: /assets/img/thumb_mallets.jpg 
            
  - 
   label: Culture
