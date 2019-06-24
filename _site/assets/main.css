@@ -979,10 +979,13 @@ h3 {
 .page__menu {
   position: absolute;
   background: #000;
-  width: 300px;
+  width: 270px;
   top: 0px;
   bottom: 0px;
   right: 0px; }
+  @media (min-width: 576px) {
+    .page__menu {
+      width: 300px; } }
   .page__menu__open {
     display: block;
     top: 20px;
@@ -1018,7 +1021,7 @@ h3 {
   z-index: 2; }
 
 .menu {
-  padding: 20px; }
+  padding: 10px; }
   .menu__link {
     color: #fff;
     text-decoration: none;
@@ -1033,12 +1036,19 @@ h3 {
     display: none; }
   .menu__close {
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 10px;
+    right: 10px;
     width: 35px; }
+    @media (min-width: 576px) {
+      .menu__close {
+        top: 20px;
+        right: 20px; } }
   .menu__link {
     font-size: 1.6em;
     font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
+  @media (min-width: 576px) {
+    .menu {
+      padding: 20px; } }
 
 @media only screen and (min-width: 900px) {
   .menu {
@@ -1649,6 +1659,9 @@ h3 {
     left: 20px;
     right: 20px;
     color: #fff; }
+    @media only screen and (max-width: 440px) {
+      .card__label .job-title {
+        font-size: 1rem; } }
   .card--margin {
     margin-top: 20px; }
 

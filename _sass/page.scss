@@ -18,10 +18,14 @@
         position: absolute;
         background: $black;
         // box-shadow: -100px 0px 100px 100px rgba(0,0,0,.2);
-        width: $menuwidth;
+        width: 270px;
         top: 0px;
         bottom: 0px;
-        right: 0px;   
+        right: 0px;
+
+        @include media-breakpoint-up(sm){
+            width: $menuwidth;
+        }
         &__open{
             display: block;
             top: $gutter;

@@ -7,7 +7,7 @@ $nav-spacing: 20px;
 }
 
 .menu{
-    padding: $gutter;
+    padding: $nav-spacing/2;
     &__link{
         color: #fff;
         text-decoration: none;
@@ -26,13 +26,22 @@ $nav-spacing: 20px;
     }
     &__close{
         position: absolute;
-        top: $gutter;   
-        right: $gutter;
+        top: $gutter/2;   
+        right: $gutter/2;
         width: 35px;
+
+        @include media-breakpoint-up(sm) {
+            top: $gutter;   
+            right: $gutter;
+        }
     }
     &__link{
         font-size: 1.6em;
         font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+    }
+
+    @include media-breakpoint-up(sm) {
+        padding: $gutter;
     }
 }
 
