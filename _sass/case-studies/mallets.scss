@@ -127,6 +127,11 @@ $mallets-gold: #c99815;
     }
   }
 
+  .video video {
+    position: relative;
+    top: -1px;
+  }
+
   .section--black-triangle-reverse {
     background-color: $mallets-gold;
     position: relative;

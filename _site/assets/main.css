@@ -2528,6 +2528,9 @@ h3 {
   .page--mallets .section--black-triangle .section, .page--mallets .section--black-triangle p, .page--mallets .section--black-triangle img {
     position: relative;
     z-index: 2; }
+.page--mallets .video video {
+  position: relative;
+  top: -1px; }
 .page--mallets .section--black-triangle-reverse {
   background-color: #c99815;
   position: relative; }
