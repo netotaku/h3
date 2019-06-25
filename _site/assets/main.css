@@ -2443,7 +2443,8 @@ h3 {
 .page--mallets .slider--min .slider__item__image {
   min-width: 85vw; }
 .page--mallets .section--hero-image {
-  background-position: center right; }
+  background-position: center right;
+  background-repeat: no-repeat; }
 .page--mallets .section--gold {
   background-color: #c99815; }
 .page--mallets .section--mallets-logo .row {
