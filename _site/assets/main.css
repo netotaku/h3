@@ -1348,9 +1348,11 @@ h3 {
       position: absolute;
       bottom: 20px;
       left: 20px;
+      right: 20px;
       z-index: 1;
       color: #fff;
-      line-height: 1; }
+      line-height: 1;
+      white-space: pre-wrap; }
     .slider__item--background-aware a {
       position: relative;
       display: block;
