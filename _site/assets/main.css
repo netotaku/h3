@@ -2446,7 +2446,7 @@ h3 {
     .page--mallets .section.hero {
       padding: 8vw; } }
   .page--mallets .section.hero .hero__content {
-    padding: 40px 20px; }
+    padding: 0 20px; }
     @media only screen and (min-width: 900px) {
       .page--mallets .section.hero .hero__content {
         padding: 0; } }
