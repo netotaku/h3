@@ -1957,14 +1957,14 @@ h3 {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9c1780', endColorstr='#124ab0',GradientType=1 );
   /* IE6-9 fallback on horizontal gradient */ }
 
-.page--deezer .row--covers {
+.page--deezer .row--covers div {
+  margin-bottom: 1rem; }
+.page--deezer .row--margin {
   margin-left: -10px;
   margin-right: -10px; }
   @media (min-width: 768px) {
-    .page--deezer .row--covers {
-      margin: auto; } }
-  .page--deezer .row--covers div {
-    margin-bottom: 1rem; }
+    .page--deezer .row--margin .col-xs-12 {
+      text-align: center; } }
 .page--deezer .slider {
   position: relative;
   z-index: 2; }

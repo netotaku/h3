@@ -17,14 +17,20 @@
 
 .page--deezer {
   .row--covers {
+
+    div {
+      margin-bottom: 1rem;
+    }
+  }
+
+  .row--margin {
     margin-left: -10px;
     margin-right: -10px;
 
-    @include media-breakpoint-up(md) {
-      margin: auto;
-    }
-    div {
-      margin-bottom: 1rem;
+    .col-xs-12 {
+      @include media-breakpoint-up(md) {
+        text-align: center;
+      }
     }
   }
 
