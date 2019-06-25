@@ -2198,6 +2198,11 @@ h3 {
 @media (min-width: 768px) {
   .page--ldo .slider--50 .slider__item__image {
     width: 50vw; } }
+.page--ldo .typography--hello {
+  font-size: 4rem; }
+  @media only screen and (min-width: 900px) {
+    .page--ldo .typography--hello {
+      font-size: 5em; } }
 .page--ldo .section--half-blue {
   position: relative;
   background-color: #0001d6; }
