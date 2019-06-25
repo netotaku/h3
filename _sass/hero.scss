@@ -45,9 +45,15 @@
         }
         &--two{
             z-index: 5;
+
+            @include media-breakpoint-down(sm) {
+                top: auto;
+                height: 130px !important;
+            }
         }
         &--three{
             z-index: 10;
+            top: auto;
         }
     }
     &__header{
