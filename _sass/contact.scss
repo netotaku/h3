@@ -52,6 +52,7 @@
                 &__item{
                     line-height: 1;  
                     font-weight: bold;
+                    margin-bottom: $gutter/2;
                     &--tel{
                         a{
                             font-size: 4.6em;
