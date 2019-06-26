@@ -1091,12 +1091,15 @@ h3 {
     transform: translateY(-50%);
     text-align: center;
     color: #fff;
-    font-size: 9.5vw; }
+    font-size: 11vw; }
     .hero__strap__brand {
       display: block;
       width: 120px;
       height: auto;
       margin-bottom: 40px; }
+    @media (max-width: 991px) {
+      .hero__strap {
+        font-size: 9.5vw; } }
   @media (min-width: 768px) {
     .hero__inner {
       position: absolute;
