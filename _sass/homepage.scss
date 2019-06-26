@@ -1,3 +1,10 @@
 .page--homepage {
   background-color: inherit;
+
+  .typography--mobile {
+    font-size: 2.2em;
+    @media only screen and (min-width: 900px) {
+      font-size: 3.1em
+    }
+  }
 }

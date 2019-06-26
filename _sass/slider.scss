@@ -37,7 +37,6 @@
             z-index: 1;
             color: #fff;
             line-height: 1;
-            white-space: pre-wrap;
         }
         &--background-aware{
             a{
@@ -48,6 +47,12 @@
                 background-size: cover;
             }
         }
+    }
+}
+
+.section--work {
+    .slider__item__label {
+        white-space: pre-wrap;
     }
 }
 
