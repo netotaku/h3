@@ -25,6 +25,14 @@ $ldo-blue: #0001d6;
     }
   }
 
+  .section--stats {
+    text-align: left;
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
   .typography--hello {
     font-size: 4rem;
 

@@ -2217,6 +2217,11 @@ h3 {
 @media (min-width: 768px) {
   .page--ldo .slider--50 .slider__item__image {
     width: 50vw; } }
+.page--ldo .section--stats {
+  text-align: left; }
+  @media (min-width: 768px) {
+    .page--ldo .section--stats {
+      text-align: center; } }
 .page--ldo .typography--hello {
   font-size: 4rem; }
   @media only screen and (min-width: 900px) {
