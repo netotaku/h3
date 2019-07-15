@@ -1802,6 +1802,42 @@ h3 {
   width: 100%;
   display: block; }
 
+#BambooHR-Footer {
+  display: none; }
+
+.page .BambooHR-ATS-board {
+  max-width: 600px; }
+  .page .BambooHR-ATS-board h1, .page .BambooHR-ATS-board h2, .page .BambooHR-ATS-board h3, .page .BambooHR-ATS-board h4, .page .BambooHR-ATS-board h5 {
+    font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
+  .page .BambooHR-ATS-board h1, .page .BambooHR-ATS-board h2, .page .BambooHR-ATS-board h3, .page .BambooHR-ATS-board h4, .page .BambooHR-ATS-board h5, .page .BambooHR-ATS-board p, .page .BambooHR-ATS-board ul li {
+    color: white; }
+  .page .BambooHR-ATS-board ul {
+    font-size: 1em; }
+  .page .BambooHR-ATS-board a {
+    font-size: 1.1rem; }
+    @media only screen and (min-width: 900px) {
+      .page .BambooHR-ATS-board a {
+        font-size: 1.3rem; } }
+  .page .BambooHR-ATS-board .BambooHR-ATS-Department-Header {
+    font-size: 1.35em;
+    font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+    border-bottom: 0px !important; }
+    @media only screen and (min-width: 900px) {
+      .page .BambooHR-ATS-board .BambooHR-ATS-Department-Header {
+        font-size: 1.8em; } }
+  .page .BambooHR-ATS-board h2 {
+    font-size: 1.8em;
+    font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+    border-bottom: 0px !important; }
+    @media only screen and (min-width: 900px) {
+      .page .BambooHR-ATS-board h2 {
+        font-size: 3.1em; } }
+  .page .BambooHR-ATS-board ul ul {
+    border-bottom: 0px;
+    padding-left: 0; }
+  .page .BambooHR-ATS-board .BambooHR-ATS-Location {
+    display: none; }
+
 @media (min-width: 768px) {
   .page--budvar .text--center {
     text-align: center; } }

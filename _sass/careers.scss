@@ -1,0 +1,59 @@
+#BambooHR-Footer {
+  display: none;
+}
+
+.page {
+  .BambooHR-ATS-board {
+    max-width: 600px; 
+
+    h1, h2, h3, h4, h5 {
+      font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+    }
+
+    h1, h2, h3, h4, h5, p, ul li {
+      color: white;
+    }
+
+    ul {
+      font-size: 1em;
+    }
+
+    a {
+      font-size: 1.1rem;
+
+      @media only screen and (min-width: 900px) {
+        font-size: 1.3rem;
+      }
+    }
+
+    .BambooHR-ATS-Department-Header {
+      font-size: 1.35em;
+      font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+      border-bottom: 0px !important;
+
+      
+      @media only screen and (min-width: 900px) {
+        font-size: 1.8em;
+      }
+    }
+
+    h2 {
+      font-size: 1.8em;
+      font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+      border-bottom: 0px !important;
+
+      @media only screen and (min-width: 900px) {
+        font-size: 3.1em;
+      }
+    }
+
+    ul ul {
+      border-bottom: 0px;
+      padding-left: 0;
+    }
+
+    .BambooHR-ATS-Location {
+      display: none;
+    }
+  }
+}
