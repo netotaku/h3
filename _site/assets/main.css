@@ -1821,20 +1821,24 @@ h3 {
   .page .BambooHR-ATS-board .BambooHR-ATS-Department-Header {
     font-size: 1.35em;
     font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
-    border-bottom: 0px !important; }
+    border-bottom: 0px !important;
+    display: none; }
     @media only screen and (min-width: 900px) {
       .page .BambooHR-ATS-board .BambooHR-ATS-Department-Header {
         font-size: 1.8em; } }
   .page .BambooHR-ATS-board h2 {
     font-size: 1.8em;
     font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
-    border-bottom: 0px !important; }
+    border-bottom: 0px !important;
+    display: none; }
     @media only screen and (min-width: 900px) {
       .page .BambooHR-ATS-board h2 {
         font-size: 3.1em; } }
   .page .BambooHR-ATS-board ul ul {
     border-bottom: 0px;
-    padding-left: 0; }
+    padding-left: 0;
+    padding-bottom: 0;
+    margin-bottom: 0; }
   .page .BambooHR-ATS-board .BambooHR-ATS-Location {
     display: none; }
 

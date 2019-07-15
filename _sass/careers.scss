@@ -30,6 +30,7 @@
       font-size: 1.35em;
       font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
       border-bottom: 0px !important;
+      display: none;
 
       
       @media only screen and (min-width: 900px) {
@@ -41,6 +42,7 @@
       font-size: 1.8em;
       font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
       border-bottom: 0px !important;
+      display: none;
 
       @media only screen and (min-width: 900px) {
         font-size: 3.1em;
@@ -50,6 +52,8 @@
     ul ul {
       border-bottom: 0px;
       padding-left: 0;
+      padding-bottom: 0;
+      margin-bottom: 0;
     }
 
     .BambooHR-ATS-Location {
