@@ -1,0 +1,198 @@
+$rowan-blue: #323b59;
+$rowan-gold: #e29a1e;
+
+.page--rowan {
+  
+  .section--rowan-gold {
+    background-color: $rowan-gold;
+  }
+
+  .section--rowan-blue {
+    background-color: $rowan-blue;
+  }
+
+  .desktop-title {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding-top: $gutter*2;
+      padding-left: $gutter;
+      padding-right: $gutter;
+      max-width: 1200px;
+    }
+  }
+
+  .mobile-title {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .rowan-logo {
+    max-width: 600px;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .section--white-triangle {
+    background-color: $rowan-blue;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/white-triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+
+    .section, p, img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--blue-triangle {
+    background-color: white;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/rowan/blue-triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: -1px;
+      left: 0;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+
+    .section, p, img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--gold-triangle {
+    background-color: white;
+    position: relative;
+
+    &:before {
+      content: '';
+      display: block;
+      background-image: url('./img/case-studies/rowan/gold-triangle.svg');
+      background-size: cover;
+      width: 100%;
+      padding-top: 61%;
+      position: absolute;
+      top: -15%;
+      left: 0;
+      z-index: 1;
+      transform: scaleX(-1);
+    }
+
+    .section, p, img {
+      position: relative;
+      z-index: 2;
+    }
+  }
+
+  .section--hero-image {
+    .hero__inner {
+      background-position: center right;
+    }
+  }
+
+
+  .section--peak--blue {
+    polygon{
+      fill: $rowan-gold;
+    }
+  }
+
+  .section--peak--blue {
+    polygon{
+      fill: $rowan-blue;
+    }
+  }
+
+  .slider--30 {
+    .slider__item__image {
+        width: 50vw;
+
+        @include media-breakpoint-up(md) {
+          width: 30vw;
+        }
+    }
+  }
+
+  .slider--50 {
+    .slider__item__image {
+      position: relative;
+      z-index: 2;
+
+      @include media-breakpoint-up(md) {
+        width: 50vw;
+      }
+    }
+  }
+
+  .section--image-overlay {
+    .image {
+      width: 55%;
+    }
+
+    .two-image-overlap {
+      display: flex;
+      flex-direction: row;
+    }
+
+    .image--two {
+      margin-top: 10%;
+      margin-left: -10%;
+    }
+  }
+
+  .laptop-container {
+    position: relative;
+
+    .laptop {
+      position: relative;
+      z-index: 1;
+    }
+
+    .screen {
+      position: absolute;
+      top: 6%;
+      left: 17%;
+      height: 84%;
+      width: 68%;
+      z-index: 2;
+      overflow-y: scroll;
+    }
+  }
+
+  .slider--75 {
+    .slider__item__image {
+      width: 75vw;
+    }
+  }
+  
+  .section--padding-top {
+      padding: $gutter 0;
+
+      @media only screen and (min-width: $max-width){
+        padding: $gutter-lrg 0;
+      }
+  }
+}
