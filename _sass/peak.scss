@@ -21,6 +21,15 @@
         bottom: 0px;
         top: auto;
     }
+
+    &--mobile-peak {
+        .peak__svg {
+            display: block;
+            @media only screen and (min-width: $max-width){
+                display: none;
+            }
+        }
+    }
 }
 
 .peak--white {

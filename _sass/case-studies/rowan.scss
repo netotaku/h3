@@ -11,6 +11,14 @@ $rowan-gold: #e29a1e;
     background-color: $rowan-blue;
   }
 
+  .typography--rowan-blue {
+    color: $rowan-blue;
+  }
+
+  .typography--rowan-gold {
+    color: $rowan-gold;
+  }
+
   .desktop-title {
     display: none;
     @include media-breakpoint-up(md) {
@@ -83,7 +91,7 @@ $rowan-gold: #e29a1e;
     }
   }
 
-  .section--gold-triangle {
+  .section--rowan-gold-triangle {
     background-color: white;
     position: relative;
 
@@ -95,7 +103,7 @@ $rowan-gold: #e29a1e;
       width: 100%;
       padding-top: 61%;
       position: absolute;
-      top: -15%;
+      top: -1px;
       left: 0;
       z-index: 1;
       transform: scaleX(-1);
@@ -107,9 +115,15 @@ $rowan-gold: #e29a1e;
     }
   }
 
+  .hero__left {
+    @include media-breakpoint-up(md) {
+      width: 72%;
+    }
+  }
+
   .section--hero-image {
     .hero__inner {
-      background-position: center right;
+      background-position: 65%;
     }
   }
 
@@ -194,5 +208,21 @@ $rowan-gold: #e29a1e;
       @media only screen and (min-width: $max-width){
         padding: $gutter-lrg 0;
       }
+  }
+
+  .section--stats {
+    
+    .typography--blue {
+      margin-bottom: 0;
+      line-height: 1;
+    }
+  }
+
+  .section--quote {
+    background-position: right;
+
+    blockquote {
+      background: url('/assets/svg/quote.svg') no-repeat
+    }
   }
 }

@@ -1551,6 +1551,11 @@ h3 {
   .peak--mask {
     bottom: 0px;
     top: auto; }
+  .peak--mobile-peak .peak__svg {
+    display: block; }
+    @media only screen and (min-width: 900px) {
+      .peak--mobile-peak .peak__svg {
+        display: none; } }
 
 .peak--white {
   background-color: #FFF; }
@@ -2645,6 +2650,10 @@ h3 {
   background-color: #e29a1e; }
 .page--rowan .section--rowan-blue {
   background-color: #323b59; }
+.page--rowan .typography--rowan-blue {
+  color: #323b59; }
+.page--rowan .typography--rowan-gold {
+  color: #e29a1e; }
 .page--rowan .desktop-title {
   display: none; }
   @media (min-width: 768px) {
@@ -2699,10 +2708,10 @@ h3 {
   .page--rowan .section--blue-triangle .section, .page--rowan .section--blue-triangle p, .page--rowan .section--blue-triangle img {
     position: relative;
     z-index: 2; }
-.page--rowan .section--gold-triangle {
+.page--rowan .section--rowan-gold-triangle {
   background-color: white;
   position: relative; }
-  .page--rowan .section--gold-triangle:before {
+  .page--rowan .section--rowan-gold-triangle:before {
     content: '';
     display: block;
     background-image: url("./img/case-studies/rowan/gold-triangle.svg");
@@ -2710,15 +2719,18 @@ h3 {
     width: 100%;
     padding-top: 61%;
     position: absolute;
-    top: -15%;
+    top: -1px;
     left: 0;
     z-index: 1;
     transform: scaleX(-1); }
-  .page--rowan .section--gold-triangle .section, .page--rowan .section--gold-triangle p, .page--rowan .section--gold-triangle img {
+  .page--rowan .section--rowan-gold-triangle .section, .page--rowan .section--rowan-gold-triangle p, .page--rowan .section--rowan-gold-triangle img {
     position: relative;
     z-index: 2; }
+@media (min-width: 768px) {
+  .page--rowan .hero__left {
+    width: 72%; } }
 .page--rowan .section--hero-image .hero__inner {
-  background-position: center right; }
+  background-position: 65%; }
 .page--rowan .section--peak--blue polygon {
   fill: #e29a1e; }
 .page--rowan .section--peak--blue polygon {
@@ -2762,3 +2774,10 @@ h3 {
   @media only screen and (min-width: 900px) {
     .page--rowan .section--padding-top {
       padding: 4vw 0; } }
+.page--rowan .section--stats .typography--blue {
+  margin-bottom: 0;
+  line-height: 1; }
+.page--rowan .section--quote {
+  background-position: right; }
+  .page--rowan .section--quote blockquote {
+    background: url("/assets/svg/quote.svg") no-repeat; }
