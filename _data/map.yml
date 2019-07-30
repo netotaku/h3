@@ -41,7 +41,12 @@
       label: Mallets
       slug: mallets
       path: /work/mallets
-      thumb: /assets/img/thumb_mallets.jpg 
+      thumb: /assets/img/thumb_mallets.jpg
+    -
+      label: Rowan Dartington
+      slug: rowan
+      path: /work/rowan-dartington
+      thumb: /assets/img/thumb_rowan.jpg 
            
  - 
   label: Culture
