@@ -2781,3 +2781,6 @@ h3 {
   background-position: right; }
   .page--rowan .section--quote blockquote {
     background: url("/assets/svg/quote-rowan.svg") no-repeat; }
+@media (min-width: 992px) {
+  .page--rowan .pull-left {
+    margin-left: -10%; } }

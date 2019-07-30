@@ -225,4 +225,10 @@ $rowan-gold: #e29a1e;
       background: url('/assets/svg/quote-rowan.svg') no-repeat
     }
   }
+
+  .pull-left {
+    @include media-breakpoint-up(lg) {
+      margin-left: -10%;
+    }
+  }
 }
