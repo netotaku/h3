@@ -2647,13 +2647,13 @@ h3 {
     z-index: 2; }
 
 .page--rowan .section--rowan-gold {
-  background-color: #e29a1e; }
+  background-color: #f7af1e; }
 .page--rowan .section--rowan-blue {
   background-color: #323b59; }
 .page--rowan .typography--rowan-blue {
   color: #323b59; }
 .page--rowan .typography--rowan-gold {
-  color: #e29a1e; }
+  color: #f7af1e; }
 .page--rowan .desktop-title {
   display: none; }
   @media (min-width: 768px) {
@@ -2732,7 +2732,7 @@ h3 {
 .page--rowan .section--hero-image .hero__inner {
   background-position: 65%; }
 .page--rowan .section--peak--blue polygon {
-  fill: #e29a1e; }
+  fill: #f7af1e; }
 .page--rowan .section--peak--blue polygon {
   fill: #323b59; }
 .page--rowan .slider--30 .slider__item__image {
