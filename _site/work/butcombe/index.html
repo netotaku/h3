@@ -20,7 +20,7 @@
 <meta name="theme-color" content="#ffffff">
 
 <script src="https://use.fontawesome.com/610695cb43.js"></script>
-<link rel="stylesheet" href="/assets/main.css?1564678524">
+<link rel="stylesheet" href="/assets/main.css?1564738247">
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="https://wearehalo.co.uk/" />
@@ -570,5 +570,41 @@
             });
         </script>
         
+        <div id="sliding-popup" class="sliding-popup-bottom is-hidden" style="height: auto; width: 100%; bottom: 0px; background-color: #000; color:#fff;"> <div class="eu-cookie-compliance-banner eu-cookie-compliance-banner-info"> <div class="popup-content info eu-cookie-compliance-content"> <div id="popup-text" class="eu-cookie-compliance-message"> <p>This site uses cookies to improve your user experience. <a href="/cookie-policy" style="color: #fff; text-decoration: underline;">Click here for more information.</a></p></div><div id="popup-buttons" class="eu-cookie-compliance-buttons"> <button id="eu_cookie_agree_button" type="button" class="agree-button eu-cookie-compliance-agree-button">continue</button> </div></div></div></div>
+        <style>
+            #sliding-popup{position:fixed;bottom:0;transition:transform 1s ease; z-index: 99;}#sliding-popup.is-hidden{transform:translatey(100%)}.eu-cookie-compliance-banner{text-align:center}.eu-cookie-compliance-banner .eu-cookie-compliance-content{width:auto;max-width:80%;padding:10px 0 10px 0;margin:0 auto;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end}.eu-cookie-compliance-banner .eu-cookie-compliance-message{padding:0;margin:0;width:auto;max-width:none;text-align:center}.eu-cookie-compliance-banner .eu-cookie-compliance-message p{margin-bottom:0;text-align:right; font-size: 1rem; font-weight: bold;}.eu-cookie-compliance-banner .eu-cookie-compliance-buttons{max-width:none;float:none;clear:both;margin:0;width:auto;line-height:0;margin-left:16px}.eu-cookie-compliance-banner .eu-cookie-compliance-buttons .eu-cookie-compliance-agree-button{margin:0;margin-top:5px;padding:4px;line-height:1.2}@media(min-width:840px){.eu-cookie-compliance-banner .eu-cookie-compliance-content{-webkit-box-align:center;-ms-flex-align:center;align-items:center}.eu-cookie-compliance-banner .eu-cookie-compliance-buttons{float:left;clear:none}.eu-cookie-compliance-banner .eu-cookie-compliance-buttons .eu-cookie-compliance-agree-button{border-radius: 0px;border:0;margin-top:0;font-size:14px; background-color: #0000D8; color: #fff; font-weight: bold; padding: 5px 15px;}}
+        </style>
+        <script>
+        var set_cookie = function () {
+            var e = new Date;
+            e.setTime(e.getTime() + 6048e5);
+            var o = "expires=" + e.toUTCString();
+            document.cookie = "eu_cookie_policy=true;" + o + ";path=/"
+            },
+            get_cookie = function (e) {
+            for (var o = e + "=", t = decodeURIComponent(document.cookie).split(";"), i = 0; i < t
+                .length; i++) {
+                for (var c = t[i];
+                " " == c.charAt(0);) c = c.substring(1);
+                if (0 === c.indexOf(o)) return c.substring(o.length, c.length)
+            }
+            return ""
+            },
+            check_cookie = function (e) {
+            return "true" === get_cookie(e)
+            };
+        if (!check_cookie("eu_cookie_policy")) {
+            var eu_cookie_popup = document.getElementById("sliding-popup"),
+            cookie_agree = document.getElementById("eu_cookie_agree_button");
+            eu_cookie_popup.classList.remove("is-hidden"), cookie_agree.addEventListener("click",
+            function () {
+            eu_cookie_popup.classList.add("is-hidden")
+            })
+        }
+        (cookie_agree = document.getElementById("eu_cookie_agree_button")).addEventListener("click",
+            function () {
+            document.getElementById("sliding-popup").classList += " is-hidden", set_cookie()
+            });
+        </script>
     </body>
 </html>
