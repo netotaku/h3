@@ -16,3 +16,6 @@ layout: default
     </footer>
 
 </div>
+{% if page.schema %}
+    {% include {{ page.schema }} %}
+{% endif %}
