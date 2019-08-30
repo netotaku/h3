@@ -45,9 +45,20 @@
     -
       label: Rowan Dartington
       slug: rowan
+<<<<<<< HEAD
       path: /work/rowan-dartington/
       thumb: /assets/img/thumb_rowan.jpg 
            
+=======
+      path: /work/rowan-dartington
+      thumb: /assets/img/thumb_rowan.jpg
+    -
+      label: Day Out With The Kids
+      slug: dowtk
+      path: /work/dowtk
+      thumb: /assets/img/thumb_dowtk.jpg
+
+>>>>>>> New case study - DOWTK
  - 
   label: Culture
   slug: culture

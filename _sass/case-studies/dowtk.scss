@@ -1,0 +1,272 @@
+$dowtk_white: #ffffff;
+$dowtk_primary: #ea4b65;
+$dowtk_secondary: #7cc5b6;
+$dowtk_tertiary: #8e74b1;
+$dowtk_quaternary: #FBD96E;
+
+.page--dowtk {
+  .text--center {
+
+    @include media-breakpoint-up(md) {
+      text-align: center;
+    }
+  }
+
+  .desktop-title {
+    display: none;
+    @include media-breakpoint-up(md) {
+      display: block;
+      padding-top: $gutter*2;
+      padding-left: $gutter;
+      padding-right: $gutter;
+      max-width: 1200px;
+    }
+  }
+
+  .hero__left {
+    @include media-breakpoint-up(md) {
+      padding-top: 0;
+    }
+  }
+
+  .mobile-title {
+    display: block;
+    @include media-breakpoint-up(md) {
+      display: none;
+    }
+  }
+
+  .hero__inner, .hero__content {
+
+    @include media-breakpoint-up(md) {
+      color: $dowtk_white;
+    }
+
+    h1 {
+      @include media-breakpoint-up(md) {
+        font-size: 4rem;
+      }
+      @include media-breakpoint-up(lg) {
+        font-size: 5rem;
+      }
+    }
+
+    strong, h1 {
+      @include media-breakpoint-up(md) {
+        color: $dowtk_white;
+      }
+    }
+
+    .section__left {
+      padding-left: 2rem;
+    }
+  }
+
+  .hero__inner {
+
+    height: 0;
+    padding-bottom: 56.4%;
+    background-image: url('/assets/img/case-studies/dowtk/intro_bg.jpg');
+    background-size: contain;
+    background-position: center;
+    background-color: #151515;
+    background-repeat: no-repeat;
+
+
+    @include media-breakpoint-up(md) {
+      background-image: url('/assets/img/case-studies/dowtk/intro_bg.jpg');
+      background-color: #151515;
+      background-size: cover;
+      background-position: center;
+      height: 100%;
+    }
+  }
+
+  .section--dowtk-red {
+    background-color: $dowtk_primary;
+  }
+
+  .section--dowtk-green {
+    background-color: $dowtk_secondary;
+  }
+
+  .section--dowtk-yellow {
+    background-color: $dowtk_quaternary;
+  }
+
+  .section--peak--dowtk-red {
+    polygon {
+      fill: $dowtk_primary;
+    }
+  }
+
+  .section--peak--dowtk-yellow {
+    polygon {
+      fill: $dowtk_quaternary;
+    }
+  }
+
+  .section--peak--dowtk-green {
+    polygon {
+      fill: $dowtk_secondary;
+    }
+  }
+
+  .section--dowtk-split-green-yellow {
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: 300px solid transparent;
+      border-right: 100vw solid $dowtk_quaternary;
+    }
+  }
+
+  .section--dowtk-split-red-green {
+    &:before {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      border-top: 600px solid transparent;
+      border-left: 100vw solid $dowtk_secondary;
+    }
+  }
+
+  .section--split-inner {
+    position: relative;
+  }
+
+  .dowtk-iconography {
+    &__title {
+      padding: 0 0 4vw 0;
+      color: $dowtk_white;
+    }
+    &__main {
+      max-width: 1360px;
+      margin: 0 auto;
+      box-shadow: 0 0px 10px 10px rgba(0,0,0,.2);
+    }
+    &__row {
+      padding: calc(2rem - 2vw);
+      &--green {
+        background-color: $dowtk_secondary;
+      }
+      &--purple {
+        background-color: $dowtk_tertiary;
+      }
+      &--yellow {
+        background-color: $dowtk_quaternary;
+      }
+    }
+    &__icon {
+      padding: 2rem;
+      @include media-breakpoint-down(md) {
+        padding: 1rem;
+      }
+      &-inner {
+        width: 120px;
+        height: 120px;
+        @include media-breakpoint-down(lg) {
+          width: 80px;
+          height: 80px;
+        }
+      }
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .dowtk-logo {
+    @include media-breakpoint-down(md) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+  }
+
+  .dowtk-cards {
+    padding-bottom: 0;
+    &__title {
+      color: $dowtk_white;
+    }
+  }
+
+  .dowtk-cards__image {
+    max-width: 1360px;
+  }
+
+  .dowtk-statistics {
+    text-align: left;
+    h3 {
+      color: $dowtk_white;
+      font-size: 3em;
+      line-height: 1em;
+      margin-bottom: 0;
+      @media screen and (max-width: 1600px) and (min-width:1200px) {
+        font-size: 2em;
+      }
+    }
+    p {
+      color: $dowtk_white;
+    }
+    .row {
+      > div {
+        @include media-breakpoint-down(lg) {
+          margin-top: 4vw;
+          &:first-child {
+            margin-top: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section--quote {
+    align-items: center;
+  }
+
+  .typography {
+    blockquote {
+      background: url(/assets/svg/quote-white.svg) no-repeat
+    }
+  }
+
+  .section--collage {
+    height: 0;
+    padding-bottom: 58.8%;
+  }
+
+  .section--footer-image {
+    .hero__inner {
+      padding-bottom: 67.4%;
+    }
+  }
+
+  .dowtk-logo__render {
+    &s {
+      padding-top: 4vw;
+    }
+    &-inner {
+      padding: 5%;
+      img {
+        @include media-breakpoint-down(md) {
+          max-width: 200px;
+        }
+      }
+    }
+  }
+
+  .dowtk-web-mockup {
+    &__image {
+      max-width: 1342px;
+      margin: 0 auto;
+    }
+  }
+}
