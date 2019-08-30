@@ -9,8 +9,8 @@
                     {% if link.slug == section.filter %}
                         {% for child in link.children %}
                             <div class="slider__item"><a href="{{ child.path }}">                                
-                                <img class="slider__item__image" src="{{ child.thumb }}"> 
-                                <img class="slider__item__grad" src="/assets/svg/grad.svg">                                
+                                <img class="slider__item__image" src="{{ child.thumb }}" alt="Halo - {{ child.label }}">
+                                <img class="slider__item__grad" src="/assets/svg/grad.svg" alt="Halo - Overlay Gradient">
                                 <h3 class="slider__item__label">{{ child.label }}</h3>
                             </a></div>
                         {% endfor %}                
@@ -21,7 +21,7 @@
             {% if section.data %}
                 {% for thumb in section.data %}
                     <div class="slider__item">
-                        <img class="slider__item__image" src="{{ thumb }}">                
+                        <img class="slider__item__image" src="{{ thumb }}" alt="Halo Thumbnail - {{ forloop.index }}">
                     </div>          
                 {% endfor %}
             {% endif %}
