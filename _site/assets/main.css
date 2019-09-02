@@ -1091,6 +1091,12 @@ h3 {
     right: 0px;
     top: 0px; }
 
+.slide-fade-enter-active, .slide-fade-leave-active {
+  transition: all 0.3s cubic-bezier(0.3, 0.3, 0.56, 1); }
+
+.slide-fade-enter, .slide-fade-leave-to {
+  opacity: 0; }
+
 .hero {
   background-size: cover;
   background-position: center; }

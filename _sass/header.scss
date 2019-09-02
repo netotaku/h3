@@ -15,3 +15,11 @@
         top: 0px;
     }
 }
+
+.slide-fade-enter-active, .slide-fade-leave-active {
+    transition: all .3s cubic-bezier(0.3, 0.3, 0.56, 1.0);
+}
+
+.slide-fade-enter, .slide-fade-leave-to {
+    opacity: 0;
+}

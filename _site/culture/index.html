@@ -42,6 +42,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <link rel="stylesheet" href="/assets/main.css?1567697787">
 <script type="text/javascript" src="/assets/main.js?1567697787"></script>
 =======
@@ -64,6 +65,10 @@
 <link rel="stylesheet" href="/assets/main.css?1567673780">
 <script type="text/javascript" src="/assets/main.js?1567673780"></script>
 >>>>>>> Tweaks to careers and cookies/terms page
+=======
+<link rel="stylesheet" href="/assets/main.css?1567673930">
+<script type="text/javascript" src="/assets/main.js?1567673930"></script>
+>>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
 
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:site" content="https://wearehalo.co.uk/" />
@@ -90,53 +95,52 @@
     <a class="page__brand" href="http://localhost:4000" title="Home">
         <img src="/assets/svg/brand.svg" alt="Halo Media Communications">
     </a>
-    <div id="js-menu" class="menu-top">  
-        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#" title="Open menu">
-            <img src="/assets/svg/bars.svg" alt="Halo - Open Menu">
-        </a>
-        <div v-if="opened" class="page__overlay" v-cloak>
-            <menu class="page__menu menu">
-                <ul>
-                
-                    <li>
-                        <a href="/principles/" class="menu__link">Principles</a>
+    <div id="js-menu" class="menu-top">
+        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg"></a>
+        <transition name="slide-fade">
+            <div v-if="opened" class="page__overlay" v-cloak>
+                <menu class="page__menu menu">
+                    <ul>
                         
-                    </li>
-                
-                    <li>
-                        <a href="/work/" class="menu__link">Work</a>
-                                                    
+                        <li>
+                            <a href="/principles/" class="menu__link">Principles</a>
+                            
+                        </li>
+                        
+                        <li>
+                            <a href="/work/" class="menu__link">Work</a>
+                            
                             <ul>
                                 
-                                    <li><a href="/work/livenation/" class="menu__link">Ticketmaster</a></li>
+                                <li><a href="/work/livenation/" class="menu__link">Ticketmaster</a></li>
                                 
-                                    <li><a href="/work/budvar/" class="menu__link">Budweiser Budvar</a></li>
+                                <li><a href="/work/budvar/" class="menu__link">Budweiser Budvar</a></li>
                                 
-                                    <li><a href="/work/deezer/" class="menu__link">Deezer</a></li>
+                                <li><a href="/work/deezer/" class="menu__link">Deezer</a></li>
                                 
-                                    <li><a href="/work/ldo/" class="menu__link">London Designer Outlet</a></li>
+                                <li><a href="/work/ldo/" class="menu__link">London Designer Outlet</a></li>
                                 
-                                    <li><a href="/work/butcombe/" class="menu__link">Butcombe Brewing Co.</a></li>
+                                <li><a href="/work/butcombe/" class="menu__link">Butcombe Brewing Co.</a></li>
                                 
-                                    <li><a href="/work/crestron/" class="menu__link">Crestron</a></li>
+                                <li><a href="/work/crestron/" class="menu__link">Crestron</a></li>
                                 
-                                    <li><a href="/work/mallets/" class="menu__link">Mallets</a></li>
+                                <li><a href="/work/mallets/" class="menu__link">Mallets</a></li>
                                 
-                                    <li><a href="/work/rowan-dartington/" class="menu__link">Rowan Dartington</a></li>
+                                <li><a href="/work/rowan-dartington/" class="menu__link">Rowan Dartington</a></li>
                                 
-                            </ul>    
+                            </ul>
+                            
+                        </li>
                         
-                    </li>
-                
-                    <li>
-                        <a href="/culture/" class="menu__link">Culture</a>
+                        <li>
+                            <a href="/culture/" class="menu__link">Culture</a>
+                            
+                        </li>
                         
-                    </li>
-                
-                </ul>
-                <div class="menu__base contact">                    
-                    <div class="contact">
-                        <h3 class="contact__heading">Get in touch</h3>
+                    </ul>
+                    <div class="menu__base contact">
+                        <div class="contact">
+                            <h3 class="contact__heading">Get in touch</h3>
 <p>
     <span class="contact__item contact__item--tel"><a href="tel:01179277841">0117 927 7841</a></span>
     <span class="contact__item contact__item--email"><a href="mailto:hello@wearehalo.co.uk">hello@wearehalo.co.uk</a></span>
@@ -156,13 +160,13 @@
 </p>
 
 <p class="contact__copyright">&copy; Copyright Halo Media Communications 2019</p>
+                        </div>
                     </div>
-                </div>
-                <a v-on:click.prevent="opened = false" href="#" title="Close menu">
-                    <img class="menu__close" src="/assets/svg/close.svg" alt="Halo - Close Menu">
-                </a>
-            </menu>
-        </div>
+                    <a v-on:click.prevent="opened = false" href="#">
+                        <img class="menu__close" src="/assets/svg/close.svg"></a>
+                </menu>
+            </div>
+        </transition>
     </div>
 </div>
         
