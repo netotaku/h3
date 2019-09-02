@@ -1216,6 +1216,10 @@ h3 {
     margin: auto; }
   .section--padding {
     padding: 40px 20px; }
+    .section--padding-hero {
+      padding: 80px 20px 40px; }
+      .section--padding-hero-b-n {
+        padding-bottom: 0; }
   .section--center {
     text-align: center; }
   .section--white {
@@ -1277,6 +1281,10 @@ h3 {
     padding: 4vw; }
     .section--padding--pinch {
       padding: 8vw; }
+    .section--padding-hero {
+      padding: 8vw; }
+      .section--padding-hero-b-n {
+        padding-bottom: 0; }
   .section--center-lrg {
     text-align: center; }
   .section__left {
