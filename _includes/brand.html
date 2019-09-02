@@ -1,7 +1,11 @@
 <div id="js-header" class="nav-bar">
-    <a class="page__brand" href="{{ site.url }}"><img src="/assets/svg/brand.svg" alt="Halo Media Communications"></a>
+    <a class="page__brand" href="{{ site.url }}" title="Home">
+        <img src="/assets/svg/brand.svg" alt="Halo Media Communications">
+    </a>
     <div id="js-menu" class="menu-top">  
-        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#"><img src="/assets/svg/bars.svg" alt="Halo - Open Menu"></a>
+        <a v-on:click.prevent="opened = true" class="page__menu__open" href="#" title="Open menu">
+            <img src="/assets/svg/bars.svg" alt="Halo - Open Menu"><
+            /a>
         <div v-if="opened" class="page__overlay" v-cloak>
             <menu class="page__menu menu">
                 <ul>
@@ -23,8 +27,9 @@
                         {% include contact.html %}
                     </div>
                 </div>
-                <a v-on:click.prevent="opened = false" href="#">
-                    <img class="menu__close" src="/assets/svg/close.svg" alt="Halo - Close Menu"></a>
+                <a v-on:click.prevent="opened = false" href="#" title="Close menu">
+                    <img class="menu__close" src="/assets/svg/close.svg" alt="Halo - Close Menu">
+                </a>
             </menu>
         </div>
     </div>
