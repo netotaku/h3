@@ -1282,7 +1282,7 @@ h3 {
   .section__left {
     width: 50%;
     padding-right: 8vw; } }
-.typography h1:not(:last-child), .typography h2:not(:last-child), .typography h3:not(:last-child), .typography h4:not(:last-child), .typography h5:not(:last-child), .typography h6:not(:last-child), .typography p:not(:last-child) {
+.typography h1:not(:last-child), .typography h2:not(:last-child), .typography h3:not(:last-child), .typography h4:not(:last-child), .typography h5:not(:last-child), .typography h6:not(:last-child), .typography p:not(:last-child), .typography blockquote:not(:last-child) {
   margin-bottom: 20px; }
 .typography p {
   font-family: 'gilroybold', Helvetica, Arial, sans-serif; }
@@ -1870,6 +1870,25 @@ h3 {
     margin-bottom: 0; }
   .page .BambooHR-ATS-board .BambooHR-ATS-Location {
     display: none; }
+
+.blog-content blockquote {
+  font-size: 1em;
+  padding: 1em 0 0.75em 2em;
+  background-image: none;
+  border-left: 8px solid #FFE21F;
+  position: relative;
+  font-style: italic; }
+  .blog-content blockquote:before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0.5em;
+    left: 0.75em;
+    background-image: url(/assets/svg/quote.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 16px;
+    height: 12px; }
 
 @media (min-width: 768px) {
   .page--budvar .text--center {

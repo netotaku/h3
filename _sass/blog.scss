@@ -1,0 +1,24 @@
+.blog {
+  &-content {
+    blockquote {
+      font-size: 1em;
+      padding: 1em 0 0.75em 2em;
+      background-image: none;
+      border-left: 8px solid #FFE21F;
+      position: relative;
+      font-style: italic;
+      &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0.5em;
+        left: 0.75em;
+        background-image: url(/assets/svg/quote.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 16px;
+        height: 12px;
+      }
+    }
+  }
+}

@@ -1,0 +1,53 @@
+---
+layout: default
+---
+{% include brand.html %}
+
+{% capture blogHead %}
+    <div class="blog-head">
+        <h1 class="blog-head__title">{{ page.title }}</h1>
+        <p class="blog-head__author">By: {{ page.author }}<br>Published: {{ page.date | date: "%B %e, %Y" }}</p>
+    </div>
+{% endcapture %}
+
+<div class="page__content content">
+    {% if page.hero.image %}
+        <div class="section hero">
+            <div class="hero__inner" style="background-image: url({{ page.hero.image }})"></div>
+            <div class="hero__content">
+                <section class="section section--padding section--padding--pinch {% if page.hero.inverseText %}section--text-white{% endif %} typography">
+                    <div class="section">
+                        {{ blogHead }}
+                    </div>
+                </section>
+            </div>
+        </div>
+    {% else %}
+        <div class="group">
+            <section class="section section--padding section--padding--pinch section--blue section--peak section--peak--blue typography">
+                <div class="section">
+                    {{ blogHead }}
+                </div>
+            </section>
+        </div>
+    {% endif %}
+    <div class="group">
+        <section class="section section--padding section--padding--pinch section--peak section--peak--blue section--white typography">
+            {% unless page.hero.image %}
+                {% include peak.html %}
+            {% endunless %}
+            <div class="section__measure">
+                <div class="blog-content typography">
+                    {{ content }}
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="section section--padding section--black footer">
+        <a class="footer__brand" href="/pong"><img src="/assets/svg/brand.svg"></a>
+        <div class="contact contact--lrg">
+            {% include contact.html %}
+        </div>
+    </footer>
+
+</div>
