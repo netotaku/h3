@@ -1,54 +1,54 @@
  - 
   label: Principles
   slug: principles
-  path: /principles
+  path: /principles/
  - 
   label: Work
   slug: work
-  path: /work
+  path: /work/
   children: 
     - 
       label: Ticketmaster
       slug : livenation
-      path: /work/livenation  
+      path: /work/livenation/
       thumb: /assets/img/thumb_livenation.jpg   
     - 
       label: Budweiser Budvar
       slug : budvar
-      path: /work/budvar
+      path: /work/budvar/
       thumb: /assets/img/thumb_budvar.jpg          
     - 
       label: Deezer
       slug : deezer
-      path: /work/deezer
+      path: /work/deezer/
       thumb: /assets/img/thumb_deezer.jpg   
     - 
       label: London Designer Outlet
       slug : ldo
-      path: /work/ldo
+      path: /work/ldo/
       thumb: /assets/img/thumb_ldo.jpg            
     -       
       label: Butcombe Brewing Co.
       slug : butcombe
-      path: /work/butcombe    
+      path: /work/butcombe/
       thumb: /assets/img/scratch/drink/butcombe.jpg   
     - 
       label: Crestron
       slug : crestron
-      path: /work/crestron   
+      path: /work/crestron/
       thumb: /assets/img/thumb_crestron.jpg 
     -
       label: Mallets
       slug: mallets
-      path: /work/mallets
+      path: /work/mallets/
       thumb: /assets/img/thumb_mallets.jpg
     -
       label: Rowan Dartington
       slug: rowan
-      path: /work/rowan-dartington
+      path: /work/rowan-dartington/
       thumb: /assets/img/thumb_rowan.jpg 
            
  - 
   label: Culture
   slug: culture
-  path: /culture 
+  path: /culture/
