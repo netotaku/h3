@@ -173,8 +173,8 @@ var pong = new Vue({
     },
     methods: {
         resize: function(){            
-            this.canvas.width = window.innerWidth;
-            this.canvas.height = window.innerHeight;             
+            this.canvas.width = document.documentElement.clientWidth;
+            this.canvas.height = document.documentElement.clientHeight;
         },
         draw: function(){
 

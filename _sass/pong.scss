@@ -1,5 +1,5 @@
 .pong{
-    cursor: none;
+   // cursor: none;
     background: #222;
     &__canvas{
         display: block;
@@ -17,5 +17,13 @@
         &--up2{
             right:0px;
         }
+    }
+    h1 {
+        color: #fff;
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        text-indent: -99999px;
     }
 }
