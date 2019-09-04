@@ -1,1 +1,60 @@
-function load(){function e(e){e.preventDefault()}function t(t){t.removeEventListener("click",e)}const n=document.querySelectorAll(".slider");let s,o,i,a=!1,r=!1,c=[];for(var d,l=0;d=n[l];l++)d.addEventListener("mousedown",function(e){a=!0,this.classList.add("active"),s=e.pageX-this.offsetLeft,o=this.scrollLeft,r=!1,c=[e.pageX,e.pageY]}),d.addEventListener("mouseleave",function(){a=!1,this.classList.remove("active")}),d.addEventListener("mouseup",function(){a=!1,this.classList.remove("active");for(var e,n=0;e=i[n];n++)setTimeout(t,250,e)}),d.addEventListener("mousemove",function(t){if(!a)return;if(t.pageX===c[0]&&t.pageY===c[1]||(r=!0),r){i=document.querySelectorAll(".slider a");for(var n,d=0;n=i[d];d++)n.addEventListener("click",e)}t.preventDefault();const l=1.2*(t.pageX-this.offsetLeft-s);this.scrollLeft=o-l})}document.addEventListener("DOMContentLoaded",load,!1);
+document.addEventListener('DOMContentLoaded', load, false);
+
+function load() {
+
+  const sliders = document.querySelectorAll('.slider');
+  let isDown = false;
+  let startX;
+  let scrollLeft;
+  let isDragging = false;
+  let startingPos = [];
+  let childLinks;
+
+  for (var i = 0, slider; slider = sliders[i]; i++) {
+    slider.addEventListener('mousedown', function(e) {
+      isDown = true;
+      this.classList.add('active');
+      startX = e.pageX - this.offsetLeft;
+      scrollLeft = this.scrollLeft;
+      isDragging = false;
+      startingPos = [e.pageX, e.pageY];
+    });
+    slider.addEventListener('mouseleave', function(e) {
+      isDown = false;
+      this.classList.remove('active');
+    });
+    slider.addEventListener('mouseup', function(e) {
+      isDown = false;
+      this.classList.remove('active');
+      for (var i = 0, element; element = childLinks[i]; i++) {
+        setTimeout(removeBlocking, 250, element);
+      }
+    });
+    slider.addEventListener('mousemove', function(e) {
+      if(!isDown) return;
+
+      if (!(e.pageX === startingPos[0] && e.pageY === startingPos[1])) {
+        isDragging = true;
+      }
+      if (isDragging) {
+        childLinks = document.querySelectorAll('.slider a');
+        for (var i = 0, element; element = childLinks[i]; i++) {
+          element.addEventListener('click', addBlocking);
+        }
+      }
+
+      e.preventDefault();
+      const x = e.pageX - this.offsetLeft;
+      const walk = (x - startX) * 1.2;
+      this.scrollLeft = scrollLeft - walk;
+    });
+  }
+
+  function addBlocking(e) {
+    e.preventDefault();
+  }
+
+  function removeBlocking(element) {
+    element.removeEventListener('click', addBlocking);
+  }
+}
