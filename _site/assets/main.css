@@ -920,7 +920,7 @@ h1, h2, h3, h4, h5, h6 {
   line-height: 1.2;
   font-family: 'gilroyblack', Helvetica, Arial, sans-serif; }
 
-h1 {
+h1, .h1 {
   font-size: 2.2em;
   line-height: 1.1; }
 
@@ -959,7 +959,7 @@ h3 {
   body {
     font-size: 1.3em; }
 
-  h1 {
+  h1, .h1 {
     font-size: 5em;
     line-height: 1.1; }
 
@@ -1265,6 +1265,8 @@ h3 {
     fill: #333333; }
   .section--peak--white polygon {
     fill: white; }
+  .section--justified-left {
+    max-width: 720px; }
 
 @media only screen and (min-width: 900px) {
   .page--culture .section--department-title {
@@ -1982,10 +1984,10 @@ h3 {
   background-size: cover;
   background-position: top; }
   .blog-latest-head {
-    padding-bottom: 0; }
+    padding-bottom: 6px; }
     @media (max-width: 991px) {
       .blog-latest-head {
-        padding: 40px 20px 0; } }
+        padding: 40px 20px 6px; } }
     .blog-latest-head h2 {
       font-size: 2em; }
       @media (min-width: 576px) {

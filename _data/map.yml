@@ -52,3 +52,8 @@
   label: Culture
   slug: culture
   path: /culture/
+  children:
+    -
+      label: Team
+      slug: team
+      path: /culture/team/

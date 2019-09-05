@@ -46,36 +46,51 @@ sections:
     content: |
         <h1>One agency.<br>
             No rules.<br>
-            <span class="typography--yellow">Except four.</span>
+            <span class="typography--black">Except four.</span>
         </h1>
-        <ul>
+        <ul class="typography--black">
             <li>Create meaningful, significant work.</li>
             <li>Challenge the brief. Question the insight. Search for original.</li>
             <li>Stay flexible. Always try to say yes.</li>
             <li>Deliver elegant answers to complex problems.</li>
         </ul>
 -
+    class: 'section--padding section--padding--pinch section--yellow typography'
+    template: sections/section.html
+    content: |
+        <div class="section section--justified-left">
+            <h2 class="h1">Careers.</h2>
+            <p>Want to work with us? We're always on the look out for great strategic and creative folk. Take a look at your current roles and apply now or simply get in touch and introduce yourself. You're welcome.</p>
+            <p>&nbsp;</p>
+            <a href="/careers/" class="button button--black">Work with us</a>
+        </div>
+-
     class: 'section--padding section--padding--pinch section--blue typography'
     template: sections/section.html
     content: |
-        <h2>People</h2>
+        <div class="section section--justified-left">
+            <h2 class="h1">People.</h2>
+            <p>There's a whole team of talented, dedicated people behind every brand we partner with. Get acquainted.</p>
+            <p>&nbsp;</p>
+            <a href="/culture/people/" class="button button--black">Meet the team</a>
+        </div>
 -
-    class: 'section section--group section--peak section--peak--blue'
-    image:  /assets/svg/triangle-rect.svg
+    class: 'section section--white'
     template: sections/group.html
+    image: '/assets/svg/triangle-solo-yellow-reduced.svg'
     sections:
         -
-            template: sections/people.html
--
-    class: 'section--padding section--blue section--center section--peak section--peak--yellow'
-    template: sections/section.html
-    content: |
-        <p><a class="button button--black" href="/careers/" target="_window">Careers</a></p>
--
-    class: 'section--padding section--padding--pinch section--black typography'
-    template: sections/section.html
-    content: |
-        <h2>Right here. <span class="typography--blue">Right Now.</span></h2>
+            template: sections/section.html
+            class: 'section section--padding--pinch blog-latest-head'
+            content: |
+                <h2 class="typography--red">The blog.</h2>
+        -
+            template: sections/blog-latest.html
+        -
+            template: sections/section.html
+            class: 'section blog-latest-foot'
+            content: |
+                <a href="/blog" class="section button button--black">Browse all articles</a>
 -
     class: 'section--white section--peak section--peak--blue typography'
     template: sections/slider-ajax.html
@@ -84,5 +99,5 @@ sections:
     class: 'section--padding section--red section--center section--peak section--peak--white'
     template: sections/section.html
     content: |
-        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us</a></p>
+        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us on Instagram</a></p>
 ---

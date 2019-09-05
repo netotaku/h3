@@ -1,0 +1,54 @@
+---
+layout: page
+title: 'Who we are'
+share_description: 'Keep things weird. Find out who we are here at Halo. The people that will push your brand to the next.'
+permalink: /culture/team/
+class: 'page--culture'
+share_image: posters/culture.jpg
+scripts: |
+    <script type="text/javascript" src="/assets/scripts/feed.js"></script>
+    <script>
+      var gallery = new Vue({
+        el: '#js-gallery',
+        data: {
+          items: []
+        },
+        mounted: function(){
+          console.log('gallery');
+
+          var that = this;
+
+          new Instafeed({
+            get: 'user', userId: '2961168982', accessToken: '2961168982.1677ed0.e48eca0a25ca4b25af12266f9fe725a4', clientId: '4f1fa779b8a948c28969964a4911fdad',
+            mock: true,
+            success: function(r){
+              that.items = r.data;
+              console.log(r.data);
+            }
+          }).run();
+        }
+      });
+    </script>
+sections:
+-
+    template: brand.html
+-
+    template: sections/header.html
+-
+    class: 'section--padding-hero section--red typography'
+    template: sections/section.html
+    content: |
+        <h1>Meet the team.</h1>
+-
+    class: 'section section--group'
+    image:  /assets/svg/triangle-rect.svg
+    template: sections/group.html
+    sections:
+        -
+            template: sections/people.html
+-
+    class: 'section--padding section--yellow section--center section--peak section--peak--yellow'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="/careers/" target="_window">Current vacancies</a></p>
+---

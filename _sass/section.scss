@@ -77,23 +77,28 @@
             polygon{
                 fill: $blue;
             }
-        } 
+        }
         &--black{
             polygon{
                 fill: $black;
             }
-        }  
+        }
         &--grey{
             polygon{
                 fill: $grey;
             }
-        }  
+        }
         &--white{
             polygon{
                 fill: white;
             }
-        }                        
-    }  
+        }
+    }
+    &--justified {
+        &-left {
+            max-width: 720px;
+        }
+    }
 }
 
 .page--culture {
