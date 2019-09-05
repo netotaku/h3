@@ -10,7 +10,7 @@ schemas:
         <h1 class="blog-head__title {% if page.hero.image %}typography--red{% endif %}">{{ page.title }}</h1>
         <div class="blog-head__sub">
             <div class="blog-head__author">
-                <img src="{{ post.author.image|default :'/assets/img/social-share.jpg' }}" class="blog-head__author-image" alt="{{ page.author.name }}" />
+                <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" class="blog-head__author-image" alt="{{ page.author.name }}" />
                 <p class="blog-head__author-name {% if page.hero.image %}typography--black{% endif %}">By {{ page.author.name }}</p>
             </div>
             <div class="blog-head__date">
@@ -76,6 +76,7 @@ schemas:
             <div class="blog-content typography">
                 {{ content }}
             </div>
+            {% include sections/schema/blogPosting.html %}
         </section>
     </div>
     <div class="group">

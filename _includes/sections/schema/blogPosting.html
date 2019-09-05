@@ -3,11 +3,13 @@
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "headline": "{{ page.title }}",
-        "alternativeHeadline": "and the women who love them",
-        "image": "{{ page.hero.image }}",
+        {% if page.hero.image %}
+          "image": "{{ page.hero.image }}",
+        {% endif %}
         "publisher": {
             "@type": "Organization",
-            "name": "Halo"
+            "name": "Halo",
+            "logo": "{{ site.url }}/assets/img/logo.png"
         },
         "url": "{{ site.url }}{{ page.url }}",
         "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
@@ -16,7 +18,12 @@
         "description": "{{ page.snippet }}",
         "author": {
             "@type": "{% if page.author.name == 'Halo' %}Organization{%else%}Person{%endif%}",
-            "name": "{{ page.author.name }}"
+            "name": "{{ page.author.name }}",
+            {% if page.author.name == 'Halo' %}
+                "logo": "{{ site.url }}/assets/img/logo.png"
+            {% else %}
+                "image": "{{ site.url }}{{ page.author.image|default :'/assets/img/logo.png' }}"
+            {% endif %}
         }
     }
 </script>
