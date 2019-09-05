@@ -5,43 +5,87 @@ layout: default
 
 {% capture blogHead %}
     <div class="blog-head">
-        <h1 class="blog-head__title">{{ page.title }}</h1>
-        <p class="blog-head__author">By: {{ page.author }}<br>Published: {{ page.date | date: "%B %e, %Y" }}</p>
+        <h1 class="blog-head__title {% if page.hero.image %}typography--red{% endif %}">{{ page.title }}</h1>
+        <div class="blog-head__sub">
+            <div class="blog-head__author">
+                <img src="{{ post.author.image|default :'/assets/img/social-share.jpg' }}" class="blog-head__author-image" alt="{{ page.author.name }}" />
+                <p class="blog-head__author-name {% if page.hero.image %}typography--black{% endif %}">By {{ page.author.name }}</p>
+            </div>
+            <div class="blog-head__date">
+                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="blog-head__time">
+                    <p class="{% if page.hero.image %}typography--black{% endif %}">
+                        {% assign d = page.date | date: "%-d" %}
+                        {% case d %}
+                        {% when "1" or "21" or "31" %}
+                        {{ d }}st
+                        {% when "2" or "22" %}
+                        {{ d }}nd
+                        {% when "3" or "23" %}
+                        {{ d }}rd
+                        {% else %}
+                        {{ d }}th
+                        {% endcase %}
+                        {{ page.date | date: "%B" }}
+                        {{ page.date | date: "%Y" }}
+                    </p>
+                </time>
+            </div>
+            <div class="blog-head__share {% if page.hero.image %}typography--blue{% endif %}">
+                <span class="blog-head__share-label">Share</span>
+                {% capture shareUrl %}{{ site.url }}{{ page.url }}{% endcapture %}
+                {% capture shareText %}Have a read of {{ page.title }} by Halo{% endcapture %}
+                <a target="_blank" rel="noopener nofollow noindex" href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl|url_encode }}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a target="_blank" rel="noopener nofollow noindex" href="https://twitter.com/share?text={{ shareText|url_encode }}&url={{ shareUrl|url_encode }}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a target="_blank" rel="noopener nofollow noindex" href="https://www.linkedin.com/shareArticle?mini=true&url={{shareUrl|url_encode}}&title={{page.title|url_encode}}&related=halo&summary={{page.title|url_encode}}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
+                    <i class="fa fa-linkedin"></i>
+                </a>
+            </div>
+        </div>
     </div>
 {% endcapture %}
 
 <div class="page__content content">
     {% if page.hero.image %}
-        <div class="section hero">
-            <div class="hero__inner" style="background-image: url({{ page.hero.image }})"></div>
-            <div class="hero__content">
-                <section class="section section--padding-hero section--padding--pinch {% if page.hero.inverseText %}section--text-white{% endif %} typography">
-                    <div class="section">
-                        {{ blogHead }}
-                    </div>
-                </section>
-            </div>
+        <div class="lead-image" style="background: url({{ page.hero.image }});">
+
         </div>
     {% else %}
         <div class="group">
-            <section class="section section--padding-hero section--padding--pinch section--blue section--peak section--peak--blue typography">
+            <section class="section section--padding-hero section--padding--pinch section--red section--peak section--peak--red typography">
                 <div class="section">
                     {{ blogHead }}
                 </div>
             </section>
         </div>
     {% endif %}
-    <div class="group">
-        <section class="section section--padding section--padding--pinch section--peak section--peak--blue section--white typography">
-            {% unless page.hero.image %}
-                {% include peak.html %}
-            {% endunless %}
-            <div class="section__measure">
-                <div class="blog-content typography">
-                    {{ content }}
+    <div class="group blog-body">
+        <section class="section section--padding section--padding--pinch section--peak section--peak--red section--white typography">
+            {% if page.hero.image %}
+                <div class="section typography--red">
+                    {{ blogHead }}
                 </div>
+            {% else %}
+                {% include peak.html %}
+            {% endif %}
+            <div class="blog-content typography">
+                {{ content }}
             </div>
         </section>
+    </div>
+    <div class="group">
+        <div class="blog-latest" style="background-image: url(/assets/svg/rhombas-blue.svg)">
+            <div class="section section--padding--pinch blog-latest-head">
+                <h2 class="typography--white">More news.</h2>
+            </div>
+            {% include sections/blog-latest.html %}
+            <div class="section blog-latest-foot">
+                <a href="/blog" class="section button button--black">Browse all articles</a>
+            </div>
+        </div>
     </div>
     <footer class="section section--padding section--black footer">
         <a class="footer__brand" href="/pong"><img src="/assets/svg/brand.svg"></a>
@@ -49,5 +93,4 @@ layout: default
             {% include contact.html %}
         </div>
     </footer>
-
 </div>

@@ -15,9 +15,13 @@
     &--yellow{
         background-color: $yellow;
     }
-    &--yellow{
+    &--red{
         background-color: $red;
-    }    
+    }
+    &--white {
+        background-color: $white;
+        color: $black;
+    }
 }
 
 @media only screen and (min-width: $max-width){
@@ -26,6 +30,12 @@
         &:hover{
             background: $white;
             color: $black;
+        }
+        &--white {
+            &:hover {
+                background: $red;
+                color: $white;
+            }
         }
     }
 } 

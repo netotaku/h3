@@ -8,8 +8,24 @@
     
         
             <url>
+                <loc>http://localhost:4000/blog/</loc>
+                
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+                
+                
+                    <changefreq>weekly</changefreq>
+                
+                
+                    <priority>0.5</priority>
+                
+            </url>
+        
+    
+        
+            <url>
                 <loc>http://localhost:4000/careers/</loc>
                 
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -35,6 +51,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -55,6 +74,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -74,6 +94,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -94,6 +117,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -113,6 +137,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -133,6 +160,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -152,6 +180,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -172,6 +203,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -191,6 +223,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -211,6 +246,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -230,6 +266,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -250,6 +289,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -269,6 +309,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -289,6 +332,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -308,6 +352,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -328,6 +375,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -347,6 +395,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -367,6 +418,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -386,6 +438,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -406,6 +461,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -425,6 +481,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -445,6 +504,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -464,6 +524,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -484,6 +547,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -503,6 +567,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -523,6 +590,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -542,6 +610,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -562,6 +633,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -581,6 +653,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>
@@ -601,6 +676,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
                     <lastmod>2019-09-05T16:36:27+01:00</lastmod>
 =======
                     <lastmod>2019-09-05T09:48:57+01:00</lastmod>
@@ -620,6 +696,9 @@
 =======
                     <lastmod>2019-09-05T09:58:50+01:00</lastmod>
 >>>>>>> Add some animation to the menu, so it doesn't pop into view quite as harshly
+=======
+                    <lastmod>2019-09-05T10:01:24+01:00</lastmod>
+>>>>>>> New version of the blog based on new designs
                 
                 
                     <changefreq>weekly</changefreq>

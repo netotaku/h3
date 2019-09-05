@@ -1,0 +1,42 @@
+---
+layout: page
+permalink: '/blog/'
+title: 'Blog'
+scripts: |
+    <script type="text/javascript" src="/assets/scripts/masonry.pkgd.min.js"></script>
+    <script>
+      var msnry = new Masonry( '.grid--masonry', {
+        itemSelector: '.grid__unit',
+        gutter: 0
+      });
+    </script>
+sections:
+-
+    template: brand.html
+-
+    class: 'section--padding-hero section--red typography'
+    template: sections/section.html
+    content: |
+        <h1>The blog.</h1>
+-
+    class: 'section section--white section--group'
+    image:  /assets/svg/triangle-solo-yellow.svg
+    template: sections/group.html
+    sections:
+        -
+            template: sections/blog.html
+-
+    class: 'section--padding section--blue section--center'
+    template: sections/section.html
+    content: |
+        <p><a class="button button--black" href="https://twitter.com/intent/follow?screen_name=weare_halo" target="_blank" rel="noopener noindex nofollow">Follow us on Twitter</a></p>
+-
+    class: 'section--padding section--padding--pinch section--black typography'
+    template: sections/section.html
+    content: |
+        <h2>See the <span class="typography--yellow">work.</span></h2>
+-
+    class: 'section--white section--work'
+    template: sections/slider.html
+    filter: work
+---
