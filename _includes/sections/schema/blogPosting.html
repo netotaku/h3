@@ -1,0 +1,22 @@
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "headline": "{{ page.title }}",
+        "alternativeHeadline": "and the women who love them",
+        "image": "{{ page.hero.image }}",
+        "publisher": {
+            "@type": "Organization",
+            "name": "Halo"
+        },
+        "url": "{{ site.url }}{{ page.url }}",
+        "datePublished": "{{ page.date | date: '%Y-%m-%d' }}",
+        "dateCreated": "{{ page.date | date: '%Y-%m-%d' }}",
+        "dateModified": "{{ page.date | date: '%Y-%m-%d' }}",
+        "description": "{{ page.snippet }}",
+        "author": {
+            "@type": "{% if page.author.name == 'Halo' %}Organization{%else%}Person{%endif%}",
+            "name": "{{ page.author.name }}"
+        }
+    }
+</script>
