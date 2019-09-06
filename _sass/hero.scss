@@ -22,6 +22,10 @@
         @include media-breakpoint-down(md) {
             font-size: 9.5vw;
         }
+        @include media-breakpoint-down(sm) {
+            font-size: 16vw;
+            line-height: 1.2em;
+        }
 
     }
     background-size: cover;
