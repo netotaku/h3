@@ -92,6 +92,11 @@
       font-style: italic;
       background-color: rgba($red, 0.05);
     }
+    p, blockquote {
+      &:not(:last-child){
+        margin-bottom: 2em;
+      }
+    }
   }
   &-body {
     .blog-head {
@@ -122,9 +127,6 @@
     &-foot {
       text-align: center;
       padding-bottom: 80px;
-      @include media-breakpoint-down(sm) {
-        padding-bottom: 40px;
-      }
     }
   }
 }

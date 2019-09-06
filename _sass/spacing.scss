@@ -1,0 +1,8 @@
+.spacing {
+  &--top {
+    padding-top: 2em;
+    @include media-breakpoint-down(sm) {
+      padding-top: 0;
+    }
+  }
+}
