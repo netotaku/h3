@@ -8,28 +8,30 @@
         </a>
         <div v-if="opened" class="page__overlay" v-cloak>
             <menu class="page__menu menu">
-                <ul>
-                {% for link in site.data.map %}
-                    <li>
-                        <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
-                        {% if link.children %}                            
+                <div class="page__menu-inner menu__inner">
+                    <ul>
+                        {% for link in site.data.map %}
+                        <li>
+                            <a href="{{ link.path }}" class="menu__link">{{ link.label }}</a>
+                            {% if link.children %}
                             <ul>
                                 {% for child in link.children %}
-                                    <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
+                                <li><a href="{{ child.path }}" class="menu__link">{{ child.label }}</a></li>
                                 {% endfor %}
-                            </ul>    
-                        {% endif %}
-                    </li>
-                {% endfor %}
-                </ul>
-                <div class="menu__base contact">                    
-                    <div class="contact">
-                        {% include contact.html %}
+                            </ul>
+                            {% endif %}
+                        </li>
+                        {% endfor %}
+                    </ul>
+                    <div class="menu__base contact">
+                        <div class="contact">
+                            {% include contact.html %}
+                        </div>
                     </div>
+                    <a v-on:click.prevent="opened = false" href="#" title="Close menu">
+                        <img class="menu__close" src="/assets/svg/close.svg" alt="Halo - Close Menu">
+                    </a>
                 </div>
-                <a v-on:click.prevent="opened = false" href="#" title="Close menu">
-                    <img class="menu__close" src="/assets/svg/close.svg" alt="Halo - Close Menu">
-                </a>
             </menu>
         </div>
     </div>
