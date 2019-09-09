@@ -10,6 +10,9 @@
     }
     &--padding{
         padding: $gutter*2 $gutter;
+        &-hero {
+            padding: $gutter*4 $gutter $gutter*2;
+        }
     }
     &--center{
         text-align: center;
@@ -124,6 +127,9 @@
             padding: $gutter-lrg;
             &--pinch{
                 padding: $gutter-lrg*2;            
+            }
+            &-hero {
+                padding: $gutter-lrg*2;
             }
         } 
         &--center-lrg{
