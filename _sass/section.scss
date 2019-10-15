@@ -12,12 +12,9 @@
         padding: $gutter*2 $gutter;
         &-hero {
             padding: $gutter*4 $gutter $gutter*2;
-<<<<<<< HEAD
-=======
-            &-b-n {
-                padding-bottom: 0;
-            }
->>>>>>> Tweaks to careers and cookies/terms page
+        }
+        &-b-n {
+            padding-bottom: 0;
         }
     }
     &--center{
