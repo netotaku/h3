@@ -92,7 +92,7 @@
       font-style: italic;
       background-color: rgba($red, 0.05);
     }
-    p, blockquote {
+    p, blockquote, ul, ol {
       &:not(:last-child){
         margin-bottom: 2em;
       }

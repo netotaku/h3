@@ -6,7 +6,7 @@ hero:
     image: '/assets/img/social-share.jpg'
 author: 
     name: Nick Ellis
-snippet: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut lacinia ultricies interdum. Nam vitae lectus turpis. Morbi pretium rhoncus dui.
+snippet: Time to get back to reality
 external:
     title: The Drum Magazine
 ---
