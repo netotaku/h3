@@ -1,6 +1,6 @@
 <section class="section section--padding typography">
     {% include peak.html %}
-    <div class="grid grid--halves grid--padding grid--padding-large u--gutter-bottom grid--masonry">
+    <div class="grid grid--halves grid--padding grid--padding-large grid--masonry">
         {% for post in site.posts limit:2 %}
         <div class="grid__unit">
             <a href="{{ post.url }}" class="blog-card u-shadow">
