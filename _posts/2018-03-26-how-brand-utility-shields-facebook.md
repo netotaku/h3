@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  'How Brand Utility Shields Facebook'
-thumb: '/assets/img/social-share.jpg'
+thumb: '/assets/img/blog/brand-utility-shields-facebook.jpg'
+hero: 
+    image: '/assets/img/blog/brand-utility-shields-facebook.jpg'
 author: 
     name: Paul Bailey
 snippet: Why would people remain loyal to a brand they didn’t like?

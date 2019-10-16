@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  'Brands and The Changing Art of Persuasion'
-thumb: '/assets/img/social-share.jpg'
+thumb: '/assets/img/blog/brands-and-the-changing-art-of-persuasion.jpg'
+hero: 
+    image: '/assets/img/blog/brands-and-the-changing-art-of-persuasion.jpg'
 author: 
     name: Paul Bailey
 snippet: Persuasion is not the most fashionable of brand P-words right now – that honor goes to Purpose.

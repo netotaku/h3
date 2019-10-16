@@ -2,8 +2,6 @@
 layout: post
 title:  'The Battle for Brand Purpose'
 thumb: '/assets/img/social-share.jpg'
-hero: 
-    image: '/assets/img/social-share.jpg'
 author: 
     name: Nick Ellis
 snippet: Time to get back to reality

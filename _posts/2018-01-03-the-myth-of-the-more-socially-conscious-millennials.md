@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  'The Myth Of The More Socially Conscious Millennials'
-thumb: '/assets/img/social-share.jpg'
+thumb: '/assets/img/blog/the-myth-of-the-more-socially-conscious.jpg'
+hero: 
+    image: '/assets/img/blog/the-myth-of-the-more-socially-conscious.jpg'
 author: 
     name: Paul Bailey
 snippet: 73% of millennials are willing to spend more on a product if it comes from a sustainable brand

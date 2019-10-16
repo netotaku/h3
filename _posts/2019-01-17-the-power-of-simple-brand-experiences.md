@@ -1,7 +1,9 @@
 ---
 layout: post
 title:  'The Power of Simple Brand Experiences'
-thumb: '/assets/img/social-share.jpg'
+thumb: '/assets/img/blog/the-power-of-simple-brand-experiences.jpg'
+hero: 
+    image: '/assets/img/blog/the-power-of-simple-brand-experiences.jpg'
 author: 
     name: Paul Bailey
 snippet: I have a new favorite toy store brand.
