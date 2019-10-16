@@ -46,8 +46,12 @@
       label: Rowan Dartington
       slug: rowan
       path: /work/rowan-dartington/
-      thumb: /assets/img/thumb_rowan.jpg 
-           
+      thumb: /assets/img/thumb_rowan.jpg
+    -
+      label: Day Out With The Kids
+      slug: dowtk
+      path: /work/dowtk/
+      thumb: /assets/img/thumb_dowtk.jpg
  - 
   label: Culture
   slug: culture
