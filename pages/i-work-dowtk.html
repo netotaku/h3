@@ -40,13 +40,42 @@ sections:
     template: sections/section.html
     content: |
         <div class="section__measure">
-            <p><img class="dowtk-logo" src="/assets/img/case-studies/dowtk/dowtk-logo.svg" alt="Halo - Day Out With The Kids Logo"></p>
-            <!--<div class="row row&#45;&#45;center">
-                <div class="col-md-8 text&#45;&#45;center">
-                    <h3>Lorem ipsum dolor sit amet</h3>
-                    <p>Donec eu tortor ac ipsum scelerisque aliquam. Fusce fermentum justo pretium eros condimentum, vitae elementum dolor dapibus. Vivamus porta tempor neque non sollicitudin. Integer sed quam purus. Donec lobortis risus eu orci dignissim dictum. Proin tincidunt, justo eget luctus porttitor, nisl ante dignissim tellus, id porttitor turpis tortor vitae velit.</p>
+            <p><div id="bodymovin" class="dowtk-bodymovin"></div><!--<img id="bodymovin" class="dowtk-logo" src="/assets/img/case-studies/dowtk/dowtk-logo.svg" alt="Halo - Day Out With The Kids Logo">--></p>
+            <script>
+                var animData = {
+                    wrapper: document.getElementById('bodymovin'),
+                    animType: 'svg',
+                    loop: true,
+                    prerender: true,
+                    autoplay: true,
+                    path: '/assets/json/lottie/dowtk-logo-anim.json'
+                };
+
+                var anim = bodymovin.loadAnimation(animData);
+
+                var element = document.querySelector('#bodymovin');
+
+                window.addEventListener('scroll', function(){
+                    if (isInViewport(element)) {
+                        anim.play();
+                    }
+                });
+
+                var isInViewport = function (elem) {
+                    var bounding = elem.getBoundingClientRect();
+                    return (
+                        bounding.top >= 0 &&
+                        bounding.left >= 0 &&
+                        bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                        bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
+                    );
+                };
+            </script>
+            <div class="row row--center">
+                <div class="col-md-8 text--center">
+                    <p>The dynamic visual identity allows for multiple marques to be experienced alongside strong and consistent typography. The logo is always as fresh and relevant as the site search results. Vibrant pastel tones give an approachable, friendly feel without loss of impact and the accompanying art direction is family focused. Creating a brand with fun, connection and togetherness at its core.</p>
                 </div>
-            </div>-->
+            </div>
         </div>
 -
     class: 'section--padding section--peak section--peak--dowtk-red section--padding--pinch section--blue section--background-aware section--quote typography'
@@ -56,44 +85,6 @@ sections:
         <div class="section__bottom quote quote--50">
             <blockquote>Halo have re-imagined our brand and completely transformed our UX, delivering bold strides in our offer and significant growth in our users. They really get us, our audience and the opportunity for the brand</blockquote>
             <cite>Tony Seaman, UK Brand Manager</cite>
-        </div>        
--
-    class: 'section--padding section--white section--labels section--center-lrg typography'
-    template: sections/section.html
-    content: |
-        <div class="section__center">
-            <div class="row row--center">
-                <div class="col-md-6 text--center">
-                    <p>The dynamic visual identity allows for multiple marques to be experienced alongside strong and consistent typography. The logo is always as fresh and relevant as the site search results. Vibrant pastel tones give an approachable, friendly feel without loss of impact and the accompanying art direction is family focused. Creating a brand with fun, connection and togetherness at its core.</p>
-                </div>
-            </div>
-            <div class="row row--center dowtk-logo__renders">
-                <div class="col-md-2 col-xs-6 dowtk-logo__render-1">
-                    <div class="dowtk-logo__render-inner">
-                        <img src="/assets/img/case-studies/dowtk/dowtk-logo-r1.svg" alt="Halo - Day Out With The Kids Render 1">
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-6 dowtk-logo__render-2">
-                    <div class="dowtk-logo__render-inner">
-                        <img src="/assets/img/case-studies/dowtk/dowtk-logo-r2.svg" alt="Halo - Day Out With The Kids Render 2">
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-6 dowtk-logo__render-3">
-                    <div class="dowtk-logo__render-inner">
-                        <img src="/assets/img/case-studies/dowtk/dowtk-logo-r3.svg" alt="Halo - Day Out With The Kids Render 3">
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-6 dowtk-logo__render-4">
-                    <div class="dowtk-logo__render-inner">
-                        <img src="/assets/img/case-studies/dowtk/dowtk-logo-r4.svg" alt="Halo - Day Out With The Kids Render 4">
-                    </div>
-                </div>
-                <div class="col-md-2 col-xs-6 dowtk-logo__render-5">
-                    <div class="dowtk-logo__render-inner">
-                        <img src="/assets/img/case-studies/dowtk/dowtk-logo-r5.svg" alt="Halo - Day Out With The Kids Render 5">
-                    </div>
-                </div>
-            </div>
         </div>
 -
     class: 'body-video section--padding--pinch section--black section--peak section--peak--gold'

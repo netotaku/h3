@@ -263,6 +263,12 @@ $dowtk_quaternary: #FBD96E;
     }
   }
 
+  .dowtk-bodymovin {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
   .dowtk-web-mockup {
     &__image {
       max-width: 1342px;
