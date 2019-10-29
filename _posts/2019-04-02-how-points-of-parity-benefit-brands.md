@@ -27,6 +27,8 @@ _In the early years, there is a value to these banks in the points-of-parity the
 the audience associate them with. These banking brands are creating an identity, not only for themselves, but for the 
 wider idea of doing your banking differently._
 
+### A history of common category cues
+
 The approach of brands within a category having common visual cues is nothing new. Just think about washing detergents, 
 and how many visual similarities they have, from graphic devices to typographic treatments. Another example might be 
 craft beer brewers who, particularly in the early years of the growing movement, created brands and identities that 
@@ -47,7 +49,9 @@ whether or not you’re a smart choice.
 >And if I was a wedding photographer, I’d organize a dozen other photographers in town and do a joint brochure and 
 marketing effort. Serving brides in a way that establishes status and increases their confidence.
 
-### Being identified as a part of a group can be beneficial.
+Being identified as a part of a group can be beneficial.
+
+### Be distinctive, but within a category
 
 Now of course, a brand should have its own identity – but let’s also remember that, particularly when the competition 
 you’re actually trying to win customers from is so much larger and with a much larger available budget, there is a value 

@@ -74,7 +74,7 @@ certainly no history of bears in Bristol. The new name has caused uproar with fa
 but for now a large percentage of the audience (74% in a recent poll) feel that the brand has changed to an identity 
 which they don’t really want as a part of their self-identity.
 
-### Be Prepared For A Reaction. It’s Actually Good That People Care
+### Want a reaction - it’s good people care
 
 We could go on and on listing examples, but the lesson is always the same. Should a brand have a existing emotional 
 connection with its audience, then any changes made to this brand – and therefore by association an individual’s 

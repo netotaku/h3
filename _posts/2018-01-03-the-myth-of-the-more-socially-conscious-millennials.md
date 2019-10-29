@@ -18,6 +18,8 @@ So, are we to assume from this that people born between 1982 and 2002 (the Mille
 previous generations? If so, why would this be the case? Maybe we should take a step back from the popular view, and 
 consider whether this is actually what the statistics are telling us, or is there something else happening here?
 
+#### Are Millennials really all that different?
+
 I challenge whether the Millennial generation are actually more driven by social causes at all, and put forward an 
 alternative hypothesis. I have no specific evidence as such, but this is food for thought which challenges the current 
 consensus and reading of the statistics.
@@ -29,12 +31,16 @@ What I suggest has happened is that the self-identity of people within this gene
 enmeshed with their associations and relationships with consumer brands that they see brands as their best route to 
 affecting social change.
 
+#### Consumers, not citizens
+
 The role of the person as consumer, rather than citizen, has been covered in great depth by academics such as Celia Lury 
 in Consumer Culture. Being born in 1982 at the earliest, Millennials have only ever lived in a time when consumer 
 culture was a pervasive force. Increasingly, the consumer is being considered as an ‘active’ consumer who can 
 ‘add-value’. This value can be either financial or in the form of intrinsic or extrinsic benefits seen by the company or 
 consumer, from ’McDonaldization’ where consumers provide immaterial labor (Zwick, Bonsu and Darmody, 2008) to 
 ‘co-creation’ and ‘prosumption’ where the consumer is the ‘producer’ of unique value (Ritzer and Jurgenson, 2010).
+
+#### The role of brand in shaping self-identity
 
 As a person’s role as an active consumer becomes more pervasive, the place brands have in shaping a person’s identity 
 becomes more central. However, when previous generations were at the ages Millennials are now, the role that consumer 
@@ -57,6 +63,8 @@ that in which they have the most impact.
 
 _The self-identity of ‘Millennials’ has become so enmeshed with consumer brands, it seems their best way to encourage 
 social change._
+
+#### Affecting social change through the role as a consumer
 
 Why is this distinction important? My argument isn’t that Millennials aren’t being more demanding of businesses and 
 organizations to be more socially conscious and responsible, but that Millennials are no more socially conscious than 

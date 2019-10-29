@@ -18,6 +18,8 @@ What I refer to here as ‘brand’ are not the spacial elements, such as the lo
 tangible, such as the values, purpose, behaviours and experiences. In defining it as such, we can consider brands 
 temporally rather than spatially.
 
+#### A brand is shared and evolutionary
+
 A brand is not created exclusively by any one specific group of people – it is born (e.g. when a business/product is 
 launched), it grows and develops (e.g. throughout the business/product lifespan), and it dies (e.g. when the 
 business/product ends and people eventually forget about it). During its lifespan a brand will mean a myriad of things 
@@ -31,6 +33,8 @@ Brands are not only economic but are also social and cultural, and so are always
 Societal, cultural and economic environments are also constantly changing and developing, and therefore so too should 
 brands.
 
+#### A brand is a dynamic entity
+
 If a brand is considered temporally, and is perpetually developing from the informed input of all stakeholders, what 
 does this mean for businesses and the branding industry? A brand is not a static entity that you can create and then 
 lock away in a brand guidelines document or a marketing plan. With a brand in perpetual development it is important to 
@@ -43,6 +47,8 @@ environment. Much like a business constantly develops its offering and working m
 relevant (or popular) the brand must be in perpetual development and evolution while still communicating itself at key 
 points in time.
 
+#### Works in progress
+
 In some recent research psychologist Dan Gilbert has explained a phenomenon he calls the “End of history illusion,” 
 where people imagine that the person they are now is the person they will be for the rest of time. He says, “Human 
 beings are works in progress that mistakenly think they’re finished.”
@@ -51,6 +57,8 @@ I suggest that the same is true for brands – brands are works in progress that
 branding industry professionals do is share the brand with the world, contextualise the brand, promote the brand, 
 represent the brand – essentially help to shape and direct the brand in and for its current social, cultural and 
 economic environment. What they or businesses don’t do is either fully control or own the brand.
+
+#### Embrace imperfection
 
 Brands should never be considered finished. They aren’t static, but are temporal and evolutionary. They can be better 
 understood if considered in a state of perpetual development. When considering brands we should accept the simple 

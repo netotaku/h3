@@ -16,6 +16,8 @@ snippet: Earlier this year the Natural Environment Research Council launched a p
 In an increasingly digital-led age there is a clamour to engage and involve people in brands. However, there are smart 
 ways of involving people and not so smart ways – and #BoatyMcBoatface is a great example of being not so smart.
 
+#### Understanding co-creation
+
 Co-creation is become an increasingly used buzz phrase, but there is considerable misunderstanding of what it means to 
 co-create a brand. There is some very intelligent and insightful literature on co-creation and the sociological and 
 psychological theories behind it, but I doubt many marketers have read any Prahalad or Ramaswamy. I think it is time 
@@ -24,6 +26,8 @@ they did.
 Importantly, co-creation is about the business and people jointly creating ‘value’. Shared value around a brand which 
 has been co-created can be an extremely effective way of building a relationship between business and people. The value 
 is often in an improved or more bespoke experience of the brand.
+
+#### The unexpected audience incentive
 
 Where the misuse of co-creation often occurs is in the assumption that people will see the same value in doing something 
 as you do. The Boaty McBoatface example is a good one, but it is far from a one-off. Giving the public the ability to 
@@ -34,6 +38,8 @@ prestige of the ship, which is exactly why the value to people of choosing a nam
 so strong. Once a name was suggested that had the right amount of wit and ‘stickiness’, there was only ever going to 
 be one winner. Boaty McBoatface it was.
 
+#### Some smart PR
+
 But it wasn’t. In a bit of a pr management exercise, the small print of the competition was outlined which said that the 
 most popular name didn’t HAVE to be used. And so the ship is to be named the RRS Sir David Attenborough, which is much 
 more in line with the mission of the vessel. However, Boaty McBoatface is still to be used as the name of one of the 
@@ -41,6 +47,8 @@ remotely operated vehicles. Now this was actually pretty smart handling for two 
 
 * everyone loves Sir David Attenborough, and so people are unlikely to complain too much about the ship being named after him
 * the Boaty McBoatface name is still being used (to a point)
+
+#### Request input, don't abdicate responsibility
 
 So what is the big lesson about co-creation here? Essentially, co-creation is about trying to create a platform in which 
 shared value can be derived. What co-creation isn’t is abdicating responsibility to the crowd, and then being surprised 

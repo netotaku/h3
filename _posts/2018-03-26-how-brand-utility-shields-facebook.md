@@ -19,6 +19,8 @@ bit of a kicking recently. Without going in to detail (the plethora of issues ar
 Cambridge Analytica and the misuse of 50 million sets of peoples’ information are pretty high on the list) it seems that 
 Facebook haven’t been all that great at being a trustworthy brand.
 
+### Does brand trust matter?
+
 People have essentially been giving their data to Facebook for years, but the lack of care Facebook have taken with this 
 data is now coming into sharp focus. The hashtag #deletefacebook has gained notable traction on social media, and the 
 Bank of America has slashed the Facebook share price forecast citing this hashtag ‘movement’ as a reason. Although the 
@@ -42,6 +44,8 @@ Orkut</a>) and that Facebook could go the way of these. I’m not convinced of t
 brand. Facebook has placed itself at the center of an incalculable number of relationships, many of which would simply 
 would not exist without it. The brand has little competition right now, and the sheer number of people on the platform 
 means that it remains in a dominant position.
+
+### Brand Utility &gt; Brand Trust
 
 It is this unique utility Facebook offers which seems to continue to outweigh any issues people might have with trust in 
 the brand. The opinion of the Facebook brand must be at an all time low right now – many people don’t trust the content 

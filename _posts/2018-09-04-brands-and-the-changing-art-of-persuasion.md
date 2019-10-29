@@ -15,7 +15,9 @@ professional lives – James Lees (Sword & Stone) and Jim Carroll (ex-UK Chairma
 but the big takeaway from the talk for me was from Jim regarding ‘persuasion’, and that a part of our role as 
 strategists remains to persuade. 
 
-### Persuasion is not the most fashionable of brand P-words right now – that honor goes to Purpose.
+Persuasion is not the most fashionable of brand P-words right now – that honor goes to Purpose.
+
+### Brand purpose can be positive
 
 Purpose has become the phrase on every brand strategists lips, but unfortunately this is a phrase which I feel has 
 become hijacked. Having a purpose for your brand is of course important, but how this is defined has become rather 
@@ -36,6 +38,8 @@ conversations in some form (in that we must actively listen to what people are s
 importantly the people leading a brand, it is our role to always seek to move the conversation on and constantly seek to 
 shape the conversation that is being had.
 
+### A marketers role is to persuade
+
 So is a part of our role still as persuaders? I may be wrong here, but I feel that many of today’s marketers consider 
 persuasion to be beneath them. Talking about things like brand purpose help us make our role sound more worthwhile, and 
 make us feel better about ourselves, but is there anything wrong with seeking to persuade?
@@ -53,6 +57,8 @@ internal expert) to help them with a specific challenge for their brand, surely 
 influence is not enough. We need to be increasing awareness and affiliation, but with the ultimate aim of encouraging 
 desired actions – which fundamentally is persuading isn’t it?
 
+### The changing tools of persuasion
+
 For those Mad Men ad execs mentioned previously, their tools of persuasion were the ‘megaphone’ media of advertising, in 
 its various forms. I believe that the role of persuasion does remain, but the tools may now be different. In our 
 networked world, persuasion doesn’t have to come directly from the ‘mouth’ of the organization. Harvard Business Review 
@@ -62,6 +68,8 @@ moderately positive reviews that are the most persuasive. We’ve also mentioned
 ethics of some social media influencers may be questionable, with the recent claims of some beauty influencers offering 
 to give negative reviews of competitor brands for $75k, but the fact that they are simply another way by which to 
 persuade should be beyond doubt.
+
+### Encourage people to want things
 
 In rather apt timing, Tom Roach (Managing Partner BBH London) shared a tweet recently reminding me of the, admittedly 
 very catchy, idea that it is now about ‘Making things people want’ rather than ‘Making people want things’. His point 

@@ -25,6 +25,8 @@ around the store this was great, and a welcome distraction that kept him busy. H
 time to leave the store. Have you tried persuading a 21 month old boy, obsessed with construction vehicles, to walk away 
 from a large set of construction vehicles? Not an easy task.
 
+### An experience with real value
+
 Up to this point, our experience of the store had been fine. Nice toys, attentive staff, and a pleasant store. All good 
 so far… but not memorable, nor particularly exceptional. However, this all changed when it was time for us to leave.
 
@@ -44,11 +46,15 @@ This promise of bubbles had done the trick. The staff member led the way outside
 bubbles – much to our son’s delight. Thirty seconds of bubbles washed away all memories of construction toys, and off we 
 went on our day out as happy as we’d been when entering the store.
 
+### Make an impression. Be remembered.
+
 Now, this might sound a little corny, but this small act made a huge impression on me. Had this staff member not 
 intervened, my last experience of the store would likely have been a difficult one. I could even have still been there 
 now trying to persuade him of the merits of leaving behind such great toys. As it was though, my last and abiding memory 
 of the toy store was of one that clearly understands its target audience, and vitally the key situations they might find 
 themselves in.
+
+### The Experience Economy
 
 Experiences have become vitally important to the shaping of a brand. In ‘The Experience Economy’, Pine & Gilmore state 
 that experience is the “_fourth economic offering_”. From commodity to goods, to service and then experience. A 
@@ -61,6 +67,8 @@ Moments. These are moments that are memorable, hopefully for the right reasons, 
 Whether this moment with the bubbles was a result of very smart and insightful staff training, or just one brilliant 
 member of staff who really understood their customers, it left behind a memory which will help shape the brand of this 
 toy store to me.
+
+### Understand what your audience needs, and deliver it.
 
 Brand experience doesn’t have to be hugely expensive, or complicated, to be effective. To display an understanding of 
 your audience, and a response which creates a positive experience for them, can be as simple as blowing bubbles.
