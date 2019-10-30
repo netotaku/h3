@@ -7,6 +7,9 @@ hero:
 author: 
     name: Paul Bailey
 snippet: Why would people remain loyal to a brand they didn’t like?
+external:
+    title: Branding Strategy Insider
+    ur: https://www.brandingstrategyinsider.com/2018/03/how-brand-utility-shields-facebook.html
 ---
 
 Why do people remain loyal to a brand? There are a myriad of benefits that brand experts claim people want from a brand 

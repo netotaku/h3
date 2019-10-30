@@ -7,6 +7,10 @@ hero:
 author: 
     name: Paul Bailey
 snippet: Brands are works in progress that we mistakenly think are finished.
+external:
+    title: Transform Magazine
+    url: https://www.transformmagazine.net/articles/2014/accepting-the-impermanent-in-brand-development/
+    short: Transform
 ---
 
 ### Brands are works in progress that we mistakenly think are finished.

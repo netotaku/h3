@@ -9,6 +9,8 @@ author:
 snippet: I’ll go first. My name is Nick and I’m addicted to creative pitching.
 external:
     title: The Drum Magazine
+    url: https://www.thedrum.com/opinion/2019/07/12/addicted-pitching-time-get-clean
+    short: The Drum
 ---
 
 I’ll go first.

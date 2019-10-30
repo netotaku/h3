@@ -7,6 +7,9 @@ hero:
 author: 
     name: Paul Bailey
 snippet: Brand is used to appeal to peoples’ emotions, by creating meaning that has a value to someone.
+external:
+    title: Branding Strategy Insider
+    url: https://www.brandingstrategyinsider.com/2018/05/why-brand-change-triggers-emotional-reactions.html
 ---
 
 Brand is used to appeal to peoples’ emotions, by creating meaning that has a value to someone. So why is there any 

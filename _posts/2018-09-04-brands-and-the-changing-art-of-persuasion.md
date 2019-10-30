@@ -7,6 +7,9 @@ hero:
 author: 
     name: Paul Bailey
 snippet: Persuasion is not the most fashionable of brand P-words right now – that honor goes to Purpose.
+external:
+    title: Branding Strategy Insider
+    url: https://www.brandingstrategyinsider.com/2018/09/brands-and-the-changing-art-of-persuasion.html
 ---
 
 I recently attended a great morning session on strategy at the <a href="https://www.ycn.org/" target="_blank">You Can 

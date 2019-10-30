@@ -7,6 +7,9 @@ hero:
 author: 
     name: Paul Bailey
 snippet: I have a new favorite toy store brand.
+external:
+    title: Branding Strategy Insider
+    url: https://www.brandingstrategyinsider.com/2019/01/the-power-of-simple-brand-experiences.html#.XbhyskX7RTY
 ---
 
 ### I have a new favorite toy store brand.

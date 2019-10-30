@@ -7,6 +7,9 @@ hero:
 author: 
     name: Paul Bailey
 snippet: In the UK in recent years there has been an emergence of a number of challenger bank brands.
+external:
+    title: Branding Strategy Insider
+    url: https://www.brandingstrategyinsider.com/2019/04/how-points-of-parity-benefit-brands.html#.XbhyoUX7RTY
 ---
 
 ### In the UK in recent years there has been an emergence of a number of challenger bank brands.

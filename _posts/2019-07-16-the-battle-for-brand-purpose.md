@@ -8,7 +8,9 @@ author:
     name: Nick Ellis
 snippet: Time to get back to reality
 external:
+    url: https://www.thedrum.com/opinion/2019/07/16/the-battle-brand-purpose-it-not-csr
     title: The Drum Magazine
+    short: The Drum
 ---
 
 ### Time to get back to reality
