@@ -1,1 +1,49 @@
+<<<<<<< Updated upstream
 { "name": "Halo Media Communications", "short_name": "Halo", "start_url": "https://h3-dev-web6.halosvr.co.uk/", "display": "browser", "background_color": "#ffffff", "description": "We partner with ambitious brands. Household names, energetic challengers, focused start-ups. Shaping &amp; connecting brands with their audiences. Creating emotional momentum.", "icons": [{ "src": "/assets/img/apple-icon-57x57.png", "sizes": "57x57", "type": "image/png" }, { "src": "/assets/img/apple-icon-60x60.png", "sizes": "60x60", "type": "image/png" }, { "src": "/assets/img/apple-icon-72x72.png", "sizes": "72x72", "type": "image/png" }, { "src": "/assets/img/apple-icon-76x76.png", "sizes": "76x76", "type": "image/png" }, { "src": "/assets/img/apple-icon-114x114.png", "sizes": "114x114", "type": "image/png" }, { "src": "/assets/img/apple-icon-120x120.png", "sizes": "120x120", "type": "image/png" }, { "src": "/assets/img/apple-icon-144x144.png", "sizes": "144x144", "type": "image/png" }, { "src": "/assets/img/apple-icon-152x152.png", "sizes": "152x152", "type": "image/png" }, { "src": "/assets/img/apple-icon-180x180.png", "sizes": "180x180", "type": "image/png" }] }
+=======
+{
+  "name": "Halo Media Communications",
+  "short_name": "Halo",
+  "start_url": "http://localhost:4000",
+  "display": "browser",
+  "background_color": "#ffffff",
+  "description": "We partner with ambitious brands. Household names, energetic challengers, focused start-ups. Shaping &amp; connecting brands with their audiences. Creating emotional momentum.",
+  "icons": [{
+    "src": "/assets/img/apple-icon-57x57.png",
+    "sizes": "57x57",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-60x60.png",
+    "sizes": "60x60",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-72x72.png",
+    "sizes": "72x72",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-76x76.png",
+    "sizes": "76x76",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-114x114.png",
+    "sizes": "114x114",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-120x120.png",
+    "sizes": "120x120",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-144x144.png",
+    "sizes": "144x144",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-152x152.png",
+    "sizes": "152x152",
+    "type": "image/png"
+  }, {
+    "src": "/assets/img/apple-icon-180x180.png",
+    "sizes": "180x180",
+    "type": "image/png"
+  }]
+}
+>>>>>>> Stashed changes

@@ -1,1 +1,5 @@
+<<<<<<< Updated upstream
 {"/our-work/live-nation/":"https://h3-dev-web6.halosvr.co.uk//work/livenation/","/our-work/":"https://h3-dev-web6.halosvr.co.uk//work/","/our-work/fierce-noble/":"https://h3-dev-web6.halosvr.co.uk//work/","/our-story/":"https://h3-dev-web6.halosvr.co.uk//"}
+=======
+{"/our-work/live-nation/":"http://localhost:4000/work/livenation/","/our-work/":"http://localhost:4000/work/","/our-work/fierce-noble/":"http://localhost:4000/work/","/our-story/":"http://localhost:4000/"}
+>>>>>>> Stashed changes
