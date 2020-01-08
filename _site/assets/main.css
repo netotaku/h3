@@ -1210,57 +1210,45 @@ h3 {
   background-position: center;
   background-size: cover;
   position: relative;
-  overflow: hidden; }
-  .section__measure {
-    max-width: 900px;
-    margin: auto; }
-  .section--padding {
-    padding: 40px 20px; }
-    .section--padding-hero {
-      padding: 80px 20px 40px; }
-    .section--padding-b-n {
-      padding-bottom: 0; }
-  .section--center {
-    text-align: center; }
+  overflow: hidden;
+  padding: 80px 20px 40px;
+  box-sizing: border-box;
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: center; }
   .section--white {
-    background-color: #fff; }
+    background-color: #fff;
+    color: #000; }
   .section--grey {
-    background-color: #333333; }
+    background-color: #333333;
+    color: #fff; }
   .section--red {
     background-color: #FF0648;
     color: #fff; }
-    .section--red a {
-      color: #fff; }
   .section--blue {
     background-color: #0000D8;
     color: #fff; }
-    .section--blue a {
-      color: #fff; }
   .section--black {
     background-color: #000;
     color: #fff; }
-    .section--black a {
-      color: #fff; }
   .section--yellow {
-    background-color: #FFE21F; }
-  .section--banner {
-    height: 185px; }
-  .section--peak .peak {
-    display: block; }
-  .section--peak--yellow polygon {
-    fill: #FFE21F; }
-  .section--peak--red polygon {
-    fill: #FF0648; }
-  .section--peak--blue polygon {
-    fill: #0000D8; }
-  .section--peak--black polygon {
-    fill: #000; }
-  .section--peak--grey polygon {
-    fill: #333333; }
-  .section--peak--white polygon {
-    fill: white; }
-  .section--justified-left {
-    max-width: 720px; }
+    background-color: #FFE21F;
+    color: #000; }
+  .section__text-block {
+    max-width: 975px;
+    text-align: center; }
+    .section__text-block * {
+      margin-bottom: 40px; }
+      .section__text-block *:last-child {
+        margin-bottom: 0; }
+  .section__related-work {
+    margin: 0;
+    padding: 0;
+    min-height: unset;
+    padding-bottom: 80px; }
 
 @media only screen and (min-width: 900px) {
   .page--culture .section--department-title {
@@ -1340,12 +1328,12 @@ h3 {
   .typography p + h2, .typography p + h3 {
     margin-top: 40px; } }
 .slider {
-  font-size: 0px;
   overflow: hidden;
   white-space: nowrap;
   overflow-x: scroll;
   cursor: ew-resize;
-  -webkit-overflow-scrolling: touch; }
+  -webkit-overflow-scrolling: touch;
+  width: 100%; }
   .slider.active {
     cursor: grabbing; }
     .slider.active a {
@@ -1354,31 +1342,27 @@ h3 {
     padding: 20px;
     padding-bottom: 0px; }
   .slider__scroll {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
     user-select: none; }
+    .slider__scroll a {
+      text-decoration: none; }
   .slider__item {
-    font-size: 16px;
-    display: inline-block;
-    margin-right: 20px;
-    position: relative; }
-    .slider__item__image {
-      display: block;
-      width: 70vw; }
+    display: inline-flex;
+    position: relative;
+    width: 50%;
+    height: 50vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center; }
     .slider__item__grad {
       position: absolute;
       top: 0px;
       bottom: 0px;
       left: 0px; }
-    .slider__item__label {
-      position: absolute;
-      bottom: 20px;
-      left: 20px;
-      right: 20px;
-      z-index: 1;
+    .slider__item h3 {
       color: #fff;
-      line-height: 1; }
+      text-decoration: none; }
     .slider__item--background-aware a {
       position: relative;
       display: block;
@@ -1448,14 +1432,20 @@ h3 {
   text-decoration: none;
   font-weight: bold; }
   .button--black {
-    background-color: #000; }
+    background-color: #000;
+    color: #fff; }
   .button--yellow {
-    background-color: #FFE21F; }
+    background-color: #FFE21F;
+    color: #000; }
   .button--red {
-    background-color: #FF0648; }
+    background-color: #FF0648;
+    color: #fff; }
   .button--white {
     background-color: #fff;
     color: #000; }
+  .button--blue {
+    background-color: #0000D8;
+    color: #fff; }
 
 @media only screen and (min-width: 900px) {
   .button {

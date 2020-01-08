@@ -1,50 +1,59 @@
 .slider{
-    font-size: 0px;
     overflow: hidden;
     white-space: nowrap;
     overflow-x: scroll;
     cursor: ew-resize;
     -webkit-overflow-scrolling: touch;
+    width: 100%;
+
     &.active {
         cursor: grabbing;
         a  {
             cursor: grabbing;
         }
     }
+
     &__title{
         padding: $gutter;
         padding-bottom: 0px;
     } 
+
     &__scroll{   
-        padding-left: $gutter;     
-        padding-top: $gutter;
-        padding-bottom: $gutter;
         user-select: none;
-    }
-    &__item{  
-        font-size: 16px;      
-        display: inline-block;
-        margin-right: $gutter;
-        position: relative;
-        &__image{
-            display: block;
-            width: 70vw;
+
+        a {
+            text-decoration: none;
         }
+    }
+
+    &__item{    
+        display: inline-flex;
+        position: relative;
+        width: 50%;
+        height: 50vh;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        justify-content: center;
+        align-items: center;
+
+        // &__image{
+        //     display: block;
+        //     width: 70vw;
+        // }
+
         &__grad{
             position: absolute;
             top: 0px;
             bottom: 0px;
             left: 0px;                        
         }
-        &__label{
-            position: absolute;
-            bottom: $gutter;
-            left: $gutter;
-            right: $gutter;
-            z-index: 1;
-            color: #fff;
-            line-height: 1;
+
+        h3 {
+            color: $white;
+            text-decoration: none;
         }
+
         &--background-aware{
             a{
                 position: relative;

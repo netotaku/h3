@@ -3,99 +3,104 @@
     background-size: cover;
     position: relative;
     overflow: hidden;
-
-    &__measure{
-        max-width: 900px;
-        margin: auto;
-    }
-    &--padding{
-        padding: $gutter*2 $gutter;
-        &-hero {
-            padding: $gutter*4 $gutter $gutter*2;
-        }
-        &-b-n {
-            padding-bottom: 0;
-        }
-    }
-    &--center{
-        text-align: center;
-    } 
+    padding: $gutter*4 $gutter $gutter*2;
+    box-sizing: border-box;
+    min-height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
 
     &--white{
         background-color: $white;
+        color: $black;
     }
     &--grey{
         background-color: $grey;
+        color: $white;
     }      
     &--red{
         background-color: $red;
         color: $white;
-        a{
-            color: $white;
-        }
     }
     &--blue{
         background-color: $blue;
         color: $white;
-        a{
-            color: $white;
-        }
     }
     &--black{
         background-color: $black;
         color: $white;
-        a{
-            color: $white;
-        }
     } 
     &--yellow{
         background-color: $yellow;
-    } 
+        color: $black;
+    }
 
-    &--banner{
-        height: 185px;
+    &__text-block {
+        max-width: 975px;
+        text-align: center;
+        
+        * {
+            margin-bottom: $gutter*2;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
     }
+
+    &__related-work {
+        margin: 0;
+        padding: 0;
+        min-height: unset;
+        padding-bottom: $gutter*4;
+    }
+
+    // &--banner{
+    //     height: 185px;
+    // }
    
-    &--peak{
-        .peak{
-            display: block;
-        }
-        &--yellow{
-            polygon{
-                fill: $yellow;
-            }
-        }
-        &--red{
-            polygon{
-                fill: $red;
-            }
-        }
-        &--blue{
-            polygon{
-                fill: $blue;
-            }
-        }
-        &--black{
-            polygon{
-                fill: $black;
-            }
-        }
-        &--grey{
-            polygon{
-                fill: $grey;
-            }
-        }
-        &--white{
-            polygon{
-                fill: white;
-            }
-        }
-    }
-    &--justified {
-        &-left {
-            max-width: 720px;
-        }
-    }
+    // &--peak{
+    //     .peak{
+    //         display: block;
+    //     }
+    //     &--yellow{
+    //         polygon{
+    //             fill: $yellow;
+    //         }
+    //     }
+    //     &--red{
+    //         polygon{
+    //             fill: $red;
+    //         }
+    //     }
+    //     &--blue{
+    //         polygon{
+    //             fill: $blue;
+    //         }
+    //     }
+    //     &--black{
+    //         polygon{
+    //             fill: $black;
+    //         }
+    //     }
+    //     &--grey{
+    //         polygon{
+    //             fill: $grey;
+    //         }
+    //     }
+    //     &--white{
+    //         polygon{
+    //             fill: white;
+    //         }
+    //     }
+    // }
+    // &--justified {
+    //     &-left {
+    //         max-width: 720px;
+    //     }
+    // }
 }
 
 .page--culture {
