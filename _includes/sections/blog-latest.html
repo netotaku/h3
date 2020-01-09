@@ -1,21 +1,29 @@
-<section class="section section--blog-latest">
-    <h2>Insights</h2>
+<section class="section section--blog-latest {{ section.class }}">
+
+    <div class="section__text-block">
+        {% if section.title %}
+            <h2>{{ section.title }}</h2>
+        {% endif %}
+
+        {% if section.text %}
+            <p>{{ section.text }}</p>
+        {% endif %}
+    </div>
+    
     <div class="section--blog-latest__container">
         {% for post in site.posts limit:3 %}
         <a href="{{ post.url }}" class="card card--blog">
             <div class="card--blog__image" style="background-image: url({{ post.thumb }})"></div>
+
             <div class="card--blog__content">
-                <h3>
-                    {{ post.title }}
-                </h3>
-                <p>
-                    {{ post.snippet }}
-                </p>
+                <h4>{{ post.title }}</h4>
+                <p>{{ post.snippet }}</p>
             </div>
         </a>
     {% endfor %}
     </div>
+
     <div class="section--blog-latest__container">
-        <a class="button button--{{ section.button }}" href="/work/">See all work</a>
+        <a class="button button--{{ section.button }}" href="/insights/">Find more articles</a>
     </div>
 </section>

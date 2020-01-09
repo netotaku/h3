@@ -72,24 +72,64 @@ img{
     display: none;
 }
 
-h1,h2,h3,h4,h5,h6{
-    line-height: 1.2;
+h1, h2, h3, h4, h5, h6 {
     font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
 }
 
 h1, .h1{
-    font-size: 2.2em;
-    line-height: 1.1;
+    font-size: 3.6em;
+    line-height: 1.2em;
+    margin-bottom: $gutter;
 }
-h2{
-    font-size: 1.8em;
-    line-height: 1.1;
-}
-h3{
-    font-size: 1.35em;
-}    
 
-.u{
+h2 {
+    font-size: 1.8em;
+    line-height: 1.2em;
+    margin-bottom: $gutter;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 2.2em;
+    } 
+
+    @include media-breakpoint-up(md) {
+        font-size: 3em;
+        margin-bottom: $gutter * 2;
+    } 
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 1.2em;
+    margin-bottom: $gutter / 2;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.6em;
+    } 
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.8em;
+    } 
+}   
+
+h4 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: $gutter / 2;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.4em;
+    } 
+
+    @include media-breakpoint-up(md) {
+        font-size: 1.6em;
+    } 
+} 
+
+p {
+    font-size: 1.1em;
+}
+
+.u {
     &--gutter-bottom{
         margin-bottom: $gutter*2;
     }
@@ -125,32 +165,6 @@ h3{
 }
 
 //////////////////////
-
-@media only screen and (min-width: $max-width){
-    body{
-        font-size: 1.3em;
-    }
-    h1, .h1{
-        font-size: 5em;
-        line-height: 1.1;
-    }
-    h2{
-        font-size: 3.1em;
-        line-height: 1.1;
-    }
-    h3{
-        font-size: 1.8em;
-    }    
-    .u{
-        &-columns{
-            column-gap: $gutter;
-            &--two{
-                column-count: 2;
-            }
-        }
-    }
-}
-
 @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
         * {

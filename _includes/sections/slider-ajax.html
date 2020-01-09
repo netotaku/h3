@@ -1,10 +1,14 @@
 <section class="section {{ section.class }}" id="{{ section.id }}">
     {% raw %}
-        <div class="slider">
-            <div class="slider__scroll">            
-                <div v-for="item in items" class="slider__item slider__item--background-aware"><a :href="item.link" :style="'background-image: url(' + item.images.standard_resolution.url + ')'">                                                                                                                                                            
-                </a></div>
+    <div class="slider slider--social">
+        <div class="slider__scroll">
+            <div v-for="item in items" class="slider__item slider--social__item">
+                <a :href="item.link" :style="'background-image: url(' + item.images.standard_resolution.url + ')'"></a>
             </div>
-        </div>
-    {% endraw %}    
+        </div>        
+    </div>    
+    {% endraw %}  
+    {% if section.buttonText %}
+        <a class="button button--{{ section.button }}" target="_blank" href="{{ section.buttonURL }}">{{ section.buttonText }}</a>
+    {% endif %}
 </section>
