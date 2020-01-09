@@ -1,141 +1,53 @@
-.blog {
-  &-head {
-    max-width: 1024px;
-    &__sub {
-      display: flex;
-      justify-content: space-between;
-      margin-left: -16px;
-      margin-right: -16px;
-      @include media-breakpoint-down(sm) {
-        flex-direction: column;
-      }
-    }
-    &__author {
-      padding: 0 16px;
-      &-image {
-        width: 80px;
-        height: 80px;
-        object-fit: cover;
-        border-radius: 50%;
-        display: inline-block;
-        vertical-align: top;
-        @include media-breakpoint-down(sm) {
-          width: 60px;
-          height: 60px;
-        }
-      }
-      &-name {
-        font-size: 1.4em;
-        display: inline-block;
-        vertical-align: top;
-        margin-top: 16px;
-        padding-left: 0.82em;
-        font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important;
-        @include media-breakpoint-down(sm) {
-          margin-top: -4px
-        }
-        @include media-breakpoint-down(xs) {
-          margin-top: -2px;
-          font-size: 1.2em;
-        }
-      }
-    }
-    &__date {
-      padding: 0 16px;
-    }
-    &__time {
-      font-size: 1.4em;
-      margin-top: 16px;
-      display: block;
-      @include media-breakpoint-down(sm) {
-        padding-left: 1em;
-        margin-top: -30px;
-        margin-left: 60px;
-      }
-      @include media-breakpoint-down(xs) {
-        margin-top: -26px;
-        font-size: 1.2em;
-      }
-      p {
-        font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important;
-      }
-    }
-    &__share {
-      padding: 16px 16px 0 16px;
-      &-label {
-        font-size: 1.4em;
-        display: inline-block;
-        vertical-align: top;
-        font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important;
-        padding-right: 6px;
-      }
-      &-link {
-        font-size: 1.4em;
-        text-decoration: none;
-        + .blog-head__share-link {
-          margin-left: 6px;
-        }
-      }
-    }
-  }
-  &-content {
-    max-width: 1024px;
-    h1, h2, h3, h4, h5, h6 {
-      color: $red;
-    }
-    h4 {
-      font-size: 1.2em;
-      @media only screen and (min-width: 900px) {
-        font-size: 1.6em;
-      }
-    }
-    blockquote {
-      font-size: 1em;
-      padding: 1.5em 2em 1.5em 2em;
-      background-image: none;
-      border-left: 8px solid $red;
-      position: relative;
-      font-style: italic;
-      background-color: rgba($red, 0.05);
-    }
-    p, blockquote, ul, ol {
-      &:not(:last-child){
-        margin-bottom: 2em;
-      }
-    }
-  }
-  &-body {
-    .blog-head {
-      margin-bottom: 80px;
-    }
-  }
-  &-latest {
-    background-color: $white;
-    background-size: cover;
-    background-position: top;
-    &-head {
-      padding-bottom: 6px;
-      @include media-breakpoint-down(md) {
-        padding: 40px 20px 6px;
-      }
-      h2 {
-        font-size: 2em;
+.card {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    text-decoration: none;
+    width: 50%;
 
-        @include media-breakpoint-up(sm) {
-          font-size: 3em;
+    &--blog {    
+        margin-right: $gutter; 
+        text-align: left;
+        display: flex;
+        justify-content: flex-start;
+
+        &:nth-child(2) {
+            margin-right: 0;
         }
 
+        &:last-child {
+            display: none;
+            margin-right: 0 !important;
+        }
+    
         @include media-breakpoint-up(md) {
-          font-size: 5em;
+            width: 33%;
+
+            &:nth-child(2) {
+                margin-right: $gutter; 
+            }
+    
+            &:last-child {
+                display: flex;
+            }
+        }    
+
+        &__image {
+            height: 25vh;
+            width: 100%;
         }
-      }
+    
+        &__content {
+            text-decoration: none;
+            padding-left: $gutter;
+            border-left: 1px solid white;
+            margin: $gutter 0;
+            text-decoration: none;;
+
+            h3 {
+                margin-bottom: $gutter;
+            }
+        }
     }
-    &-foot {
-      text-align: center;
-      padding-bottom: 80px;
-    }
-  }
-  &-external-source {
-    padding: 80px 0 0;
-  }
-}
+ }
+ 

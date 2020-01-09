@@ -1214,6 +1214,7 @@ h3 {
   padding: 80px 20px 40px;
   box-sizing: border-box;
   min-height: 80vh;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1249,6 +1250,14 @@ h3 {
     padding: 0;
     min-height: unset;
     padding-bottom: 80px; }
+  .section--blog-latest {
+    width: 100%; }
+    .section--blog-latest__container {
+      display: flex;
+      justify-content: center;
+      align-items: flex-start;
+      flex-direction: row;
+      width: 100%; }
 
 @media only screen and (min-width: 900px) {
   .page--culture .section--department-title {
@@ -1883,116 +1892,40 @@ h3 {
   .page .BambooHR-ATS-board .BambooHR-ATS-Location {
     display: none; }
 
-.blog-head {
-  max-width: 1024px; }
-  .blog-head__sub {
+.card {
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-decoration: none;
+  width: 50%; }
+  .card--blog {
+    margin-right: 20px;
+    text-align: left;
     display: flex;
-    justify-content: space-between;
-    margin-left: -16px;
-    margin-right: -16px; }
-    @media (max-width: 767px) {
-      .blog-head__sub {
-        flex-direction: column; } }
-  .blog-head__author {
-    padding: 0 16px; }
-    .blog-head__author-image {
-      width: 80px;
-      height: 80px;
-      object-fit: cover;
-      border-radius: 50%;
-      display: inline-block;
-      vertical-align: top; }
-      @media (max-width: 767px) {
-        .blog-head__author-image {
-          width: 60px;
-          height: 60px; } }
-    .blog-head__author-name {
-      font-size: 1.4em;
-      display: inline-block;
-      vertical-align: top;
-      margin-top: 16px;
-      padding-left: 0.82em;
-      font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important; }
-      @media (max-width: 767px) {
-        .blog-head__author-name {
-          margin-top: -4px; } }
-      @media (max-width: 575px) {
-        .blog-head__author-name {
-          margin-top: -2px;
-          font-size: 1.2em; } }
-  .blog-head__date {
-    padding: 0 16px; }
-  .blog-head__time {
-    font-size: 1.4em;
-    margin-top: 16px;
-    display: block; }
-    @media (max-width: 767px) {
-      .blog-head__time {
-        padding-left: 1em;
-        margin-top: -30px;
-        margin-left: 60px; } }
-    @media (max-width: 575px) {
-      .blog-head__time {
-        margin-top: -26px;
-        font-size: 1.2em; } }
-    .blog-head__time p {
-      font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important; }
-  .blog-head__share {
-    padding: 16px 16px 0 16px; }
-    .blog-head__share-label {
-      font-size: 1.4em;
-      display: inline-block;
-      vertical-align: top;
-      font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important;
-      padding-right: 6px; }
-    .blog-head__share-link {
-      font-size: 1.4em;
+    justify-content: flex-start; }
+    .card--blog:nth-child(2) {
+      margin-right: 0; }
+    .card--blog:last-child {
+      display: none;
+      margin-right: 0 !important; }
+    @media (min-width: 768px) {
+      .card--blog {
+        width: 33%; }
+        .card--blog:nth-child(2) {
+          margin-right: 20px; }
+        .card--blog:last-child {
+          display: flex; } }
+    .card--blog__image {
+      height: 25vh;
+      width: 100%; }
+    .card--blog__content {
+      text-decoration: none;
+      padding-left: 20px;
+      border-left: 1px solid white;
+      margin: 20px 0;
       text-decoration: none; }
-      .blog-head__share-link + .blog-head__share-link {
-        margin-left: 6px; }
-.blog-content {
-  max-width: 1024px; }
-  .blog-content h1, .blog-content h2, .blog-content h3, .blog-content h4, .blog-content h5, .blog-content h6 {
-    color: #FF0648; }
-  .blog-content h4 {
-    font-size: 1.2em; }
-    @media only screen and (min-width: 900px) {
-      .blog-content h4 {
-        font-size: 1.6em; } }
-  .blog-content blockquote {
-    font-size: 1em;
-    padding: 1.5em 2em 1.5em 2em;
-    background-image: none;
-    border-left: 8px solid #FF0648;
-    position: relative;
-    font-style: italic;
-    background-color: rgba(255, 6, 72, 0.05); }
-  .blog-content p:not(:last-child), .blog-content blockquote:not(:last-child), .blog-content ul:not(:last-child), .blog-content ol:not(:last-child) {
-    margin-bottom: 2em; }
-.blog-body .blog-head {
-  margin-bottom: 80px; }
-.blog-latest {
-  background-color: #fff;
-  background-size: cover;
-  background-position: top; }
-  .blog-latest-head {
-    padding-bottom: 6px; }
-    @media (max-width: 991px) {
-      .blog-latest-head {
-        padding: 40px 20px 6px; } }
-    .blog-latest-head h2 {
-      font-size: 2em; }
-      @media (min-width: 576px) {
-        .blog-latest-head h2 {
-          font-size: 3em; } }
-      @media (min-width: 768px) {
-        .blog-latest-head h2 {
-          font-size: 5em; } }
-  .blog-latest-foot {
-    text-align: center;
-    padding-bottom: 80px; }
-.blog-external-source {
-  padding: 80px 0 0; }
+      .card--blog__content h3 {
+        margin-bottom: 20px; }
 
 .blog-card {
   display: block;

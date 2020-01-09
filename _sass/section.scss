@@ -6,6 +6,7 @@
     padding: $gutter*4 $gutter $gutter*2;
     box-sizing: border-box;
     min-height: 80vh;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,6 +56,18 @@
         padding: 0;
         min-height: unset;
         padding-bottom: $gutter*4;
+    }
+
+    &--blog-latest {
+        width: 100%;
+        
+        &__container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: row;
+            width: 100%;
+        }  
     }
 
     // &--banner{
