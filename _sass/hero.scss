@@ -1,15 +1,14 @@
-.hero{
-    &__strap{
-        // width: 80%;
+.hero {
+    &__strap {
         margin: auto;
-        // color: $red;  
         font-family: frequencymid;      
         position: absolute;
         top: 50%;
         left: 0px;
         right: 0px;        
-        transform: translateY(-50%);                
-        &__brand{
+        transform: translateY(-50%);  
+
+        &__brand {
             display: block;
             width: 120px;
             height: auto;
@@ -39,7 +38,7 @@
             height: 100%;
         }
     }
-    &__layer{
+    &__layer {
         display: block;
         background-size: cover;
         position: absolute;
@@ -48,7 +47,7 @@
         left: 0px;
         right: 0px;
         width: 100%    !important;
-        height: auto   !important;        
+
         &--one{
             z-index: 1;
         }
@@ -65,23 +64,68 @@
             top: auto;
         }
     }
-    &__header{
 
-    }
-    &--minimal{
-        .hero__inner{
-            padding-top: 20%;
-        }
-    }
+    &__banner {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: $gutter * 2 $gutter;
+        box-sizing: border-box;
 
-    h1 {
-
-        @include media-breakpoint-up(sm) {
-            font-size: 3em;
+        @include media-breakpoint-up(xl) {
+            flex-direction: row;            
         }
 
         @include media-breakpoint-up(md) {
-            font-size: 5em;
+            padding: $gutter * 2;          
+        }
+
+        &__column {
+            width: 100%;
+            padding: 0;
+            box-sizing: border-box;
+            display: flex;
+            flex-flow: column;
+            align-items: flex-start;
+
+            @include media-breakpoint-up(lg) {
+                padding: 0 1em;
+            }
+
+            @include media-breakpoint-up(xl) {
+                width: 33%;
+                padding: 0 1.5em;
+            }
+
+            * {
+                margin-bottom: 20px;
+
+                &:last-child {
+                    @include media-breakpoint-up(xl) {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &__work {
+                opacity: .75;
+            }
+
+            &__stats {
+                span {
+                    margin-bottom: 10px;
+                    display: block;
+                    font-weight: bolder;
+                    font-family: 'gilroyblack', Helvetica, Arial, sans-serif !important;
+                    font-size: 1.3em;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
         }
     }
 }
@@ -108,13 +152,14 @@
     background-repeat: no-repeat;
     background-position: center;
     width: 100%;
-    padding-top: 100%;
     overflow-y: hidden;
     position: relative;
+    height: 60vh;
+    padding: 0;
 
-    @include media-breakpoint-up(md) {
-        padding-top: 53%;
-    }
+    @include media-breakpoint-up(lg) {
+        height: 90vh;
+    } 
 }
 
 .hero__content {

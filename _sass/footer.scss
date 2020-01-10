@@ -1,5 +1,10 @@
 .footer{
     position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    text-align: left;
+
     &__brand{
         margin: 0px;
         margin-bottom: $gutter;

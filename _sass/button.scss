@@ -5,7 +5,7 @@
     background-color: $blue;
     color: $white;
     line-height: 22px;
-    padding: 18px 40px;
+    padding: 14px 40px;
     border-radius: 40px;
     text-decoration: none;
     font-weight: bold;  
@@ -35,7 +35,7 @@
 
 @media only screen and (min-width: $max-width){
     .button{
-        font-size: 1.2em;
+        font-size: 1.1em;
         &:hover{
             background: $white;
             color: $black;

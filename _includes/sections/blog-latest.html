@@ -1,12 +1,11 @@
 <section class="section section--blog-latest {{ section.class }}">
-
     <div class="section__text-block">
         {% if section.title %}
-            <h2>{{ section.title }}</h2>
+            <h2>{{ section.title | markdownify }}</h2>
         {% endif %}
 
         {% if section.text %}
-            <p>{{ section.text }}</p>
+            <p>{{ section.text | markdownify }}</p>
         {% endif %}
     </div>
     

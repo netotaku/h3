@@ -126,7 +126,11 @@ h4 {
 } 
 
 p {
-    font-size: 1.1em;
+    font-size: 1em;
+
+    @include media-breakpoint-up(sm) {
+        font-size: 1.1em;
+    } 
 }
 
 .u {
@@ -164,6 +168,10 @@ p {
     }
 }
 
+.unset-height {
+    min-height: unset !important;
+}
+
 //////////////////////
 @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {
@@ -171,4 +179,4 @@ p {
             letter-spacing: -0.03em;
         }
     }
-  }
+}
