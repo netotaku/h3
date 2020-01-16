@@ -5,11 +5,22 @@
     background-color: $blue;
     color: $white;
     line-height: 22px;
-    padding: 14px 40px;
+    padding: 12px 30px;
     border-radius: 40px;
     text-decoration: none;
     font-weight: bold;  
-    margin: 0 auto;
+    margin: 10px auto 0 auto;
+
+    @include media-breakpoint-up(md) {
+        padding: 14px 40px;
+        font-size: 1.1em;
+        margin: 0 auto;
+
+        &:hover{
+            background: $white;
+            color: $black;
+        }
+    } 
 
     &--black{
         background-color: $black;
@@ -26,25 +37,14 @@
     &--white {
         background-color: $white;
         color: $black;
+
+        &:hover {
+            background: $red;
+            color: $white;
+        }
     }
     &--blue {
         background-color: $blue;
         color: $white;
     }
 }
-
-@media only screen and (min-width: $max-width){
-    .button{
-        font-size: 1.1em;
-        &:hover{
-            background: $white;
-            color: $black;
-        }
-        &--white {
-            &:hover {
-                background: $red;
-                color: $white;
-            }
-        }
-    }
-} 

@@ -41,40 +41,35 @@ sections:
     video: culture.mp4
     content: KEEP THINGS WEIRD
 -
-    class: 'section--padding section--padding--pinch section--red typography'
+    class: 'section--red section--culture-block'
     template: sections/section.html
     content: |
-        <h1>One agency.<br>
-            No rules.<br>
-            <span class="typography--black">Except four.</span>
-        </h1>
-        <ul class="typography--black">
-            <li>Create meaningful, significant work.</li>
-            <li>Challenge the brief. Question the insight. Search for original.</li>
-            <li>Stay flexible. Always try to say yes.</li>
-            <li>Deliver elegant answers to complex problems.</li>
-        </ul>
--
-    class: 'section--padding section--padding--pinch section--yellow typography'
-    template: sections/section.html
-    content: |
-        <div class="section section--justified-left">
-            <h2 class="h1">Careers.</h2>
-            <p>Want to work with us? We're always on the look out for great strategic and creative folk. Take a look at your current roles and apply now or simply get in touch and introduce yourself. You're welcome.</p>
-            <div class="spacing--top">
-                <a href="/careers/" class="button button--black">Work with us</a>
-            </div>
+        <div class="section__text-block">
+            <h2>One agency. No rules.<br><span class="typography--black">Except four.</span></h2>
+            <ul class="typography--black list">
+                <li>Create meaningful, significant work.</li>
+                <li>Challenge the brief. Question the insight. Search for original.</li>
+                <li>Stay flexible. Always try to say yes.</li>
+                <li>Deliver elegant answers to complex problems.</li>
+            </ul>
         </div>
 -
-    class: 'section--padding section--padding--pinch section--blue typography'
+    class: 'section--yellow section--culture-block'
     template: sections/section.html
     content: |
-        <div class="section section--justified-left">
-            <h2 class="h1">People.</h2>
+        <div class="section__text-block">
+            <h2>Careers.</h2>
+            <p>Want to work with us? We're always on the look out for great strategic and creative folk. Take a look at your current roles and apply now or simply get in touch and introduce yourself. You're welcome.</p>
+            <a href="/careers/" class="button button--black">Work with us</a>
+        </div>
+-
+    class: 'section--blue section--culture-block'
+    template: sections/section.html
+    content: |
+        <div class="section__text-block">
+            <h2>People.</h2>
             <p>There's a whole team of talented, dedicated people behind every brand we partner with. Get acquainted.</p>
-            <div class="spacing--top">
-                <a href="/culture/team/" class="button button--black">Meet the team</a>
-            </div>
+            <a href="/culture/team/" class="button button--black">Meet the team</a>
         </div>
 -
     class: 'section section--blue typography--white'
@@ -89,9 +84,4 @@ sections:
     button: red
     buttonText: Follow us on Instagram
     buttonURL: https://www.instagram.com/wearehalo_bristol/
--
-    class: 'section--padding section--red section--center section--peak section--peak--white'
-    template: sections/section.html
-    content: |
-        <p><a class="button button--black" href="https://www.instagram.com/wearehalo_bristol/" target="_window">Follow us on Instagram</a></p>
 ---

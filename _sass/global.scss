@@ -28,7 +28,7 @@
     font-style: normal;
 }
 
-*{
+* {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
@@ -36,39 +36,45 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
-ul{
+ul {
     list-style-type: none;
+    text-align: left;
 }
 
-ol{
+ol {
     margin-left: 26px;
 }
 
-html{
+.list {
+    list-style: unset;
+}
+
+html {
     height: 100%;
     background: #333;
 }
-body{
+
+body {
     line-height: 1.6;
-    font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
-    font-size: 1.1em;
+    font-family: 'gilroymedium', Helvetica, Arial, sans-serif; 
+    font-size: 1em;
 }
 
-a{
+a {
     color: $red;
     &:hover{
         text-decoration: none;
     }
 }
 
-img{
+img {
     display: block;
     width: 100%;
     max-width: 100%;
     margin: auto;
 }
 
-[v-cloak]{
+[v-cloak] {
     display: none;
 }
 
@@ -76,7 +82,7 @@ h1, h2, h3, h4, h5, h6 {
     font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
 }
 
-h1, .h1{
+h1, .h1 {
     font-size: 3.6em;
     line-height: 1.2em;
     margin-bottom: $gutter;
@@ -128,7 +134,7 @@ h4 {
 p {
     font-size: 1em;
 
-    @include media-breakpoint-up(sm) {
+    @include media-breakpoint-up(md) {
         font-size: 1.1em;
     } 
 }

@@ -13,12 +13,12 @@
         }
     }
 
-    &__title{
+    &__title {
         padding: $gutter;
         padding-bottom: 0px;
     } 
 
-    &__scroll{   
+    &__scroll {   
         user-select: none;
         display: flex;
         flex-direction: row;
@@ -42,6 +42,7 @@
         background-size: cover;
         justify-content: center;
         align-items: center;
+        white-space: normal;
 
         @include media-breakpoint-up(md) {
             height: 30vh;
@@ -64,7 +65,7 @@
         }
 
         &--background-aware{
-            a{
+            a {
                 position: relative;
                 display: block;
                 height: 70vw;
@@ -75,8 +76,17 @@
     }
 
     &--social {
-        &__item{    
-            width: 33.33% !important;
+        .slider__scroll {
+            display: block;            
+        }        
+
+        &__item {    
+            width: 50%;
+            display: inline-block;
+
+            @include media-breakpoint-up(md) {
+                width: 33.33%;
+            }
 
             a {
                 height: 100%;
