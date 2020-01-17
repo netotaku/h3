@@ -179,6 +179,10 @@ p {
     min-height: unset !important;
 }
 
+.strong {
+    font-family: 'gilroyblack';
+}
+
 //////////////////////
 @media not all and (min-resolution:.001dpcm) {
     @supports (-webkit-appearance:none) {

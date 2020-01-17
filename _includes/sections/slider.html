@@ -2,7 +2,6 @@
     {{ section.content }}
     <div class="slider">
         <div class="slider__scroll">
-            
             {% if section.filter %}
                 {% for link in site.data.map %}
                     {% if link.slug == section.filter %}
@@ -24,8 +23,9 @@
                     </div>          
                 {% endfor %}
             {% endif %}
-
         </div>        
     </div>    
-    <a class="button button--{{ section.button }}" href="/work/">See all work</a>
+    {% if section.buttonURL %}
+        <a class="button button--{{ section.button }}" href="{{ section.buttonURL }}">{{ section.buttonText }}</a>
+    {% endif %}  
 </section>

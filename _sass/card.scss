@@ -134,21 +134,26 @@
             left: 0;
             text-align: center;
 
+            h3 {
+                transition: 0.3s ease-out;
+                transform: translateY(100%);
+            }
+            
             p {
-                display: none;
+                opacity: 0;
+                transition: 0.3s ease-out;
+                transform: translateY(50%);
             }
 
             &:hover {
                 @include media-breakpoint-up(xl) {
                     h3 {
-                        -webkit-animation: slide-up-heading .5s ease-out;
-                        -moz-animation: slide-up-heading .5s ease-out;
+                        transform: translateY(0);
                     }
 
                     p {
-                        display: block;
-                        -webkit-animation: slide-up-text .5s ease-out;
-                        -moz-animation: slide-up-text .5s ease-out;
+                        opacity: 1;
+                        transform: translateY(0);
                     }
                 }               
             }
