@@ -241,50 +241,230 @@
         }
     }
 
-    // &--banner{
-    //     height: 185px;
-    // }
-   
-    // &--peak{
-    //     .peak{
-    //         display: block;
-    //     }
-    //     &--yellow{
-    //         polygon{
-    //             fill: $yellow;
-    //         }
-    //     }
-    //     &--red{
-    //         polygon{
-    //             fill: $red;
-    //         }
-    //     }
-    //     &--blue{
-    //         polygon{
-    //             fill: $blue;
-    //         }
-    //     }
-    //     &--black{
-    //         polygon{
-    //             fill: $black;
-    //         }
-    //     }
-    //     &--grey{
-    //         polygon{
-    //             fill: $grey;
-    //         }
-    //     }
-    //     &--white{
-    //         polygon{
-    //             fill: white;
-    //         }
-    //     }
-    // }
-    // &--justified {
-    //     &-left {
-    //         max-width: 720px;
-    //     }
-    // }
+    &--case-banner {
+        padding: 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+    }
+
+    &--promo {
+        padding: 30vh 0 0 0;
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end;
+
+        @include media-breakpoint-down(lg) {
+            padding: 40vh 0 0 0;
+        }
+
+        .section__left{
+            padding: $gutter * 4;
+
+            @include media-breakpoint-down(lg) {
+                padding: $gutter * 2;
+            }
+
+            @include media-breakpoint-down(md) {
+                padding: $gutter;
+            }
+
+            * {
+                margin: $gutter 0;
+            }
+        }
+    }
+
+    &--grid {
+        width: 100%;
+        padding: 40px 0;
+
+        &__row {
+            display: flex;
+            justify-content: space-between;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 2vw;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+
+            &__item {
+                width: 50%;
+                padding: 2vh 2vw;
+                box-sizing: border-box;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+
+                img {
+                    max-height: 50vh;
+                    width: auto;
+                }
+            }
+        }
+
+        .row-reversed {
+            flex-direction: row-reverse;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+        }
+    }
+
+    &--gallery {
+        display: block;
+
+        &__row {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+
+            &__col-1,
+            &__col-2,
+            &__col-3,
+            &__col-4,
+            &__col-5 {
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                align-items: flex-start;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            &__col-1 {
+                img {
+                    width: 100%;
+                }
+            }
+            &__col-2 {
+                img {
+                    width: 50%;
+
+                    @include media-breakpoint-down(md) {
+                        width: 100%;
+                    }
+                }
+            }
+            &__col-3 {
+                img {
+                    width: 33.33%;
+                }
+            }
+            &__col-4 {
+                img {
+                    width: 25%;
+
+                    @include media-breakpoint-down(md) {
+                        width: 50%;
+                    }
+                }
+            }
+            &__col-5 {
+                img {
+                    width: 20%;
+                }
+            }
+        }
+
+        &__promo {
+            display: flex;
+            flex-direction: row;
+            width: 100%;
+            height: 100%;
+
+            @include media-breakpoint-down(md) {
+                flex-direction: column;
+            }
+
+            &--reversed {
+                flex-direction: row-reverse;
+
+                @include media-breakpoint-down(md) {
+                    flex-direction: column;
+                }
+            }
+
+            &__main {
+                width: 66.66%;
+                height: 100%;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+
+                * {
+                    width: 100%;
+                    height: 100%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+            }
+
+            &__grid {
+                width: 33.33%;
+                display: flex;
+                justify-content: space-between;
+                flex-direction: row;
+                flex-wrap: wrap;
+
+                @include media-breakpoint-down(md) {
+                    width: 100%;
+                }
+
+                * {
+                    width: 100%;
+                    height: 50%;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+
+                    @include media-breakpoint-down(md) {
+                        width: 50%;
+                        height: 40vw;
+                    }
+                }
+            }
+        }
+    }
+
+    &--video {
+        height: 95vh;
+
+        @include media-breakpoint-down(lg) {
+            height: 60vh;
+        }
+
+        @include media-breakpoint-down(md) {
+            height: 40vh;
+        }
+
+        @include media-breakpoint-down(sm) {
+            height: 35vh;
+        }
+    }
+
+    &--stats {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: $gutter * 2;
+        text-align: center;
+
+        @include media-breakpoint-down(md) {
+            padding: $gutter;
+        }
+
+        &__item {
+            padding: 1em 2em;
+        }
+    }
 }
 
 .page--culture {
