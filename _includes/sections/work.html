@@ -3,12 +3,17 @@
         {% for link in site.data.map %}
             {% if link.slug == 'work' %}
                 {% for child in link.children %}
-                    <a href="{{ child.path }}" class="card card--work">
-                        <div class="card--work__image" style="background-image: url({{ child.thumb }})"></div>
-                        <div class="card--work__content">
-                            <h4>{{ child.label }}</h4>
-                        </div>
-                    </a>
+                    <div class="card card--work">
+                        <a href= "{{ child.path }}">
+                            <div class="card--work__image" style="background-image: url({{ child.thumb }})"></div>
+                            <div class="card--work__content">
+                                <div class="card--work__content__overlay">
+                                    <h3>{{ child.label }}</h3>
+                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.</p>
+                                </div>
+                            </div>
+                        </a>                        
+                    </div>
                 {% endfor %}  
             {% endif %}  
         {% endfor %}

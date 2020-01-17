@@ -1,7 +1,6 @@
 .page{
 
     &__content{
-        // filter: blur(8px);
         position: relative;
         z-index: 1;    
     }
@@ -17,7 +16,6 @@
     &__menu{                
         position: absolute;
         background: $black;
-        // box-shadow: -100px 0px 100px 100px rgba(0,0,0,.2);
         width: 270px;
         top: 0px;
         bottom: 0px;
@@ -49,13 +47,13 @@
             &__open{
                 top: $gutter-lrg;
                 right: $gutter-lrg;
-                width: 59px;
+                width: 50px;
             }
         } 
         &__brand{
             top: $gutter-lrg;
             left: $gutter-lrg;
-            width: 59px;
+            width: 50px;
         }   
     }
 

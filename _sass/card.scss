@@ -53,56 +53,56 @@
 
     &--blog,
     &--work {    
-        margin-right: $gutter; 
+        padding-right: 0; 
         text-align: left;
         display: flex;
         justify-content: flex-start;
         flex-wrap: wrap;
         margin-bottom: $gutter;
-        width: 100%;
+        width: 100%;  
 
-        &:nth-child(2) {
-            margin-right: 0;
+        &:last-child {
+            padding-right: 0;
         }
 
-        &:last-child,
-        &:nth-child(3) {
-            // display: none;
-            margin-right: 0 !important;
-        }
-
-        @include media-breakpoint-up(md) {
+        @include media-breakpoint-up(sm) {
             width: 50%;
-        }  
-    
-        @include media-breakpoint-up(xl) {
-            width: 33%;
+            padding-right: $gutter;
 
-            &:nth-child(2) {
-                margin-right: $gutter; 
+            &:nth-child(2n + 2) {
+                padding-right: 0;
             }
-    
-            &:last-child {
-                display: flex;
+        }  
+
+        @include media-breakpoint-up(xl) {
+            width: 33.33%;
+
+            &:nth-child(2n + 2) {
+                padding-right: $gutter;
             }
-        }    
+
+            &:nth-child(3n + 3) {
+                padding-right: 0;
+            }
+        }  
+
+        a {
+            position: relative;
+            text-decoration: none;
+        }
 
         &__image {
-            min-height: 25vh;
-            max-height: 30vh;
             width: 100%;
+            height: 100%;
             margin-bottom: 0;
 
             @include media-breakpoint-up(sm) {
-                height: 20vh;
                 margin-bottom: $gutter / 2;
-            }  
-
-            @include media-breakpoint-up(xl) {
-                height: 35vh;                
-            }  
+            }
         }
-    
+    }
+
+    &--blog {
         &__content {
             text-decoration: none;
             padding-left: $gutter;
@@ -111,5 +111,93 @@
             text-decoration: none;
             color: $white;
         }
+
+        &__image {
+            min-height: 25vh;
+            max-height: 30vh;
+
+            @include media-breakpoint-up(sm) {
+                height: 20vh;
+            }
+        }
     }
+
+    &--work {
+        &__content {
+            text-decoration: none;
+            text-decoration: none;
+            color: $white;
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+
+            p {
+                display: none;
+            }
+
+            &:hover {
+                @include media-breakpoint-up(xl) {
+                    h3 {
+                        -webkit-animation: slide-up-heading .5s ease-out;
+                        -moz-animation: slide-up-heading .5s ease-out;
+                    }
+
+                    p {
+                        display: block;
+                        -webkit-animation: slide-up-text .5s ease-out;
+                        -moz-animation: slide-up-text .5s ease-out;
+                    }
+                }               
+            }
+
+            &__overlay {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100%;
+                width: 100%;
+                flex-direction: column;
+                padding: $gutter * 2;
+                box-sizing: border-box;
+            }
+        }
+
+        &__image {
+            min-height: 40vh;
+            max-height: 40vh;
+
+            @include media-breakpoint-up(sm) {
+                height: 30vh;
+            }
+        }
+    }
+}
+
+// ----------------------
+//   HEADING TRANSITION
+// ----------------------
+
+@-webkit-keyframes slide-up-heading {
+    0% { -webkit-transform: translateY(50%); }   
+    100% { -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-up-heading {
+    0% { -moz-transform: translateY(50%); }   
+    100% {-moz-transform: translateY(0); }
+}
+
+// ----------------------
+//    TEXT TRANSITION
+// ----------------------
+
+@-webkit-keyframes slide-up-text {
+    0% { opacity: 0; -webkit-transform: translateY(50%); }   
+    100% { opacity: 1; -webkit-transform: translateY(0); }
+}
+@-moz-keyframes slide-up-text {
+    0% { opacity: 0; -moz-transform: translateY(50%); }   
+    100% { opacity: 1; -moz-transform: translateY(0); }
 }

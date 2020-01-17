@@ -18,20 +18,31 @@ sections:
         EVERYTHING LOUDER
 
 -
-    class: 'section--padding section--padding--pinch section--blue typography'
+    class: 'section--blue section--heading unset-height'
     template: sections/section.html
     content: |
-        <h1>Work</h1>
+        <h2>Work</h2>
 -
-    class: 'section section--group section--peak section--peak--blue'
+    class: ''
     image:  /assets/svg/triangle-rect.svg
-    template: sections/group.html
-    sections:
-        -
-            template: sections/work.html
+    template: sections/work.html
 -
-    class: 'section--padding section--red section--center section--peak section--peak--yellow'
+    class: 'section section--blue typography--white'
+    template: sections/blog-latest.html
+    image: '/assets/svg/triangle-solo-yellow-reduced.svg'
+    title: We write stuff in our spare time too.
+    button: white
+-
+    class: 'section--blue unset-height'
     template: sections/section.html
     content: |
-        <p><a class="button button--black" href="/contact/" target="_window">Contact us</a></p>
+        <div class="section__text-block">
+            <img class="icon" src="/assets/img/lips.gif" alt="Halo - Lips">
+            <h2>Talk to us.</h2>
+            <p>
+                Answering strategic and commercial questions with insight &amp; creativity.
+                <br>Get in touch. Let’s talk about you.
+            </p>
+            <a class="button button--black" href="/contact/">Contact</a>
+        </div>
 ---
