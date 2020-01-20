@@ -428,6 +428,11 @@
         }
     }
 
+    &--slider {
+        max-height: 80vh;
+        padding: 0;
+    }
+
     &--video {
         height: 95vh;
 

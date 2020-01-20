@@ -18,9 +18,11 @@
 
             {% if section.data %}
                 {% for thumb in section.data %}
-                    <div class="slider__item">
-                        <img class="slider__item__image" src="{{ thumb }}" alt="Halo Thumbnail - {{ forloop.index }}">
-                    </div>          
+                    <a>
+                        <div class="slider__item">
+                            <img class="slider__item__image" src="{{ thumb }}" alt="Halo Thumbnail - {{ forloop.index }}">
+                        </div>    
+                    </a>                          
                 {% endfor %}
             {% endif %}
         </div>        
