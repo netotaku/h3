@@ -179,6 +179,14 @@ p {
     min-height: unset !important;
 }
 
+.latest-blog-no-bg {
+    .section__text-block {
+        &::after {
+            display: none !important;
+        }
+    }    
+}
+
 .strong {
     font-family: 'gilroyblack';
 }

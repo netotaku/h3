@@ -72,6 +72,10 @@
             &:nth-child(2n + 2) {
                 padding-right: 0;
             }
+
+            &:last-child {
+                display: none;
+            }
         }  
 
         @include media-breakpoint-up(xl) {
@@ -83,6 +87,10 @@
 
             &:nth-child(3n + 3) {
                 padding-right: 0;
+            }
+
+            &:last-child {
+                display: flex;
             }
         }  
 

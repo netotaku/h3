@@ -163,29 +163,39 @@
 
     &--blog-latest {
         width: 100%;
-        background: $blue;
         position: relative;  
-        padding-top: $gutter;      
-
-        &::after {
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            right: 0;            
-            background: $black;
-            content: "";
-            height: 65%;
-            width: 100vw;
-            z-index: 0;
-
-            @include media-breakpoint-up(sm) {
-                height: 45%;
-                padding-top: $gutter * 4; 
-            } 
-        }
+        padding-top: $gutter;    
 
         .section__text-block {
             margin-bottom: $gutter;
+            z-index: 2;
+            // position: relative;
+
+            &::after {
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;            
+                background: $blue;
+                content: "";
+                height: 25%;
+                width: 100vw;
+                z-index: -1;
+    
+                @include media-breakpoint-up(sm) {
+                    height: 45%;
+                    padding-top: $gutter * 4; 
+                } 
+
+                @include media-breakpoint-up(md) {
+                    // left: -$gutter * 2;
+                }
+            
+                @include media-breakpoint-up(xl) {
+                    // left: -$gutter * 4;
+                }  
+            }
 
             @include media-breakpoint-up(lg) {
                 height: 50%;
@@ -200,7 +210,8 @@
             align-items: flex-start;
             flex-direction: column;
             width: 100%;
-            z-index: 1;
+            z-index: 2;
+            position: relative;          
 
             @include media-breakpoint-up(sm) {
                 flex-direction: row;
@@ -214,6 +225,11 @@
                 } 
             }
         }  
+
+        &__button {
+            background: $black;
+            width: 100%;
+        }
     }
 
     &--work {

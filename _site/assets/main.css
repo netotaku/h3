@@ -983,6 +983,9 @@ p {
 .unset-height {
   min-height: unset !important; }
 
+.latest-blog-no-bg .section__text-block::after {
+  display: none !important; }
+
 .strong {
   font-family: 'gilroyblack'; }
 
@@ -1383,25 +1386,26 @@ p {
           margin-top: 40px; } }
   .section--blog-latest {
     width: 100%;
-    background: #0000D8;
     position: relative;
     padding-top: 20px; }
-    .section--blog-latest::after {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: #000;
-      content: "";
-      height: 65%;
-      width: 100vw;
-      z-index: 0; }
-      @media (min-width: 479px) {
-        .section--blog-latest::after {
-          height: 45%;
-          padding-top: 80px; } }
     .section--blog-latest .section__text-block {
-      margin-bottom: 20px; }
+      margin-bottom: 20px;
+      z-index: 2; }
+      .section--blog-latest .section__text-block::after {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: #0000D8;
+        content: "";
+        height: 25%;
+        width: 100vw;
+        z-index: -1; }
+        @media (min-width: 479px) {
+          .section--blog-latest .section__text-block::after {
+            height: 45%;
+            padding-top: 80px; } }
       @media (min-width: 992px) {
         .section--blog-latest .section__text-block {
           height: 50%;
@@ -1413,7 +1417,8 @@ p {
       align-items: flex-start;
       flex-direction: column;
       width: 100%;
-      z-index: 1; }
+      z-index: 2;
+      position: relative; }
       @media (min-width: 479px) {
         .section--blog-latest__container {
           flex-direction: row; } }
@@ -1422,6 +1427,9 @@ p {
         @media (min-width: 992px) {
           .section--blog-latest__container .button {
             margin-top: 40px; } }
+    .section--blog-latest__button {
+      background: #000;
+      width: 100%; }
   .section--work {
     width: 100%; }
     .section--work__container {
@@ -2085,14 +2093,18 @@ p {
         width: 50%;
         padding-right: 20px; }
         .card--blog:nth-child(2n + 2), .card--work:nth-child(2n + 2) {
-          padding-right: 0; } }
+          padding-right: 0; }
+        .card--blog:last-child, .card--work:last-child {
+          display: none; } }
     @media (min-width: 1200px) {
       .card--blog, .card--work {
         width: 33.33%; }
         .card--blog:nth-child(2n + 2), .card--work:nth-child(2n + 2) {
           padding-right: 20px; }
         .card--blog:nth-child(3n + 3), .card--work:nth-child(3n + 3) {
-          padding-right: 0; } }
+          padding-right: 0; }
+        .card--blog:last-child, .card--work:last-child {
+          display: flex; } }
     .card--blog a, .card--work a {
       position: relative;
       text-decoration: none; }

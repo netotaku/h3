@@ -52,6 +52,16 @@
       slug: dowtk
       path: /work/dowtk/
       thumb: /assets/img/thumb_dowtk.jpg
+    -
+      label: Fierce & Noble
+      slug: fierce-and-noble
+      path: /work/fierce-and-noble/
+      thumb: /assets/img/thumb_dowtk.jpg
+    -
+      label: Lovehoney
+      slug: lovehoney
+      path: /work/lovehoney/
+      thumb: /assets/img/thumb_dowtk.jpg
  - 
   label: Culture
   slug: culture
