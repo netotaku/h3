@@ -121,15 +121,15 @@
                 box-sizing: border-box;
 
                 &:first-child {
-                    width: 30%;
+                    width: 35%;
                 }
 
                 &:nth-child(2) {
-                    width: 40%;
+                    width: 45%;
                 }
 
                 &:last-child {
-                    width: 30%;
+                    width: 20%;
                     padding-right: 0;
                 }
             }

@@ -10,57 +10,74 @@
     - 
       label: Ticketmaster
       slug : livenation
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/livenation/
       thumb: /assets/img/thumb_livenation.jpg   
     - 
       label: Budweiser Budvar
       slug : budvar
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/budvar/
       thumb: /assets/img/thumb_budvar.jpg          
     - 
       label: Deezer
       slug : deezer
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/deezer/
       thumb: /assets/img/thumb_deezer.jpg   
     - 
       label: London Designer Outlet
       slug : ldo
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/ldo/
       thumb: /assets/img/thumb_ldo.jpg            
     -       
       label: Butcombe Brewing Co.
       slug : butcombe
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/butcombe/
       thumb: /assets/img/scratch/drink/butcombe.jpg   
     - 
       label: Crestron
       slug : crestron
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/crestron/
       thumb: /assets/img/thumb_crestron.jpg 
     -
       label: Mallets
       slug: mallets
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/mallets/
       thumb: /assets/img/thumb_mallets.jpg
     -
       label: Rowan Dartington
       slug: rowan
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/rowan-dartington/
       thumb: /assets/img/thumb_rowan.jpg
     -
       label: Day Out With The Kids
       slug: dowtk
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/dowtk/
       thumb: /assets/img/thumb_dowtk.jpg
     -
       label: Fierce & Noble
       slug: fierce-and-noble
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/fierce-and-noble/
       thumb: /assets/img/thumb_dowtk.jpg
     -
       label: Lovehoney
       slug: lovehoney
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
       path: /work/lovehoney/
+      thumb: /assets/img/thumb_dowtk.jpg
+    -
+      label: Wickwar
+      slug: wickwar
+      description: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur mollis sem a mauris dictum, a ultrices turpis facilisis.
+      path: /work/wickwar/
       thumb: /assets/img/thumb_dowtk.jpg
  - 
   label: Culture

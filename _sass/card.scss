@@ -52,46 +52,22 @@
     }
 
     &--blog,
-    &--work {    
-        padding-right: 0; 
+    &--work {            
         text-align: left;
         display: flex;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-wrap: wrap;
-        margin-bottom: $gutter;
+        margin-bottom: $gutter / 2;
         width: 100%;  
-
-        &:last-child {
-            padding-right: 0;
-        }
+        box-sizing: border-box;
 
         @include media-breakpoint-up(sm) {
             width: 50%;
-            padding-right: $gutter;
-
-            &:nth-child(2n + 2) {
-                padding-right: 0;
-            }
-
-            &:last-child {
-                display: none;
-            }
+            padding: 0 $gutter / 2;
         }  
 
         @include media-breakpoint-up(xl) {
             width: 33.33%;
-
-            &:nth-child(2n + 2) {
-                padding-right: $gutter;
-            }
-
-            &:nth-child(3n + 3) {
-                padding-right: 0;
-            }
-
-            &:last-child {
-                display: flex;
-            }
         }  
 
         a {
@@ -111,6 +87,18 @@
     }
 
     &--blog {
+        @include media-breakpoint-up(sm) {
+            &:last-child {
+                display: none;
+            }
+        }  
+
+        @include media-breakpoint-up(xl) {
+            &:last-child {
+                display: flex;
+            }
+        }  
+
         &__content {
             text-decoration: none;
             padding-left: $gutter;
@@ -189,28 +177,3 @@
     }
 }
 
-// ----------------------
-//   HEADING TRANSITION
-// ----------------------
-
-@-webkit-keyframes slide-up-heading {
-    0% { -webkit-transform: translateY(50%); }   
-    100% { -webkit-transform: translateY(0); }
-}
-@-moz-keyframes slide-up-heading {
-    0% { -moz-transform: translateY(50%); }   
-    100% {-moz-transform: translateY(0); }
-}
-
-// ----------------------
-//    TEXT TRANSITION
-// ----------------------
-
-@-webkit-keyframes slide-up-text {
-    0% { opacity: 0; -webkit-transform: translateY(50%); }   
-    100% { opacity: 1; -webkit-transform: translateY(0); }
-}
-@-moz-keyframes slide-up-text {
-    0% { opacity: 0; -moz-transform: translateY(50%); }   
-    100% { opacity: 1; -moz-transform: translateY(0); }
-}

@@ -1,27 +1,51 @@
-.form{
+.form {
+    width: 100%;
+
     input, textarea, label{
         display: block;
         width: 100%;
-        margin-bottom: 20px;
+        margin-bottom: $gutter * 2;
         border: 0px;
-        font-size: 1em;        
+        font-size: 1em;    
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
     }
-    label{
-        margin-bottom: 5px;
+
+    label {
+        font-family: 'gilroyblack', Helvetica, Arial, sans-serif;
+        font-size: 1.4em;
+        line-height: 1.2em;
+        margin-bottom: $gutter / 2;
+
+        @include media-breakpoint-up(sm) {
+            font-size: 1.6em;
+        } 
+
+        @include media-breakpoint-up(md) {
+            font-size: 1.8em;
+        } 
     }
-    button{
+
+    button {
         margin-top: 20px;
+        font-size: 1.1em;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
-    textarea{
+
+    textarea {
         height: 350px;
-        padding: 5px;
+        padding: $gutter;
+        margin-bottom: $gutter;
     }
-    input{
+
+    input {
         height: 50px;
         line-height: 50px;
-        padding: 5px;
-    }
-    .button{
-        font-size: 1em;
+        padding: $gutter;
     }
 }

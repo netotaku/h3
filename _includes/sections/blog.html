@@ -1,4 +1,27 @@
-<section class="section section--padding typography">
+<section class="section section--blog">
+    <div class="section--blog__container">
+        {% for link in site.data.map %}
+            {% if link.slug == 'work' %}
+                {% for child in link.children %}
+                    <div class="card card--work">
+                        <a href= "{{ child.path }}">
+                            <div class="card--work__image" style="background-image: url({{ child.thumb }})"></div>
+                            <div class="card--work__content">
+                                <div class="card--work__content__overlay">
+                                    <h3>{{ child.label }}</h3>
+                                    <p>{{ child.description }}</p>
+                                </div>
+                            </div>
+                        </a>                        
+                    </div>
+                {% endfor %}  
+            {% endif %}  
+        {% endfor %}
+    </div>
+</section>
+
+
+<!-- <section class="section section--padding typography">
     {% include peak.html %}
     <div class="grid grid--halves grid--padding grid--padding-large u--gutter-bottom grid--masonry">
         {% for post in site.posts %}
@@ -53,4 +76,4 @@
             </div>
         {% endfor %}
     </div>
-</section>
+</section> -->

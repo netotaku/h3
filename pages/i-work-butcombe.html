@@ -3,7 +3,7 @@ layout: page
 title: 'Case Study: Butcombe Brewing Co.'
 permalink: '/work/butcombe/'
 class: 'page--butcombe'
-share_image: case-studies/butcombe/butcombe_hero_image_1.jpg
+share_image: case-studies/butcombe/Hero.jpg
 share_description: 'Case study of Butcombe Brewing Co.: Raising a glass to a classic brewery.'
 sections:
 -
@@ -13,153 +13,195 @@ sections:
 -
     class: 'section--yellow'
     template: sections/lead-image.html
-    image: case-studies/butcombe/butcombe_hero_image_1.jpg
+    image: case-studies/butcombe/Hero.jpg
 -
-    class: 'section section--padding section--padding--pinch section--background-aware typography typography--black section--lead'
-    template: sections/section.html
-    image: case-studies/butcombe/lead.png
+    class: 'section--black unset-height'
+    template: sections/hero.html
+    image: ''
     content: |
-        <div class="section__center">
-            <div class="section__left">
-                <h1 class="typography--white">Raising a glass to a classic brewery.</h1>
-
-                <p class="typography--white"><strong>Client:</strong><br>
-                Butcombe Brewing Co.</p>
-
-                <p class="typography--white"><strong>Work:</strong><br>
-                Full service rebrand / Narrative / Identity / Experience</p>
-
-                <p class="typography--white">Butcombe Brewing Co.; a household name from the South West and heritage brand of beer drinkers everywhere. Fighting for share in a crowded, continuously shifting market, Halo were the chosen partner for the brand’s reinvention. We shaped a new strategic brand narrative, defining and creating opportunities for category growth, forged a complete revolution of visual identity and design for the traditional ale portfolio and created an entire brand architecture for a specialist, limited edition craft beer range. The resulting work won critical acclaim, and a World Beer Medal for brand design.</p>
+        <div class="hero__banner">
+            <div class="hero__banner__column">
+                <h1 class="hero__banner__column__title">Butcombe Brewing Co.</h1>
+                <!-- <span class="hero__banner__column__client">LiveWest</span> -->
+            </div>
+            <div class="hero__banner__column">
+                <p class="hero__banner__column__description">
+                    Strategy / Narrative / Identity / Packaging
+                    <br><br>
+                    Butcombe Brewing Co.; a household name from the South West and
+                    heritage brand of beer drinkers everywhere. Fighting for share in a crowded, continuously shifting market, Halo were the chosen partner
+                    for the brand’s reinvention. We shaped a new strategic brand narrative, defining and creating opportunities for category growth, forged a complete revolution of visual identity and design for the traditional ale portfolio and created an entire brand architecture for a specialist, limited edition craft beer range. The resulting work won critical acclaim, and a World Beer Medal for brand design.                </p>
+            </div>
+            <div class="hero__banner__column">
+                <p class="hero__banner__column__stats">
+                    18% increase in off-trade sales
+                    <br>
+                    24% increase in on-trade sales
+                    <br>
+                    World Beer Medal for Design                
+                </p>
             </div>
         </div>
 -
-    class: 'section--padding section--black section--center section--peak section--peak--red'
+    class: 'section--black section--gallery'
     template: sections/section.html
     content: |
-        <p><a class="button button--blue" href="/contact/">Request a case study</a></p>
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--1.jpg" alt="Butcombe Image">
+            </div>
+        </div>
 -
-    class: 'section--grey'
+    class: 'section--black typography--white'
+    template: sections/section.html
+    content: |
+        <div class="section__text-block">
+            <h2>Premium Range</h2>
+            <p>The complete reinvention of the Premium Range - from positioning to design execution has been influential to business performance. Butcombe’s on-trade sales have grown steadily in both volume and margin, and the brewery has achieved significant listings nationally in retailers Tesco, Sainsbury’s & Morrisons.</p>
+            <a class="button button--blue" href="/contact/">Request a case study</a>
+        </div>
+-
+    class: 'section--black section--gallery'
+    template: sections/section.html
+    content: |
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/crestron/billboard_1.jpg" alt="LiveWest Image">
+            </div>
+        </div>
+
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/crestron/billboard_1.jpg" alt="LiveWest Image">
+            </div>
+        </div>
+-
+    class: 'section--grey section--slider section--slider--large-image unset-height'
     template: sections/slider.html
     data:
-        - /assets/img/case-studies/butcombe/slide-1.png
-        - /assets/img/case-studies/butcombe/slide-2.png
-        - /assets/img/case-studies/butcombe/slide-3.png
-        - /assets/img/case-studies/butcombe/slide-4.png
-        - /assets/img/case-studies/butcombe/slide-5.png
+        - /assets/img/case-studies/butcombe/Section--10.jpg
+        - /assets/img/case-studies/butcombe/Section--11.jpg
 -
-    class: 'section--padding section--peak section--peak--grey section--padding--pinch section--blue section--background-aware typography section--dinosaur'
+    class: 'section--black typography--white'
     template: sections/section.html
     content: |
-        <div class="section__center">
-            <div class="section__left">
-                <blockquote>The Butcombe brand is beloved and respected by fans of traditional British ale across the UK & beyond. Halo immediately got straight to the heart of the brand, understanding our unique proposition with their impressive consumer insights and commercial approach. The results speak from themselves. Halo have revitalised the brand, created new revenue streams &amp; opened up markets for us in a way we hadn’t thought possible.
-                </blockquote>
-                <cite>Emmy Webster, Marketing Director</cite>
+        <div class="section__text-block">
+            <h2>Pedro Oyabide</h2>
+            <p>Pedro was the natural choice for this project. A unique talent, his work is the perfect balance of bold ideas, sensitively rendered
+                and realised for mass production without loss of vision or artistic value. Working closely with the Halo studio, whatever ideas we threw at Pedro, he was up for the challenge. A T Rex on fire? No problem.</p>
+            <a class="button button--blue" href="/contact/">Request a case study</a>
+        </div>
+-
+    class: 'section--black section--gallery'
+    template: sections/section.html
+    content: |
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/crestron/billboard_1.jpg" alt="LiveWest Image">
             </div>
         </div>
 -
-    class: 'section--padding section--white section--center'
-    template: sections/section.html
-    content: |
-        <div class="row row--center">
-            <div class="col-md-8"><img src="/assets/img/case-studies/butcombe/butcombe_poster.jpg" alt="Halo - Butcombe Poster"></div>
-        </div>
--
-    template: sections/lead-image.html
-    image: case-studies/butcombe/but_9.jpg
--
-    class: 'section section--padding section--center-lrg section--b-white typography'
-    template: sections/section.html
-    content: |
-        <div class="section__measure">
-            <div class="row">
-                <div class="col-md-offset-2 col-md-8 flourish">
-                    <h3>PEDRO OYABRIDE</h3>
-                    <p>Pedro was the natural choice for this project. A unique talent, his work is the perfect balance of bold ideas, sensitively rendered and realised for mass production without loss of vision or artistic value. Working closely with the Halo studio, whatever ideas we threw at Pedro, he was up for the challenge. A T Rex on fire? No problem.</p>
-                </div>
-            </div>
-
-        </div>
--
-    class: 'section--padding section--black section--78 typography'
-    template: sections/section.html
-    content: |
-        <div class="row">
-            <div class="col-md-6">
-                <h2 class="type--yellow">Creating original craft and sub-brand stories</h2>
-                <p><strong>A range to celebrate all the things we missed whilst making Butcombe Original</strong></p>
-                <p>The shift in the consumer pallete towards punchier, heavy hopped IPA’s & mature Bocks has created space in the category for Butcombe’s seasonal, special edition brews. Each one is limited batch with a unique name & design created in honour of a landmark event or personality from 1978 - the year of the Brewery’s birth. The ‘78 Range has achieved significant retail listings & On-Trade support.</p>
-            </div>
-            <div class="logo col-md-offset-1 col-md-4">
-                <img class src="/assets/img/case-studies/butcombe/the_78_range.svg" alt="Halo - The 78 Range">
-            </div>
-        </div>
--
-    class: 'section--padding section--peak section--peak--black section--center section--green'
-    template: sections/section.html
-    content: |
-        <div class="row row--center">
-            <div class="col-md-6 can">
-                <img class="pull-right" src="/assets/img/case-studies/butcombe/invader_can_shadow.jpg" alt="Halo - Butcombe Invader Can">
-            </div>
-            <div class="col-xs-10 col-md-6 col-lg-6 col--center typography">
-                <h3>The game changing beer</h3>
-                <p><strong>1978 saw the release of Space Invaders, the arcade game that changed the world with its iconic game play and design. Today, it remains a totem for a generation, taking us back to a simpler time, where saving the universe came in 8-bit and a handful of small change could last you the night. To celebrate this game changer, we’ve created a beer that’s a classic in its own right.</strong></p>
-            </div>
-        </div>
--
-    class: 'section--padding section--center section--red'
-    template: sections/section.html
-    content: |
-        <div class="row row--center">
-            <div class="col-xs-10 col-md-6 col-lg-6 col--center typography">
-                <h3>A beer for the people</h3>
-                <p><strong>They called the winter of ‘78 ‘the winter of discontent’. Widespread strikes across the public sector brought the country to a standstill as workers fought for their rights. To mark this tumultuous period of British history, we’ve created a beer for the people.</strong></p>
-            </div>
-            <div class="col-md-6 can">
-                <img class="pull-right" src="/assets/img/case-studies/butcombe/union_can_shadow.jpg" alt="Halo - Butcombe Union Can">
-            </div>
-        </div>
--
-    class: 'section--padding section--stats section--center grid grid--thirds typography'
-    template: sections/section.html
-    content: |
-        <div class="section__measure">
-            <div class="row row--center">
-                <div class="col-sm-6 col-lg-4">
-                    <span class="typography--huge typography--yellow">18%</span>
-                    <p><strong>Increase in Off-Trade sales</strong></p>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <span class="typography--huge typography--yellow">24%</span>
-                    <p><strong>Increase in On-Trade sales</strong></p>
-                </div>
-                <div class="col-sm-6 col-lg-4">
-                    <span class="typography--huge typography--yellow">Awarded</span>
-                    <p><strong>World Beer Medal for Design</strong></p>
-                </div>
-            </div>
-
-        </div>
--
-    class: 'section--black slider--100'
+    class: 'section--grey section--slider section--slider--large-image unset-height'
     template: sections/slider.html
     data:
-        - /assets/img/case-studies/butcombe/but_13.jpg
-        - /assets/img/case-studies/butcombe/but_14.jpg
+        - /assets/img/case-studies/butcombe/Section--10.jpg
+        - /assets/img/case-studies/butcombe/Section--11.jpg
+        - /assets/img/case-studies/butcombe/Section--10.jpg
+        - /assets/img/case-studies/butcombe/Section--11.jpg
+        - /assets/img/case-studies/butcombe/Section--10.jpg
 -
-    class: 'section--img-100'
+    class: 'section--black typography--white'
     template: sections/section.html
     content: |
-        <img src="/assets/img/case-studies/butcombe/forty_two_can_2.jpg" alt="Halo - Butcombe Forty Two Can">
+        <div class="section__text-block">
+            <h2>‘Creating a craft range to celebrate all the things we missed whilst making Butcombe Original’</h2>
+            <p>The shift in the consumer pallete towards punchier, heavy hopped IPA’s & mature Bocks has created space in the category for Butcombe’s seasonal, special edition brews. Each one is limited batch with a unique name & design created in honour of a landmark event or personality from 1978 - the year of the Brewery’s birth. The ‘78 Range has achieved significant retail listings & on-trade support, realised for mass production without loss of vision or artistic value.</p>
+            <a class="button button--blue" href="/contact/">Request a case study</a>
+        </div>
 -
-    class: 'section--padding section--blue section--center'
+    class: 'section--black section--gallery'
     template: sections/section.html
     content: |
-        <p><a class="button button--black" href="/contact/">Request a case study</a></p>
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--7.jpg" alt="LiveWest Image">
+            </div>
+        </div>
 
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--8.jpg" alt="LiveWest Image">
+            </div>
+        </div>
+
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--9.jpg" alt="LiveWest Image">
+            </div>
+        </div>
 -
-    class: 'section--white section--work'
+    class: 'section--black typography--white'
+    template: sections/section.html
+    content: |
+        <div class="section__text-block">
+            <h2>A beer for the people</h2>
+            <p>They called the winter of ‘78 ‘the winter of discontent’. Widespread strikes across the public sector brought the country to a standstill as workers fought for their rights. To mark this tumultuous period of British history, we’ve created a beer for the people.</p>
+        </div>
+-
+    class: 'section--black section--gallery'
+    template: sections/section.html
+    content: |
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--10.jpg" alt="LiveWest Image">
+            </div>
+        </div>
+-
+    class: 'section--black typography--white'
+    template: sections/section.html
+    content: |
+        <div class="section__text-block">
+            <h2>The game changing beer</h2>
+            <p>1978 saw the release of Space Invaders, the arcade game that changed the world with its iconic game play and design. Today, it remains a totem for a generation, taking us back to a simpler time, where saving the universe came in 8-bit and a handful of small change could last you the night. To celebrate this game changer, we’ve created a beer that’s a classic in its own right.</p>
+        </div>
+-
+    class: 'section--black section--gallery'
+    template: sections/section.html
+    content: |
+        <div class="section--gallery__row">
+            <div class="section--gallery__row__col-1">
+                <img src="/assets/img/case-studies/butcombe/Section--11.jpg" alt="LiveWest Image">
+            </div>
+        </div>
+-
+    class: 'section--black unset-height'
+    template: sections/section.html
+    content: |
+        <h2>Time for another?</h2>
+-
+    class: 'section--black section__related-work'    
     template: sections/slider.html
+    button: red
+    buttonURL: /work/
+    buttonText: 'See all work'
     filter: work
+-
+    class: 'typography--white section--black latest-blog-no-bg'
+    template: sections/blog-latest.html
+    title: Further reading
+    button: white
+-
+    class: 'section section--blue unset-height'    
+    template: sections/section.html
+    content: |
+        <div class="section__text-block">
+            <img class="icon" src="/assets/img/lips.gif" alt="Halo - Lips">
+            <h2>Talk to us.</h2>
+            <p>
+                Answering strategic and commercial questions with insight &amp; creativity.
+                <br>Get in touch. Let’s talk about you.
+            </p>
+            <a class="button button--black" href="/contact/">Contact</a>
+        </div>
+
 ---

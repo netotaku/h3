@@ -169,7 +169,6 @@
         .section__text-block {
             margin-bottom: $gutter;
             z-index: 2;
-            // position: relative;
 
             &::after {
                 position: absolute;
@@ -187,14 +186,6 @@
                     height: 45%;
                     padding-top: $gutter * 4; 
                 } 
-
-                @include media-breakpoint-up(md) {
-                    // left: -$gutter * 2;
-                }
-            
-                @include media-breakpoint-up(xl) {
-                    // left: -$gutter * 4;
-                }  
             }
 
             @include media-breakpoint-up(lg) {
@@ -227,14 +218,12 @@
         }  
 
         &__button {
-            background: $black;
             width: 100%;
         }
     }
 
-    &--work {
-        width: 100%;
-        
+    &--work,
+    &--blog {
         &__container {
             display: flex;
             justify-content: flex-start;
@@ -247,6 +236,14 @@
                 flex-direction: row;
             } 
         }  
+    }
+
+    &--work {
+        width: 100%;
+    }
+
+    &--blog {
+        width: 70%;
     }
 
     &--heading {
@@ -447,6 +444,19 @@
     &--slider {
         max-height: 80vh;
         padding: 0;
+        margin: 0;
+
+        &--large-image {
+            max-height: unset;
+
+            .slider__item {
+                height: unset;
+            }
+
+            .slider__scroll a {
+                flex-basis: 100%;
+            }
+        }
     }
 
     &--video {
@@ -481,59 +491,10 @@
             padding: 1em 2em;
         }
     }
-}
 
-.page--culture {
-    .section--department-title {
-        @media only screen and (min-width: 900px) {
-            padding-bottom: 4vw;
-        }
+    &--cookies-terms {
+        margin-bottom: $gutter * 2;
+        text-align: left;
+        width: 100%;
     }
 }
-
-
-
-.section--quote {
-    display: flex;
-    align-items: flex-end;
-}
-
-.section--background-aware {
-    background-repeat: no-repeat;
-}
-
-@media only screen and (max-width: $max-width){
-    .section{
-        &--background-aware{            
-            background-image: none !important;
-        }       
-    }
-} 
-
-
-@media only screen and (min-width: $max-width){
-    .section{
-        &--background-aware{
-            min-height: 100vh;
-        }  
-        &--padding{
-            padding: $gutter-lrg;
-            &--pinch{
-                padding: $gutter-lrg*2;            
-            }
-            &-hero {
-                padding: $gutter-lrg*2;
-            }
-            &-b-n {
-                padding-bottom: 0;
-            }
-        } 
-        &--center-lrg{
-            text-align: center;
-        }
-        &__left {
-            width: 50%; 
-            padding-right:  $gutter-lrg*2;
-        }
-    }
-} 

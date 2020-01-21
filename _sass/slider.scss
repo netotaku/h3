@@ -43,6 +43,7 @@
         justify-content: center;
         align-items: center;
         white-space: normal;
+        flex-direction: column;        
 
         @include media-breakpoint-up(md) {
             height: 30vh;
@@ -59,10 +60,35 @@
             background-position: center;
         }
 
-        h3 {
+        h3, p {
+            padding: 0 $gutter * 2;
+            box-sizing: border-box;
+            transition: 0.3s ease-out;
             color: $white;
-            text-decoration: none;
         }
+
+        h3 {
+            text-decoration: none;
+            transform: translateY(100%);
+        }
+
+        p {            
+            opacity: 0;            
+            transform: translateY(50%);
+        }
+
+        &:hover {
+            @include media-breakpoint-up(xl) {
+                h3 {
+                    transform: translateY(0);
+                }
+
+                p {
+                    opacity: 1;
+                    transform: translateY(0);
+                }
+            }               
+        }        
 
         &--background-aware{
             a {
