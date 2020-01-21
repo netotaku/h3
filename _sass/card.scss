@@ -106,14 +106,24 @@
             margin: $gutter 0;
             text-decoration: none;
             color: $white;
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+                font-size: 1em;
+                align-items: flex-end;
+                margin-top: $gutter;
+            }
         }
 
         &__image {
             min-height: 25vh;
             max-height: 30vh;
+            background-size: cover;
+            background-position: center;
 
             @include media-breakpoint-up(sm) {
-                height: 20vh;
+                height: 30vh;
             }
         }
     }

@@ -242,8 +242,83 @@
         width: 100%;
     }
 
+    &--people {
+        &__container {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+
+            @include media-breakpoint-up(lg) {
+                justify-content: space-evenly;
+            } 
+
+            &__item {
+                position: relative;                
+                background-position: top;
+                background-repeat: no-repeat;
+                background-size: cover;
+                height: 40vh;
+                width: 42vw;
+
+                @include media-breakpoint-up(xl) {
+                    height: 60vh;
+                    width: 30vw;
+                }  
+                
+                h4 {
+                    position: absolute;
+                    left: $gutter;
+                    right: $gutter;
+                    bottom: $gutter;
+                    color: $white;
+
+                    span {
+                        display: block;
+                        clear: both;
+                        font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
+                    }
+                }
+            }
+        }
+        .slider__scroll {
+            a {
+                flex-basis: 50%;
+
+                @include media-breakpoint-up(lg) {
+                    flex-basis: 33.33%;
+                } 
+            }
+        }
+
+        .slider__item {
+            height: 40vh;
+            background-position: top;
+            position: relative;
+
+            @include media-breakpoint-up(xl) {
+                height: 60vh;
+            } 
+
+            h4 {
+                position: absolute;
+                bottom: $gutter;
+                left: 0;
+                right: 0;
+                transform: translateY(0);
+                color: $white;
+
+                span {
+                    display: block;
+                    clear: both;
+                    font-family: 'gilroymedium', Helvetica, Arial, sans-serif;
+                }
+            }
+        }
+    }
+
     &--blog {
-        width: 70%;
+        align-items: flex-start;
     }
 
     &--heading {

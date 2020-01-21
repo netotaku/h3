@@ -1,79 +1,37 @@
 <section class="section section--blog">
+    <h2>Latest</h2>
     <div class="section--blog__container">
-        {% for link in site.data.map %}
-            {% if link.slug == 'work' %}
-                {% for child in link.children %}
-                    <div class="card card--work">
-                        <a href= "{{ child.path }}">
-                            <div class="card--work__image" style="background-image: url({{ child.thumb }})"></div>
-                            <div class="card--work__content">
-                                <div class="card--work__content__overlay">
-                                    <h3>{{ child.label }}</h3>
-                                    <p>{{ child.description }}</p>
-                                </div>
-                            </div>
-                        </a>                        
+        {% for post in site.posts %}
+            <div class="card card--blog">
+                <a href= "{{ post.url }}">
+                    <div class="card--blog__image" style="background-image: url({{ post.thumb }})"></div>
+                    <div class="card--blog__content">
+                        <h3>{{ post.title }}</h3>                            
+                        <p>{{ post.snippet }}</p>
+
+                        <!-- <div class="card--blog__content__bottom">
+                            {{ post.author.name }}
+                            <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="blog-card__time">
+                                <p>
+                                    {% assign d = post.date | date: "%-d" %}
+                                    {% case d %}
+                                    {% when "1" or "21" or "31" %}
+                                    {{ d }}st
+                                    {% when "2" or "22" %}
+                                    {{ d }}nd
+                                    {% when "3" or "23" %}
+                                    {{ d }}rd
+                                    {% else %}
+                                    {{ d }}th
+                                    {% endcase %}
+                                    {{ post.date | date: "%B" }}
+                                    {{ post.date | date: "%Y" }}
+                                </p>
+                            </time>
+                        </div> -->
                     </div>
-                {% endfor %}  
-            {% endif %}  
-        {% endfor %}
+                </a>                        
+            </div>
+        {% endfor %}  
     </div>
 </section>
-
-
-<!-- <section class="section section--padding typography">
-    {% include peak.html %}
-    <div class="grid grid--halves grid--padding grid--padding-large u--gutter-bottom grid--masonry">
-        {% for post in site.posts %}
-            <div class="grid__unit">
-                <a href="{{ post.url }}" class="blog-card u-shadow">
-                    <div class="blog-card__inner">
-                        <div class="blog-card__image">
-                            <div class="blog-card__hero" style="background-image: url({{ post.thumb }})"></div>
-                            <div class="blog-card__grad"></div>
-                            {% if post.external.title %}
-                                <p class="blog-card__external-title">{{ post.external.title }}</p>
-                            {% endif %}
-                        </div>
-                        <div class="blog-card__content">
-                            <h3 class="blog-card__title">
-                                {{ post.title }}
-                            </h3>
-                            <div class="blog-card__sub typography--white">
-                                <div class="blog-card__author">
-                                    <img src="{{ post.author.image|default :'/assets/img/social-share.jpg' }}" class="blog-card__author-image" alt="{{ post.author.name }}" />
-                                    <p class="blog-card__author-name">By {{ post.author.name }}</p>
-                                </div>
-                                <div class="blog-card__date">
-                                    <time datetime="{{ post.date | date: "%Y-%m-%d" }}" class="blog-card__time">
-                                        <p>
-                                            {% assign d = post.date | date: "%-d" %}
-                                            {% case d %}
-                                            {% when "1" or "21" or "31" %}
-                                            {{ d }}st
-                                            {% when "2" or "22" %}
-                                            {{ d }}nd
-                                            {% when "3" or "23" %}
-                                            {{ d }}rd
-                                            {% else %}
-                                            {{ d }}th
-                                            {% endcase %}
-                                            {{ post.date | date: "%B" }}
-                                            {{ post.date | date: "%Y" }}
-                                        </p>
-                                    </time>
-                                </div>
-                            </div>
-                            <p class="blog-card__snippet typography--white">
-                                {{ post.snippet }}
-                            </p>
-                            <div class="blog-card__buttons">
-                                <span class="button button--white blog-card__button">Read Article</span>
-                            </div>
-                        </div>
-                    </div>
-                </a>
-            </div>
-        {% endfor %}
-    </div>
-</section> -->

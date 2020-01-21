@@ -1,100 +1,90 @@
-<section class="section section--padding section--padding--pinch typography u--no-gutter-bottom">
-
+<section class="section {{ section.class }}">
     <h2>Founders.</h2>
 
-    <div class="grid grid--halves grid--padding">
+    <div class="section--people__container">
         {% for person in site.data.people.founders %}
-            <div class="grid__unit">
-                <div class="u-shadow">
-                    <div class="card card--image-aware">
-                        <img src="{{ person.image }}" alt="Halo - {{ person.name }}">
-                        
-                        <h3 class="card__label">
-                            {{ person.name }}<br>
-                            <span class="typography--normal">{{ person.title }}</span></h3>                                    
-                    </div>
-                </div>
+            <div class="section--people__container__item" style="background-image: url({{ person.image }});">
+                <h4>
+                    {{ person.name }}
+                    <span>{{ person.title }}</span>
+                </h4> 
             </div>
         {% endfor %}
     </div>
 </section>
 
-<section class="section section--padding section--padding--pinch typography section--department-title">
+<section class="section {{ section.class }}">    
     <h2>Leadership.</h2>
+
+    <div class="slider">
+        <div class="slider__scroll">   
+            {% for person in site.data.people.leadership %}                        
+                <a> 
+                    <div class="slider__item" style="background-image: url({{ person.image }});">
+                        <h4>
+                            {{ person.name }}
+                            <span>{{ person.title }}</span>
+                        </h4> 
+                    </div>
+                </a>
+            {% endfor %}
+        </div>        
+    </div>      
 </section>
 
-<div class="slider">
-    <div class="slider__scroll">            
-        {% for person in site.data.people.leadership %}                
-            <div class="slider__item">
-                <div class="u-shadow">
-                    <div class="card__inner">
-                        <img class="slider__item__image slider__item__image--large" src="{{ person.image }}" alt="Halo - {{ person.name }}">
-                        <h3 class="slider__item__label card__label"> {{ person.name }}<br>
-                            <span class="typography--normal job-title">{{ person.title }}</span></h3>
-                    </div>
-                </div>
-            </div>                
-        {% endfor %}
-    </div>
-</div>  
-
-<section class="section section--padding section--padding--pinch typography section--department-title">
+<section class="section {{ section.class }}">    
     <h2>Client Partnerships.</h2>
+
+    <div class="slider">
+        <div class="slider__scroll">   
+            {% for person in site.data.people.accounts %}                        
+                <a> 
+                    <div class="slider__item" style="background-image: url({{ person.image }});">
+                        <h4>
+                            {{ person.name }}
+                            <span>{{ person.title }}</span>
+                        </h4> 
+                    </div>
+                </a>
+            {% endfor %}
+        </div>        
+    </div>      
 </section>
 
-<div class="slider">
-    <div class="slider__scroll">            
-        {% for person in site.data.people.accounts %}                
-            <div class="slider__item">
-                <div class="u-shadow">
-                    <div class="card__inner">
-                        <img class="slider__item__image slider__item__image--large" src="{{ person.image }}" alt="Halo - {{ person.name }}">
-                        <h3 class="slider__item__label card__label"> {{ person.name }}<br>
-                            <span class="typography--normal job-title">{{ person.title }}</span></h3>
-                    </div>
-                </div>
-            </div>                
-        {% endfor %}
-    </div>
-</div>  
-
-<section class="section section--padding section--padding--pinch typography section--department-title">
+<section class="section {{ section.class }}">    
     <h2>Creative.</h2>
+
+    <div class="slider">
+        <div class="slider__scroll">   
+            {% for person in site.data.people.creative %}                        
+                <a> 
+                    <div class="slider__item" style="background-image: url({{ person.image }});">
+                        <h4>
+                            {{ person.name }}
+                            <span>{{ person.title }}</span>
+                        </h4> 
+                    </div>
+                </a>
+            {% endfor %}
+        </div>        
+    </div>      
 </section>
 
-<div class="slider">
-    <div class="slider__scroll">            
-        {% for person in site.data.people.creative %}                
-            <div class="slider__item">
-                <div class="u-shadow">
-                    <div class="card__inner">
-                        <img class="slider__item__image slider__item__image--large" src="{{ person.image }}" alt="Halo - {{ person.name }}">
-                        <h3 class="slider__item__label card__label"> {{ person.name }}<br>
-                            <span class="typography--normal job-title">{{ person.title }}</span></h3>
-                    </div>
-                </div>
-            </div>                
-        {% endfor %}
-    </div>
-</div>  
-    
-<section class="section section--padding section--padding--pinch typography section--department-title">
+<section class="section {{ section.class }}">    
     <h2>Digital.</h2>
-</section>
 
-<div class="slider">
-    <div class="slider__scroll">            
-        {% for person in site.data.people.digital %}                
-            <div class="slider__item">
-                <div class="u-shadow">
-                    <div class="card__inner">
-                        <img class="slider__item__image slider__item__image--large" src="{{ person.image }}" alt="Halo - {{ person.name }}">
-                        <h3 class="slider__item__label card__label"> {{ person.name }}<br>
-                        <span class="typography--normal job-title">{{ person.title }}</span></h3>
+    <div class="slider">
+        <div class="slider__scroll">   
+            {% for person in site.data.people.digital %}                        
+                <a> 
+                    <div class="slider__item" style="background-image: url({{ person.image }});">
+                        <h4>
+                            {{ person.name }}
+                            <span>{{ person.title }}</span>
+                        </h4> 
                     </div>
-                </div>
-            </div>                
-        {% endfor %}
-    </div>
-</div>  
+                </a>
+            {% endfor %}
+        </div>        
+    </div>      
+</section>
