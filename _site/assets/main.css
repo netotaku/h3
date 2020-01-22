@@ -1174,6 +1174,8 @@ p {
 .hero--image {
   background-position: center;
   background-size: cover; }
+.hero--blog-article {
+  max-height: 50vh; }
 .hero__strap {
   margin: auto;
   font-family: frequencymid;
@@ -1546,6 +1548,32 @@ p {
         font-family: 'gilroymedium', Helvetica, Arial, sans-serif; }
   .section--blog {
     align-items: flex-start; }
+  .section--blog-article__container {
+    text-align: left; }
+    .section--blog-article__container__title h1 {
+      margin-bottom: 0; }
+    .section--blog-article__container__title__date-type {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 40px;
+      font-size: 1.2em; }
+      .section--blog-article__container__title__date-type * {
+        margin-right: 20px; }
+    .section--blog-article__container__author {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      align-items: center; }
+      .section--blog-article__container__author img {
+        max-height: 8vw;
+        width: auto; }
+      .section--blog-article__container__author a {
+        color: white;
+        font-size: 1.8em;
+        margin-right: 20px; }
+        .section--blog-article__container__author a:last-child {
+          margin-right: 0; }
   .section--heading h1, .section--heading h2, .section--heading h3, .section--heading h4 {
     margin: 0;
     padding: 0; }

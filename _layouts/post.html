@@ -5,17 +5,18 @@ schemas:
 ---
 {% include brand.html %}
 
-{% capture blogHead %}
-    <div class="blog-head">
-        <h1 class="blog-head__title {% if page.hero.image %}typography--red{% endif %}">{{ page.title }}</h1>
-        <div class="blog-head__sub">
-            <div class="blog-head__author">
-                <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" class="blog-head__author-image" alt="{{ page.author.name }}" />
-                <p class="blog-head__author-name {% if page.hero.image %}typography--black{% endif %}">By {{ page.author.name }}</p>
-            </div>
-            <div class="blog-head__date">
-                <time datetime="{{ page.date | date: "%Y-%m-%d" }}" class="blog-head__time">
-                    <p class="{% if page.hero.image %}typography--black{% endif %}">
+<div class="hero--image hero--blog-article" style="background-image: url({{ page.hero.image }})"></div>
+
+<section class="section section--white section--blog-article">
+    <div class="section__text-block section--blog-article__container">   
+
+        <div class="section--blog-article__container__title">
+            <h1 class="blog-head__title {% if page.hero.image %}typography--red{% endif %}">{{ page.title }}</h1>
+
+            <div class="section--blog-article__container__title__date-type">
+                <span>Article Type</span>
+                <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
+                    <span>
                         {% assign d = page.date | date: "%-d" %}
                         {% case d %}
                         {% when "1" or "21" or "31" %}
@@ -29,44 +30,34 @@ schemas:
                         {% endcase %}
                         {{ page.date | date: "%B" }}
                         {{ page.date | date: "%Y" }}
-                    </p>
+                    </span>
                 </time>
-            </div>
-            <div class="blog-head__share {% if page.hero.image %}typography--blue{% endif %}">
-                <span class="blog-head__share-label">Share</span>
-                {% capture shareUrl %}{{ site.url }}{{ page.url }}{% endcapture %}
-                {% capture shareText %}Have a read of {{ page.title }} by Halo{% endcapture %}
-                <a target="_blank" rel="noopener nofollow noindex" href="https://www.facebook.com/sharer/sharer.php?u={{ shareUrl|url_encode }}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
-                    <i class="fa fa-facebook"></i>
-                </a>
-                <a target="_blank" rel="noopener nofollow noindex" href="https://twitter.com/share?text={{ shareText|url_encode }}&url={{ shareUrl|url_encode }}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
-                    <i class="fa fa-twitter"></i>
-                </a>
-                <a target="_blank" rel="noopener nofollow noindex" href="https://www.linkedin.com/shareArticle?mini=true&url={{shareUrl|url_encode}}&title={{page.title|url_encode}}&related=halo&summary={{page.title|url_encode}}" class="blog-head__share-link {% if page.hero.image %}typography--blue{% endif %}">
-                    <i class="fa fa-linkedin"></i>
-                </a>
-            </div>
-        </div>
-    </div>
-{% endcapture %}
+            </div>            
+        </div>        
 
-<div class="page__content content">
-    {% if page.hero.image %}
-        <div class="lead-image section--peak-mask section--peak-mask--white" style="background-image: url({{ page.hero.image }});">
-            <div class="peak-mask">
-                <div class="peak-mask__peak">
-                    <div class="peak-mask__holder">
-                        <svg class="peak-mask__peak__mask" width="100px" height="100px" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
-                                <g id="Artboard" fill="#D8D8D8">
-                                    <path d="M23,0 L50,20 L77,0 L100,0 L100,100 L0,100 L0,0 L23,0 Z" id="Combined-Shape"></path>
-                                </g>
-                            </g>
-                        </svg>
-                    </div>
-                </div>
+        <div class="section--blog-article__container__content">
+            {{ content }}
+        </div>              
+    </div>    
+</section>
+
+<section class="section section--blue unset-height">
+    <div class="section__text-block section--blog-article__container"> 
+        <div class="section--blog-article__container__author">
+            <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" alt="{{ page.author.name }}" />
+            <h3>{{ page.author.name }}</h3>
+            <div class="section--blog-article__container__author__social">
+                <a target="_blank" href="https://twitter.com/weare_halo" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/wearehalo_bristol/" title="Check out our Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/halo-media-communications-ltd/" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-linkedin"></i></a>
             </div>
-        </div>
+        </div>  
+    </div>
+</section>
+
+<!-- <div class="page__content content">
+    {% if page.hero.image %}
+        <div class="lead-image section--peak-mask section--peak-mask--white" style="background-image: url({{ page.hero.image }});">   </div>
     {% else %}
         <div class="group">
             <section class="section section--padding-hero section--padding--pinch section--red section--peak section--peak--red typography">
@@ -115,4 +106,4 @@ schemas:
             {% include contact.html %}
         </div>
     </footer>
-</div>
+</div> -->
