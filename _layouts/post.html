@@ -32,19 +32,73 @@ schemas:
                         {{ page.date | date: "%Y" }}
                     </span>
                 </time>
-            </div>            
+            </div>  
+
+            <div class="section--blog-article__container__title__social">
+                <!-- Share:   -->
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{page.url }}" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-facebook"></i></a>
+                <a target="_blank" href="https://twitter.com/intent/tweet?url={{ site.url }}{{page.url }}&text={{ page.title }}" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{page.url }}&title={{ page.title }}" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-linkedin"></i></a>
+            </div>
         </div>        
 
         <div class="section--blog-article__container__content">
             {{ content }}
-        </div>              
+        </div>  
+        
+        <div class="section--blog-article__container__author">
+            <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" alt="{{ page.author.name }}" />
+            <span>Author</span>
+            <h3>{{ page.author.name }}</h3>
+            <div class="section--blog-article__container__author__social">
+                <a target="_blank" href="https://twitter.com/weare_halo" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a target="_blank" href="https://www.instagram.com/wearehalo_bristol/" title="Check out our Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/halo-media-communications-ltd/" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-linkedin"></i></a>
+            </div>
+        </div>  
     </div>    
 </section>
 
-<section class="section section--blue unset-height">
+<section class="section section--blog-latest section--black">
+    <div class="section__text-block">
+        <h2>Get some more insight</h2>
+    </div>
+    
+    <div class="section--blog-latest__container">
+        {% for post in site.posts limit:3 %}
+            <a href="{{ post.url }}" class="card card--blog">
+                <div class="card--blog__image" style="background-image: url({{ post.thumb }})"></div>
+
+                <div class="card--blog__content">
+                    <h4>{{ post.title }}</h4>
+                    <p>{{ post.snippet }}</p>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+    <div class="section--blog-latest__button">
+        <a class="button button--{{ section.button }}" href="/blog/">See all articles</a>
+    </div>     
+</section>
+
+<footer class="section section--black footer unset-height">
+    <a class="footer__brand" href="/" title="Relax"><img src="/assets/svg/brand.svg" alt="Halo Media Communications"></a>
+    <div class="contact contact--lrg">
+        {% include contact.html %}
+    </div>
+    <a href="/pong/">
+        <div id="easter-egg">
+            {% include svgs/easter-egg.svg %} 
+        </div>
+    </a>       
+</footer>
+
+<!-- <section class="section section--blue unset-height">
     <div class="section__text-block section--blog-article__container"> 
         <div class="section--blog-article__container__author">
             <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" alt="{{ page.author.name }}" />
+            <span>Written by</span>
             <h3>{{ page.author.name }}</h3>
             <div class="section--blog-article__container__author__social">
                 <a target="_blank" href="https://twitter.com/weare_halo" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
@@ -53,7 +107,7 @@ schemas:
             </div>
         </div>  
     </div>
-</section>
+</section> -->
 
 <!-- <div class="page__content content">
     {% if page.hero.image %}

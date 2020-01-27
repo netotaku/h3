@@ -1,11 +1,11 @@
 .hero {
     &--video,
     &--image {
-        height: 60vh;
+        height: 65vh;
         
-        @include media-breakpoint-up(xl) {
-            height: 90vh;
-        } 
+        // @include media-breakpoint-up(xl) {
+        //     height: 60vh;
+        // } 
     }
 
     &--image {
@@ -14,7 +14,11 @@
     }
 
     &--blog-article {
-        max-height: 50vh;
+        max-height: 40vh;
+
+        @include media-breakpoint-up(xl) {
+            max-height: 60vh;
+        }
     }
 
     &__strap {

@@ -117,13 +117,18 @@
         }
 
         &__image {
-            min-height: 25vh;
+            height: 35vh;
             max-height: 30vh;
             background-size: cover;
             background-position: center;
 
             @include media-breakpoint-up(sm) {
-                height: 30vh;
+                height: 25vw;
+            }
+
+            @include media-breakpoint-up(xl) {
+                max-height: unset;
+                height: 35vh;
             }
         }
     }
