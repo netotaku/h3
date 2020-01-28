@@ -2,6 +2,7 @@
 layout: post
 title:  'The Myth Of The More Socially Conscious Millennials'
 thumb: '/assets/img/blog/the-myth-of-the-more-socially-conscious.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/the-myth-of-the-more-socially-conscious.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: 73% of millennials are willing to spend more on a product if it comes f
 external:
     title: Branding Strategy Insider
     url: https://www.brandingstrategyinsider.com/2018/01/the-myth-of-the-more-socially-conscious-millennials.html
+pinned: true
 ---
 
 ### 73% of millennials are willing to spend more on a product if it comes from a sustainable brand. 81% of millennials expect their favorite companies to make public declarations of their corporate citizenship.

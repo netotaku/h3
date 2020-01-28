@@ -2,6 +2,7 @@
 layout: post
 title:  'Why Brand Change Triggers Emotional Reactions'
 thumb: '/assets/img/blog/why-brand-change-triggers-emotional-reactions.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/why-brand-change-triggers-emotional-reactions.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: Brand is used to appeal to peoples’ emotions, by creating meaning tha
 external:
     title: Branding Strategy Insider
     url: https://www.brandingstrategyinsider.com/2018/05/why-brand-change-triggers-emotional-reactions.html
+pinned: false
 ---
 
 Brand is used to appeal to peoples’ emotions, by creating meaning that has a value to someone. So why is there any 

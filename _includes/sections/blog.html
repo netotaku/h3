@@ -1,5 +1,24 @@
-<section class="section section--blog">
-    <h2>Latest</h2>
+<section class="section section--blog {{ section.class }}">
+
+    <!-- <h2>Popular</h2> -->
+    <div class="section--blog__container">
+        {% for post in site.posts  %}
+            {% if post.pinned == true %}
+                <div class="card card--blog card--blog--promoted">
+                    <a href= "{{ post.url }}">
+                        <div class="card--blog__image" style="background-image: url({{ post.thumb }})"></div>
+                        <div class="card--blog__content">
+                            <h4>Promoted</h4>
+                            <h3>{{ post.title }}</h3>                            
+                            <p>{{ post.snippet }}</p>
+                        </div>
+                    </a>                        
+                </div>
+            {% endif %}
+        {% endfor %}  
+    </div>
+
+    <h2>Latest Articles</h2>
     <div class="section--blog__container">
         {% for post in site.posts %}
             <div class="card card--blog">

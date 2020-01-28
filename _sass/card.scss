@@ -86,7 +86,9 @@
         }
     }
 
-    &--blog {
+    &--blog {     
+        margin-bottom: $gutter * 2;
+
         @include media-breakpoint-up(sm) {
             &:last-child {
                 display: none;
@@ -97,7 +99,44 @@
             &:last-child {
                 display: flex;
             }
-        }  
+        } 
+        
+        &--promoted {
+            width: 100%;
+            display: flex !important;
+
+            a {
+                display: flex !important;
+                width: 100%;
+                flex-direction: column;
+
+                @include media-breakpoint-up(xl) {
+                    flex-direction: row;
+                    align-items: center;
+                } 
+            }
+
+            .card--blog__content {         
+                width: 100%;
+                display: flex !important;
+                flex-direction: column;
+                justify-content: center;
+
+                @include media-breakpoint-up(xl) {
+                    width: 35vw;
+                } 
+            }
+
+            .card--blog__image {
+                height: 20vw;
+                width: 100%;
+
+                @include media-breakpoint-up(xl) {
+                    width: 50vw;
+                    margin-right: $gutter * 2;
+                } 
+            }
+        }
 
         &__content {
             text-decoration: none;
@@ -133,6 +172,12 @@
         }
     }
 
+    &--blog-latest {
+        &:nth-child(n+4) {
+            display: none;
+        }
+    }
+
     &--work {
         &__content {
             text-decoration: none;
@@ -146,14 +191,21 @@
             text-align: center;
 
             h3 {
-                transition: 0.3s ease-out;
-                transform: translateY(100%);
+                @include media-breakpoint-up(xl) { 
+                    transition: 0.3s ease-out;
+                    transform: translateY(100%);
+                }
             }
             
             p {
-                opacity: 0;
-                transition: 0.3s ease-out;
-                transform: translateY(50%);
+                display: none;
+
+                @include media-breakpoint-up(xl) { 
+                    opacity: 0;
+                    transition: 0.3s ease-out;
+                    transform: translateY(50%);
+                    display: block
+                }
             }
 
             &:hover {
@@ -181,12 +233,15 @@
             }
         }
 
-        &__image {
-            min-height: 40vh;
+        &__image {            
             max-height: 40vh;
 
             @include media-breakpoint-up(sm) {
                 height: 30vh;
+            }
+
+            @include media-breakpoint-up(xl) {
+                height: 40vh;
             }
         }
     }

@@ -14,7 +14,8 @@ schemas:
             <h1 class="blog-head__title {% if page.hero.image %}typography--red{% endif %}">{{ page.title }}</h1>
 
             <div class="section--blog-article__container__title__date-type">
-                <span>Article Type</span>
+                <span>{{ page.type }}</span>
+                <span>/</span>
                 <time datetime="{{ page.date | date: "%Y-%m-%d" }}">
                     <span>
                         {% assign d = page.date | date: "%-d" %}
@@ -35,7 +36,6 @@ schemas:
             </div>  
 
             <div class="section--blog-article__container__title__social">
-                <!-- Share:   -->
                 <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{ site.url }}{{page.url }}" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-facebook"></i></a>
                 <a target="_blank" href="https://twitter.com/intent/tweet?url={{ site.url }}{{page.url }}&text={{ page.title }}" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
                 <a target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&url={{ site.url }}{{page.url }}&title={{ page.title }}" title="Check out our LinkedIn" rel="noopener"><i class="fa fa-linkedin"></i></a>
@@ -49,7 +49,7 @@ schemas:
         <div class="section--blog-article__container__author">
             <img src="{{ post.author.image|default :'/assets/img/logo.png' }}" alt="{{ page.author.name }}" />
             <span>Author</span>
-            <h3>{{ page.author.name }}</h3>
+            <h4>{{ page.author.name }}</h4>
             <div class="section--blog-article__container__author__social">
                 <a target="_blank" href="https://twitter.com/weare_halo" title="Check out our Twitter" rel="noopener"><i class="fa fa-twitter"></i></a>
                 <a target="_blank" href="https://www.instagram.com/wearehalo_bristol/" title="Check out our Instagram" rel="noopener"><i class="fa fa-instagram"></i></a>
@@ -65,16 +65,20 @@ schemas:
     </div>
     
     <div class="section--blog-latest__container">
-        {% for post in site.posts limit:3 %}
-            <a href="{{ post.url }}" class="card card--blog">
-                <div class="card--blog__image" style="background-image: url({{ post.thumb }})"></div>
-
-                <div class="card--blog__content">
-                    <h4>{{ post.title }}</h4>
-                    <p>{{ post.snippet }}</p>
-                </div>
-            </a>
+        {% for i in (1..4) %}
+            {% if site.posts[i].slug == page.slug || i == 4 %}
+                {% continue %}
+            {% else %}
+                <a href="{{ site.posts[i].url }}" class="card card--blog card--blog-latest">
+                    <div class="card--blog__image" style="background-image: url({{ site.posts[i].thumb }})"></div>
+                    <div class="card--blog__content">
+                        <h4>{{ site.posts[i].title }}</h4>
+                        <p>{{ site.posts[i].snippet }}</p>
+                    </div>
+                </a>
+            {% endif %}
         {% endfor %}
+
     </div>
 
     <div class="section--blog-latest__button">

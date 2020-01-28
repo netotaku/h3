@@ -47,6 +47,20 @@ ol {
 
 .list {
     list-style: unset;
+
+    &--numbered {
+        list-style: decimal;
+        font-family: frequencymid;
+
+        li {
+            text-align: left;
+            font-family: frequencymid;
+
+            span {
+                font-family: gilroymedium;
+            }
+        }
+    }
 }
 
 html {
@@ -144,7 +158,7 @@ p {
     font-size: 1.1em;
 
     @include media-breakpoint-up(md) {
-        // font-size: 1.1em;
+        font-size: 1em;
     } 
 }
 

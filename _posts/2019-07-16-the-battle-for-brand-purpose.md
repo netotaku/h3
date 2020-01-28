@@ -2,6 +2,7 @@
 layout: post
 title:  'The Battle for Brand Purpose'
 thumb: '/assets/img/blog/battle-for-brand-purpose.jpg'
+type: 'Strategy'
 hero: 
     image: '/assets/img/blog/battle-for-brand-purpose.jpg'
 author: 
@@ -11,6 +12,7 @@ external:
     url: https://www.thedrum.com/opinion/2019/07/16/the-battle-brand-purpose-it-not-csr
     title: The Drum Magazine
     short: The Drum
+pinned: false
 ---
 
 ### Time to get back to reality

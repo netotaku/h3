@@ -2,6 +2,7 @@
 layout: post
 title:  'How Brand Utility Shields Facebook'
 thumb: '/assets/img/blog/brand-utility-shields-facebook.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/brand-utility-shields-facebook.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: Why would people remain loyal to a brand they didn’t like?
 external:
     title: Branding Strategy Insider
     ur: https://www.brandingstrategyinsider.com/2018/03/how-brand-utility-shields-facebook.html
+pinned: false
 ---
 
 Why do people remain loyal to a brand? There are a myriad of benefits that brand experts claim people want from a brand 

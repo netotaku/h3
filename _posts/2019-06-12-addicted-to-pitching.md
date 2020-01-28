@@ -2,6 +2,7 @@
 layout: post
 title:  'Addicted to Pitching? Time to get clean'
 thumb: '/assets/img/blog/addicted-to-pitching.jpg'
+type: 'Strategy'
 hero: 
     image: '/assets/img/blog/addicted-to-pitching.jpg'
 author: 
@@ -11,6 +12,7 @@ external:
     title: The Drum Magazine
     url: https://www.thedrum.com/opinion/2019/07/12/addicted-pitching-time-get-clean
     short: The Drum
+pinned: false
 ---
 
 I’ll go first.

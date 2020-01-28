@@ -2,6 +2,7 @@
 layout: post
 title:  'How Points of Parity Benefit Brands'
 thumb: '/assets/img/blog/how-points-of-parity.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/how-points-of-parity.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: In the UK in recent years there has been an emergence of a number of ch
 external:
     title: Branding Strategy Insider
     url: https://www.brandingstrategyinsider.com/2019/04/how-points-of-parity-benefit-brands.html#.XbhyoUX7RTY
+pinned: false
 ---
 
 ### In the UK in recent years there has been an emergence of a number of challenger bank brands.

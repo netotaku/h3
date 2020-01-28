@@ -2,6 +2,7 @@
 layout: post
 title:  'The Power of Simple Brand Experiences'
 thumb: '/assets/img/blog/the-power-of-simple-brand-experiences.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/the-power-of-simple-brand-experiences.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: I have a new favorite toy store brand.
 external:
     title: Branding Strategy Insider
     url: https://www.brandingstrategyinsider.com/2019/01/the-power-of-simple-brand-experiences.html#.XbhyskX7RTY
+pinned: false
 ---
 
 ### I have a new favorite toy store brand.

@@ -2,11 +2,13 @@
 layout: post
 title:  'Boaty McBoatface – A lesson in co-creation'
 thumb: '/assets/img/blog/a-lesson-in-co-creation.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/a-lesson-in-co-creation.jpg'
 author: 
     name: Paul Bailey
 snippet: Earlier this year the Natural Environment Research Council launched a poll to name their Royal Research Ship.
+pinned: false
 ---
 
 ### Earlier this year the Natural Environment Research Council launched a poll to name their Royal Research Ship, using the hashtag #NameOurShip. A Royal Research Ship (RRS) conducts scientific research for Her Majesty’s Government no less, so this is respectable, important stuff.

@@ -2,6 +2,7 @@
 layout: post
 title:  'Accepting Impermanence in Brand Development'
 thumb: '/assets/img/blog/accepting-impermanence.jpg'
+type: 'Brand'
 hero: 
     image: '/assets/img/blog/accepting-impermanence.jpg'
 author: 
@@ -11,6 +12,7 @@ external:
     title: Transform Magazine
     url: https://www.transformmagazine.net/articles/2014/accepting-the-impermanent-in-brand-development/
     short: Transform
+pinned: false
 ---
 
 ### Brands are works in progress that we mistakenly think are finished.

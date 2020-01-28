@@ -18,7 +18,7 @@
         min-height: 60vh;
     }
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         padding: $gutter * 4;
         min-height: 60vh;
     }
@@ -77,7 +77,7 @@
             } 
         }
 
-        ul {
+        ol {
             margin-left: $gutter;
         }        
     }

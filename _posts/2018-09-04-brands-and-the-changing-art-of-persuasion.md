@@ -2,6 +2,7 @@
 layout: post
 title:  'Brands and The Changing Art of Persuasion'
 thumb: '/assets/img/blog/brands-and-the-changing-art-of-persuasion.jpg'
+type: 'Strategy'
 hero: 
     image: '/assets/img/blog/brands-and-the-changing-art-of-persuasion.jpg'
 author: 
@@ -10,6 +11,7 @@ snippet: Persuasion is not the most fashionable of brand P-words right now – t
 external:
     title: Branding Strategy Insider
     url: https://www.brandingstrategyinsider.com/2018/09/brands-and-the-changing-art-of-persuasion.html
+pinned: false
 ---
 
 I recently attended a great morning session on strategy at the <a href="https://www.ycn.org/" target="_blank">You Can 
